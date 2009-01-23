@@ -1,0 +1,3 @@
+i18n.bundle.file=../../../../bin/system/bundles/zoundry.blogpub.xml
+i18n.function=_extstr
+i18n.package=zoundry.blogpub.messages
