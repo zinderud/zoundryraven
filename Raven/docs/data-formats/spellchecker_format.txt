@@ -1,0 +1,12 @@
+This is a description of the format of a single "spell checker" in Raven.
+
+<spellchecker lang="xsd:string">
+    <dictionary display-name="xsd:string" lang-code="xsd:string" type="z:id" url="z:url" />
+    <provider>z:class</provider>
+    <personal-dictionary>
+        <word>xsd:string</word>*
+    </personal-dictionary>
+	<auto-corrections>
+	   <auto-correction word="xsd:string">xsd:string</auto-correction>*
+	</auto-corrections>
+</spellchecker>

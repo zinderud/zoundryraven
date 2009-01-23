@@ -1,0 +1,14 @@
+This is a description of the format of a single persisted "background task" in Raven.
+
+<task task-id="z:guid" class="python:class">
+    <task-attributes>
+    	<attribute name="xs:string">xs:string</attribute>*
+    </task-attributes>
+    <error>?
+        <message>xs:string</message>
+        <details>xs:string</details>
+    </error>
+	<custom-attributes>?
+		<attribute name="xs:string">xs:string</attribute>*
+	</custom-attributes>
+</task>
