@@ -1,0 +1,4 @@
+<!-- Data format file for usage statistics packets -->
+<zusage:packet>
+    <zusage:header appVersion="" profile="" />
+</zusage:packet>
