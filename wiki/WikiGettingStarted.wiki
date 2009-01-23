@@ -47,11 +47,11 @@ Use Subversion to download the Zoundry Raven source from this Google Code projec
 ===Test that Zoundry Raven Works===
 Now it's time to run Zoundry Raven, since you've gone to all this trouble.  To run, open a command/cmd prompt and cd into the following directory:
 
-C:\<PathToZoundryRaven>\src\python
+C:\PathToZoundryRaven\src\python
 
 Then type:
 
-C:\<PathToPython24>\python.exe zoundry\blogapp\raven.py
+C:\PathToPython24\python.exe zoundry\blogapp\raven.py
 
 It should work!
 
