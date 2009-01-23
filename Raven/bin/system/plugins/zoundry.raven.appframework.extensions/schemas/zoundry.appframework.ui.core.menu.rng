@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+
+    <start>
+        <element 
+            name="menu" 
+            ns="http://www.zoundry.com/schemas/2006/03/zplugin.rng" 
+            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+
+            <element name="type">
+                <choice>
+                    <value>menubar</value>
+                    <value>popup</value>
+                </choice>
+            </element>
+            <optional>
+                <element name="name">
+                    <data type="string"/>
+                </element>
+            </optional>
+            <optional>
+                <element name="description">
+                    <data type="string"/>
+                </element>
+            </optional>
+
+        </element>
+    </start>
+
+</grammar>

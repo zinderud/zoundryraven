@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zoundry-plugin xmlns="http://www.zoundry.com/schemas/2006/03/zplugin.rng" version="1.0" signature="64Y364615NWQBKSCQA2OHFLELT6W8HWPS1RG3PCFHGRSU9C8XM648YI4YSP96RCPL79KNFUR7F0VGRF9OLLAZ76BNRSMDQFIL8YXJE31HSM0BMN9OAKPVKSMELDOFLXXX3X79P2PDW4580XJ6ACOVG5P1NR5W43SA2JYN6ETY0TQVQNNKWJICDY1VXICRTL1BNA2S9WK7IHAR01P9HM1Q17CZKOOTAZIQQXFU86275PS208RQH4KV24GK654VPW9NE2XKDZC4ZMD1C4UNHQZPMV9A11897VG8IOG1X8NLXYP3SFJ0JIBK6IZHIIJKLBTRVXKSPDZBDS4V4H6ILSY7H1EX1VSG6JJGU4D36OXHBNGWVRHZLQAY1AISPXGHXU2RBEH7LX35O90" id="zoundry.raven.appframework.services" name="Zoundry Logger Service">
+
+    <dependencies>
+        <depends on="zoundry.raven.appframework.extensions" version="1.0"/>
+    </dependencies>
+    
+    <!--
+         Some basic application services.
+     -->
+
+    <!-- The Logger Service -->
+    <zoundry-extension point="zoundry.engine.service">
+        <id>zoundry.appframework.service.logger</id>
+        <class>zoundry.appframework.services.logger.ZLoggerService</class>
+    </zoundry-extension>
+
+    <!-- The TimeZone Service -->
+    <zoundry-extension point="zoundry.engine.service">
+        <id>zoundry.appframework.service.timezone</id>
+        <class>zoundry.appframework.services.tzservice.ZTimeZoneService</class>
+    </zoundry-extension>
+
+    <!-- The Internationalization Service -->
+    <zoundry-extension point="zoundry.engine.service">
+        <id>zoundry.appframework.service.i18nservice</id>
+        <class>zoundry.appframework.services.i18nservice.i18nserviceimpl.ZI18NService</class>
+    </zoundry-extension>
+    
+    <!-- The MimeType Service -->
+    <zoundry-extension point="zoundry.engine.service">
+        <id>zoundry.appframework.service.mimetypes</id>
+        <class>zoundry.appframework.services.mimetypes.mimetypesimpl.ZMimeTypeService</class>
+    </zoundry-extension>
+
+    <!-- The Background Task Service -->
+    <zoundry-extension point="zoundry.engine.service">
+        <id>zoundry.appframework.service.backgroundtask</id>
+        <class>zoundry.appframework.services.backgroundtask.backgroundtaskimpl.ZBackgroundTaskService</class>
+    </zoundry-extension>
+
+    <!-- The URL Fetch Service -->
+    <zoundry-extension point="zoundry.engine.service">
+        <id>zoundry.appframework.service.urlfetch</id>
+        <class>zoundry.appframework.services.urlfetch.urlfetchsvcimpl.ZURLFetchService</class>
+    </zoundry-extension>
+
+    <!-- The Spellchecker Service -->
+    <zoundry-extension point="zoundry.engine.service">
+        <id>zoundry.appframework.service.spellchecker</id>
+        <class>zoundry.appframework.services.spellcheck.spellcheckimpl.ZSpellCheckService</class>
+    </zoundry-extension>
+    
+    <!-- The Imaging Service -->
+    <zoundry-extension point="zoundry.engine.service">
+        <id>zoundry.appframework.service.imaging</id>
+        <class>zoundry.appframework.services.imaging.imaging.ZImagingService</class>
+    </zoundry-extension>
+    
+    <!-- The Drag & Drop Service -->
+    <zoundry-extension point="zoundry.engine.service">
+        <id>zoundry.appframework.service.dnd</id>
+        <class>zoundry.appframework.services.dnd.dndimpl.ZDnDService</class>
+    </zoundry-extension>
+    
+    <!-- The Application Update Service -->
+    <zoundry-extension point="zoundry.engine.service">
+        <id>zoundry.appframework.service.auto-update</id>
+        <class>zoundry.appframework.services.autoupdate.autoupdateimpl.ZAutoUpdateService</class>
+    </zoundry-extension>
+    
+    <!-- The Feedback Service -->
+    <zoundry-extension point="zoundry.engine.service">
+        <id>zoundry.appframework.service.feedback</id>
+        <class>zoundry.appframework.services.feedback.feedbackimpl.ZFeedbackService</class>
+    </zoundry-extension>
+    
+    <!-- The Resource Store Service -->
+    <zoundry-extension point="zoundry.engine.service">
+        <id>zoundry.appframework.service.resourcestore</id>
+        <class>zoundry.appframework.services.resourcestore.resourcestoreimpl.ZResourceStore</class>
+    </zoundry-extension>
+    
+	<!-- The XHTML Validation Service -->
+    <zoundry-extension point="zoundry.engine.service">
+        <id>zoundry.appframework.service.xhtmlvalidationservice</id>
+        <class>zoundry.appframework.services.validation.xhtmlvalidationimpl.ZXhtmlValidatorServiceImpl</class>
+    </zoundry-extension>    
+        
+    
+    <!--
+        Service-related extensions.
+     -->
+    
+    <!-- Aspell Dictionary Handler -->
+    <zoundry-extension point="zoundry.appframework.spellcheck.dictionary-handler">
+        <id>zoundry.appframework.spellcheck.dictionary-handler.aspell</id>
+        <class>zoundry.appframework.services.spellcheck.aspell.aspellprovider.ZAspellSpellCheckDictionaryHandler</class>
+    </zoundry-extension>
+
+    <!-- Aspell Spellcheck Provider -->
+    <zoundry-extension point="zoundry.appframework.spellcheck.provider">
+        <id>zoundry.appframework.spellcheck.provider.aspell</id>
+        <class>zoundry.appframework.services.spellcheck.aspell.aspellprovider.ZAspellSpellCheckProvider</class>
+    </zoundry-extension>
+
+</zoundry-plugin>

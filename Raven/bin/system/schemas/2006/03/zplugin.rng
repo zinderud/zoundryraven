@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+
+    <!-- Define a xsd:any equivalent element. -->
+    <define name="anyElement">
+        <element>
+            <anyName/>
+            <zeroOrMore>
+                <choice>
+                    <attribute>
+                        <anyName/>
+                    </attribute>
+                    <text/>
+                    <ref name="anyElement"/>
+                </choice>
+            </zeroOrMore>
+        </element>
+    </define>
+
+    <!-- Start of the actual grammar. -->
+    <start>
+        <element 
+            name="zoundry-plugin" 
+            ns="http://www.zoundry.com/schemas/2006/03/zplugin.rng" 
+            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+
+            <attribute name="id"><data type="string"/></attribute>
+            <attribute name="name"><data type="string"/></attribute>
+            <attribute name="version"><data type="string"/></attribute>
+            <optional>
+                <attribute name="signature"><data type="string"/></attribute>
+            </optional>
+        
+            <!-- The plugin dependency section. -->
+            <zeroOrMore>
+                <element name="dependencies">
+                    <zeroOrMore>
+                        <element name="depends">
+                            <attribute name="on"><data type="string"/></attribute>
+                            <attribute name="version"><data type="string"/></attribute>
+                        </element>
+                    </zeroOrMore>
+                </element>
+            </zeroOrMore>
+
+            <!-- The list of extension points. -->
+            <zeroOrMore>
+                <element name="zoundry-extension">
+                    <attribute name="point"/>
+                    <element name="id">
+                        <data type="string"/>
+                    </element>
+                    <optional>
+                        <element name="class">
+                            <data type="string"/>
+                        </element>
+                    </optional>
+                    <optional>
+                        <element name="extension-data">
+                            <ref name="anyElement" />
+                        </element>
+                    </optional>
+                </element>
+            </zeroOrMore>
+            
+        </element>
+    </start>
+
+</grammar>

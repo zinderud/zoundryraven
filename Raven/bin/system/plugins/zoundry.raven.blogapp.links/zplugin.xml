@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zoundry-plugin xmlns="http://www.zoundry.com/schemas/2006/03/zplugin.rng" 
+	version="1.0" signature="00000116f801148000c000a8000100024d01cf9e" 
+	name="Zoundry Link Providers" id="zoundry.raven.blogapp.links">
+ 
+    <dependencies>
+        <!-- <depends on="zoundry.raven.blogapp.extensions" version="1.0"/> -->       
+    </dependencies>
+
+	<!-- 
+		===========================================
+		 Extension Points for Link Provider Service  
+	    ===========================================
+	-->
+	     
+    <!-- Link Provider Extension Point -->
+    <zoundry-extension point="zoundry.extension">
+        <id>zoundry.extension.zoundry.blogapp.links.provider.type</id>
+        <extension-data>
+            <extension-info>
+				<id>zoundry.blogapp.links.provider.type</id>
+				<interface>zoundry.blogapp.services.links.linkprovider.IZLinkProvider</interface>
+            </extension-info>
+        </extension-data>
+    </zoundry-extension>
+    
+    <!-- The Link provider config entry Extension Point -->
+    <zoundry-extension point="zoundry.extension">
+        <id>zoundry.blogapp.links.provider.type.simplelinkprovider</id>
+        <extension-data>
+            <extension-info>
+                <id>zoundry.blogapp.links.simplelinkprovider.entries</id>
+            </extension-info>
+        </extension-data>
+    </zoundry-extension>    
+
+	<!-- 
+		===========================================
+		 Link Provider Type Extension Point Contributors  
+	    ===========================================
+	-->	     
+    <!--  The Simple Link Provider impl.  -->
+    <zoundry-extension point="zoundry.blogapp.links.provider.type">
+        <id>zoundry.blogapp.links.provider.type.simplelinkprovider</id>
+        <class>zoundry.blogapp.services.links.providers.simplelinkprovider.ZSimpleLinkProvider</class>
+        <extension-data>
+            <link-provider-type>
+            	<name>Simple Quick Links</name>
+            	<description>Provides quick links and formatters configured via plug-in xml.</description>
+                <locations>
+                	<location>zoundry.raven.links.uicontrib.location.contextmenu</location>
+                </locations>
+                <category>zoundry.raven.links.uicontrib.category.local</category>                
+                <capabilities>
+                    <capability enabled="true" id="zoundry.raven.capability.links.linkprovider.listlinks"/>
+                    <capability enabled="true" id="zoundry.raven.capability.links.linkprovider.formatters"/>
+                </capabilities>
+            </link-provider-type>
+        </extension-data>
+    </zoundry-extension>
+            
+</zoundry-plugin>

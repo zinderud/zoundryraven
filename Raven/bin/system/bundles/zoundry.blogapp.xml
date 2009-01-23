@@ -1,0 +1,931 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string-bundle xmlns="http://www.zoundry.com/schemas/2006/06/zbundle.rng" locale="en" xml:space="preserve">
+
+    <string name="ZoundryRaven">Zoundry Raven</string>
+
+    <string name="raven.StartupErrorsFoundMsg">Errors found during startup.  Please see startup.log for more details.</string>
+    <string name="raven.ErrorFindingProfile">Error finding profile.</string>
+
+    <string name="mainmenu.Perspective">&amp;Perspective</string>
+
+    <string name="splash.Complete">Complete</string>
+    <string name="splash.CurrentProgress2">Current Progress (%s)</string>
+    <string name="splash.OverallProgress2">Overall Progress (%s)</string>
+    <string name="splash.CurrentProgress">Current Progress: </string>
+    <string name="splash.OverallProgress">Overall Progress: </string>
+    <string name="splash.StartingZoundryRaven">Starting Zoundry Raven</string>
+
+    <string name="startup.ValidatingPlugin">Validating plugin %s.</string>
+    <string name="startup.ValidatingPlugins">Validating %d plugins.</string>
+    <string name="startup.LoadingPlugin">Loading plugin %s.</string>
+    <string name="startup.LoadingPlugins">Loading %d plugins.</string>
+    <string name="startup.StartingService">Starting service '%s'.</string>
+    <string name="startup.StartingEngineServices">Starting Engine services.</string>
+    <string name="startup.CreatingService">Creating service '%s'.</string>
+    <string name="startup.CreatingEngineServices">Creating Engine services.</string>
+    <string name="startup.ServiceFailedToStartMsg">Service '%s' failed to start : '%s'</string>
+    <string name="startup.ServiceCreationFailedMsg">Service '%s' creation failed : '%s'</string>
+    <string name="startup.PluginFailedToValidateMsg">Plugin '%s' failed to validate: '%s'</string>
+    <string name="startup.PluginFailedToLoadMsg">Plugin '%s' failed to load: '%s'</string>
+    <string name="startup.ErrorDuringStartupMsg">Error during startup: '%s'</string>
+
+    <string name="newprofile.DialogUseMsg">Use this dialog to create a new User Profile.</string>
+    <string name="newprofile.NewProfile">New Profile</string>
+    <string name="newprofile.ChooseAProfileLocation">Choose a Profile Location:</string>
+    <string name="newprofile.Path:">Path:</string>
+    <string name="newprofile.Name:">Name:</string>
+    <string name="newprofile.ProfileInfo">Profile Info</string>
+    <string name="newprofile.CreateNewProfile">Create New Profile</string>
+    <string name="newprofile.ProfilePathMissing">The profile path must be specified.</string>
+    <string name="newprofile.ProfileAlreadyExists">A profile named '%s' already exists.</string>
+    <string name="newprofile.ProfileNameMissing">A profile name must be supplied.</string>
+    <string name="newprofile.ProfilePathTooltip">Enter a full path to where this profile should live on disk.</string>
+    <string name="newprofile.ProfileNameTooltip">Enter a name for this new Profile.</string>
+    <string name="newprofile.DirectoryNotWritableError">The directory chosen must be 'writable'.</string>
+    <string name="newprofile.DirectoryNotEmptyError">The directory chosen must be empty (or a previously created Raven profile directory).</string>
+    <string name="newprofile.NotADirectoryError">The path chosen must be a directory (not a file).</string>
+
+    <string name="manager.DialogUseMsg">Use this dialog to manage your Raven profiles.  Please create and/or choose a profile to continue.</string>
+    <string name="manager.Profiles">Profiles</string>
+    <string name="manager.Delete">Delete</string>
+    <string name="manager.New">New</string>
+    <string name="manager.WindowTitle">Zoundry Profile Manager</string>
+    <string name="manager.Portable">Portable</string>
+    <string name="manager.Path">Path</string>
+    <string name="manager.Name">Name</string>
+    <string name="manager.DeleteProfileTitle">Delete Profile?</string>
+    <string name="manager.DeleteProfileConfirmMsg">Also delete all of the files in the '%s' profile?</string>
+    <string name="manager.BypassCheckboxTooltip">Enable this option if you only ever want one Profile</string>
+    <string name="manager.ImportingZBW1XProfile">Importing Zoundry Blog Writer 1.x Profile</string>
+    <string name="manager.Import">Import...</string>
+    <string name="manager.ProfileAlreadyExists">A profile named '%s' already exists.</string>
+    <string name="manager.ProfileNotFound">No profile named '%s' found.</string>
+    <string name="manager.DoNotShowProfileDialog">Don't show this dialog again</string>
+    <string name="manager.FromWLW">From Windows Live Writer...</string>
+    <string name="manager.FromZBW">From Zoundry Blog Writer...</string>
+    <string name="manager.MyProfile">My Profile</string>
+
+    <string name="viewutil.HtmlFileNotFoundError">Could not find static HTML file named '%s'.</string>
+
+    <string name="perspective.Unknown">Unknown</string>
+
+    <string name="appwindow.FailedToLoadDefaultPerspective">Failed to load the default perspective (please contact Zoundry Support).</string>
+
+    <string name="mainmenu.New">&amp;New</string>
+    <string name="mainmenu.Help">&amp;Help</string>
+    <string name="mainmenu.Tools">&amp;Tools</string>
+    <string name="mainmenu.View">&amp;View</string>
+    <string name="mainmenu.File">&amp;File</string>
+
+    <string name="importprofile.ImportDialogHeaderMsg">Use this dialog to import a profile from Zoundry Blog Writer 1.x.</string>
+    <string name="importprofile.ImportProfile">Import Profile</string>
+    <string name="importprofile.EnterZBW1XPathTooltip">Enter the path to your Zoundry Blog Writer 1.x User Profile.</string>
+    <string name="importprofile.ChoosePathDialogTitle">Choose a Zoundry Blog Writer 1.x Profile</string>
+    <string name="importprofile.OldProfilePath:">Old Profile Path</string>
+    <string name="importprofile.ZBW1XProfileMissing">A path to a Zoundry Blog Writer 1.x profile must be specified.</string>
+    <string name="importprofile.ImportMessage">Use this dialog to specify your new Raven Profile (imported from Windows Live Writer).</string>
+    <string name="importprofile.ImportHeader">Import from Windows Live Writer</string>
+
+    <string name="importer.ImportedBlogPostMsg">Imported blog post %d of %d.</string>
+    <string name="importer.IncorrectListenerType">Incorrect listener type (should be an instance of IZRunnableProgressListener).</string>
+    <string name="importer.ImportedBlogAccountMsg">Imported Blog Account %d of %d.</string>
+    <string name="importer.ImportedPersonalDictionaryMsg">Imported personal dictionary information.</string>
+    <string name="importer.ImportedMediaStoreMsg">Imported FTP and media store information.</string>
+
+    <string name="accountio.FailedToLoadAccount">Failed to load account at '%s'.</string>
+    <string name="accountio.FailedToSaveAccount">Failed to save the account to directory '%s'.</string>
+
+    <string name="factory.NoAccountDeserializer">No deserializer found for account with namespace '%s'.</string>
+    <string name="factory.NoSerializerForAccountError">No serializer found for namespace '%s'.</string>
+
+    <string name="navigator.Unpublished">Unpublished</string>
+    <string name="navigator.Tags">Tags</string>
+    <string name="navigator.Images">Images</string>
+    <string name="navigator.Links">Links</string>
+    <string name="navigator.Posts">Posts</string>
+
+    <string name="dataio.DocumentLoadFailedError">Failed to load document '%s'.</string>
+    <string name="dataio.FailedToSaveDocument">Failed to save document '%s'.</string>
+
+    <string name="deserializers.NoContentModeFoundError">Failed to deserialize document: no 'mode' found for content.</string>
+
+    <string name="mediastorageio.FailedToSaveStore">Failed to save the media storage with id '%s'.</string>
+    <string name="mediastorageio.FailedToLoadStore">Failed to load media storage.</string>
+
+    <string name="mediastoragesrvc.NoMediaSiteFound">No media site with id '%s' found.</string>
+    <string name="mediastoragesrvc.FailedToAddMediaStorageError">Failed to add media storage: a store named %s already exists.</string>
+    <string name="mediastoragesrvc.StoreTypeNotFoundError">Media site '%s' referenced a media storage type that does not exist (%s).</string>
+
+    <string name="mediasiteimpl.InvalidPropertyOverride">Media site property attempted to override a property that doesn't exist in its storage type (%s).</string>
+
+    <string name="mediastorageimpl.FailedToUploadFile">Failed to upload file '%s'.</string>
+
+    <string name="docindex.ReindexedDocument">Reindexed document '%s'.</string>
+    <string name="docindex.LoadedDocument">Loaded document '%s'.</string>
+    <string name="docindex.ReindexTask">Reindex Task</string>
+
+    <string name="shutdown.CancelRunningTasksTitle">Cancel running tasks?</string>
+    <string name="shutdown.CancelRunningTasksMessage">There are %d running tasks that can't be resumed later.  Cancel these tasks?</string>
+
+    <string name="mediastorageztest.FileStillExistsError">Test file still exists at URL '%s'.</string>
+    <string name="mediastorageztest.FailedToDeleteFileError">Failed to delete file from Media Storage.</string>
+    <string name="mediastorageztest.VerifyTestFileDeleted">Verify test file was deleted...</string>
+    <string name="mediastorageztest.DeleteTestFile">Delete test file from Media Storage...</string>
+    <string name="mediastorageztest.FileNotInStoreListError">Failed to find test file in Media Storage file list.</string>
+    <string name="mediastorageztest.VerifyTestFileList">Verify test file in Media Storage file list...</string>
+    <string name="mediastorageztest.TestFileWrongSizeError">Test file exists but is the wrong size.</string>
+    <string name="mediastorageztest.IncorrectContentTypeError">Incorrect content type '%s' for URL: '%s'.</string>
+    <string name="mediastorageztest.FileNotFoundError">Failed to verify URL '%s' (file not found).</string>
+    <string name="mediastorageztest.FailedToVerifyURLError">Failed to verify URL: '%s'</string>
+    <string name="mediastorageztest.VerifyTestFileURL">Verify URL of uploaded test file...</string>
+    <string name="mediastorageztest.NoURLFromUploadError">Media Storage '%s' [upload] did not return a URL.</string>
+    <string name="mediastorageztest.FailedToUploadTestFileError">Failed to upload test file to Media Storage '%s'.</string>
+    <string name="mediastorageztest.UploadTestFile">Upload test file to store...</string>
+
+    <string name="editstoredialog._Settings">%s Settings</string>
+    <string name="editstoredialog.EditMediaStorageDialogMessage">Use this dialog to edit the settings for a Media Storage.</string>
+    <string name="editstoredialog.EditMediaStorageSettings">Edit Media Storage Settings</string>
+    <string name="editstoredialog.EditSettings">Edit %s Settings</string>
+    <string name="mediastoragedialog.NewStore">New Storage</string>
+    <string name="mediastoragedialog.MediaStorages">Media Storages</string>
+    <string name="mediastoragedialog.DialogTitle">Media Storage Manager</string>
+    <string name="mediastoragedialog.HeaderTitle">Media Storage Manager</string>
+    <string name="mediastoragedialog.HeaderMessage">Use this dialog to manage your Media Storages (add, edit, delete, etc...).</string>
+    <string name="mediastoragedialog.Type">Type</string>
+    <string name="mediastoragedialog.Name">Name</string>
+
+    <string name="mediastoragemanager.DeleteMediaStorage">Delete the '%s' media storage?</string>
+    <string name="mediastoragemanager.ConfirmDelete">Confirm Delete</string>
+    <string name="mediastoragemanager.MediaStorageTestDialogTitle">Test Media Storage Settings</string>
+
+    <string name="mediastoragewizard.Settings">Settings</string>
+    <string name="mediastoragewizard.ConfirmSettingsText">Please take a moment to confirm your settings.</string>
+    <string name="mediastoragewizard._Settings">%s Settings</string>
+    <string name="mediastoragewizard.MediaStorageNameTooltip">Enter a friendly name for this Media Storage. (Example: Book Review Blog FTP Storage)</string>
+    <string name="mediastoragewizard.MediaStorageName">Media Storage Name:</string>
+    <string name="mediastoragewizard.StoreTypeComboTooltip">Choose a type of Media Storage from the list.</string>
+    <string name="mediastoragewizard.EmptyStoreTypeSelectionError">Please select a Media Storage Type.</string>
+    <string name="mediastoragewizard.MediaStorageType">Media Storage Type:</string>
+    <string name="mediastoragewizard.WizardDescription">Use this wizard to create a new Media Storage.  Zoundry Raven uses a Media Storage to upload images and other resources to some remote site so that they are properly linked in your Blog post..</string>
+    <string name="mediastoragewizard.WelcomeMessage">Welcome to the New Media Storage Wizard</string>
+    <string name="mediastoragewizard.StoreAlreadyExistsError">A Media Storage named '%s' already exists.</string>
+    <string name="mediastoragewizard.EmptyStoreNameError">You must specify a name for this Media Storage.</string>
+    <string name="mediastoragewizard.NewMediaStorageWizard">New Media Storage Wizard</string>
+    <string name="mediastoragewizard.NoStorageLink">I don't have online storage!</string>
+
+    <string name="infodetailswidgets.Unavailable">Unavailable...</string>
+    <string name="infodetailswidgets.Retrieving">Retrieving...</string>
+    <string name="infodetailswidgets.ImageType">Image Type:</string>
+    <string name="infodetailswidgets.ImageHeight">Image Height:</string>
+    <string name="infodetailswidgets.ImageWidth">Image Width:</string>
+    <string name="infodetailswidgets.FileSize">File Size:</string>
+    <string name="infodetailswidgets.Summary">Summary</string>
+    <string name="infodetailswidgets.PreviewUnavailable">Preview Unavailable</string>
+    <string name="infodetailswidgets.GeneratingPreview">Generating Preview...</string>
+    <string name="infodetailswidgets.Preview">Preview</string>
+
+    <string name="imgsviewmodel.local">local</string>
+
+    <string name="infodetailswidgets.LinkType">Link Type:</string>
+
+    <string name="postsview.Title">Title</string>
+    <string name="postsview.ThisMonth">This Month</string>
+    <string name="postsview.ThisWeek">This Week</string>
+    <string name="postsview.Yesterday">Yesterday</string>
+    <string name="postsview.Today">Today</string>
+    <string name="postsview.Published">Published</string>
+    <string name="postsview.Drafts">Drafts</string>
+    <string name="postsview.All">All</string>
+    <string name="postsview.Filter">Filter:</string>
+    <string name="postsview.NoTitle">No Title</string>
+
+    <string name="linkdetails.LinkURL">Link URL</string>
+    <string name="mediadetails.MediaSource">Media Source</string>
+
+    <string name="editorwin.SaveDocument">Save Document</string>
+    <string name="editorwin.SaveDocumentMessage">'%s' has been modified.  Save the changes?</string>
+    <string name="editorwin.No_Title">No Title</string>
+
+    <string name="publishersitewizard.NewPublisherSiteWizard">New Blog Site Account Wizard</string>
+    <string name="publishersitewizard.WelcomeMessage">Welcome to the New Blog Account Wizard</string>
+    <string name="publishersitewizard.WizardDescription">Use the New Blog Account Wizard to create a Blog Account.  Zoundry Raven requires a Blog Account so that it knows how to publish content to your Blog(s).</string>
+    <string name="publishersitewizard.BlogUrlLabel">Blog URL:</string>
+    <string name="publishersitewizard.BlogUrlTooltip">Enter blog site URL.</string>
+    <string name="publishersitewizard.BlogUrlInvalid">The Blog URL must be valid taking the form http://hostname/path</string>
+    <string name="publishersitewizard.ApiInfo">Account and Site API Information</string>
+    <string name="publishersitewizard.ApiInfoDescription">Please choose a account name and enter the blog API information.</string>
+    <string name="publishersitewizard.AccountNameLabel">Account Name:</string>
+    <string name="publishersitewizard.AccountNameTooltip">Enter a name for the account associated with this site</string>
+    <string name="publishersitewizard.AccountAlreadyExistsError">Account name with name '%s' already exists. Please choose a different name.</string>
+    <string name="publishersitewizard.EmptyAccountNameError">Account name is empty. Please enter name for the site account.</string>
+    <string name="publishersitewizard.SiteTypeLabel">Site Type:</string>
+    <string name="publishersitewizard.SiteTypeTooltip">Select blog site API type.</string>
+    <string name="publishersitewizard.EmptySiteTypeSelectionError">Please select a site type.</string>
+    <string name="publishersitewizard.UsernameLabel">Username:</string>
+    <string name="publishersitewizard.UsernameTooltip">Enter your blog site API username.</string>
+    <string name="publishersitewizard.EmptyUsername">The username is empty. Please enter your account username.</string>
+    <string name="publishersitewizard.PasswordLabel">Password:</string>
+    <string name="publishersitewizard.PasswordTooltip">Enter your blog site API password.</string>
+    <string name="publishersitewizard.EmptyPassword">The password is empty. Please enter your account password.</string>
+    <string name="publishersitewizard.ApiUrlLabel">API URL:</string>
+    <string name="publishersitewizard.ApiUrlTooltip">Enter your blog site API url.</string>
+    <string name="publishersitewizard.ApiUrlInvalid">The API URL is required and must be valid taking the form http://hostname/path</string>
+    <string name="publishersitewizard.Confirm">Confirm Blogs</string>
+    <string name="publishersitewizard.ConfirmDescription">Select blog to download posts and choose image upload mechanism.</string>
+    <string name="publishersitewizard.MediaUploadMethodLabel">File Upload via:</string>
+    <string name="publishersitewizard.MediaUploadMethodTooltip">Choose method to upload images and other media.</string>
+    <string name="publishersitewizard.CreateNewMediaStorage">Create New Media Storage</string>
+
+	<string name="blogpostslist.WhereFound">Where Found (Blog Posts)</string>
+    <string name="blogpostslist.Title">Title</string>
+    <!-- <string name="blogpostslist.Blog">Blog</string> -->
+    <!-- <string name="blogpostslist.Published">Published</string> -->
+    <string name="blogpostslist.Created">Created</string>
+    <!-- <string name="blogpostslist.Modified">Modifed</string> -->
+    <string name="blogpostslist.NoTitle">No Title</string>
+
+    <string name="accountblogs.BlogList">Blog List</string>
+    <string name="accountblogs.BlogName">Blog Name</string>
+
+    <string name="synchronizeaccountdialog.DialogTitle">Update Account Blogs</string>
+    <string name="synchronizeaccountdialog.HeaderTitle">Update Account Blogs</string>
+    <string name="synchronizeaccountdialog.HeaderMessage">Use this dialog to update the list of blogs in this account and download recent posts.</string>
+    <string name="synchronizeaccountdialog.RefreshBlogList">Refresh Blog List</string>
+    <string name="synchronizeaccountdialog.FetchingBlogList">Fetching list of blogs...</string>
+
+    <string name="publishersynch.updatingbloglist">Updating blog list from server</string>
+    <string name="publishersynch.updatingcategories">Updating categories from server</string>
+    <string name="publishersynch.downloadingposts">Downloading documents from server</string>
+
+    <string name="publishersynch.AccountSynchBgTask.name">Update Online Blog Information</string>
+    <string name="publishersynch.DownloadBgTask.name">Download Documents</string>
+
+    <string name="deleteentryuiutil.DeleteDocumentError.title">Document Delete Error</string>
+    <string name="deleteentryuiutil.DeleteDocumentNotFound.message">Document to delete is not available.</string>
+    <string name="deleteentryuiutil.DeleteBgTask.name">Delete Document</string>
+
+    <string name="publishentryuiutil.PublishDocumentError.title">Publish Document Error</string>
+    <string name="publishentryuiutil.PublishDocumentNotFound.message">Document to publish is not available.</string>
+    <string name="publishentryuiutil.PublishBgTask.name">Publish Document</string>
+
+
+    <string name="settingssubpage.InvalidEndpointError">A valid URL for 'endpoint' is required.</string>
+    <string name="settingssubpage.Endpoint">Endpoint:</string>
+    <string name="settingssubpage.APIInformation">API Information</string>
+    <string name="settingssubpage.InvalidPasswordError">A value for 'password' is required.</string>
+    <string name="settingssubpage.Password">Password:</string>
+    <string name="settingssubpage.InvalidUsernameError">A value for 'username' is required.</string>
+    <string name="settingssubpage.Username">Username:</string>
+    <string name="settingssubpage.Credentials">Credentials</string>
+
+    <string name="pubsubpage.OverridePublishingSettings">Override global Publishing Settings</string>
+    <string name="pubsubpage.ReUploadImages">Re-Upload images (even if not dirty)</string>
+    <string name="pubsubpage.UploadTNsOnly">Upload thumbnails only</string>
+    <string name="pubsubpage.ImageUpload">Image Upload</string>
+    <string name="pubsubpage.AddLightbox">Add Lightbox to image links</string>
+    <string name="pubsubpage.AddPoweredByZoundry">Add 'Powered By Zoundry' to the post footer</string>
+    <string name="pubsubpage.PublishingOptions">Publishing Options</string>
+    <string name="pubsubpage.RemoveNewLines">Remove Newlines</string>
+
+    <string name="pingsubpage.OverrideGlobalPingSettings">Override global Ping Sites settings</string>
+    <string name="pingsubpage.PingSites">Ping Sites</string>
+    <string name="pingsubpage.OverrideAccountPingSitesSettings">Override Account Ping Sites settings</string>
+    
+    <string name="tagsubpage.OverrideGlobalTagSettings">Override global Tag Sites settings</string>
+    <string name="tagsubpage.TagSites">Tag Sites</string>
+    <string name="tagsubpage.OverrideAccountTagSitesSettings">Override Account Tag Sites settings</string>
+
+    <string name="pubsubpage.OverrideAccountPublishingSettings">Override Account Publishing settings</string>
+
+    <string name="storesubpage.OverrideAccountMediaStorageSetting">Override Account Media Storage setting</string>
+
+    <string name="accountpage.Ping_Sites_Description">Ping Sites Description</string>
+    <string name="accountpage.Ping_Sites">Ping Sites</string>
+    <string name="accountpage.Tag_Sites_Description">Tag Sites Description</string>
+    <string name="accountpage.Tag_Sites">Tag Sites</string>
+    
+    <string name="accountpage.Media_Store_Description">Media Storage Description</string>
+    <string name="accountpage.Media_Store">Media Storage</string>
+    <string name="accountpage.Publishing_Description">Publishing Description</string>
+    <string name="accountpage.Publishing">Publishing</string>
+    <string name="accountpage.Settings_Description">Settings Description</string>
+    <string name="accountpage.Settings">Settings</string>
+
+    <string name="blogpage.Ping_Sites_Description">Ping Sites Description</string>
+    <string name="blogpage.Ping_Sites">Ping Sites</string>
+    <string name="blogpage.Tag_Sites_Description">Tag Sites Description</string>
+    <string name="blogpage.Tag_Sites">Tag Sites</string>
+    
+    <string name="blogpage.Media_Store_Description">Media Storage Description</string>
+    <string name="blogpage.Media_Store">Media Storage</string>
+    <string name="blogpage.Publishing_Description">Publishing Description</string>
+    <string name="blogpage.Publishing">Publishing</string>
+
+    <string name="pingsitesprefpage.Ping_Sites">Ping Sites</string>
+    <string name="tagsitesprefpage.Tag_Sites">Tag Sites</string>
+
+    <string name="blogpubprefpage.Re_Upload_images__even_if_not_dirty_">Re-Upload images (even if not dirty)</string>
+    <string name="blogpubprefpage.Upload_thumbnails_only">Upload thumbnails only</string>
+    <string name="blogpubprefpage.Image_Upload">Image Upload</string>
+    <string name="blogpubprefpage.Add__Powered_By_Zoundry__to_the_post_footer">Add 'Powered By Zoundry' to the post footer</string>
+    <string name="blogpubprefpage.Publishing_Options">Publishing Options</string>
+    <string name="blogpubprefpage.AddLightbox">Add Lightbox to image links</string>
+    <string name="blogpubprefpage.RemoveNewLines">Remove Newlines</string>
+
+    <string name="standard.Download_content_">Download content.</string>
+    <string name="standard.Delete">Delete</string>
+    <string name="standard.DeleteDescription">Delete the selected content.</string>
+    <string name="standard.Download">Download</string>
+    <string name="standard.Publish_some_content_">Publish some content.</string>
+    <string name="standard.Publish">Publish</string>
+    <string name="standard.Author_some_new_content_">Author some new content.</string>
+    <string name="standard.Write">Write</string>
+    <string name="standard.ViewOnlineDescription">View the selected item online.</string>
+    <string name="standard.ViewOnline">View (online)</string>
+    <string name="standard.AddStorageDescription">Add a new Media Storage</string>
+    <string name="standard.AddStorage">Add Storage</string>
+    <string name="standard.AddAccountDescriton">Add a new Blog Account</string>
+    <string name="standard.AddAccount">Add Account</string>
+
+    <string name="accountprefsdialog.DeleteAccount">Delete Account</string>
+    <string name="accountprefsdialog.DeleteAccountNamed">Delete the account named '%s'?</string>
+    <string name="accountprefsdialog.RemoveAccount">Remove Account</string>
+    <string name="accountprefsdialog.AddAccount">Add Account...</string>
+    <string name="accountprefsdialog.AccountManagerDescription">Use this dialog to manage your accounts, including adding, removing, and editing account settings.</string>
+    <string name="accountprefsdialog.AccountManager">Account Manager</string>
+
+    <string name="blogeditor.Preview">Preview</string>
+    <string name="blogeditor.XHTML">XHTML</string>
+    <string name="blogeditor.Design">Design</string>
+    <string name="blogeditor.RedoDesc">Redo last edit action.</string>
+    <string name="blogeditor.Redo">Redo</string>
+    <string name="blogeditor.UndoDesc">Undo last edit action.</string>
+    <string name="blogeditor.Undo">Undo</string>
+    <string name="blogeditor.PasteDesc">Pastes the contents of the clipboard.</string>
+    <string name="blogeditor.Paste">Paste</string>
+    <string name="blogeditor.CopyDesc">Copies the current selection.</string>
+    <string name="blogeditor.Copy">Copy</string>
+    <string name="blogeditor.CutDesc">Cuts the current selection.</string>
+    <string name="blogeditor.Cut">Cut</string>
+    <string name="blogeditor.SaveDesc">Saves the blog post.</string>
+    <string name="blogeditor.Save">Save</string>
+    
+    <string name="blogeditor.CopyNonPortableFiles">Copy Non-Portable Files</string>
+    <string name="blogeditor.CopyNonPortableFilesDesc">This post has one or more files that are not in the portable drive. Would you like to copy these files to the portable drive?</string>
+    <string name="blogeditor.CopyNonPortableFilesProgressTitle">Copying Non-Portable Files</string>
+    <string name="blogeditor.CopyNonPortableFilesProgressAction">Copying file %s</string>
+
+    <string name="factory.TemplateSerializerNotFound">Could not find template serializer for namespace %s.</string>
+    <string name="factory.TemplateDeserializerNotFound">Could not find template deserializer for namescpace %s.</string>
+
+    <string name="trayprefpage.HideAppWindowOnMinimize">Hide application window on Minimize</string>
+    <string name="trayprefpage.AlwaysShowTrayIcon">Always show Tray Icon</string>
+    <string name="trayprefpage.TrayIcon">Tray Icon</string>
+    <string name="trayprefpage.RequiredRestartTitle">System Tray Settings Changed</string>
+    <string name="trayprefpage.RequiredRestartMessage">Changes to the system tray settings will take effect after restarting the application.</string>
+
+    <string name="blogposthandler.NoContentTitle">No Content Dropped</string>
+    <string name="blogposthandler.NoContentDroppedMsg">No content was dropped into the editor because the blog post being dropped has not yet been published.</string>
+
+    <string name="splash.BuiltOn">Built On</string>
+    <string name="splash.Version">Version</string>
+
+    <string name="accountbrowser.Accounts">Accounts</string>
+    <string name="accountbrowser.Unpublished">Unpublished</string>
+
+    <string name="foldersbrowser.Folders">Folders</string>
+    <string name="foldersbrowser.Tags">Tags</string>
+    <string name="foldersbrowser.Images">Images</string>
+    <string name="foldersbrowser.Links">Links</string>
+    <string name="foldersbrowser.Posts">Posts</string>
+
+    <string name="blogbrowser.Blogs">Blogs</string>
+
+    <string name="postactions.DeleteDescription">Delete the blog post.</string>
+    <string name="postactions.Delete">&amp;Delete</string>
+    <string name="postactions.ViewDescription">View the blog post in your default browser.</string>
+    <string name="postactions.View">&amp;View (online)...</string>
+    <string name="postactions.EditDescription">Open the blog post in the editor.</string>
+    <string name="postactions.Edit">&amp;Edit...</string>
+    <string name="postactions.CopyPostUrl">Copy Permanent Link Location</string>
+    <string name="postactions.CopyPostUrlDescription">Copy post link URL to the clipboard</string>
+
+    <!-- Spell check dialog -->
+    <string name="spellcheckdialog.DialogTitle">Spell Check</string>
+    <string name="spellcheckdialog.MisspellWord">Misspelled Word</string>
+    <string name="spellcheckdialog.ReplaceWith">Replace With</string>
+    <string name="spellcheckdialog.Suggestions">Suggestions</string>
+    <string name="spellcheckdialog.Ignore">Ignore</string>
+    <string name="spellcheckdialog.IgnoreAll">Ignore All</string>
+    <string name="spellcheckdialog.Add">Add</string>
+    <string name="spellcheckdialog.Replace">Replace</string>
+    <string name="spellcheckdialog.ReplaceAll">Replace All</string>
+
+    <!-- spell checck ui util -->
+    <string name="spellcheckuiutil.SpellcheckNotSupported">Spell check is not supported by this editor</string>
+    <string name="spellcheckuiutil.SpellcheckNotEnabledQuestion">Spell check is not enabled.  Would you like to enable spell check now?</string>
+    <string name="spellcheckuiutil.SpellcheckCompleted">Spell check is complete</string>
+
+    <!-- Find replace dialog -->
+    <string name="findreplacedialog.DialogTitle">Find and Replace</string>
+    <string name="findreplacedialog.FindWhat">Find what</string>
+    <string name="findreplacedialog.MatchCase">Match case</string>
+    <string name="findreplacedialog.MatchWholeWord">Match whole word</string>
+    <string name="findreplacedialog.ReplaceWith">Replace with</string>
+    <string name="findreplacedialog.Find">Find</string>
+    <string name="findreplacedialog.ReplaceFind">Replace/Find</string>
+    <string name="findreplacedialog.ReplaceAll">Replace All</string>
+    <string name="findreplacedialog.NotFound">Not Found</string>
+
+    <string name="postsview.BlogPosts">Blog Posts</string>
+
+    <string name="linksummaryview.LinkSummary">Link Summary</string>
+
+    <string name="postsummaryview.BlogPostSummary">Blog Post Summary</string>
+
+    <string name="tagsummaryview.TagSummary">Tag Summary</string>
+
+    <string name="imagesummaryview.ImageSummary">Image Summary</string>
+
+    <string name="templatefetch.Resource_Downloaded">Resource '%s' downloaded.</string>
+    <string name="templatefetch.DownloadingResource">Downloading resource '%s'.</string>
+
+    <string name="templatefetchbgtask.SavingTemplateToDisk">Saving Template to disk</string>
+    <string name="templatefetchbgtask.CleaningUpTemplateHTML">Cleaning up template HTML</string>
+    <string name="templatefetchbgtask.DownloadingBlogTemplate">Downloading Blog Template</string>
+    <string name="templatefetchbgtask.PublishingTemplateBlogPost">Publishing template blog post</string>
+    <string name="templatefetchbgtask.DownloadingTemplate">Downloading Template</string>
+
+    <string name="blogactions.DownloadTemplateDescription">Downloads the Blog's current template.</string>
+    <string name="blogactions.Download_Template">Download &amp;Template...</string>
+    <string name="blogactions.ViewOnlineDescription">View the blog in the default browser.</string>
+    <string name="blogactions._ViewOnline">&amp;View (online)...</string>
+    <string name="blogactions.New_Post">New &amp;Post...</string>
+    <string name="blogactions.DownloadRecentPostsDescription">Download recent posts.</string>
+    <string name="blogactions._DownloadRecentPosts">&amp;Download Recent Posts</string>
+    <string name="blogactions.SettingsDescription">Open the Blog Settings dialog.</string>
+    <string name="blogactions._Settings">&amp;Settings...</string>
+    <string name="blogactions.ProblemOpeningBlogURL">Problem Opening Blog URL</string>
+    <string name="blogactions.CouldNotDetermineURLForBlog">Could not determine URL for blog '%s'.</string>
+
+    <string name="pubdatawidgets.OtherOptions">Other Options</string>
+    <string name="pubdatawidgets.ImageUpload">Image Upload</string>
+    <string name="pubdatawidgets.Publishing">Publishing</string>
+    <string name="pubdatawidgets.AddPoweredBy">Add 'Powered by Zoundry' to the post footer</string>
+    <string name="pubdatawidgets.ReUpload">Re-Upload Images (even if not dirty)</string>
+    <string name="pubdatawidgets.UploadOnlyTNs">Upload only thumbnail images</string>
+    <string name="pubdatawidgets.OverridePubTime">Override Publish Time:</string>
+    <string name="pubdatawidgets.PublishAsDraft">Publish as Draft</string>
+    <string name="pubdatawidgets.AddLightbox">Add Lightbox to image links</string>
+    <string name="pubdatawidgets.Add">Add</string>
+    <string name="pubdatawidgets.AddCategory">Add Category:</string>
+    <string name="pubdatawidgets.URL">URL</string>
+    <string name="pubdatawidgets.Service">Service</string>
+    <string name="pubdatawidgets.WpOptions">WordPress 2.2+ Options</string>
+    <string name="pubdatawidgets.WpPostSlug">Post Slug</string>
+    <string name="pubdatawidgets.WpPostPassword">Post Password</string>
+    <string name="pubdatawidgets.WpPublishStatus">Publish Status</string>
+    <string name="pubdatawidgets.TrackbackDate">Date</string>
+    <string name="pubdatawidgets.TrackbackSent">Sent</string>
+    <string name="pubdatawidgets.Trackback.EnterUrlInNewLines">Trackback URLs (one per line):</string>
+    
+    <string name="pubdatawidgets.WpPublishStatus_published">Published</string>    
+    <string name="pubdatawidgets.WpPublishStatus_pending">Pending Review</string>
+    <string name="pubdatawidgets.WpPublishStatus_unpublished">Unpublished (draft)</string>
+    <string name="pubdatawidgets.WpPublishStatus_private">Private</string>
+    
+    <!-- 
+    <string name="pubdatawidgets.RemoveTrackback">Remove Trackback</string>
+    <string name="pubdatawidgets.AddTrackback">Add Trackback URL:</string>
+	-->
+    <string name="storesubpage.UploadFilesVia">Upload Files Via</string>
+
+    <string name="aboutdialog.Credits">Credits</string>
+    <string name="aboutdialog.Info">Info</string>
+    <string name="aboutdialog.AboutRaven">About Zoundry Raven</string>
+
+    <string name="imagedialog.ImageDialogInsertDescription">Use this dialog to insert an image file.</string>
+    <string name="imagedialog.ImageDialogEditDescription">Use this dialog to edit image properties.</string>
+    <string name="imagedialog.Insert_Image">Insert Image</string>
+    <string name="imagedialog.Edit_Image">Edit Image</string>
+    <string name="imagedialog.Bottom">Bottom</string>
+    <string name="imagedialog.Top">Top</string>
+    <string name="imagedialog.Right">Right</string>
+    <string name="imagedialog.Left">Left</string>
+    <string name="imagedialog.Margin">Margin</string>
+    <string name="imagedialog.Color">Color</string>
+    <string name="imagedialog.Width">Width</string>
+    <string name="imagedialog.Style">Style</string>
+    <string name="imagedialog.LockAspect">Lock Aspect</string>
+    <string name="imagedialog.InvalidImageURLError">Please enter a valid image location URL.</string>
+    <string name="imagedialog.Height">Height</string>
+    <string name="imagedialog.Class">Class</string>
+    <string name="imagedialog.Title">Title</string>
+    <string name="imagedialog.ALTText">ALT Text</string>
+    <string name="imagedialog.Src">Src</string>
+    <string name="imagedialog.Border">Border</string>
+    <string name="imagedialog.Alignment">Alignment</string>
+    <string name="imagedialog.Size">Size</string>
+    <string name="imagedialog.ImageProperties">Image Properties</string>
+    <string name="imagedialog.InsertImage">Insert Image</string>
+    <string name="imagedialog.EditImageInformation">Edit Image Information</string>
+
+    <string name="linkdialog.LinkDialogDescription">Use this dialog to create/edit a HTML hyperlink.</string>
+    <string name="linkdialog.CreateHyperlink">Create Hyperlink</string>
+    <string name="linkdialog.EditHyperlink">Edit Hyperlink</string>
+    <string name="linkdialog.LinkProperties">Link Properties</string>
+    <string name="linkdialog.OpenInNewWindow">Open in a new window when link is clicked.</string>
+    <string name="linkdialog.InvalidURLError">Please enter a valid URL.</string>
+    <string name="linkdialog.Rel">Rel</string>
+    <string name="linkdialog.Class">Class</string>
+    <string name="linkdialog.Target">Target</string>
+    <string name="linkdialog.Title">Title</string>
+    <string name="linkdialog.URL">URL</string>
+    <string name="linkdialog.EnterLinkInfo">Enter Link Information</string>
+
+    <string name="blogconfig.Configure">Configure...</string>
+    <string name="blogconfig.WeblogPing">Weblog Ping</string>
+    <string name="blogconfig.Categories">Categories</string>
+    <string name="blogconfig.General">General</string>
+    <string name="blogconfig.Trackbacks">Trackbacks</string>
+    <string name="blogconfig.TagSites">Tag Sites</string>
+
+    <string name="blogselector._AllAccounts_">&lt;All Accounts&gt;</string>
+    <string name="blogselector.Account">Account: </string>
+    <string name="blogselector.BlogName">Blog Name:</string>
+
+    <string name="metadata.Tagwords">Tagwords:</string>
+    <string name="metadata.Title">Title:</string>
+    <string name="metadata.Blogs">Blog(s):</string>
+
+    <string name="blogeditor.PublishContentToYourBlog">Publish content to your blog.</string>
+
+    <string name="file_new.BlogAccountDescription">Create a new blog account.</string>
+    <string name="file_new._BlogAccount">&amp;Blog Account...</string>
+    <string name="file_new.MediaStorageDescription">Create a new media storage.</string>
+    <string name="file_new._MediaStorage">&amp;Media Storage...</string>
+    <string name="file_new.BlogPostDescription">Compose a new blog post.</string>
+    <string name="file_new._BlogPost">&amp;Blog Post...</string>
+
+    <string name="file.ExitDescription">Exit the application.</string>
+    <string name="file.Exit">E&amp;xit</string>
+
+    <string name="help.AboutDescription">Open the About Zoundry Raven dialog.</string>
+    <string name="help._About">&amp;About...</string>
+    <string name="help.ManageTranslationsDesc">Opens the translation manager window.</string>
+    <string name="help.ManageTranslations">Manage Translations...</string>
+
+    <string name="tools.MediaStorageSettingsDescription">Open the Media Storage Manager dialog</string>
+    <string name="tools._MediaStorageSettings">&amp;Media Storage Settings...</string>
+    <string name="tools.BackgroundTasksDescription">Open the Background Tasks dialog</string>
+    <string name="tools.BackgroundTasks">Background &amp;Tasks...</string>
+    <string name="tools._Preferences">&amp;Preferences...</string>
+    <string name="tools.AccountManagerDescription">Open the Account Manager dialog.</string>
+    <string name="tools._AccountManager">&amp;Account Manager...</string>
+
+    <string name="mediastoragemanager.DeleteDescription">Delete the media storage.</string>
+    <string name="mediastoragemanager._Delete">&amp;Delete</string>
+    <string name="mediastoragemanager.TestDescription">Test the media storage's configuration.</string>
+    <string name="mediastoragemanager._Test">&amp;Test...</string>
+    <string name="mediastoragemanager.EditDescription">Edit the media storage.</string>
+    <string name="mediastoragemanager._Edit">&amp;Edit...</string>
+
+    <string name="welcome.GettingStarted">Getting Started</string>
+
+    <string name="dashboard.Dashboard">Raven Dashboard</string>
+
+    <string name="tagsview.Tags">Tags</string>
+
+    <string name="linksview.Links">Links</string>
+
+    <string name="imagesview.Images">Images</string>
+
+    <string name="blogsummary.BlogSummary">Blog Summary</string>
+
+    <string name="acctsummary.AccountSummary">Account Summary</string>
+
+    <string name="navigator.AccountNavigator">Account Navigator</string>
+
+    <string name="trayactions.RestoreDescription">Restore the application window.</string>
+    <string name="trayactions._Restore">&amp;Restore...</string>
+    <string name="trayactions.MinimizeDescription">Minimize the application window.</string>
+    <string name="trayactions._Minimize">&amp;Minimize</string>
+
+    <string name="mediastoragewizard.TestSettings">Test Settings...</string>
+
+    <string name="blogposthandler.BlogPostDesc">Drop/Paste the clipboard contents as a Zoundry Raven Blog Post.</string>
+    <string name="blogposthandler.BlogPost">Blog Post</string>
+
+    <string name="mediastorageutil.AssociateStorageWithAccounts">Associate Storage With Accounts</string>
+    <string name="mediastorageutil.AssociateStorageWithAccountsMsg">You have %d account(s) without a configured Media Storage.  Associate this storage with those accounts now?</string>
+
+    <string name="fontdialog.DialogTitle">Font Settings</string>
+    <string name="fontdialog.FontSettings">Settings</string>
+    <string name="fontdialog.FontPreview">Preview</string>
+	<string name="fontdialog.FontName">Font</string>
+	<string name="fontdialog.FontSize">Size</string>
+	<string name="fontdialog.Color">Color</string>
+	<string name="fontdialog.BackgroundColor">Background</string>
+	
+	<string name="tabledialog.DialogTitle">Table</string>
+	<string name="tabledialog.TableSettings">Table Settings</string>
+	<string name="tabledialog.Cols">Columns</string>
+	<string name="tabledialog.Rows">Rows</string>
+	<string name="tabledialog.CellPadding">Cell Padding</string>
+	<string name="tabledialog.CellSpacing">Cell Spacing</string>
+	<string name="tabledialog.Width">Width (px)</string>
+	<string name="tabledialog.Border">Border</string>
+	
+    <string name="feedback.SendFeedbackDescription">Send some feedback to Zoundry about Raven (bug report, enhancement request, etc).</string>
+    <string name="feedback.SendFeedback">Send &amp;Feedback...</string>
+
+    <string name="trayicon.NewBlogPost">New Blog Post...</string>
+
+    <string name="startup.RecoverMessage">Found %d unsaved document(s) (most likely because Raven crashed or was terminated).  Recover these documents?</string>
+    <string name="startup.RecoverTitle">Recover Unsaved Content?</string>
+
+    <string name="publisherutil.DeletingPostFromBlogs">Deleting post '%s' from %d blogs.</string>
+    <string name="publisherutil.DeletingOnlinePost">Deleting Online Post</string>
+    <string name="publisherutil.DeleteUnpublishedPostTitle">Delete Unpublished Post?</string>
+    <string name="publisherutil.DeleteUnpublishedPostMessage">Delete unpublished blog post "%s"?</string>
+    <string name="publisherutil.PublishingConfigurationMessage">This dialog notifies you of potential problems with the document you are publishing.</string>
+    <string name="publisherutil.PublishingConfiguration">Publishing Configuration</string>
+
+    <string name="deletepostsdialog.DeleteLocalCopy">Delete local copy</string>
+    <string name="deletepostsdialog.DeleteFromTheseBlogs">Delete from these blogs</string>
+    <string name="deletepostsdialog.DeleteBlogPost">Delete blog post</string>
+    <string name="deletepostsdialog.DeletePublishedPost">Delete Published Post?</string>
+
+    <string name="blogcommands.PostDeleted">Post deleted.</string>
+    <string name="blogcommands.DeletingLocalCopy">Deleting local copy...</string>
+    <string name="blogcommands.FailedToDeleteOnlinePost">Failed to delete online post.</string>
+    <string name="blogcommands.DeletingPostFromBlog">Deleting post from blog '%s'...</string>
+
+    <string name="importactions.ImportedWLWProfile">Imported WLW Profile</string>
+    <string name="importactions.ImportingWLWProfile">Importing Windows Live Writer Profile</string>
+    <string name="importactions.ImportedZBWProfile">Imported ZBW Profile</string>
+
+    <string name="importactions.WLWDetectedTitle">Windows Live Writer Detected</string>
+    <string name="importactions.WLWDetectedMessage">We have detected that you have Windows Live Writer installed.  Would you like to import those settings into Raven?</string>
+    <string name="importactions.ZBWDetectedTitle">Zoundry Blog Writer Detected</string>
+    <string name="importactions.ZBWDetectedMessage">We have detected that you have Zoundry Blog Writer installed.  Would you like to import those settings into Raven?</string>
+
+    <string name="wlwimporter.ImportedWLWBlogMsg">Imported Windows Live Writer Blog: '%s'</string>
+
+    <string name="blogeditor.__NoTemplate__">--No Template--</string>
+    <string name="blogeditor.ViewWithTemplate">View With Template:</string>
+
+    <string name="templateuiutil.DownloadingBlogTemplate">Downloading the template for your blog named '%s'.</string>
+
+    <string name="templategrabber.TemplateDownloaded">Template downloaded.</string>
+    <string name="templategrabber.BlogContentAnalysed">Blog content analysed.</string>
+    <string name="templategrabber.AnalysingBlogContent">Analysing blog content to determine template.</string>
+    <string name="templategrabber.TemplateDownloadStarted">Blog template download started.</string>
+    <string name="templategrabber.DownloadingBlogTemplate">Downloading Blog Template</string>
+    <string name="templategrabber.Downloading">Downloading</string>
+    <string name="templategrabber.DownloadingResources">Downloading blog template resources.</string>
+    <string name="templategrabber.TemplateTrimmedAndSaved">Template trimmed and saved.</string>
+    <string name="templategrabber.TemplateDownloaded_Trimming">Template downloaded, trimming.</string>
+    <string name="templategrabber.BlogContentDownloaded_Analysing">Blog content downloaded, analysing.</string>
+    <string name="templategrabber.DownloadingBlogContentForAnalysis">Downloading blog content for analysis.</string>
+    <string name="templategrabber.UnableToDetectTemplate">We were unable to detect your blog's template from existing blog content.</string>
+    <string name="templategrabber.FindingBlogPostContent">Finding blog post content markup.</string>
+    <string name="templategrabber.FindingBlogPostTitle">Finding blog post title markup.</string>
+    <string name="templategrabber.AnalysingFrom">Analysing from: '%s'</string>
+    <string name="templategrabber.BlogHasNoPosts">The blog has no posts to analyze for the blog template.</string>
+    <string name="templategrabber.ConnectingToFeed">Connecting to your blog's feed.</string>
+
+    <string name="templatedialogs.DialogDescriptionMessage">Use this dialog to add a template from an existing Blog that Raven knows about.</string>
+    <string name="templatedialogs.AddTemplateFromBlog">Add Template from Blog</string>
+    <string name="templatedialogs.MakeThisTemplateTheDefault">Make this template the default for this blog</string>
+    <string name="templatedialogs.PickAFriendlyTemplateName">Pick a friendly name for this template (e.g. 'My Blog Template').</string>
+    <string name="templatedialogs.TemplateName">Template Name</string>
+    <string name="templatedialogs.ChooseABlog">Please choose a blog.</string>
+    <string name="templatedialogs.FromBlog">From Blog</string>
+    <string name="templatedialogs.AddTemplate">Add Template</string>
+    <string name="templatedialogs.TemplateAlreadyExists">A template with that name already exists, please choose a different name.</string>
+    <string name="templatedialogs.PleaseEnterTemplateName">Please enter a name for your template (e.g. 'My Blog Template').</string>
+
+    <string name="templatemanager.BlogTemplateManagerDescription">Use this dialog to add and remove blog templates.</string>
+    <string name="templatemanager.BlogTemplateManager">Blog Template Manager</string>
+
+    <string name="tools.OpenTheTemplateManager">Open the Blog Template Manager dialog</string>
+    <string name="tools.ManageTemplates">Manage Blog Templates</string>
+
+    <string name="blogeditortoolbarmodel.Create_Thumbnail">Create Thumbnail</string>
+    <string name="blogeditortoolbarmodel.Thumbnail">Thumbnail</string>
+    <string name="blogeditortoolbarmodel.Image_border">Image border</string>
+    <string name="blogeditortoolbarmodel.Border">Border</string>
+    <string name="blogeditortoolbarmodel.Align_Image">Align Image</string>
+    <string name="blogeditortoolbarmodel.Align">Align</string>
+
+    <string name="blogeditortoolbarmodel.HtmlBlockTags">XHTML Block Tags</string>
+    <string name="blogeditortoolbarmodel.HtmlBlockTagsDescription">Format or insert XHTML block tags</string>
+    
+    <string name="blogeditortoolbarmodel.HtmlTags">XHTML Tags</string>
+    <string name="blogeditortoolbarmodel.HtmlTagsDescription">Format or insert XHTML tags</string>
+    
+    <string name="blogeditortoolbarmodel.XhtmlValidate">Validate</string>
+    <string name="blogeditortoolbarmodel.XhtmlValidateDescription">Validate code against XHTML 1.0 schema</string>
+    <string name="blogeditortoolbarmodel.XhtmlTidy">Tidy</string>
+    <string name="blogeditortoolbarmodel.XhtmlTidyDescription">Run Tidy to clean up XHTML code</string>
+    <string name="blogeditortoolbarmodel.XhtmlClearMessages">Clear</string>
+    <string name="blogeditortoolbarmodel.XhtmlClearMessagesDescription">Clear validation messages</string>
+
+    <string name="blogpostmenubar._Find">&amp;Find...</string>
+    <string name="blogpostmenubar.Select_All">Select &amp;All</string>
+    <string name="blogpostmenubar.PasteAs_Html">Paste As &amp;Html</string>
+    <string name="blogpostmenubar._Paste">&amp;Paste</string>
+    <string name="blogpostmenubar._Copy">&amp;Copy</string>
+    <string name="blogpostmenubar.Cu_t">Cu&amp;t</string>
+    <string name="blogpostmenubar._Redo">&amp;Redo</string>
+    <string name="blogpostmenubar._Undo">&amp;Undo</string>
+    <string name="blogpostmenubar._Close">&amp;Close</string>
+    <string name="blogpostmenubar._Save">&amp;Save</string>
+    <string name="blogpostmenubar._Edit">&amp;Edit</string>
+    <string name="blogpostmenubar._File">&amp;File</string>
+
+    <string name="templatesubpage.OverrideAccountTemplate">Override Account Template setting</string>
+    <string name="templatesubpage.ChooseTemplate">Choose a Default Template</string>
+
+    <string name="blogpage.Template_Description">Template Description</string>
+    <string name="blogpage.Template">Template</string>
+
+    <string name="accountpage.Template_Description">Template Description</string>
+    <string name="accountpage.Template">Template</string>
+
+    <string name="postsview.LastModified">Last Modified</string>
+
+    <string name="blogchooser.RemoveBlogTooltip">Remove this blog - use this if you do not want to publish to this blog.</string>
+    <string name="blogchooser.AddBlogTooltip">Publish to additional blog(s) - use this if you want to publish this content to multiple blogs.</string>
+
+    <string name="templateactions.DeleteTemplateMsg">Delete template '%s'?</string>
+    <string name="templateactions.DeleteTemplateTitle">Delete Template?</string>
+    <string name="templatemanager.Remove">Remove</string>
+    <string name="templatemanager.Add">Add...</string>
+    <string name="templatemanager.Templates">Templates</string>
+
+    <string name="affiliatelinksprefpage.AffiliateLinksDesc3">Note: if you have a Zoundry Service Account, you need to manually convert your product links into Zoundry Affiliate Links using the menu option that appears when you right-click on a qualifying product link in the Blog Post editor.</string>
+    <string name="affiliatelinksprefpage.AffiliateLinksDesc2">If you do not wish to support Zoundry in this way, simply check the box above, and we'll stop doing it.</string>
+    <string name="affiliatelinksprefpage.AffiliateLinksDesc1">By default, Zoundry Raven will convert any product links in your blog posts (Amazon.com links, for example) into affiliate links that could potentially earn us some money.  This is one of the ways we try to keep Zoundry Raven free for our users.</string>
+    <string name="affiliatelinksprefpage.DontTouchLinks">Don't mess with my links</string>
+    <string name="affiliatelinksprefpage.Affiliate_Links">Affiliate Links</string>
+        
+    <string name="blogcontenteditorcontextmenumodel.Select__All">Select &amp;All</string>
+    <string name="blogcontenteditorcontextmenumodel.Paste_as__Html">Paste as &amp;Html</string>
+    <string name="blogcontenteditorcontextmenumodel._Paste">&amp;Paste</string>
+    <string name="blogcontenteditorcontextmenumodel._Copy">&amp;Copy</string>
+    <string name="blogcontenteditorcontextmenumodel.Cu_t">Cu&amp;t</string>
+    <string name="blogcontenteditorcontextmenumodel._Redo">&amp;Redo</string>
+    <string name="blogcontenteditorcontextmenumodel._Undo">&amp;Undo</string>
+	<string name="blogcontenteditorcontextmenumodel.Remove_Extended_Entry_Marker">Remove Extended Entry Marker</string>    
+    
+    <string name="blogcontenteditorlinkmenumodel.Link">Link</string>
+    <string name="blogcontenteditorlinkmenumodel.CreateLink">Create Link...</string>
+    <string name="blogcontenteditorlinkmenumodel.LinkTo">Link To</string>
+    <string name="blogcontenteditorlinkmenumodel.RemoveLink">Remove Link</string>
+    <string name="blogcontenteditorlinkmenumodel.ConvertLink">Convert Link...</string>
+    <string name="blogcontenteditorlinkmenumodel.EditLink">Edit Link</string>
+    <string name="blogcontenteditorlinkmenumodel.CopyLinkLocation">Copy Link Location</string>
+    <string name="blogcontenteditorlinkmenumodel.CreateEmbedContent">Create Embed Content</string>
+    
+    <string name="blogcontenteditorimagemenumodel.Image">Image</string>
+    <string name="blogcontenteditorimagemenumodel.InsertImageFile">Insert Image File</string>
+    <string name="blogcontenteditorimagemenumodel.InsertImageTag">Insert Image Tag</string>
+    <string name="blogcontenteditorimagemenumodel.EditImage">Edit Image</string>
+    <string name="blogcontenteditorimagemenumodel.CopyImageLocation">Copy Image Location</string>
+    
+    <string name="blogcontenteditorimagealignmenumodel.Align">Align</string>
+    <string name="blogcontenteditorimagealignmenumodel.AlignNone">None</string>
+    <string name="blogcontenteditorimagealignmenumodel.AlignLeft">Left</string>
+    <string name="blogcontenteditorimagealignmenumodel.AlignCenter">Center</string>
+    <string name="blogcontenteditorimagealignmenumodel.AlignRight">Right</string>
+      
+    <string name="blogcontenteditorimagebordermenumodel.Border">Border</string>
+    <string name="blogcontenteditorimagebordermenumodel.BorderNone">None</string>
+    <string name="blogcontenteditorimagebordermenumodel.BorderSolid">Solid</string>
+    <string name="blogcontenteditorimagebordermenumodel.BorderDashed">Dashed</string>
+    <string name="blogcontenteditorimagebordermenumodel.BorderDotted">Dotted</string>
+    <string name="blogcontenteditorimagebordermenumodel.BorderDouble">Double</string>
+    <string name="blogcontenteditorimagebordermenumodel.BorderGroove">Groove</string>
+    <string name="blogcontenteditorimagebordermenumodel.BorderInset">Inset</string>
+    <string name="blogcontenteditorimagebordermenumodel.BorderOutset">Outset</string>
+    <string name="blogcontenteditorimagebordermenumodel.BorderRidge">Ridge</string>
+    
+    <string name="blogcontenteditorimagethumbnailmenumodel.Thumbnail">Thumbnail</string>
+    
+    <string name="blogcontenteditortablemenumodel.Table">Table</string>
+    <string name="blogcontenteditortablemenumodel.InsertTable">Insert Table...</string>
+
+    <string name="blogeditoractions.FailedToConvertLink">Failed to convert product link.</string>
+    <string name="blogeditoractions.SuccessfullyConvertedLink">Successfully converted product link, inserting into HTML.</string>
+    <string name="blogeditoractions.Invoking_Zoundry_Service">Invoking Zoundry Service...</string>
+    <string name="blogeditoractions.Converting_Link">Converting Link</string>
+
+    <string name="publishersitewizard.NoBlogYet">I don't have a blog yet!</string>
+
+    <string name="postactions.OpenAsUnpublishedDesc">Makes an unsaved, unpublished copy of the selected blog post and opens it in the editor.</string>
+    <string name="postactions.OpenAsUnpublished">Open as Unpublished Copy...</string>
+
+    <string name="translationeditor.UseThisDialogMsg">Use this dialog to translate Raven into a specific language.  For each string in the list, select a string to translate, then type the translation text and press ENTER.</string>
+    <string name="translationeditor.TranslationEditor">Translation Editor</string>
+    <string name="translationeditor.EnglishValue">English Value</string>
+    <string name="translationeditor.ShowOnlyUntranslated">Show only untranslated strings</string>
+    <string name="translationeditor.EditTranslation_">Edit Translation (%s)</string>
+    <string name="translationeditor.TranslatedValue">Translated Value</string>
+    <string name="translationeditor.BundleKey">Bundle Key</string>
+    <string name="translationeditor.Save">Save</string>
+    <string name="translationeditor.CancelTranslationTitle">Cancel Translation Changes?</string>
+    <string name="translationeditor.CancelTranslationMessage">If you cancel, all of your translation changes will be lost.  Cancel anyway?</string>
+    
+    <string name="newtranslationdl.UseThisDialogMsg">Use this dialog to create a new Raven translation - choose your language and (optionally) country.</string>
+    <string name="newtranslationdl.LanguageLabel">Language:</string>
+    <string name="newtranslationdl.CreateNewTranslation">Create New Translation</string>
+    
+    <string name="translationmanager.UseThisWindowMsg">Use this window to add/edit translations.</string>
+    <string name="translationmanager.TranslationManager">Translation Manager</string>
+    <string name="translationmanager.Edit">Edit...</string>
+    <string name="translationmanager.New">New...</string>
+    <string name="translationmanager.Translations">Translations</string>
+    <string name="translationmanager.MustHaveWriteAccessError">You must have write access to the Zoundry Raven installation directory.</string>
+    <string name="translationmanager.TranslationEditingNotAllowed">Translation Editing Not Allowed</string>
+    
+    <string name="welcome.PublishDesc">Finally, publish your post (using the Publish button on either the main application or editor toolbar).</string>
+    <string name="welcome.Publish">Publish</string>
+    <string name="welcome.WritePostDesc">Next, you can author/write a new post.</string>
+    <string name="welcome.WritePost">Write a Post</string>
+    <string name="welcome.CreateAccountDesc">First, use the Account Creation Wizard to create your new Blog Account.  You must have an account with an online Blog System such as Blogger.com or TypePad.com.</string>
+    <string name="welcome.CreateAnAccount">Create an Account</string>
+    <string name="welcome.WelcomeToRaven">Welcome to Raven</string>
+
+    <string name="blogsummary.ViewBlogDesc">View this Blog in the default browser (online)</string>
+    <string name="blogsummary.ViewBlog">View Blog (online)</string>
+    <string name="blogsummary.NewPostDesc">Post a new entry to this Blog</string>
+    <string name="blogsummary.NewPost">New Post</string>
+    <string name="blogsummary.ConfigureBlogDesc">View Settings for this Blog</string>
+    <string name="blogsummary.ConfigureBlog">Configure Blog</string>
+
+    <string name="dashboard.SettingsDesc">Change/configure application settings</string>
+    <string name="dashboard.Settings">Settings</string>
+    <string name="dashboard.NewMediaStorageDesc">Create a new Media Storage</string>
+    <string name="dashboard.NewMediaStorage">New Media Storage</string>
+    <string name="dashboard.NewBlogAccountDesc">Create a new Blog Account</string>
+    <string name="dashboard.NewBlogAccount">New Blog Account</string>
+
+    <string name="acctsummary.Refresh">Refresh/Sync</string>
+    <string name="acctsummary.ViewSettings">View Settings</string>
+    <string name="acctsummary.RefreshDesc">Refresh/Sync this Account (online)</string>
+    <string name="acctsummary.ViewSettingsDesc">View Settings for this Account</string>
+
+    <string name="blogposttoolbar.ViewPostOnline">View post online.</string>
+    <string name="blogposttoolbar.ViewOnline">View (online)</string>
+    <string name="blogposttoolbar.Publish">Publish</string>
+    
+    <string name="blogeditortoolbarmodel.Check_Spelling">Check Spelling</string>
+    <string name="blogeditortoolbarmodel.Spell_Check">Spell Check</string>
+    <string name="blogeditortoolbarmodel.Insert_Extended_Entry_marker">Insert Extended Entry marker</string>
+    <string name="blogeditortoolbarmodel.Extended_Entry">Extended Entry</string>
+    <string name="blogeditortoolbarmodel.Insert_Table">Insert Table</string>
+    <string name="blogeditortoolbarmodel.Insert_Link">Insert Link</string>
+    <string name="blogeditortoolbarmodel.Insert_Image">Insert Image</string>
+    <string name="blogeditortoolbarmodel.Numbered_List">Numbered List</string>
+    <string name="blogeditortoolbarmodel.Number_List">Number List</string>
+    <string name="blogeditortoolbarmodel.Bulleted_List">Bulleted List</string>
+    <string name="blogeditortoolbarmodel.Bullet_List">Bullet List</string>
+    <string name="blogeditortoolbarmodel.Remove_Indent">Remove Indent</string>
+    <string name="blogeditortoolbarmodel.De_Indent">De-Indent</string>
+    <string name="blogeditortoolbarmodel.Indent">Indent</string>
+    <string name="blogeditortoolbarmodel.Justify">Justify</string>    
+    <string name="blogeditortoolbarmodel.Align_Right">Align Right</string>
+    <string name="blogeditortoolbarmodel.Center">Center</string>
+    <string name="blogeditortoolbarmodel.Align_Left">Align Left</string>
+    <string name="blogeditortoolbarmodel.Strikethrough">Strikethrough</string>
+    <string name="blogeditortoolbarmodel.Underline">Underline</string>
+    <string name="blogeditortoolbarmodel.Italic">Italic</string>
+    <string name="blogeditortoolbarmodel.Bold">Bold</string>
+    <string name="blogeditortoolbarmodel.Font_Settings">Font Settings</string>
+    <string name="blogeditortoolbarmodel.Font">Font</string>
+    <string name="blogeditortoolbarmodel.Blockquote">BlockQuote</string>
+
+    <string name="appstatusbar.NoRunningTasks">No Running Tasks</string>
+    <string name="appstatusbar.RunningTasks">Running Tasks</string>
+
+    <string name="navigator.DashboardTooltip">Go to the Zoundry Raven Dashboard.</string>
+    <string name="navigator.CollapseAllTooltip">Collapse all nodes in the tree.</string>
+
+    <string name="flickrprovider.RavenIsAuthorized">Raven is now Flickr authorized!</string>
+    <string name="flickrprovider.StillNotAuthorized">Raven is *still* not authorized (something went wrong).</string>
+    <string name="flickrprovider.NotYetAuthorized">Raven is not yet Flickr authorized.</string>
+    <string name="flickrprovider.Authorized">Authorized</string>
+    <string name="flickrprovider.ClickHereLabel">Click here once you have authorized Raven: </string>
+    <string name="flickrprovider.Begin">Begin</string>
+    <string name="flickrprovider.BeginAuthLabel">First, begin the authorization process: </string>
+    <string name="flickrprovider.FlickrAuthDescription">You must now log in to Flickr to authorize Zoundry Raven as an 'allowed client', otherwise Flickr will not let us upload pictures.  Authorizing Raven is simple, start the process by clicking the 'Begin' button below.  Your browser will open up and direct you to Flickr.  Follow the instructions, then come back and click the 'Authorized' button below.</string>
+    
+    <string name="help.CheckForUpdatesDesc">Checks if a new version of Zoundry Raven is available for download.</string>
+    <string name="help.CheckForUpdates">Check for Updates</string>
+
+    <string name="help.GetSupportDesc">Get forum support for Zoundry Raven.</string>
+    <string name="help.GetSupport">Get Support...</string>
+
+</string-bundle>

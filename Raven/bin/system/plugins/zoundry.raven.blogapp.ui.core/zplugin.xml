@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zoundry-plugin xmlns="http://www.zoundry.com/schemas/2006/03/zplugin.rng" version="1.0" signature="1APIGTH0BAGHA3Z1RZ336WOWL61YVBGLKTCPTRMFSSIRQZ1WVRGY05UZER91IRKJOWRYSIZH36SDKHTX4S9QQIL6F87X2CMKUP9DAMAR9GHOPETS1QH2GC70RORMOY7QBSBH8O3ILMSE8TA3GZPVYXOTMUI3J6RLDZA3TZDM7C0T9KA1SADCRDXUZ72OVXVBBTTK6LPZURBVEVKD9QEOYVDGQYHEEIZHJ9BDIO4QQPGJR90SWNXIDKTDI50WCCLGWD08EHD767TNLJWXKHT38L310A1HL3X2M4K4L8QEZ4VCQYPRLN97HWXVIFKZR89XBA85PUZ3MH36INEH8TMJ9I48DEDEK18AM3QHS0977KQ6Q6AOX4UQS420F6YC6LZSL2A4OH42P6F7D" id="zoundry.raven.blogapp.ui.core" name="Zoundry Core UI">
+
+    <dependencies>
+        <depends on="zoundry.raven.blogapp.services" version="1.0"/>
+    </dependencies>
+
+    <!--  The core startup action -->
+    <zoundry-extension point="zoundry.appframework.startup-action">
+        <id>zoundry.blogapp.ui.actions.core.startup</id>
+        <class>zoundry.blogapp.ui.actions.startup.ZBlogAppStartupAction</class>
+    </zoundry-extension>
+
+    <!--  The core shutdown action -->
+    <zoundry-extension point="zoundry.appframework.shutdown-action">
+        <id>zoundry.blogapp.ui.actions.core.shutdown</id>
+        <class>zoundry.blogapp.ui.actions.shutdown.ZBlogAppShutdownAction</class>
+    </zoundry-extension>
+
+    <!-- Blog->DownloadRecent Group -->
+    <zoundry-extension point="zoundry.appframework.ui.core.menugroup">
+        <id>zoundry.blogapp.ui.core.menu.perspective.all.blogmenu.downloadrecent</id>
+        <extension-data>
+            <menu-group>
+                <parent-group>zoundry.blogapp.ui.core.menu.blog</parent-group>
+                <name>%menugroup.blogmenu.downloadrecentposts%</name>
+                <gravity>10</gravity>
+                <icon>icons/ui/core/menus/blog/downloadposts.png</icon>
+            </menu-group>
+        </extension-data>
+    </zoundry-extension>
+    <!-- Blog->DownloadRecent->RecentPost Menu Item -->
+    <zoundry-extension point="zoundry.appframework.ui.core.menuitem">
+        <id>zoundry.blogapp.ui.core.menu.perspective.all.blogmenu.downloadrecent.recent1</id>
+        <class>zoundry.blogapp.ui.actions.blog.blogactions.ZDownloadRecentBlogPostsMenuAction</class>
+        <extension-data>
+            <menu-item>
+                <group>zoundry.blogapp.ui.core.menu.perspective.all.blogmenu.downloadrecent</group>
+                <name>%menugroup.blogmenu.downloadrecentposts.recent1%</name>
+                <gravity>1</gravity>
+                <description>%menugroup.blogmenu.downloadrecentposts.recent1.description%</description>
+                <icon/>
+				<parameters>
+					<parameter name="numposts">1</parameter>
+				</parameters>                
+            </menu-item>
+        </extension-data>
+    </zoundry-extension>
+    <zoundry-extension point="zoundry.appframework.ui.core.menuitem">
+        <id>zoundry.blogapp.ui.core.menu.perspective.all.blogmenu.downloadrecent.recent5</id>
+        <class>zoundry.blogapp.ui.actions.blog.blogactions.ZDownloadRecentBlogPostsMenuAction</class>
+        <extension-data>
+            <menu-item>
+                <group>zoundry.blogapp.ui.core.menu.perspective.all.blogmenu.downloadrecent</group>
+                <name>%menugroup.blogmenu.downloadrecentposts.recent5%</name>
+                <gravity>5</gravity>
+                <description>%menugroup.blogmenu.downloadrecentposts.recent5.description%</description>
+                <icon/>
+				<parameters>
+					<parameter name="numposts">5</parameter>
+				</parameters>                                
+            </menu-item>
+        </extension-data>
+    </zoundry-extension>        
+    <zoundry-extension point="zoundry.appframework.ui.core.menuitem">
+        <id>zoundry.blogapp.ui.core.menu.perspective.all.blogmenu.downloadrecent.recent10</id>
+        <class>zoundry.blogapp.ui.actions.blog.blogactions.ZDownloadRecentBlogPostsMenuAction</class>
+        <extension-data>
+            <menu-item>
+                <group>zoundry.blogapp.ui.core.menu.perspective.all.blogmenu.downloadrecent</group>
+                <name>%menugroup.blogmenu.downloadrecentposts.recent10%</name>
+                <gravity>10</gravity>
+                <description>%menugroup.blogmenu.downloadrecentposts.recent10.description%</description>
+                <icon/>
+				<parameters>
+					<parameter name="numposts">10</parameter>
+				</parameters>
+            </menu-item>
+        </extension-data>
+    </zoundry-extension>   
+    <zoundry-extension point="zoundry.appframework.ui.core.menuitem">
+        <id>zoundry.blogapp.ui.core.menu.perspective.all.blogmenu.downloadrecent.recent20</id>
+        <class>zoundry.blogapp.ui.actions.blog.blogactions.ZDownloadRecentBlogPostsMenuAction</class>
+        <extension-data>
+            <menu-item>
+                <group>zoundry.blogapp.ui.core.menu.perspective.all.blogmenu.downloadrecent</group>
+                <name>%menugroup.blogmenu.downloadrecentposts.recent20%</name>
+                <gravity>20</gravity>
+                <description>%menugroup.blogmenu.downloadrecentposts.recent20.description%</description>
+                <icon/>
+				<parameters>
+					<parameter name="numposts">20</parameter>
+				</parameters>
+            </menu-item>
+        </extension-data>
+    </zoundry-extension>
+    <zoundry-extension point="zoundry.appframework.ui.core.menuitem">
+        <id>zoundry.blogapp.ui.core.menu.perspective.all.blogmenu.downloadrecent.recent50</id>
+        <class>zoundry.blogapp.ui.actions.blog.blogactions.ZDownloadRecentBlogPostsMenuAction</class>
+        <extension-data>
+            <menu-item>
+                <group>zoundry.blogapp.ui.core.menu.perspective.all.blogmenu.downloadrecent</group>
+                <name>%menugroup.blogmenu.downloadrecentposts.recent50%</name>
+                <gravity>50</gravity>
+                <description>%menugroup.blogmenu.downloadrecentposts.recent50.description%</description>
+                <icon/>
+				<parameters>
+					<parameter name="numposts">50</parameter>
+				</parameters>
+            </menu-item>
+        </extension-data>
+    </zoundry-extension>
+    <zoundry-extension point="zoundry.appframework.ui.core.menuitem">
+        <id>zoundry.blogapp.ui.core.menu.perspective.all.blogmenu.downloadrecent.recent100</id>
+        <class>zoundry.blogapp.ui.actions.blog.blogactions.ZDownloadRecentBlogPostsMenuAction</class>
+        <extension-data>
+            <menu-item>
+                <group>zoundry.blogapp.ui.core.menu.perspective.all.blogmenu.downloadrecent</group>
+                <name>%menugroup.blogmenu.downloadrecentposts.recent100%</name>
+                <gravity>100</gravity>
+                <description>%menugroup.blogmenu.downloadrecentposts.recent100.description%</description>
+                <icon/>
+				<parameters>
+					<parameter name="numposts">100</parameter>
+				</parameters>
+            </menu-item>
+        </extension-data>
+    </zoundry-extension>
+    <zoundry-extension point="zoundry.appframework.ui.core.menuitem">
+        <id>zoundry.blogapp.ui.core.menu.perspective.all.blogmenu.downloadrecent.recent250</id>
+        <class>zoundry.blogapp.ui.actions.blog.blogactions.ZDownloadRecentBlogPostsMenuAction</class>
+        <extension-data>
+            <menu-item>
+                <group>zoundry.blogapp.ui.core.menu.perspective.all.blogmenu.downloadrecent</group>
+                <name>%menugroup.blogmenu.downloadrecentposts.recent250%</name>
+                <gravity>250</gravity>
+                <description>%menugroup.blogmenu.downloadrecentposts.recent250.description%</description>
+                <icon/>
+				<parameters>
+					<parameter name="numposts">250</parameter>
+				</parameters>
+            </menu-item>
+        </extension-data>
+    </zoundry-extension>
+    <zoundry-extension point="zoundry.appframework.ui.core.menuitem">
+        <id>zoundry.blogapp.ui.core.menu.perspective.all.blogmenu.downloadrecent.recent500</id>
+        <class>zoundry.blogapp.ui.actions.blog.blogactions.ZDownloadRecentBlogPostsMenuAction</class>
+        <extension-data>
+            <menu-item>
+                <group>zoundry.blogapp.ui.core.menu.perspective.all.blogmenu.downloadrecent</group>
+                <name>%menugroup.blogmenu.downloadrecentposts.recent500%</name>
+                <gravity>500</gravity>
+                <description>%menugroup.blogmenu.downloadrecentposts.recent500.description%</description>
+                <icon/>
+				<parameters>
+					<parameter name="numposts">500</parameter>
+				</parameters>
+            </menu-item>
+        </extension-data>
+    </zoundry-extension>    
+    <zoundry-extension point="zoundry.appframework.ui.core.menuitem">
+        <id>zoundry.blogapp.ui.core.menu.perspective.all.blogmenu.downloadrecent.recent1000</id>
+        <class>zoundry.blogapp.ui.actions.blog.blogactions.ZDownloadRecentBlogPostsMenuAction</class>
+        <extension-data>
+            <menu-item>
+                <group>zoundry.blogapp.ui.core.menu.perspective.all.blogmenu.downloadrecent</group>
+                <name>%menugroup.blogmenu.downloadrecentposts.recent1000%</name>
+                <gravity>1000</gravity>
+                <description>%menugroup.blogmenu.downloadrecentposts.recent1000.description%</description>
+                <icon/>
+				<parameters>
+					<parameter name="numposts">1000</parameter>
+				</parameters>
+            </menu-item>
+        </extension-data>
+    </zoundry-extension>        
+    <zoundry-extension point="zoundry.appframework.ui.core.menuitem">
+        <id>zoundry.blogapp.ui.core.menu.perspective.all.blogmenu.downloadrecent.allposts</id>
+        <class>zoundry.blogapp.ui.actions.blog.blogactions.ZDownloadRecentBlogPostsMenuAction</class>
+        <extension-data>
+            <menu-item>
+                <group>zoundry.blogapp.ui.core.menu.perspective.all.blogmenu.downloadrecent</group>
+                <name>%menugroup.blogmenu.downloadrecentposts.allposts%</name>
+                <gravity>9999</gravity>
+                <description>%menugroup.blogmenu.downloadrecentposts.allposts.description%</description>
+                <icon/>
+				<parameters>
+					<parameter name="numposts">5000</parameter>
+				</parameters>
+            </menu-item>
+        </extension-data>
+    </zoundry-extension>    
+
+</zoundry-plugin>

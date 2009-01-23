@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zoundry-plugin xmlns="http://www.zoundry.com/schemas/2006/03/zplugin.rng" version="1.0" signature="192NOAPD4QBUIPAPPSM1O545RSE5GEYTO89ABHT5T2PE4JM5NC70KRKZSZJ7TE8W47ABD5OXEZYPMS02PA9PQCHT3J5P6PW0VR66C3D2K07HV6ZN8AD15ZVGOMIPIVDTOPVU14QHKFCAK1LI48MWUPJY6LN1AUMZLO7O3RTFUSTPYSERDCUXAVVSAUZWGQEXY3OABT3VVRE8QKX6ZSWIPCIXEOSSSXGR5VVL3MRWQMVIE6PXRFI5Q6YK4EPA0YY2LP1092YYT0VOSVPSQW6HGGYTCNLFVBK7XY1REL051ZPISYL0RKH934OSDAU83PI6CRWAB2V7M1048JTA0CSHI0IECFPPCHR1WUH2YBFCC9UVVPA679KWDFI0LBY44GKWPWK8DY5ABTY7B" id="zoundry.raven.blogapp.ui.standard" name="Zoundry Standard Perspective UI">
+
+    <dependencies>
+        <depends on="zoundry.raven.blogapp.services" version="1.0"/>
+        <depends on="zoundry.raven.blogapp.ui.core" version="1.0"/>
+    </dependencies>
+
+    <!-- The Standard Perspective -->
+    <zoundry-extension point="zoundry.blogapp.ui.perspective">
+        <id>zoundry.blogapp.ui.perspectives.standard</id>
+        <class>zoundry.blogapp.ui.perspectives.standard.ZStandardPerspective</class>
+        <extension-data>
+            <perspective-info>
+                <name>%perspective.standard.name%</name>
+                <description>%perspective.standard.description%</description>
+            </perspective-info>
+        </extension-data>
+    </zoundry-extension>
+
+    <!-- The Blog Post Details Panel Extension Point -->
+    <zoundry-extension point="zoundry.extension">
+        <id>zoundry.extension.zoundry.blogapp.ui.views.standard.post-details-panel</id>
+        <extension-data>
+            <extension-info>
+                <id>zoundry.blogapp.ui.views.standard.post-details-panel</id>
+                <schema-location>schemas/zoundry.blogapp.ui.views.standard.post-details-panel.rng</schema-location>
+                <interface>zoundry.blogapp.ui.views.standard.ctxview.details.commondetails.IZDetailsPanelFactory</interface>
+            </extension-info>
+        </extension-data>
+    </zoundry-extension>
+
+    <!-- The 'Preview' Blog Post Details Panel -->
+    <zoundry-extension point="zoundry.blogapp.ui.views.standard.post-details-panel">
+        <id>zoundry.blogapp.ui.views.standard.post-details-panel.preview</id>
+        <class>zoundry.blogapp.ui.views.standard.ctxview.postdetails.postdetailsimpl.previewdetails.ZPreviewBlogPostDetailsPanelFactory</class>
+        <extension-data>
+            <post-details-panel-info>
+                <name>%blogpost-details-panel.preview.name%</name>
+            </post-details-panel-info>
+        </extension-data>
+    </zoundry-extension>
+
+    <!-- The 'General' Blog Post Details Panel -->
+    <zoundry-extension point="zoundry.blogapp.ui.views.standard.post-details-panel">
+        <id>zoundry.blogapp.ui.views.standard.post-details-panel.general</id>
+        <class>zoundry.blogapp.ui.views.standard.ctxview.postdetails.postdetailsimpl.generaldetails.ZGeneralBlogPostDetailsPanelFactory</class>
+        <extension-data>
+            <post-details-panel-info>
+                <name>%blogpost-details-panel.general.name%</name>
+            </post-details-panel-info>
+        </extension-data>
+    </zoundry-extension>
+
+    <!-- The 'Links' Blog Post Details Panel -->
+    <zoundry-extension point="zoundry.blogapp.ui.views.standard.post-details-panel">
+        <id>zoundry.blogapp.ui.views.standard.post-details-panel.links</id>
+        <class>zoundry.blogapp.ui.views.standard.ctxview.postdetails.postdetailsimpl.linkdetails.ZLinkBlogPostDetailsPanelFactory</class>
+        <extension-data>
+            <post-details-panel-info>
+                <name>%blogpost-details-panel.links.name%</name>
+            </post-details-panel-info>
+        </extension-data>
+    </zoundry-extension>
+
+    <!-- The 'Media' Blog Post Details Panel -->
+    <zoundry-extension point="zoundry.blogapp.ui.views.standard.post-details-panel">
+        <id>zoundry.blogapp.ui.views.standard.post-details-panel.media</id>
+        <class>zoundry.blogapp.ui.views.standard.ctxview.postdetails.postdetailsimpl.mediadetails.ZMediaBlogPostDetailsPanelFactory</class>
+        <extension-data>
+            <post-details-panel-info>
+                <name>%blogpost-details-panel.media.name%</name>
+            </post-details-panel-info>
+        </extension-data>
+    </zoundry-extension>
+
+    <!-- The Image Details Panel Extension Point -->
+    <zoundry-extension point="zoundry.extension">
+        <id>zoundry.extension.zoundry.blogapp.ui.views.standard.image-details-panel</id>
+        <extension-data>
+            <extension-info>
+                <id>zoundry.blogapp.ui.views.standard.image-details-panel</id>
+                <schema-location>schemas/zoundry.blogapp.ui.views.standard.image-details-panel.rng</schema-location>
+                <interface>zoundry.blogapp.ui.views.standard.ctxview.details.commondetails.IZDetailsPanelFactory</interface>
+            </extension-info>
+        </extension-data>
+    </zoundry-extension>
+
+    <!-- The 'Image Info' Image Details Panel -->
+    <zoundry-extension point="zoundry.blogapp.ui.views.standard.image-details-panel">
+        <id>zoundry.blogapp.ui.views.standard.image-details-panel.info</id>
+        <class>zoundry.blogapp.ui.views.standard.ctxview.imgdetails.imgdetailsimpl.infodetails.ZInfoImageDetailsPanelFactory</class>
+        <extension-data>
+            <image-details-panel-info>
+                <name>%image-details-panel.info.name%</name>
+            </image-details-panel-info>
+        </extension-data>
+    </zoundry-extension>
+
+    <!-- The Link Details Panel Extension Point -->
+    <zoundry-extension point="zoundry.extension">
+        <id>zoundry.extension.zoundry.blogapp.ui.views.standard.link-details-panel</id>
+        <extension-data>
+            <extension-info>
+                <id>zoundry.blogapp.ui.views.standard.link-details-panel</id>
+                <schema-location>schemas/zoundry.blogapp.ui.views.standard.link-details-panel.rng</schema-location>
+                <interface>zoundry.blogapp.ui.views.standard.ctxview.details.commondetails.IZDetailsPanelFactory</interface>
+            </extension-info>
+        </extension-data>
+    </zoundry-extension>
+
+    <!-- The 'Link Info' Link Details Panel -->
+    <zoundry-extension point="zoundry.blogapp.ui.views.standard.link-details-panel">
+        <id>zoundry.blogapp.ui.views.standard.link-details-panel.info</id>
+        <class>zoundry.blogapp.ui.views.standard.ctxview.linkdetails.linkdetailsimpl.infodetails.ZInfoLinkDetailsPanelFactory</class>
+        <extension-data>
+            <link-details-panel-info>
+                <name>%link-details-panel.info.name%</name>
+            </link-details-panel-info>
+        </extension-data>
+    </zoundry-extension>
+
+    <!-- The Tag Details Panel Extension Point -->
+    <zoundry-extension point="zoundry.extension">
+        <id>zoundry.extension.zoundry.blogapp.ui.views.standard.tag-details-panel</id>
+        <extension-data>
+            <extension-info>
+                <id>zoundry.blogapp.ui.views.standard.tag-details-panel</id>
+                <schema-location>schemas/zoundry.blogapp.ui.views.standard.tag-details-panel.rng</schema-location>
+                <interface>zoundry.blogapp.ui.views.standard.ctxview.details.commondetails.IZDetailsPanelFactory</interface>
+            </extension-info>
+        </extension-data>
+    </zoundry-extension>
+
+    <!-- The 'Tag Info' Tag Details Panel -->
+    <zoundry-extension point="zoundry.blogapp.ui.views.standard.tag-details-panel">
+        <id>zoundry.blogapp.ui.views.standard.tag-details-panel.info</id>
+        <class>zoundry.blogapp.ui.views.standard.ctxview.tagdetails.tagdetailsimpl.infodetails.ZInfoTagDetailsPanelFactory</class>
+        <extension-data>
+            <tag-details-panel-info>
+                <name>%tag-details-panel.info.name%</name>
+            </tag-details-panel-info>
+        </extension-data>
+    </zoundry-extension>
+
+</zoundry-plugin>

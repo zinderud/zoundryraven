@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zoundry-plugin xmlns="http://www.zoundry.com/schemas/2006/03/zplugin.rng" 
+	version="1.0" signature="00000116f9c1210000c000a80001000231582241" 
+	name="Zoundry SimpleLinkProvider Default Config" id="zoundry.raven.blogapp.simplelinkprovider">
+
+	<!-- 
+		===========================================
+		 Simple Link Provider Extension Point Contributors  
+	    ===========================================
+	-->	     
+    <!-- Config entry the Simple Link Provider  -->
+    <zoundry-extension point="zoundry.blogapp.links.simplelinkprovider.entries">
+        <id>zoundry.blogapp.links.simplelinkprovider.entries.default</id>
+        <extension-data>
+        	<link-entries>
+	        	<links>
+	        		<link>
+	        			<name>Zoundry</name>
+	        			<url>http://www.zoundry.com</url>
+	        			<icon>icons/zoundry.png</icon>
+	        			        		
+	        		</link>
+	        		<link>
+	        			<name>Zoundry Raven</name>
+	        			<url>http://www.zoundryraven.com</url>
+	        			<icon>icons/raven.png</icon>	        			        		
+	        		</link>        		
+	        	</links>
+	        	<link-formatters>
+	        	    <!--  search: google, yahoo, msn, digg, you tube, blog search -->
+	        		<link-formatter>	        			
+	        			<name>Google</name>
+	        			<url>http://www.google.com</url>
+	        			<icon>icons/search/google.png</icon>	        			
+	        			<type>search</type>
+	        			<format>http://www.google.com/search?q={0}</format>
+	        		</link-formatter>	        	    
+	        		<link-formatter>	        			
+	        			<name>Yahoo!</name>
+	        			<url>http://search.yahoo.com</url>
+	        			<icon>icons/search/yahoo.png</icon>	        			
+	        			<type>search</type>
+	        			<format>http://search.yahoo.com/search?ei=UTF-8&amp;p={0}</format>
+	        		</link-formatter>
+	        		<link-formatter>	        			
+	        			<name>Windows Live</name>
+	        			<url>http://www.live.com</url>
+	        			<icon>icons/search/windowslive.png</icon>	        			
+	        			<type>search</type>
+	        			<format>http://search.live.com/results.aspx?q={0}</format>
+	        		</link-formatter>
+	        		
+	        		<!-- 
+	        		<link-formatter>	        			
+	        			<name>MSN</name>
+	        			<url>http://search.msn.com</url>
+	        			<icon>icons/search/msn.png</icon>	        			
+	        			<type>search</type>
+	        			<format>http://search.msn.com/results.aspx?FORM=MSNH&amp;srch_type=0&amp;q={0}</format>
+	        		</link-formatter>
+	        		 -->	        	    
+	        		<link-formatter>	        			
+	        			<name>Digg</name>
+	        			<url>http://digg.com</url>
+	        			<icon>icons/search/digg.png</icon>	        			
+	        			<type>search</type>
+	        			<format>http://digg.com/search?s={0}</format>
+	        		</link-formatter>	        	    
+	        		<link-formatter>	        			
+	        			<name>YouTube</name>
+	        			<url>http://youtube.com</url>
+	        			<icon>icons/search/youtube.png</icon>	        			
+	        			<type>search</type>
+	        			<format>http://youtube.com/results?search_query={0}</format>
+	        		</link-formatter>	        	    
+	        		<link-formatter>	        			
+	        			<name>BlogSearch (Google)</name>
+	        			<url>http://blogsearch.google.com</url>
+	        			<icon>icons/search/google.png</icon>	        			
+	        			<type>search</type>
+	        			<format>http://blogsearch.google.com/blogsearch?ie=UTF-8&amp;q={0}</format>
+	        		</link-formatter>	
+	        		<link-formatter>	        			
+	        			<name>Picasa</name>
+	        			<url>http://picasaweb.google.com</url>
+	        			<icon>icons/search/picasa.png</icon>	        			
+	        			<type>search</type>
+	        			<format>http://picasaweb.google.com/lh/searchbrowse?q={0}</format>
+	        		</link-formatter>	        		        	    
+	        			        	    
+	        	    <!--  tag: Flickr, Zoomr, Delicious -->
+	        		<link-formatter>	        			
+	        			<name>Technorati</name>
+	        			<url>http://www.technorati.com</url>
+	        			<rel>tag</rel>
+	        			<icon>icons/tags/technorati.png</icon>
+	        			<type>tag</type>
+	        			<enc>+</enc>
+	        			<format>http://www.technorati.com/tag/{0}</format>	        			
+	        		</link-formatter>
+	        		<link-formatter>	        			
+	        			<name>Del.icio.us</name>
+	        			<url>http://del.icio.us</url>
+	        			<rel>tag</rel>
+	        			<icon>icons/tags/delicious.png</icon>
+	        			<type>tag</type>
+	        			<enc/>
+	        			<format>http://del.icio.us/tag/{0}</format>	        			
+	        		</link-formatter>
+	        		<link-formatter>	        			
+	        			<name>Zooomr</name>
+	        			<url>http://www.zooomr.com</url>
+	        			<rel>tag</rel>
+	        			<icon>icons/tags/zooomr.png</icon>
+	        			<type>tag</type>
+	        			<enc/>
+	        			<format>http://www.zooomr.com/search/photos/?q={0}</format>	        			
+	        		</link-formatter>
+	        		<link-formatter>
+	        			<type>tag</type>
+	        			<name>Flickr</name>
+	        			<icon>icons/tags/flickr.png</icon>
+	        			<url>http://www.flickr.com</url>
+	        			<format>http://www.flickr.com/photos/tags/{0}</format>
+	        		</link-formatter>
+	        			        	    
+	        	    <!--  ref: m-w, wiki, answsers -->        		
+	        		<link-formatter>	        			
+	        			<name>Wikipedia</name>	        			
+	        			<url>http://en.wikipedia.org</url>
+	        			<icon>icons/reference/wikipedia.png</icon>
+	        			<type>reference</type>
+	        			<enc>_</enc>
+	        			<format>http://en.wikipedia.org/wiki/{0}</format>
+	        		</link-formatter>
+	        		<link-formatter>	        			
+	        			<name>Answers.com</name>	        			
+	        			<url>http://www.answers.com/</url>
+	        			<icon>icons/reference/answers.png</icon>
+	        			<type>reference</type>
+	        			<enc/>
+	        			<format>http://www.answers.com/{0}</format>
+	        		</link-formatter> 
+	        		<link-formatter>	        			
+	        			<name>M-W Dictionary</name>	        			
+	        			<url>http://www.m-w.com/</url>
+	        			<icon>icons/reference/mwdictionary.png</icon>
+	        			<type>reference</type>
+	        			<enc/>
+	        			<format>http://www.m-w.com/cgi-bin/dictionary?va={0}</format>
+	        		</link-formatter>	        		       		        		        		
+	        		        		        		        		
+	        	</link-formatters>
+	        </link-entries>
+        </extension-data>
+    </zoundry-extension>
+        
+</zoundry-plugin>

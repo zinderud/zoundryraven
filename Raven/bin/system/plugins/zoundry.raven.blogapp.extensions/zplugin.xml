@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zoundry-plugin xmlns="http://www.zoundry.com/schemas/2006/03/zplugin.rng" version="1.0" signature="1DJ9EWDFWCE4ED6QUYUJ8U62RK7AIEC8NHDKUCFJ941AT17LU4SAJQP1DBH5I4V0BTP6EJ5ICIHAU175VCFEN3ESKISE1W5B2OV4G63AQ3VA4OH8UR8CHFTENPRLHBKCCVCNPANV0HW9U08XKJMIE3I1D5586R1E91UIXCS488CKXC0WYVWPK3CLB8G25ULSJX77UBJTYY1CLVP46DLXR04MO96Q80F733MJU4HWP8CKDHN5K2KUHG6IUB0VMI1U72NFRBSKEI92JNEX2PSSC45D04L8E73YXB842Q45BG4Q8HIPLJPG9YYBFV937GKSDPGRU0XAOGLG9JH5VHAJCV5W3KYQTIRQHYWMYSWEB1L16PCHSCLXEVHDGG4HZR00UWML26QXD2UEJ" id="zoundry.raven.blogapp.extensions" name="Zoundry Blog App Extensions">
+
+    <dependencies>
+        <depends on="zoundry.raven.appframework.extensions" version="1.0"/>
+    </dependencies>
+    
+    <!-- The UI Perspective Extension Point -->
+    <zoundry-extension point="zoundry.extension">
+        <id>zoundry.extension.zoundry.blogapp.ui.perspective</id>
+        <extension-data>
+            <extension-info>
+                <id>zoundry.blogapp.ui.perspective</id>
+                <schema-location>schemas/zoundry.blogapp.ui.perspective.rng</schema-location>
+                <interface>zoundry.blogapp.ui.perspectives.perspective.IZPerspective</interface>
+            </extension-info>
+        </extension-data>
+    </zoundry-extension>
+
+    <!-- The Media Storage Type Extension Point -->
+    <zoundry-extension point="zoundry.extension">
+        <id>zoundry.extension.zoundry.blogapp.mediastorage.type</id>
+        <extension-data>
+            <extension-info>
+                <id>zoundry.blogapp.mediastorage.type</id>
+                <schema-location>schemas/zoundry.blogapp.mediastorage.type.rng</schema-location>
+                <interface>zoundry.blogapp.services.mediastorage.mediastorageprovider.IZMediaStorageProvider</interface>
+            </extension-info>
+        </extension-data>
+    </zoundry-extension>
+    
+    <!-- The Media Site Extension Point -->
+    <zoundry-extension point="zoundry.extension">
+        <id>zoundry.extension.zoundry.blogapp.mediastorage.site</id>
+        <extension-data>
+            <extension-info>
+                <id>zoundry.blogapp.mediastorage.site</id>
+                <schema-location>schemas/zoundry.blogapp.mediastorage.site.rng</schema-location>
+            </extension-info>
+        </extension-data>
+    </zoundry-extension>
+        
+    <!-- 
+    	The Publisher Type Extension Point 
+    -->
+    <zoundry-extension point="zoundry.extension">
+        <id>zoundry.extension.zoundry.blogapp.pubsystems.publisher.type</id>
+        <extension-data>
+            <extension-info>
+                <id>zoundry.blogapp.pubsystems.publisher.type</id>
+	            <interface>zoundry.blogapp.services.pubsystems.publisher.IZPublisher</interface>
+            </extension-info>
+        </extension-data>
+    </zoundry-extension>
+
+    <!-- 
+    	The Publisher Site Extension Point 
+    -->
+    <zoundry-extension point="zoundry.extension">
+        <id>zoundry.extension.zoundry.blogapp.pubsystems.publisher.site</id>
+        <extension-data>
+            <extension-info>
+                <id>zoundry.blogapp.pubsystems.publisher.site</id>
+            </extension-info>
+        </extension-data>
+    </zoundry-extension>    
+    
+    <!-- 
+    	The Weblog Ping Site Extension Point 
+    -->
+    <zoundry-extension point="zoundry.extension">
+        <id>zoundry.extension.zoundry.blogapp.pubsystems.weblogping.site</id>
+        <extension-data>
+            <extension-info>
+                <id>zoundry.blogapp.pubsystems.weblogping.site</id>
+            </extension-info>
+        </extension-data>
+    </zoundry-extension>
+    
+    <!-- 
+    	The Link Provider Type Extension Point 
+    -->
+    <zoundry-extension point="zoundry.extension">
+        <id>zoundry.extension.zoundry.blogapp.links.provider.type</id>
+        <extension-data>
+            <extension-info>
+				<id>zoundry.blogapp.links.provider.type</id>
+				<interface>zoundry.blogapp.services.links.linkprovider.IZLinkProvider</interface>
+            </extension-info>
+        </extension-data>
+    </zoundry-extension>
+    
+    <!-- 
+    	The SimpleLinkProvider config entry Extension Point 
+    -->
+    <zoundry-extension point="zoundry.extension">
+        <id>zoundry.blogapp.links.provider.type.simplelinkprovider</id>
+        <extension-data>
+            <extension-info>
+                <id>zoundry.blogapp.links.simplelinkprovider.entries</id>
+            </extension-info>
+        </extension-data>
+    </zoundry-extension>    
+    
+</zoundry-plugin>

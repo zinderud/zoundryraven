@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+
+    <start>
+        <element 
+            name="post-details-panel-info" 
+            ns="http://www.zoundry.com/schemas/2006/03/zplugin.rng" 
+            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+
+            <element name="name">
+                <data type="string"/>
+            </element>
+
+        </element>
+    </start>
+
+</grammar>

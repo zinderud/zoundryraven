@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zoundry-plugin xmlns="http://www.zoundry.com/schemas/2006/03/zplugin.rng" version="1.0" signature="5K641VY2ZLZ1EK0Z5K0RGU9REY9X7MUBYT7VDUDSA6T22TDZ20RRW5AUNE0XB9C97P6SXMT8Q1EAXJLHXIMU4GL2X2K9PLJ7HOCZAV3PIB9PCDS49D7MI7GGQ5YM91YAUSJNLBBE8LB34C349J3V5AY3C1KMZJJJYQ6SHZRPCKOK0IO8RO0HLUQFQTQ31K563RZ7Q0V2O6GKQ2203JULNUG08SIAS09BYT6WR5UOPY3KNNIAIN4AC6KEEVMQV4XIGPX5Z2TVR2QJMB2P4R66OAIFE86RS07ZO9RBDJECL1QSQMSPIO49CXX6739X8PZ5HXL7202LWHNCA0DXVA96LKVXH7ZT843UZNO750NZAYSXGFZ7EYUPEF5OHK2KNP7RCRE452R4FA4C" id="test.zoundry.raven.blogapp.pubsystems" name="Test Zoundry Publishing Systems">
+    
+    <!--
+    	===============================================================
+    	WEBLOG PING SITES
+		===============================================================
+	-->
+    <zoundry-extension point="zoundry.blogapp.pubsystems.weblogping.site">
+        <id>test.zoundry.blogapp.pubsystems.publishers.weblogping.site.test_ok</id>
+        <extension-data>
+            <weblog-ping-site>
+            	<name>Zoundry_Test_SuccessResponse</name>
+            	<url>http://devblog.zoundry.com/weblogping/testping_ok.php</url>
+            </weblog-ping-site>
+	    </extension-data>
+	</zoundry-extension>	
+    <zoundry-extension point="zoundry.blogapp.pubsystems.weblogping.site">
+        <id>test.zoundry.blogapp.pubsystems.publishers.weblogping.site.test_error</id>
+        <extension-data>
+            <weblog-ping-site>
+            	<name>Zoundry_Test_ErrorResponse</name>
+            	<url>http://devblog.zoundry.com/weblogping/testping_error.php</url>
+            </weblog-ping-site>
+	    </extension-data>
+	</zoundry-extension>		
+    <zoundry-extension point="zoundry.blogapp.pubsystems.weblogping.site">
+        <id>test.zoundry.blogapp.pubsystems.publishers.weblogping.site.test_nomsg</id>
+        <extension-data>
+            <weblog-ping-site>
+            	<name>Zoundry_Test_NoResponse</name>
+            	<url>http://devblog.zoundry.com/weblogping/testping_nomessage.php</url>
+            </weblog-ping-site>
+	    </extension-data>
+	</zoundry-extension>		
+    <zoundry-extension point="zoundry.blogapp.pubsystems.weblogping.site">
+        <id>test.zoundry.blogapp.pubsystems.publishers.weblogping.site.test_fault</id>
+        <extension-data>
+            <weblog-ping-site>
+            	<name>Zoundry_Test_FaultResponse</name>
+            	<url>http://devblog.zoundry.com/weblogping/testping_fault.php</url>
+            </weblog-ping-site>
+	    </extension-data>
+	</zoundry-extension>	
+    <zoundry-extension point="zoundry.blogapp.pubsystems.weblogping.site">
+        <id>test.zoundry.blogapp.pubsystems.publishers.weblogping.site.test_404</id>
+        <extension-data>
+            <weblog-ping-site>
+            	<name>Zoundry_Test_404Response</name>
+            	<url>http://devblog.zoundry.com/weblogping/testping_fault_404.php</url>
+            </weblog-ping-site>
+	    </extension-data>
+	</zoundry-extension>	
+</zoundry-plugin>

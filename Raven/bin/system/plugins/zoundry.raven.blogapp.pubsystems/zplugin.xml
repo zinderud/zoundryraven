@@ -1,0 +1,801 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zoundry-plugin xmlns="http://www.zoundry.com/schemas/2006/03/zplugin.rng" version="1.0" signature="H0OD3E8ZD2LALGQRCLQI2IUPUGY6ZUDI055TQB701RQTEULZCP5ZHERU7ERX7HMJ571UJTBKALXK4B229KDEV9ZJIKQ388N8QEVNDSDGGJ7GYH66NZUU09UI0T8YTMP49GX8KJZ5WGSD55S9PL7BC50SOBF295CY0O0QZZGEUL2VRFNVJU1ECK8FPEZLTSUE4UNMHI4GHYP42T47NOLUXQV1WDHQEEBKGH96U02M3RWWCFPAYRQ2J6J1XZJ3Z6WR7E5U7MHX8KCJFBW9ODIZ5L12OGWYULNJ4I20LCZ1RZT8Y4AFWGW15WUZN7OWZTVKJ7B4RY9UQ0W7GKPKD172OOGF00YCVIIAV71AFSJ10JNILEN1YSBDMXD5AUBJ97YOJ8KTQ1ESAAAV" id="zoundry.raven.blogapp.pubsystems" name="Zoundry Publishing Systems">
+        
+    <!--
+    	===============================================================
+    	MEDIA STORE EXT POINT IMPLS. IMPLEMENTED BY PUBLISHER
+		===============================================================
+	-->    
+    <!--  The Blog Media Storage Type -->
+    <zoundry-extension point="zoundry.blogapp.mediastorage.type">
+        <id>zoundry.blogapp.mediastorage.type.blog</id>
+        <class>zoundry.blogapp.services.pubsystems.blog.blogmediastorage.ZBlogPublisherMediaStorageProvider</class>
+        <extension-data>
+            <media-storage-type>
+                <icon>icons/types/metaweblog-xmlrpc.gif</icon>
+                <properties>
+                    <property name="account-id"/>
+                    <property name="blog-id"/>
+                    <property name="api"/>
+                </properties>
+                <capabilities>
+                    <capability enabled="false" id="zoundry.raven.capability.mediastorage.supports-delete"/>
+                    <capability enabled="false" id="zoundry.raven.capability.mediastorage.supports-file-list"/>
+					<capability enabled="true"  id="zoundry.raven.capability.mediastorage.supports-anytype-files"/>                    
+                </capabilities>
+            </media-storage-type>
+        </extension-data>
+    </zoundry-extension>
+    
+    <!-- The Blog Media Site -->
+    <zoundry-extension point="zoundry.blogapp.mediastorage.site">
+        <id>zoundry.blogapp.mediastorage.site.blog.metaweblog</id>
+        <class/>
+        <extension-data>
+            <media-site>
+            	<media-storage-type-id>zoundry.blogapp.mediastorage.type.blog</media-storage-type-id>
+                <internal-store>true</internal-store>
+            	<display-name>Metaweblog XMLRPC API</display-name>
+                <properties>
+                	<property name="api">
+                		<default-value>metaweblog</default-value>
+                	</property>
+                </properties>
+            </media-site>
+        </extension-data>
+    </zoundry-extension>    
+	    
+    <!--
+    	===============================================================
+    	WEBLOG PING SITES
+		===============================================================
+	-->
+    <zoundry-extension point="zoundry.blogapp.pubsystems.weblogping.site">
+        <id>zoundry.blogapp.pubsystems.publishers.weblogping.site.technorati</id>
+        <extension-data>
+            <weblog-ping-site>
+            	<name>Technorati</name>
+            	<url>http://rpc.technorati.com/rpc/ping</url>
+            </weblog-ping-site>
+	    </extension-data>
+	</zoundry-extension>	
+    <zoundry-extension point="zoundry.blogapp.pubsystems.weblogping.site">
+        <id>zoundry.blogapp.pubsystems.publishers.weblogping.site.icerocket</id>
+        <extension-data>
+            <weblog-ping-site>
+            	<name>Ice Rocket</name>
+            	<url>http://rpc.icerocket.com:10080</url>
+            </weblog-ping-site>
+	    </extension-data>
+	</zoundry-extension>	
+    <zoundry-extension point="zoundry.blogapp.pubsystems.weblogping.site">
+        <id>zoundry.blogapp.pubsystems.publishers.weblogping.site.weblogs</id>
+        <extension-data>
+            <weblog-ping-site>
+            	<name>Weblogs</name>
+            	<url>http://rpc.weblogs.com/RPC2</url>
+            </weblog-ping-site>
+	    </extension-data>
+	</zoundry-extension>	
+    <zoundry-extension point="zoundry.blogapp.pubsystems.weblogping.site">
+        <id>zoundry.blogapp.pubsystems.publishers.weblogping.site.blo.gs</id>
+        <extension-data>
+            <weblog-ping-site>
+            	<name>Blo.gs</name>
+            	<url>http://ping.blo.gs/</url>
+            </weblog-ping-site>
+	    </extension-data>
+	</zoundry-extension>	
+    <zoundry-extension point="zoundry.blogapp.pubsystems.weblogping.site">
+        <id>zoundry.blogapp.pubsystems.publishers.weblogping.site.pingomatic</id>
+        <extension-data>
+            <weblog-ping-site>
+            	<name>Ping-O-Matic</name>
+            	<url>http://rpc.pingomatic.com</url>
+            </weblog-ping-site>
+	    </extension-data>
+	</zoundry-extension>	
+    <zoundry-extension point="zoundry.blogapp.pubsystems.weblogping.site">
+        <id>zoundry.blogapp.pubsystems.publishers.weblogping.site.yahoo</id>
+        <extension-data>
+            <weblog-ping-site>
+            	<name>My Yahoo</name>
+            	<url>http://api.my.yahoo.com/RPC2</url>
+                <capabilities>
+                	<capability enabled="true" id="zoundry.blogapp.pubsystems.publisher.weblogping.extended.ping"/>
+                </capabilities>            	
+            </weblog-ping-site>
+	    </extension-data>
+	</zoundry-extension>	
+    <zoundry-extension point="zoundry.blogapp.pubsystems.weblogping.site">
+        <id>zoundry.blogapp.pubsystems.publishers.weblogping.site.feedburner</id>
+        <extension-data>
+            <weblog-ping-site>
+            	<name>Feed Burner</name>
+            	<url>http://ping.feedburner.com</url>
+            </weblog-ping-site>
+	    </extension-data>
+	</zoundry-extension>	
+    <zoundry-extension point="zoundry.blogapp.pubsystems.weblogping.site">
+        <id>zoundry.blogapp.pubsystems.publishers.weblogping.site.google.blogsearch</id>
+        <extension-data>
+            <weblog-ping-site>
+            	<name>Google Blog Search</name>
+            	<url>http://blogsearch.google.com/ping/RPC2</url>
+            </weblog-ping-site>
+	    </extension-data>
+	</zoundry-extension>
+    
+    
+    <!--
+    	===============================================================
+    	BLOG PUBLISHER EXTENSION POINT IMPLS
+		===============================================================
+	-->
+
+	<!-- ======== Blogger V1 ======== -->
+	<zoundry-extension point="zoundry.blogapp.pubsystems.publisher.type">
+	   <id>zoundry.blogapp.pubsystems.publisher.type.xmlrpc.blogger.v1</id>
+	   <class>zoundry.blogapp.services.pubsystems.blog.xmlrpc.ZXmlRpcBlogPublisher</class>
+	   <extension-data>
+	      <publisher-type>
+	         <name>Blogger V1</name>
+	         <icon>icons/types/bloggerv1-xmlrpc.gif</icon>
+                <capabilities>
+                    <capability enabled="true" id="zoundry.raven.capability.blogpub.blogserver.draft"/>
+                </capabilities>
+	         <parameters>
+	            <parameter name="zoundry.raven.param.blogpub.blogserver.factory.classname">zoundry.blogpub.xmlrpc.xmlrpcapi.ZXmlRpcServerFactory</parameter>
+	            <parameter name="zoundry.raven.param.blogpub.blogserver.classname">zoundry.blogpub.xmlrpc.xmlrpcserverimpl.ZBloggerV1XmlRpcServer</parameter>
+	         </parameters>
+	         <properties/>
+	      </publisher-type>
+	   </extension-data>
+	</zoundry-extension>
+
+	<!-- ======== Blogger V2 ======== -->
+	<zoundry-extension point="zoundry.blogapp.pubsystems.publisher.type">
+	   <id>zoundry.blogapp.pubsystems.publisher.type.xmlrpc.blogger.v2</id>
+	   <class>zoundry.blogapp.services.pubsystems.blog.xmlrpc.ZXmlRpcBlogPublisher</class>
+	   <extension-data>
+	      <publisher-type>
+	         <name>Blogger V2</name>
+	         <icon>icons/types/bloggerv2-xmlrpc.gif</icon>
+                <capabilities>
+                    <capability enabled="true" id="zoundry.raven.capability.blogpub.blogserver.draft"/>
+                </capabilities>
+	         <parameters>
+	            <parameter name="zoundry.raven.param.blogpub.blogserver.factory.classname">zoundry.blogpub.xmlrpc.xmlrpcapi.ZXmlRpcServerFactory</parameter>
+	            <parameter name="zoundry.raven.param.blogpub.blogserver.classname">zoundry.blogpub.xmlrpc.xmlrpcserverimpl.ZBloggerV2XmlRpcServer</parameter>
+	         </parameters>
+	         <properties/>
+	      </publisher-type>
+	   </extension-data>
+	</zoundry-extension>
+
+	<!-- ======== Metaweblog ======== -->
+	<zoundry-extension point="zoundry.blogapp.pubsystems.publisher.type">
+	   <id>zoundry.blogapp.pubsystems.publisher.type.xmlrpc.metaweblog</id>
+	   <class>zoundry.blogapp.services.pubsystems.blog.xmlrpc.ZXmlRpcBlogPublisher</class>
+	   <extension-data>
+	      <publisher-type>
+	         <name>Metaweblog</name>
+	         <icon>icons/types/metaweblog-xmlrpc.gif</icon>
+                <capabilities>
+                    <capability enabled="true" id="zoundry.raven.capability.blogpub.blogserver.draft"/>
+                    <capability enabled="true" id="zoundry.raven.capability.blogpub.blogserver.mediaupload"/>
+                    <capability enabled="true" id="zoundry.raven.capability.blogpub.blogserver.categories"/>
+                    <capability enabled="true" id="zoundry.raven.capability.blogpub.blogserver.categories.multiselect"/>
+                </capabilities>
+	         <parameters>
+	            <parameter name="zoundry.raven.param.blogpub.blogserver.factory.classname">zoundry.blogpub.xmlrpc.xmlrpcapi.ZXmlRpcServerFactory</parameter>
+	            <parameter name="zoundry.raven.param.blogpub.blogserver.classname">zoundry.blogpub.xmlrpc.xmlrpcserverimpl.ZMetaweblogXmlRpcServer</parameter>
+	         </parameters>
+	         <properties/>
+	      </publisher-type>
+	   </extension-data>
+	</zoundry-extension>
+
+	<!-- ======== WordPress ======== -->
+	<zoundry-extension point="zoundry.blogapp.pubsystems.publisher.type">
+	   <id>zoundry.blogapp.pubsystems.publisher.type.xmlrpc.wordpress</id>
+	   <class>zoundry.blogapp.services.pubsystems.blog.xmlrpc.ZXmlRpcBlogPublisher</class>
+	   <extension-data>
+	      <publisher-type>
+	         <name>WordPress</name>
+	         <icon>icons/types/wordpress.gif</icon>
+                <capabilities>
+                    <capability enabled="true" id="zoundry.raven.capability.blogpub.blogserver.draft"/>
+                    <capability enabled="true" id="zoundry.raven.capability.blogpub.blogserver.mediaupload"/>
+                    <capability enabled="true" id="zoundry.raven.capability.blogpub.blogserver.categories"/>
+                    <capability enabled="true" id="zoundry.raven.capability.blogpub.blogserver.categories.multiselect"/>
+                </capabilities>
+	         <parameters>
+	            <parameter name="zoundry.raven.param.blogpub.blogserver.factory.classname">zoundry.blogpub.xmlrpc.xmlrpcapi.ZXmlRpcServerFactory</parameter>
+	            <parameter name="zoundry.raven.param.blogpub.blogserver.classname">zoundry.blogpub.xmlrpc.xmlrpcserverimpl.ZWordPressXmlRpcServer</parameter>
+				<parameter name="zoundry.raven.param.blogpub.blogserver.removenewlines">true</parameter>	            
+	         </parameters>
+	         <properties/>
+	      </publisher-type>
+	   </extension-data>
+	</zoundry-extension>
+	
+	<!-- ======== WordPress 2.2 or later ======== -->
+	<zoundry-extension point="zoundry.blogapp.pubsystems.publisher.type">
+	   <id>zoundry.blogapp.pubsystems.publisher.type.xmlrpc.wordpress22</id>
+	   <class>zoundry.blogapp.services.pubsystems.blog.xmlrpc.ZXmlRpcBlogPublisher</class>
+	   <extension-data>
+	      <publisher-type>
+	         <name>WordPress</name>
+	         <icon>icons/types/wordpress.gif</icon>
+                <capabilities>
+                    <capability enabled="true" id="zoundry.raven.capability.blogpub.blogserver.draft"/>
+                    <capability enabled="true" id="zoundry.raven.capability.blogpub.blogserver.mediaupload"/>
+                    <capability enabled="true" id="zoundry.raven.capability.blogpub.blogserver.categories"/>
+                    <capability enabled="true" id="zoundry.raven.capability.blogpub.blogserver.categories.multiselect"/>
+                    <capability enabled="true" id="zoundry.raven.capability.blogpub.blogserver.pages"/>
+                    <capability enabled="true" id="zoundry.raven.capability.blogpub.blogserver.tagging"/>
+                </capabilities>
+	         <parameters>
+	            <parameter name="zoundry.raven.param.blogpub.blogserver.factory.classname">zoundry.blogpub.xmlrpc.xmlrpcapi.ZXmlRpcServerFactory</parameter>
+	            <parameter name="zoundry.raven.param.blogpub.blogserver.classname">zoundry.blogpub.xmlrpc.xmlrpcserverimpl.ZWordPress22XmlRpcServer</parameter>
+				<parameter name="zoundry.raven.param.blogpub.blogserver.removenewlines">true</parameter>	            
+	         </parameters>
+	         <properties/>
+	      </publisher-type>
+	   </extension-data>
+	</zoundry-extension>	
+
+	<!-- ======== WindowsLive Spaces ======== -->
+	<zoundry-extension point="zoundry.blogapp.pubsystems.publisher.type">
+	   <id>zoundry.blogapp.pubsystems.publisher.type.xmlrpc.windowslive</id>
+	   <class>zoundry.blogapp.services.pubsystems.blog.xmlrpc.ZXmlRpcBlogPublisher</class>
+	   <extension-data>
+	      <publisher-type>
+	         <name>Windows Live Spaces (MSN)</name>
+	         <icon>icons/types/msnspaces.gif</icon>
+             <capabilities>
+                    <capability enabled="true" id="zoundry.raven.capability.blogpub.blogserver.draft"/>
+                    <capability enabled="false" id="zoundry.raven.capability.blogpub.blogserver.mediaupload"/>
+                    <capability enabled="true" id="zoundry.raven.capability.blogpub.blogserver.categories"/>             
+	            	<capability enabled="true" id="zoundry.raven.capability.blogpub.blogserver.categories.usergenerated"/>
+             </capabilities>
+            
+	         <parameters>
+	            <parameter name="zoundry.raven.param.blogpub.blogserver.factory.classname">zoundry.blogpub.xmlrpc.xmlrpcapi.ZXmlRpcServerFactory</parameter>
+	            <parameter name="zoundry.raven.param.blogpub.blogserver.classname">zoundry.blogpub.xmlrpc.xmlrpcserverimpl.ZLiveSpacesXmlRpcServer</parameter>
+	         </parameters>
+	         <properties/>
+	      </publisher-type>
+	   </extension-data>
+	</zoundry-extension>
+
+	<!-- ======== MovableType ======== -->
+	<zoundry-extension point="zoundry.blogapp.pubsystems.publisher.type">
+	   <id>zoundry.blogapp.pubsystems.publisher.type.xmlrpc.movabletype</id>
+	   <class>zoundry.blogapp.services.pubsystems.blog.xmlrpc.ZXmlRpcBlogPublisher</class>
+	   <extension-data>
+	      <publisher-type>
+	         <name>Moveable Type</name>
+	         <icon>icons/types/mt-xmlrpc.gif</icon>
+                <capabilities>
+                    <capability enabled="true" id="zoundry.raven.capability.blogpub.blogserver.draft"/>
+                    <capability enabled="true" id="zoundry.raven.capability.blogpub.blogserver.mediaupload"/>
+                    <capability enabled="true" id="zoundry.raven.capability.blogpub.blogserver.categories"/>
+                    <capability enabled="true" id="zoundry.raven.capability.blogpub.blogserver.categories.multiselect"/>
+                    <capability enabled="true" id="zoundry.raven.capability.blogpub.blogserver.extendedentry"/>
+                </capabilities>
+	         <parameters>
+	            <parameter name="zoundry.raven.param.blogpub.blogserver.factory.classname">zoundry.blogpub.xmlrpc.xmlrpcapi.ZXmlRpcServerFactory</parameter>
+	            <parameter name="zoundry.raven.param.blogpub.blogserver.classname">zoundry.blogpub.xmlrpc.xmlrpcserverimpl.ZMovableTypeXmlRpcServer</parameter>
+	         </parameters>
+	         <properties/>
+	      </publisher-type>
+	   </extension-data>
+	</zoundry-extension>
+
+	<!-- ======== SixApart MovableType ======== -->
+	<zoundry-extension point="zoundry.blogapp.pubsystems.publisher.type">
+	   <id>zoundry.blogapp.pubsystems.publisher.type.xmlrpc.sixapart.movabletype</id>
+	   <class>zoundry.blogapp.services.pubsystems.blog.xmlrpc.ZXmlRpcBlogPublisher</class>
+	   <extension-data>
+	      <publisher-type>
+	         <name>SixApart Moveable Type</name>
+	         <icon>icons/types/movabletype.gif</icon>
+                <capabilities>
+                    <capability enabled="true" id="zoundry.raven.capability.blogpub.blogserver.draft"/>
+                    <capability enabled="true" id="zoundry.raven.capability.blogpub.blogserver.mediaupload"/>
+                    <capability enabled="true" id="zoundry.raven.capability.blogpub.blogserver.categories"/>
+                    <capability enabled="true" id="zoundry.raven.capability.blogpub.blogserver.categories.multiselect"/>
+                    <capability enabled="true" id="zoundry.raven.capability.blogpub.blogserver.extendedentry"/>
+                </capabilities>
+	         <parameters>
+	            <parameter name="zoundry.raven.param.blogpub.blogserver.factory.classname">zoundry.blogpub.xmlrpc.xmlrpcapi.ZXmlRpcServerFactory</parameter>
+	            <parameter name="zoundry.raven.param.blogpub.blogserver.classname">zoundry.blogpub.xmlrpc.xmlrpcserverimpl.ZSixApartMovableTypeXmlRpcServer</parameter>
+	         </parameters>
+	         <properties/>
+	      </publisher-type>
+	   </extension-data>
+	</zoundry-extension>
+
+	<!-- ======== Live Journal ======== -->
+	<zoundry-extension point="zoundry.blogapp.pubsystems.publisher.type">
+	   <id>zoundry.blogapp.pubsystems.publisher.type.xmlrpc.lj</id>
+	   <class>zoundry.blogapp.services.pubsystems.blog.xmlrpc.ZXmlRpcBlogPublisher</class>
+	   <extension-data>
+	      <publisher-type>
+	         <name>LiveJournal (LJ XML-RPC)</name>
+	         <icon>icons/types/livejournal.gif</icon>
+                <capabilities>
+                    <capability enabled="true" id="zoundry.raven.capability.blogpub.blogserver.draft"/>
+                    <capability enabled="true" id="zoundry.raven.capability.blogpub.blogserver.mediaupload"/>
+                    <capability enabled="true" id="zoundry.raven.capability.blogpub.blogserver.categories"/>
+                    <capability enabled="true" id="zoundry.raven.capability.blogpub.blogserver.tagging"/>
+                </capabilities>
+	         <parameters>
+	            <parameter name="zoundry.raven.param.blogpub.blogserver.factory.classname">zoundry.blogpub.xmlrpc.xmlrpcapi.ZXmlRpcServerFactory</parameter>
+	            <parameter name="zoundry.raven.param.blogpub.blogserver.classname">zoundry.blogpub.xmlrpc.xmlrpcserverimpl.ZLiveJournalXmlRpcServer</parameter>
+	         </parameters>
+	         <properties/>
+	      </publisher-type>
+	   </extension-data>
+	</zoundry-extension>
+
+	<!-- ======== Atom 0.3 ======== -->
+	<zoundry-extension point="zoundry.blogapp.pubsystems.publisher.type">
+	   <id>zoundry.blogapp.pubsystems.publisher.type.atom.atom03</id>
+	   <class>zoundry.blogapp.services.pubsystems.blog.atom.ZAtomBlogPublisher</class>
+	   <extension-data>
+	      <publisher-type>
+	         <name>Atom 0.3</name>
+	         <icon>icons/types/atom.gif</icon>
+                <capabilities>
+                    <capability enabled="true" id="zoundry.raven.capability.blogpub.blogserver.draft"/>
+                    <capability enabled="false" id="zoundry.raven.capability.blogpub.blogserver.mediaupload"/>
+                    <capability enabled="true" id="zoundry.raven.capability.blogpub.blogserver.categories"/>
+                    <capability enabled="true" id="zoundry.raven.capability.blogpub.blogserver.categories.multiselect"/>
+                </capabilities>
+	         <parameters>
+	            <parameter name="zoundry.raven.param.blogpub.blogserver.factory.classname">zoundry.blogpub.atom.atomapi.ZAtomServerFactory</parameter>
+	            <parameter name="zoundry.raven.param.blogpub.blogserver.classname">zoundry.blogpub.atom.atom03impl.ZAtom03Server</parameter>
+	         </parameters>
+	         <properties/>
+	      </publisher-type>
+	   </extension-data>
+	</zoundry-extension>
+
+	<!-- ======== Atom 1.0 ======== -->
+	<zoundry-extension point="zoundry.blogapp.pubsystems.publisher.type">
+	   <id>zoundry.blogapp.pubsystems.publisher.type.atom.atom10</id>
+	   <class>zoundry.blogapp.services.pubsystems.blog.atom.ZAtomBlogPublisher</class>
+	   <extension-data>
+	      <publisher-type>
+	         <name>Atom 1.0</name>
+	         <icon>icons/types/atom.gif</icon>
+                <capabilities>
+                    <capability enabled="true" id="zoundry.raven.capability.blogpub.blogserver.draft"/>
+                    <capability enabled="false" id="zoundry.raven.capability.blogpub.blogserver.mediaupload"/>
+                    <capability enabled="true" id="zoundry.raven.capability.blogpub.blogserver.categories"/>
+                    <capability enabled="true" id="zoundry.raven.capability.blogpub.blogserver.categories.multiselect"/>
+                </capabilities>
+
+	         <parameters>
+	            <parameter name="zoundry.raven.param.blogpub.blogserver.factory.classname">zoundry.blogpub.atom.atomapi.ZAtomServerFactory</parameter>
+	            <parameter name="zoundry.raven.param.blogpub.blogserver.classname">zoundry.blogpub.atom.atom10impl.ZAtom10Server</parameter>
+	         </parameters>
+	         <properties/>
+	      </publisher-type>
+	   </extension-data>
+	</zoundry-extension>
+	
+	<!-- ======== Blogger (Atom 1.0) ======== -->
+	<zoundry-extension point="zoundry.blogapp.pubsystems.publisher.type">
+	   <id>zoundry.blogapp.pubsystems.publisher.type.atom.atom10.blogger</id>
+	   <class>zoundry.blogapp.services.pubsystems.blog.atom.ZAtomBlogPublisher</class>
+	   <extension-data>
+	      <publisher-type>
+	         <name>Blogger (GData/Atom 1.0)</name>
+	         <icon>icons/types/blogger.gif</icon>
+              <capabilities>
+                <capability enabled="true" id="zoundry.raven.capability.blogpub.blogserver.draft"/>
+                <capability enabled="false" id="zoundry.raven.capability.blogpub.blogserver.mediaupload"/>
+                <capability enabled="true" id="zoundry.raven.capability.blogpub.blogserver.categories"/>
+                <capability enabled="true" id="zoundry.raven.capability.blogpub.blogserver.categories.multiselect"/>
+                <capability enabled="true" id="zoundry.raven.capability.blogpub.blogserver.categories.usergenerated"/>
+                <capability enabled="true" id="zoundry.raven.capability.blogpub.blogserver.tagging"/>
+              </capabilities>
+	         <parameters>
+	            <parameter name="zoundry.raven.param.blogpub.blogserver.factory.classname">zoundry.blogpub.atom.atomapi.ZAtomServerFactory</parameter>
+	            <parameter name="zoundry.raven.param.blogpub.blogserver.classname">zoundry.blogpub.atom.atom10impl.ZBloggerAtom10Server</parameter>
+	            <parameter name="zoundry.raven.param.blogpub.blogserver.api.url">http://www.blogger.com/feeds/default/blogs</parameter>
+	         </parameters>	         
+	         <properties/>
+	      </publisher-type>
+	   </extension-data>
+	</zoundry-extension>	
+
+     <!--
+     	=======================================================
+     	 Publisher Sites
+        =======================================================
+      -->
+
+    <zoundry-extension point="zoundry.blogapp.pubsystems.publisher.site">
+        <id>zoundry.blogapp.pubsystems.publishers.site.blogger.atom10</id>
+        <class/>
+        <extension-data>
+            <publisher-site>
+                <publisher-type-id>zoundry.blogapp.pubsystems.publisher.type.atom.atom10.blogger</publisher-type-id>
+            	<name>Blogger.com</name>
+            	<icon>icons/sites/blogger.gif</icon>
+            </publisher-site>
+	    </extension-data>
+	</zoundry-extension>
+	
+    <zoundry-extension point="zoundry.blogapp.pubsystems.publisher.site">
+        <id>zoundry.blogapp.pubsystems.publishers.site.blogger.atom03</id>
+        <class/>
+        <extension-data>
+            <publisher-site>
+                <publisher-type-id>zoundry.blogapp.pubsystems.publisher.type.atom.atom03</publisher-type-id>
+            	<name>Blogger.com (legacy Atom 0.3 API)</name>
+            	<icon>icons/sites/blogger-atom03.gif</icon>
+	            <parameters>
+	             	<parameter name="zoundry.raven.param.blogpub.blogserver.api.url">https://www.blogger.com:443/atom</parameter>
+	             </parameters>	             
+                <properties/>
+            </publisher-site>
+	    </extension-data>
+	</zoundry-extension>
+
+    <zoundry-extension point="zoundry.blogapp.pubsystems.publisher.site">
+        <id>zoundry.blogapp.pubsystems.publishers.site.typepad.xmlrpc</id>
+        <class/>
+        <extension-data>
+            <publisher-site>
+                <publisher-type-id>zoundry.blogapp.pubsystems.publisher.type.xmlrpc.sixapart.movabletype</publisher-type-id>
+            	<name>Typepad (xml-rpc)</name>
+            	<icon>icons/sites/typepad.gif</icon>
+            </publisher-site>
+	    </extension-data>
+	</zoundry-extension>
+
+    <zoundry-extension point="zoundry.blogapp.pubsystems.publisher.site">
+        <id>zoundry.blogapp.pubsystems.publishers.site.typepad.atom03</id>
+        <class/>
+        <extension-data>
+            <publisher-site>
+                <publisher-type-id>zoundry.blogapp.pubsystems.publisher.type.atom.atom03</publisher-type-id>
+            	<name>Typepad (Atom 0.3)</name>
+            	<icon>icons/sites/typepad.gif</icon>
+	            <parameters>
+	             	<parameter name="zoundry.raven.param.blogpub.blogserver.api.url">http://www.typepad.com/t/atom/weblog</parameter>
+	             </parameters>	             
+                <properties/>
+            </publisher-site>
+	    </extension-data>
+	</zoundry-extension>
+
+    <zoundry-extension point="zoundry.blogapp.pubsystems.publisher.site">
+        <id>zoundry.blogapp.pubsystems.publishers.site.windowslivespaces</id>
+        <class/>
+        <extension-data>
+            <publisher-site>
+                <publisher-type-id>zoundry.blogapp.pubsystems.publisher.type.xmlrpc.windowslive</publisher-type-id>
+            	<name>Windows Live Spaces</name>
+	            <parameters>
+	             	<parameter name="zoundry.raven.param.blogpub.blogserver.api.url">https://storage.msn.com/storageservice/MetaWeblog.rpc</parameter>
+	             	<parameter name="zoundry.raven.param.blogpub.blogserver.maxposts">20</parameter>
+	             </parameters>	             
+                <properties/>
+            </publisher-site>
+	    </extension-data>
+	</zoundry-extension>
+
+	<zoundry-extension point="zoundry.blogapp.pubsystems.publisher.site">
+	    <id>zoundry.blogapp.pubsystems.publishers.site.wordpress.com</id>
+	    <class/>
+	    <extension-data>
+	        <publisher-site>
+	            <publisher-type-id>zoundry.blogapp.pubsystems.publisher.type.xmlrpc.wordpress22</publisher-type-id>
+	        	<name>WordPress.com (hosted)</name>
+	        	<icon>icons/sites/wpdotcom.gif</icon>
+	        </publisher-site>
+	    </extension-data>
+	</zoundry-extension>
+
+	<zoundry-extension point="zoundry.blogapp.pubsystems.publisher.site">
+	    <id>zoundry.blogapp.pubsystems.publishers.site.wordpress</id>
+	    <class/>
+	    <extension-data>
+	        <publisher-site>
+	            <publisher-type-id>zoundry.blogapp.pubsystems.publisher.type.xmlrpc.wordpress</publisher-type-id>
+	        	<name>WordPress (ver. 2.1 or ealier)</name>
+	        </publisher-site>
+	    </extension-data>
+	</zoundry-extension>
+	
+	<zoundry-extension point="zoundry.blogapp.pubsystems.publisher.site">
+	    <id>zoundry.blogapp.pubsystems.publishers.site.wordpress22</id>
+	    <class/>
+	    <extension-data>
+	        <publisher-site>
+	            <publisher-type-id>zoundry.blogapp.pubsystems.publisher.type.xmlrpc.wordpress22</publisher-type-id>
+	        	<name>WordPress</name>
+	        </publisher-site>
+	    </extension-data>
+	</zoundry-extension>	
+
+	<zoundry-extension point="zoundry.blogapp.pubsystems.publisher.site">
+	    <id>zoundry.blogapp.pubsystems.publishers.site.livejournal.com</id>
+	    <class/>
+	    <extension-data>
+	        <publisher-site>
+	            <publisher-type-id>zoundry.blogapp.pubsystems.publisher.type.xmlrpc.lj</publisher-type-id>
+	        	<name>LiveJournal.com</name>
+	            <parameters>
+	             	<parameter name="zoundry.raven.param.blogpub.blogserver.api.url">http://www.livejournal.com/interface/xmlrpc</parameter>
+	             </parameters>
+	            <properties/>
+	        </publisher-site>
+	    </extension-data>
+	</zoundry-extension>
+
+	<zoundry-extension point="zoundry.blogapp.pubsystems.publisher.site">
+	    <id>zoundry.blogapp.pubsystems.publishers.site.movabletype.sixapart</id>
+	    <class/>
+	    <extension-data>
+	        <publisher-site>
+	            <publisher-type-id>zoundry.blogapp.pubsystems.publisher.type.xmlrpc.sixapart.movabletype</publisher-type-id>
+	        	<name>Six Apart MovableType</name>
+	        	<icon>icons/sites/movabletype.gif</icon>
+	        </publisher-site>
+	    </extension-data>
+	</zoundry-extension>
+
+	<zoundry-extension point="zoundry.blogapp.pubsystems.publisher.site">
+	    <id>zoundry.blogapp.pubsystems.publishers.site.blogharbor</id>
+	    <class/>
+	    <extension-data>
+	        <publisher-site>
+	            <publisher-type-id>zoundry.blogapp.pubsystems.publisher.type.xmlrpc.metaweblog</publisher-type-id>
+	        	<name>Blog Harbor</name>
+	        	<icon>icons/sites/blogharbor.gif</icon>
+	            <parameters>
+	             	<parameter name="zoundry.raven.param.blogpub.blogserver.api.url">https://www.blogware.com/xmlrpc.cgi</parameter>
+	             </parameters>
+	            <properties/>
+	        </publisher-site>
+	    </extension-data>
+	</zoundry-extension>
+
+	<zoundry-extension point="zoundry.blogapp.pubsystems.publisher.site">
+	    <id>zoundry.blogapp.pubsystems.publishers.site.blogware</id>
+	    <class/>
+	    <extension-data>
+	        <publisher-site>
+	            <publisher-type-id>zoundry.blogapp.pubsystems.publisher.type.xmlrpc.metaweblog</publisher-type-id>
+	        	<name>Blogware</name>
+	            <parameters>
+	             	<parameter name="zoundry.raven.param.blogpub.blogserver.api.url">https://www.blogware.com/xmlrpc.cgi</parameter>
+	             </parameters>
+	            <properties/>
+	        </publisher-site>
+	    </extension-data>
+	</zoundry-extension>
+
+	<zoundry-extension point="zoundry.blogapp.pubsystems.publisher.site">
+	    <id>zoundry.blogapp.pubsystems.publishers.site.lifetype</id>
+	    <class/>
+	    <extension-data>
+	        <publisher-site>
+	            <publisher-type-id>zoundry.blogapp.pubsystems.publisher.type.xmlrpc.metaweblog</publisher-type-id>
+	        	<name>LifeType</name>
+	        	<icon>icons/sites/lifetype.gif</icon>
+	        </publisher-site>
+	    </extension-data>
+	</zoundry-extension>
+
+	<zoundry-extension point="zoundry.blogapp.pubsystems.publisher.site">
+	    <id>zoundry.blogapp.pubsystems.publishers.site.nucleus</id>
+	    <class/>
+	    <extension-data>
+	        <publisher-site>
+	            <publisher-type-id>zoundry.blogapp.pubsystems.publisher.type.xmlrpc.movabletype</publisher-type-id>
+	        	<name>Nucleus</name>
+	        	<icon>icons/sites/nucleus.gif</icon>
+	            <parameters>
+	             	<parameter name="zoundry.raven.param.blogpub.blogserver.maxposts">20</parameter>
+	             </parameters>
+	            <properties/>
+	        </publisher-site>
+	    </extension-data>
+	</zoundry-extension>
+
+	<zoundry-extension point="zoundry.blogapp.pubsystems.publisher.site">
+	    <id>zoundry.blogapp.pubsystems.publishers.site.drupal</id>
+	    <class/>
+	    <extension-data>
+	        <publisher-site>
+	            <publisher-type-id>zoundry.blogapp.pubsystems.publisher.type.xmlrpc.movabletype</publisher-type-id>
+	        	<name>Drupal</name>
+	        	<icon>icons/sites/drupal.gif</icon>
+	        </publisher-site>
+	    </extension-data>
+	</zoundry-extension>
+
+	<zoundry-extension point="zoundry.blogapp.pubsystems.publisher.site">
+	    <id>zoundry.blogapp.pubsystems.publishers.site.communityserver</id>
+	    <class/>
+	    <extension-data>
+	        <publisher-site>
+	            <publisher-type-id>zoundry.blogapp.pubsystems.publisher.type.xmlrpc.metaweblog</publisher-type-id>
+	        	<name>Community Server</name>
+	        	<icon>icons/sites/communityserver.gif</icon>
+	            <parameters>
+	            	<!--
+	             	<parameter name="zoundry.raven.param.blogpub.blogserver.dateformat.in"></parameter>
+	             	<parameter name="zoundry.raven.param.blogpub.blogserver.dateformat.out"></parameter>
+	             	-->
+	             </parameters>
+	            <properties/>
+	        </publisher-site>
+	    </extension-data>
+	</zoundry-extension>
+
+	<zoundry-extension point="zoundry.blogapp.pubsystems.publisher.site">
+	    <id>zoundry.blogapp.pubsystems.publishers.site.roller</id>
+	    <class/>
+	    <extension-data>
+	        <publisher-site>
+	            <publisher-type-id>zoundry.blogapp.pubsystems.publisher.type.xmlrpc.metaweblog</publisher-type-id>
+	        	<name>Roller</name>
+	        	<icon>icons/sites/roller.gif</icon>
+	        </publisher-site>
+	    </extension-data>
+	</zoundry-extension>
+
+	<zoundry-extension point="zoundry.blogapp.pubsystems.publisher.site">
+	    <id>zoundry.blogapp.pubsystems.publishers.site.squarespace</id>
+	    <class/>
+	    <extension-data>
+	        <publisher-site>
+	            <publisher-type-id>zoundry.blogapp.pubsystems.publisher.type.xmlrpc.metaweblog</publisher-type-id>
+	        	<name>Squarespace</name>
+	        	<icon>icons/sites/squarespace.gif</icon>
+	            <parameters>
+	             	<parameter name="zoundry.raven.param.blogpub.blogserver.api.url">http://www.squarespace.com/do/process/external/PostInterceptor</parameter>
+	             </parameters>	        	
+	        </publisher-site>
+	    </extension-data>
+	</zoundry-extension>
+
+	<zoundry-extension point="zoundry.blogapp.pubsystems.publisher.site">
+	    <id>zoundry.blogapp.pubsystems.publishers.site.dasblog</id>
+	    <class/>
+	    <extension-data>
+	        <publisher-site>
+	            <publisher-type-id>zoundry.blogapp.pubsystems.publisher.type.xmlrpc.metaweblog</publisher-type-id>
+	        	<name>DasBlog</name>
+	        	<icon>icons/sites/dasblog.gif</icon>
+	        </publisher-site>
+	    </extension-data>
+	</zoundry-extension>
+
+	<zoundry-extension point="zoundry.blogapp.pubsystems.publisher.site">
+	    <id>zoundry.blogapp.pubsystems.publishers.site.textpattern</id>
+	    <class/>
+	    <extension-data>
+	        <publisher-site>
+	            <publisher-type-id>zoundry.blogapp.pubsystems.publisher.type.xmlrpc.movabletype</publisher-type-id>
+	        	<name>TextPattern</name>
+	        	<icon>icons/sites/textpattern.gif</icon>
+	            <parameters>
+	             	<parameter name="zoundry.raven.param.blogpub.blogserver.dateformat.out">%Y%m%dT%H:%M:%S</parameter>
+	             </parameters>	             
+                <properties/>	        	
+	        </publisher-site>
+	    </extension-data>
+	</zoundry-extension>
+
+	<zoundry-extension point="zoundry.blogapp.pubsystems.publisher.site">
+	    <id>zoundry.blogapp.pubsystems.publishers.site.xoops</id>
+	    <class/>
+	    <extension-data>
+	        <publisher-site>
+	            <publisher-type-id>zoundry.blogapp.pubsystems.publisher.type.xmlrpc.metaweblog</publisher-type-id>
+	        	<name>Xoops</name>
+	        	<icon>icons/sites/xoops.gif</icon>
+	        </publisher-site>
+	    </extension-data>
+	</zoundry-extension>
+
+	<zoundry-extension point="zoundry.blogapp.pubsystems.publisher.site">
+	    <id>zoundry.blogapp.pubsystems.publishers.site.xaraya</id>
+	    <class/>
+	    <extension-data>
+	        <publisher-site>
+	            <publisher-type-id>zoundry.blogapp.pubsystems.publisher.type.xmlrpc.metaweblog</publisher-type-id>
+	        	<name>Xaraya</name>
+	        	<icon>icons/sites/xaraya.gif</icon>
+	        </publisher-site>
+	    </extension-data>
+	</zoundry-extension>
+
+	<zoundry-extension point="zoundry.blogapp.pubsystems.publisher.site">
+	    <id>zoundry.blogapp.pubsystems.publishers.site.atom10</id>
+	    <class/>
+	    <extension-data>
+	        <publisher-site>
+	            <publisher-type-id>zoundry.blogapp.pubsystems.publisher.type.atom.atom10</publisher-type-id>
+	        	<name>Custom Atom 1.0</name>
+	        </publisher-site>
+	    </extension-data>
+	</zoundry-extension>
+
+	<zoundry-extension point="zoundry.blogapp.pubsystems.publisher.site">
+	    <id>zoundry.blogapp.pubsystems.publishers.site.atom03</id>
+	    <class/>
+	    <extension-data>
+	        <publisher-site>
+	            <publisher-type-id>zoundry.blogapp.pubsystems.publisher.type.atom.atom03</publisher-type-id>
+	        	<name>Custom Atom 0.3</name>
+	        </publisher-site>
+	    </extension-data>
+	</zoundry-extension>
+
+	<zoundry-extension point="zoundry.blogapp.pubsystems.publisher.site">
+	    <id>zoundry.blogapp.pubsystems.publishers.site.movabletype</id>
+	    <class/>
+	    <extension-data>
+	        <publisher-site>
+	            <publisher-type-id>zoundry.blogapp.pubsystems.publisher.type.xmlrpc.movabletype</publisher-type-id>
+	        	<name>Custom Movable Type</name>
+	        </publisher-site>
+	    </extension-data>
+	</zoundry-extension>
+
+	<zoundry-extension point="zoundry.blogapp.pubsystems.publisher.site">
+	    <id>zoundry.blogapp.pubsystems.publishers.site.metaweblog</id>
+	    <class/>
+	    <extension-data>
+	        <publisher-site>
+	            <publisher-type-id>zoundry.blogapp.pubsystems.publisher.type.xmlrpc.metaweblog</publisher-type-id>
+	        	<name>Custom Metaweblog</name>
+	        </publisher-site>
+	    </extension-data>
+	</zoundry-extension>
+
+	<zoundry-extension point="zoundry.blogapp.pubsystems.publisher.site">
+	    <id>zoundry.blogapp.pubsystems.publishers.site.livejournal</id>
+	    <class/>
+	    <extension-data>
+	        <publisher-site>
+	            <publisher-type-id>zoundry.blogapp.pubsystems.publisher.type.xmlrpc.lj</publisher-type-id>
+	        	<name>Custom Live Journal (LJ xml-rpc) API</name>
+	        </publisher-site>
+	    </extension-data>
+	</zoundry-extension>
+
+	<zoundry-extension point="zoundry.blogapp.pubsystems.publisher.site">
+	    <id>zoundry.blogapp.pubsystems.publishers.site.bloggerv1</id>
+	    <class/>
+	    <extension-data>
+	        <publisher-site>
+	            <publisher-type-id>zoundry.blogapp.pubsystems.publisher.type.xmlrpc.blogger.v1</publisher-type-id>
+	        	<name>Custom Blogger V1</name>
+	        </publisher-site>
+	    </extension-data>
+	</zoundry-extension>
+
+	<zoundry-extension point="zoundry.blogapp.pubsystems.publisher.site">
+	    <id>zoundry.blogapp.pubsystems.publishers.site.bloggerv2</id>
+	    <class/>
+	    <extension-data>
+	        <publisher-site>
+	            <publisher-type-id>zoundry.blogapp.pubsystems.publisher.type.xmlrpc.blogger.v2</publisher-type-id>
+	        	<name>Custom Blogger V2</name>
+	        </publisher-site>
+	    </extension-data>
+	</zoundry-extension>
+</zoundry-plugin>

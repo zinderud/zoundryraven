@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+
+    <start>
+        <element 
+            name="menu-item" 
+            ns="http://www.zoundry.com/schemas/2006/03/zplugin.rng" 
+            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+
+            <element name="group">
+                <data type="string"/>
+            </element>
+            <element name="name">
+                <data type="string"/>
+            </element>
+            <element name="gravity">
+                <data type="int"/>
+            </element>
+            <optional>
+                <element name="description">
+                    <data type="string"/>
+                </element>
+            </optional>
+            <optional>
+                <element name="type">
+                    <choice>
+                        <value>standard</value>
+                        <value>check</value>
+                        <value>separator</value>
+                    </choice>
+                </element>
+            </optional>
+            <optional>
+                <element name="bold">
+                    <data type="boolean" />
+                </element>
+            </optional>
+            <optional>
+                <element name="icon">
+                    <data type="string" />
+                </element>
+            </optional>
+            <optional>
+                <element name="parameters">
+	                <zeroOrMore>
+		                <element name="parameter">
+			                <attribute name="name"><data type="string"/></attribute>
+		                    <data type="string"/>
+		                </element>
+	                </zeroOrMore>		                
+                </element>
+            </optional>
+        </element>
+    </start>
+
+</grammar>

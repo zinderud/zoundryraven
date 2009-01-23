@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+
+    <start>
+        <element 
+            name="media-site" 
+            ns="http://www.zoundry.com/schemas/2006/03/zplugin.rng" 
+            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+
+            <element name="media-storage-type-id"><text /></element>
+            <optional>
+                <element name="internal-store"><text /></element>
+            </optional>            
+            <element name="display-name"><text /></element>
+            <optional>
+                <element name="icon"><text /></element>
+            </optional>
+            <optional>
+	            <element name="properties">
+	            	<oneOrMore>
+	            		<element name="property">
+	            			<attribute name="name"><data type="string"/></attribute>
+	            			<interleave>
+					            <optional>
+		            				<element name="type"><text /></element>
+		            			</optional>
+					            <optional>
+			            			<element name="display-name"><text /></element>
+		            			</optional>
+					            <optional>
+			            			<element name="tooltip"><text /></element>
+		            			</optional>
+					            <optional>
+		    	        			<element name="validation"><text /></element>
+		            			</optional>
+					            <optional>
+		        	    			<element name="error-message"><text /></element>
+		            			</optional>
+					            <optional>
+		            				<element name="default-value"><text /></element>
+		            			</optional>
+					            <optional>
+		            				<element name="hidden"><text /></element>
+		            			</optional>
+		            		</interleave>
+	            		</element>
+	            	</oneOrMore>
+	            </element>
+	        </optional>
+	        <optional>
+	            <element name="capabilities">
+	            	<oneOrMore>
+	            		<element name="capability">
+	            			<attribute name="id"><data type="string"/></attribute>
+	            			<optional>
+		            			<attribute name="enabled"><data type="string"/></attribute>
+		            		</optional>
+	            		</element>
+	            	</oneOrMore>
+	            </element>
+	        </optional>
+        </element>
+    </start>
+
+</grammar>
