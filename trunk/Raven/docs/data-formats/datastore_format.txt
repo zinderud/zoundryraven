@@ -1,0 +1,41 @@
+This is a description of the format of a single document in the datastore.
+
+<entry entry-id="xs:guid">
+   <attributes>?
+      <attribute name="xs:ncname" namespace="xs:anyURI"?>xs:string</attribute>*
+   </attributes>
+   <blogs>?
+      <blog account-id="z:acctid" blog-id="z:blogid">*
+         <publish-info>?
+            <attributes>?
+               <attribute name="xs:ncname" namespace="xs:anyURI"?>xs:string</attribute>*
+            </attributes>
+            <trackbacks>?
+               <trackback>*
+                  <attributes>?
+                     <attribute name="xs:ncname" namespace="xs:anyURI"?>xs:string</attribute>*
+                  </attributes>
+               </trackback>
+            </trackbacks>
+         </publish-info>
+         <categories>?
+            <category>*
+               <attributes>?
+                  <attribute name="xs:ncname" namespace="xs:anyURI"?>xs:string</attribute>*
+               </attributes>
+            </category>
+         </categories>
+      </blog>
+   </blogs>
+   <tagwordset>?
+      <tagwords url="xs:anyURI">z:csvstring</tagwords>*
+   </tagwordset>
+   <trackbacks>?
+      <trackback>*
+         <attributes>?
+            <attribute name="xs:ncname" namespace="xs:anyURI"?>xs:string</attribute>*
+         </attributes>
+      </trackback>
+   </trackbacks>
+   <content mode="xs:string" type="xs:string">xs:any</content>
+</entry>

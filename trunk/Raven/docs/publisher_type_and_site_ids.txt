@@ -1,0 +1,217 @@
+Publisher TypeDefs
+=======================
+
+1. blogger v1
+   zoundry.blogapp.pubsystems.publisher.type.xmlrpc.blogger.v1
+
+2. blogger v2
+   zoundry.blogapp.pubsystems.publisher.type.xmlrpc.blogger.v2
+
+3. metaweblog
+   zoundry.blogapp.pubsystems.publisher.type.xmlrpc.metaweblog
+   categories: multi
+   imageupload
+   drafts
+
+4. wordpress
+   zoundry.blogapp.pubsystems.publisher.type.xmlrpc.wordpress
+   categories: multi
+   imageupload
+    drafts
+   extended entry
+   mt-excerpt/summary
+
+5. windowslive
+   zoundry.blogapp.pubsystems.publisher.type.xmlrpc.windowslive
+   categories: single, editable
+   
+6. movabletype
+   zoundry.blogapp.pubsystems.publisher.type.xmlrpc.movabletype
+   categories: multi
+   imageupload
+   draft
+   extended entry
+   mt-excerpt/summary
+
+
+7. sixapart_mt
+   zoundry.blogapp.pubsystems.publisher.type.xmlrpc.sixapart.movabletype
+   categories: multi
+   imageupload
+   extended entry
+   mt-excerpt/summary
+
+
+8. livejournal TBD
+   zoundry.blogapp.pubsystems.publisher.type.xmlrpc.lj
+   categories: single
+   imageupload
+   drafts
+
+9. atom_03 TBD
+   zoundry.blogapp.pubsystems.publisher.type.atom.atom03
+   categories: multi
+
+10. atom_10 TBD
+   zoundry.blogapp.pubsystems.publisher.type.atom.atom10
+   categories: multi
+
+11. Google_atom_10  TBD
+   zoundry.blogapp.pubsystems.publisher.type.atom.atom10.gdata
+   override auth-type=googlelogin
+   categories: multi, editable
+   drafts
+
+12. Google_atom_03  TBD
+   zoundry.blogapp.pubsystems.publisher.type.atom.atom03.blogger
+   drafts
+
+
+Publisher Site Defs
+===================
+
+1a. Blogger.com (Beta)
+   zoundry.blogapp.pubsystems.publishers.site.blogger.atom10
+   pub = google_atom10
+   legacy api=Atom10, acc=Blogger.com
+
+
+1b. Blogger.com
+   zoundry.blogapp.pubsystems.publishers.site.blogger.atom03
+   pub = google_atom03
+   legacy api=Atom, acc=Blogger.com
+
+2. TYpepad (XmlRpC)
+   zoundry.blogapp.pubsystems.publishers.site.typepad.xmlrpc
+   pub = sixapart_mt
+   legacy api=xmlrpc.movabletype , acc=Six Apart Movable Type, resid=typepad
+
+3. Typepad (Atom)
+   zoundry.blogapp.pubsystems.publishers.site.typepad.atom03
+   pub = atom_03
+   legacy api=atom, acc=TypePad
+
+4. MSN Spaces (Windows Live)
+   zoundry.blogapp.pubsystems.publishers.site.windowslivespaces
+   pub = windowslive
+   legacy api=xmlrpc.msnspaces, acc=MSNSpaces, res=msnspaces
+   override maxpost = 20
+
+5. WordPress.com (Hosted)
+   zoundry.blogapp.pubsystems.publishers.site.wordpress.com
+   pub = wordpress
+   legacy api=xmlrpc.wordpress, acc=Wordpress, res=wpdotcom
+  
+6. WordPress
+   zoundry.blogapp.pubsystems.publishers.site.wordpress
+   pub = wordpress
+   legacy api=xmlrpc.wordpress acc=Wordpress, res=wordpress
+
+7. Live Journal 
+   zoundry.blogapp.pubsystems.publishers.site.livejournal.com
+   pub = livejournal
+   legacy api=xmlrpc.livejournal  acc=LiveJournal, HOST=www.livejournal.com (default to custom live-journal)
+
+
+9. Six Apart MovableType
+   zoundry.blogapp.pubsystems.publishers.site.movabletype.sixapart
+   pub = movabletype_sa
+   legacy api=xmlrpc.movabletype   acc=Six Apart Movable Type, res=?, HOST=match(/mt-xmlrpc.cgi)
+
+10. Blog Harbor 
+    zoundry.blogapp.pubsystems.publishers.site.blogharbor
+    pub = metaweblog
+    legacy  api=  acc=MetaWeblog, res=blogharbor (check this before blogware, below)
+
+11.Blog Ware
+   zoundry.blogapp.pubsystems.publishers.site.blogware
+   pub = metaweblog
+   legacy  api= acc=MetaWeblog, res=NA, URL=https://www.blogware.com/xmlrpc.cgi
+
+12. Lifetype
+    zoundry.blogapp.pubsystems.publishers.site.lifetype
+    pub = metaweblog
+    legacy api=xmlrpc.metaweblog  acc=MetaWeblog, res=lifetype
+
+13. Nucleus
+    zoundry.blogapp.pubsystems.publishers.site.nucleus
+    pub = movabletype
+    legacy api=xmlrpc.mt  acc=Movable Type, res=nucleus
+   override maxpost = 20
+
+14. Drupal
+    zoundry.blogapp.pubsystems.publishers.site.drupal
+    pub = movabletype
+    legacy api=xmlrpc.mt  acc=Movable Type, res=drupal
+
+15. Community Server
+    zoundry.blogapp.pubsystems.publishers.site.communityserver
+    pub = metaweblog
+    legacy  api= , acc=MetaWeblog, res=communityserver
+    override dateformat
+
+16. Roller
+    zoundry.blogapp.pubsystems.publishers.site.roller
+    pub = metaweblog
+    legacy api=xmlrpc.metaweblog  acc=MetaWeblog, res=roller
+
+17. SquareSpace
+    zoundry.blogapp.pubsystems.publishers.site.squarespace
+    pub = metaweblog
+    legacy api=xmlrpc.metaweblog  acc=MetaWeblog, res=squarespace
+    
+18. DasBlog
+    zoundry.blogapp.pubsystems.publishers.site.dasblog
+    pub = metaweblog
+    legacy api=xmlrpc.metaweblog  acc=MetaWeblog, res=dasblog 
+
+19. Text Pattern
+    zoundry.blogapp.pubsystems.publishers.site.textpattern
+    pub = movabletype
+    legacy api=xmlrpc.mt  acc=Movable Type, res=textpattern
+
+20. Xoops
+    zoundry.blogapp.pubsystems.publishers.site.xoops
+    pub = metaweblog
+    legacy api=xmlrpc.metaweblog  acc=MetaWeblog, res=xoops
+
+21. Xaraya
+    zoundry.blogapp.pubsystems.publishers.site.xaraya
+    pub = metaweblog
+    legacy api=xmlrpc.metaweblog  acc=MetaWeblog, res=xaraya
+
+
+22. Custom Atom 1.0
+    zoundry.blogapp.pubsystems.publishers.site.atom10
+    pub = atom10
+    legacy api=Atom10, acc=Custom Atom 1.0
+
+23. Custom Atom 0.3
+    zoundry.blogapp.pubsystems.publishers.site.atom03
+    pub =  atom03
+    legacy api=Atom, acc=Custom Atom
+
+24. Custom Movable Type
+    zoundry.blogapp.pubsystems.publishers.site.movabletype
+    pub = movbletype
+ 
+25. Custom Metaweblog
+    zoundry.blogapp.pubsystems.publishers.site.metaweblog
+    pub = metaweblog
+    legacy api=xmlrpc.metaweblog  acc=MetaWeblog, res=
+
+
+26 Live Journal (Custom)
+   zoundry.blogapp.pubsystems.publishers.site.livejournal
+   pub = livejournal
+   legacy api=xmlrpc.livejournal  acc=LiveJournal
+
+27. Custom Blogger V1
+    zoundry.blogapp.pubsystems.publishers.site.bloggerv1
+    pub = blogger v1
+    legacy  api=xmlrpc.bloggerv1 acc=Blogger v1 API
+
+28. Custom Blogger V2
+    zoundry.blogapp.pubsystems.publishers.site.bloggerv2
+    pub = 
+    legacy  api=xmlrpc.bloggerv2  acc=Blogger v2 API

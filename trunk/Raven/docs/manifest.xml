@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="manifest.xsl" type="text/xsl"?>
+<zoundry-project name="Raven">
+
+   <title>Zoundry Raven Dependencies</title>
+   <description>
+       Zoundry Raven is a windows application that allows users to easily post 
+       content to their blog, as well as manage the blog content in a more productive environment.
+   </description>
+   <dependencies>
+      <!-- Library dependencies are things you need to download in order to run Raven. -->
+      <dependency-set type="library" 
+         description="The following software must be installed in order to run Raven:">
+         <depends id="python24x">
+            <name>Python 2.4.x</name>
+            <download-url>http://www.python.org/ftp/python/2.4.4/python-2.4.4.msi</download-url>
+            <homepage-url>http://www.python.org</homepage-url>
+         </depends>
+         <depends id="4suite">
+            <name>4Suite 1.0.2</name>
+            <download-url>ftp://ftp.4suite.org/pub/4Suite/4Suite-XML-1.0.2.win32-py2.4.exe</download-url>
+            <homepage-url>http://4suite.org/index.xhtml</homepage-url>
+         </depends>
+         <depends id="pyxml">
+            <name>PyXML 0.8.4 for Python 2.4</name>
+            <download-url>http://internap.dl.sourceforge.net/sourceforge/pyxml/PyXML-0.8.4.win32-py2.4.exe</download-url>
+            <homepage-url>http://sourceforge.net/projects/pyxml/</homepage-url>
+         </depends>
+         <depends id="pywin32">
+            <name>Windows Extensions for Python (build 212)</name>
+            <download-url>http://downloads.sourceforge.net/pywin32/pywin32-212.win32-py2.4.exe?modtime=1217535935&amp;big_mirror=0&amp;filesize=5409684</download-url>
+            <homepage-url>http://sourceforge.net/projects/pywin32/</homepage-url>
+         </depends>
+         <depends id="wxwidgets">
+            <name>WX Widgets 2.8.9</name>
+            <download-url>http://voxel.dl.sourceforge.net/sourceforge/wxwindows/wxMSW-2.8.9-Setup.exe</download-url>
+            <homepage-url>http://www.wxwidgets.org/</homepage-url>
+         </depends>
+         <depends id="wxpython">
+            <name>WX Python 2.8.9.1</name>
+            <download-url>http://voxel.dl.sourceforge.net/sourceforge/wxpython/wxPython2.8-win32-unicode-2.8.9.1-py24.exe</download-url>
+            <homepage-url>http://www.wxpython.org/</homepage-url>
+         </depends>
+         <depends id="egenix">
+            <name>EGenix MX Base</name>
+            <download-url>http://www.egenix.com/files/python/egenix-mx-base-2.0.6.win32-py2.4.exe</download-url>
+            <homepage-url>http://www.egenix.com/files/python/eGenix-mx-Extensions.html</homepage-url>
+         </depends>
+         <depends id="egenixexp">
+            <name>EGenix MX Experimental</name>
+            <download-url>http://www.egenix.com/files/python/egenix-mx-experimental-0.9.0.win32-py2.4.exe</download-url>
+            <homepage-url>http://www.egenix.com/files/python/eGenix-mx-Extensions.html</homepage-url>
+         </depends>
+         <depends id="ctypes">
+            <name>C-Types</name>
+            <download-url>http://superb-west.dl.sourceforge.net/sourceforge/ctypes/ctypes-1.0.1.win32-py2.4.exe</download-url>
+            <homepage-url>http://starship.python.net/crew/theller/ctypes/#</homepage-url>
+         </depends>
+<!--
+         <depends id="utidy">
+            <name>U-Tidy</name>
+            <download-url>http://download.berlios.de/utidylib/uTidylib-0.2.1.win32.exe</download-url>
+            <homepage-url>http://utidylib.berlios.de/</homepage-url>
+         </depends>
+-->
+         <depends id="pysqlite">
+            <name>PySQL Lite 2.3.3</name>
+            <download-url>http://initd.org/pub/software/pysqlite/releases/2.3/2.3.3/pysqlite-2.3.3.win32-py2.4.exe</download-url>
+            <homepage-url>http://initd.org/tracker/pysqlite</homepage-url>
+         </depends>
+         <depends id="crypto">
+            <name>Python Crypto 2.0.1 (deprecated)</name>
+            <download-url>http://www.amk.ca/files/python/crypto/pycrypto-2.0.1.tar.gz</download-url>
+            <homepage-url>http://www.amk.ca/python/code/crypto</homepage-url>
+         </depends>
+         <depends id="pil">
+            <name>Python Imaging Library (PIL) 1.1.6</name>
+            <download-url>http://effbot.org/downloads/PIL-1.1.6.win32-py2.4.exe</download-url>
+            <homepage-url>http://www.pythonware.com/products/pil/</homepage-url>
+         </depends>
+         <depends id="pytz">
+            <name>World Timezone Definitions for Python 2008i</name>
+            <download-url>http://pypi.python.org/packages/source/p/pytz/pytz-2008i.zip#md5=8d99b2742a5ff0e9315d01815331ce1f</download-url>
+            <homepage-url>http://pytz.sourceforge.net/</homepage-url>
+         </depends>
+      </dependency-set>
+
+      <!-- Utilities used to do Raven development. -->
+      <dependency-set type="util" description="The following utilities may be useful:">
+         <depends id="pydev">
+            <name>PyDev (Python Eclipse Plugin)</name>
+            <download-url>http://pydev.sf.net/updates/</download-url>
+            <homepage-url>http://pydev.sourceforge.net/</homepage-url>
+         </depends>
+      </dependency-set>
+   </dependencies>
+
+</zoundry-project>

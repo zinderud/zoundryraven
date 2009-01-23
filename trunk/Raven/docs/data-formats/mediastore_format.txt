@@ -1,0 +1,7 @@
+This is a description of the format of a single "media store" in Raven.
+
+<store store-id="z:guid" media-site-id="z:id" name="xs:string">
+	<properties>?
+		<property name="xs:string">xs:string</property>*
+	</properties>
+</store>

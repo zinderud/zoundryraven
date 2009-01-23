@@ -1,0 +1,5 @@
+This is a description of the format of a "word list" in Raven.
+
+<word-list>
+    <word>xsd:string</word>*
+</word-list>

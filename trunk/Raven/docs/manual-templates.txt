@@ -1,0 +1,95 @@
+How To Create Your Own Zoundry Raven Template
+
+A Zoundry Raven template consists of the following:
+--------------------------------------------------
+
+   1) The raw root index.html of your blog (unaltered)
+   2) All of the resources referenced in your blog, including
+      images, css, javascript, etc...
+   3) An xhtml version of the root index.html that is trimmed down to
+      include only a single blog post, with the blog post title 
+      markup replaced with <ravenTitle /> and the blog post content
+      markup replaced with <ravenBody />
+   4) An xhtml version of the root index.html that is trimmed down to
+      include the <ravenTitle /> and <ravenBody /> and EXCLUDE any 
+      blog header information.
+   5) An xhtml version of the root index.html that is trimmed down to
+      include only the <ravenBody />.
+   6) A template.xml file describing the template's meta data
+
+
+
+An example directory structure for a template:
+---------------------------------------------
+
+templateRootDir
+  - css
+     - authorization.css
+     - blog_controls.css
+     - classic.css
+  - images
+     - 0451459067.01.MZZZZZZZ.jpg
+     - bloggerbutton1.gif
+     - corners_cap_bot.gif
+     - corners_cap_top.gif
+     - corners_main_bot.gif
+     - corners_main_top.gif
+     - etc... (1 file for each image referenced by the blog post/template)
+  - dhampir-by-barb-jc-hendee.html
+  - index-all.html
+  - index-body.html
+  - index-titleBody.html
+  - template.xml
+
+
+An example of a template.xml file:
+---------------------------------
+
+<?xml version="1.0" encoding="UTF-8"?>
+<template xmlns="http://www.zoundry.com/schemas/2007/11/ztemplate.rng" template-id="00000116445719f500c000a8000100452bebee79">
+  <root>C:\Documents and Settings\Eric Wittmann\My Documents\My Raven Profiles\Small Profile\templates\00000116445719f500c000a8000100452bebee79\dhampir-by-barb-jc-hendee.html</root>
+  <name>Fantasy Template</name>
+  <source>Blog [Paalin's Fantasy Book Blog]</source>
+  <allFile>index-all.html</allFile>
+  <bodyAndTitleFile>index-titleBody.html</bodyAndTitleFile>
+  <bodyOnlyFile>index-body.html</bodyOnlyFile>
+  <creationTime>2007-11-15T17:24:27.253Z</creationTime>
+  <lastModifiedTime>2007-11-15T17:24:27.253Z</lastModifiedTime>
+</template>
+
+
+Recommended Steps to Produce a Manual Template:
+----------------------------------------------
+
+  1) Publish a simple post to your blog (or use an existing post)
+  2) Navigate to that blog post's URL (so you are looking at JUST that blog post)
+  3) Download the blog post and all of its dependent resources (images, css, etc)
+       Note: most browsers provide a way to do this
+  4) If not already done, go through the saved .html file and replace all references
+     to remote resources (images, css, etc) to point to their local counterpart
+  5) Make three copies of the root HTML file called:
+       a) index-all.html
+       b) index-body.html
+       c) index-titleBody.html
+  6) In 'index-all.html', find the Blog Post title and replace it with <ravenTitle />
+  7) In 'index-all.html', find the Blog Post body and replace it with <ravenBody />
+  8) In 'index-titleBody.html', remove all of the HTML markup in the <body> of the
+     html except for the Blog Post title and Blog Post body (make sure to leave any
+     markup NOT in the <body> such as the <head>
+  9) In 'index-titleBody.html', find the Blog Post title and replace it with <ravenTitle />
+  10) In 'index-titleBody.html', find the Blog Post body and replace it with <ravenBody />
+  11) In 'index-body.html', remove all of the HTML markup in the <body> of the
+      html except for the Blog Post body (make sure to leave any markup NOT in the <body> 
+      such as the <head>
+  12) In 'index-body.html', find the Blog Post title and replace it with <ravenTitle />
+  13) In 'index-body.html', find the Blog Post body and replace it with <ravenBody />
+  14) Create a template.xml file like the one above - replace the contents of the
+      <root>, <name>, and <source> elements with appropriate values.  And replace the
+      value of the template-id attribute (use any string, as long as it is unique)
+  15) Crate a new folder in your Raven Profile's "templates" directory (create a 
+      "templates" directory if one does not exist).  This new folder can be named 
+      anything you want.
+  16) Copy all of the relevant files into this new template directory.
+  17) Restart Zoundry Raven
+
+  
