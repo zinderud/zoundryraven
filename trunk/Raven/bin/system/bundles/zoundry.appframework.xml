@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string-bundle xmlns="http://www.zoundry.com/schemas/2006/06/zbundle.rng" locale="en" xml:space="preserve">
+
+    <string name="Browse">Browse...</string>
+    <string name="OK">OK</string>
+    <string name="Cancel">Cancel</string>
+    <string name="Apply">Apply</string>
+    <string name="Close">Close</string>
+    <string name="Next">&amp;Next</string>
+    <string name="Finish">&amp;Finish</string>
+    <string name="Back">&amp;Back</string>
+
+    <string name="dialog.YesButtonLabel">&amp;Yes</string>
+    <string name="dialog.NoButtonLabel">&amp;No</string>
+
+    <!--  ====================================================  -->
+    <!--  Strings for Plugin: zoundry.raven.appframework.prefs  -->
+    <!--  ====================================================  -->
+    <string name="prefpage.general.name">General</string>
+    <string name="prefpage.general.description">This preference page/section groups together many general preferences pages and categories.</string>
+    <string name="prefpage.general.logger.name">Logging</string>
+    <string name="prefpage.general.logger.description">This preference page allows you to change your logging settings (primarily used to turn on/off 'debug' logging).</string>
+    <string name="prefpage.general.locale.name">Locale</string>
+    <string name="prefpage.general.locale.description">This preference page allows you to change your locale/language settings.</string>
+    
+    <string name="prefpage.general.proxy.name">Proxy</string>
+    <string name="prefpage.general.proxy.description">Configure HTTP Proxy Settings</string>
+    <string name="prefpage.general.proxy.enable">Use HTTP Proxy</string>
+    <string name="prefpage.general.proxy.host">Host</string>
+    <string name="prefpage.general.proxy.port">Port</string>
+    <string name="prefpage.general.proxy.username">Username</string>
+	<string name="prefpage.general.proxy.password">Password</string>    
+
+    <string name="prefpage.zoundrysvc.name">Zoundry Service</string>
+    <string name="prefpage.zoundrysvc.description">Use this preference page/section to configure your Zoundry Service settings (only applicable if you are a Zoundry Service member).</string>
+
+    <string name="prefpage.spelling.name">Spelling</string>
+    <string name="prefpage.spelling.description">This preference page/section allows you to change your spell check options.</string>
+    <string name="prefpage.spelling.personal-dict.name">Personal Dictionary</string>
+    <string name="prefpage.spelling.personal-dict.description">This preference page/section allows you to manager your personal spelling dictionary/word list.</string>
+
+    <string name="prefpage.systray.name">System Tray</string>
+    <string name="prefpage.systray.description">Use this preference page to change Zoundry Raven's appearance (or lack thereof) in the system tray.</string>
+
+    <string name="prefpage.affiliatelinks.name">Affiliate Links</string>
+    <string name="prefpage.affiliatelinks.description">Use this preference page to change how Zoundry Raven works with product affiliate links.</string>
+
+    <string name="prefpage.blogpub.name">Blog Publishing</string>
+    <string name="prefpage.blogpub.description">Use this preference page to alter the default blog publishing settings.</string>
+    <string name="prefpage.blogpub.pingsites.name">Ping Sites</string>
+    <string name="prefpage.blogpub.pingsites.description">Use this preference page to set the default ping sites to use when publishing a blog entry.</string>
+    
+    <string name="prefpage.blogpub.tagsites.name">Tag Sites</string>
+    <string name="prefpage.blogpub.tagsites.description">Use this preference page to set the default tag sites to use when publishing a blog entry.</string>
+    
+    <string name="prefpage.editor.name">Editor</string>
+    <string name="prefpage.editor.description">Use this preference page to change editor settings.</string>
+    <string name="prefpage.editor.font.name">Editor Font</string>
+    <string name="prefpage.editor.font.description">Use this preference page to change editor Font settings.</string>
+    
+
+    <!--  =================================================  -->
+    <!--  Strings for Plugin: zoundry.raven.blogapp.ui.core  -->
+    <!--  =================================================  -->
+    <string name="menuitem.file.new.blogpost.name">Blog &amp;Post</string>
+    <string name="menuitem.file.new.blogpost.description">Author a new blog post.</string>
+    <string name="menuitem.file.new.mediastorage.name">Media &amp;Storage</string>
+    <string name="menuitem.file.new.mediastorage.description">Configure a new Media Storage.</string>
+    <string name="menuitem.file.new.blogsite.name">&amp;Blog Account</string>
+    <string name="menuitem.file.new.blogsite.description">Create and configure a new blog account.</string>
+
+    <string name="menuitem.tools.bgtasks.name">Background &amp;Tasks...</string>
+    <string name="menuitem.tools.bgtasks.description">Open the Background Task Manager dialog.</string>
+    <string name="menuitem.tools.settings.name">&amp;Preferences...</string>
+    <string name="menuitem.tools.settings.description">Open the Zoundry Raven Settings dialog.</string>
+    <string name="menuitem.tools.mediastorages.name">&amp;Media Storage Settings...</string>
+    <string name="menuitem.tools.mediastorages.description">Open a dialog that is used to manage Media Storages and their settings.</string>
+    <string name="menuitem.help.about.name">&amp;About</string>
+    <string name="menuitem.help.about.description">Get information about the application.</string>
+    <string name="menuitem.help.translate.name">&amp;Translate Raven...</string>
+    <string name="menuitem.help.translate.description">Opens the Translation Manager window to aid in translating Zoundry Raven.</string>
+    <string name="menuitem.tools.templatemanager.name">Blog Template Manager...</string>
+    <string name="menuitem.tools.templatemanager.description">Open a dialog that is used to manage your Blog Templates.</string>
+
+    <string name="mediastoragemenu.edit.name">&amp;Edit...</string>
+    <string name="mediastoragemenu.edit.description">Edit the Media Storage's Settings</string>
+    <string name="mediastoragemenu.test.name">&amp;Test...</string>
+    <string name="mediastoragemenu.test.description">Test the Media Storage's Settings</string>
+    <string name="mediastoragemenu.delete.name">&amp;Delete</string>
+    <string name="mediastoragemenu.delete.description">Delete the Media Storage</string>
+
+    <string name="menugroup.blogmenu.downloadrecentposts">Download Posts</string>
+    <string name="menugroup.blogmenu.downloadrecentposts.recent1">Most Recent Post</string>
+    <string name="menugroup.blogmenu.downloadrecentposts.recent1.description">Download most recent post.</string>
+    <string name="menugroup.blogmenu.downloadrecentposts.recent5">5 Posts</string>
+    <string name="menugroup.blogmenu.downloadrecentposts.recent5.description">Download most recent 5 posts.</string>
+    <string name="menugroup.blogmenu.downloadrecentposts.recent10">10 Posts</string>
+    <string name="menugroup.blogmenu.downloadrecentposts.recent10.description">Download most recent 10 posts.</string>
+    <string name="menugroup.blogmenu.downloadrecentposts.recent20">20 Posts</string>
+    <string name="menugroup.blogmenu.downloadrecentposts.recent20.description">Download most recent 20 posts.</string>
+    <string name="menugroup.blogmenu.downloadrecentposts.recent50">50 Posts</string>
+    <string name="menugroup.blogmenu.downloadrecentposts.recent50.description">Download most recent 50 posts.</string>
+    <string name="menugroup.blogmenu.downloadrecentposts.recent100">100 Posts</string>
+    <string name="menugroup.blogmenu.downloadrecentposts.recent100.description">Download most recent 100 posts.</string>
+    <string name="menugroup.blogmenu.downloadrecentposts.recent250">250 Posts</string>
+    <string name="menugroup.blogmenu.downloadrecentposts.recent250.description">Download most recent 250 posts.</string>
+    <string name="menugroup.blogmenu.downloadrecentposts.recent500">500 Posts</string>
+    <string name="menugroup.blogmenu.downloadrecentposts.recent500.description">Download most recent 500 posts.</string>
+    <string name="menugroup.blogmenu.downloadrecentposts.recent1000">1000 Posts</string>
+    <string name="menugroup.blogmenu.downloadrecentposts.recent1000.description">Download most recent 1000 posts.</string>
+    <string name="menugroup.blogmenu.downloadrecentposts.allposts">All posts</string>
+    <string name="menugroup.blogmenu.downloadrecentposts.allposts.description">Download all posts.</string>
+
+    <!--  =====================================================  -->
+    <!--  Strings for Plugin: zoundry.raven.blogapp.ui.standard  -->
+    <!--  =====================================================  -->
+    <string name="perspective.standard.name">Standard</string>
+    <string name="perspective.standard.description">The Standard Perspective shows the blog account/post information in an interface similar to that of a typical email program.</string>
+    <string name="blogpost-details-panel.preview.name">Preview</string>
+    <string name="blogpost-details-panel.general.name">General</string>
+    <string name="blogpost-details-panel.links.name">Links</string>
+    <string name="blogpost-details-panel.media.name">Media</string>
+    <string name="image-details-panel.info.name">Info</string>
+    <string name="link-details-panel.info.name">Info</string>
+    <string name="tag-details-panel.info.name">Info</string>
+
+    <!--  ===================================================  -->
+    <!--  Strings for Plugin: zoundry.raven.blogapp.ui.browse  -->
+    <!--  ===================================================  -->
+    <string name="perspective.browse.name">Browse</string>
+    <string name="perspective.browse.description">The Browse Perspective shows the blog account/post information in a three-panel browse interface.</string>
+
+    <!--  =====================================  -->
+    <!--  Strings for Zoundry AppFramework Code  -->
+    <!--  =====================================  -->
+    <string name="user.CouldNotCreateUserProfile">Could not create user profile of type %s.</string>
+
+    <string name="plugin.FailedToLoadSchema">Failed to load zplugin RNG schema.</string>
+    <string name="plugin.FailedToLoadPluginSpec">Failed to load plugin spec file at %s.</string>
+    <string name="plugin.DependencyCheckFailed">Plugin '%s' dependency check failed.  [Requires version %s of plugin '%s']</string>
+    <string name="plugin.PluginNotLoadedDueToLicense">Plugin '%s' failed to load due to license restriction.</string>
+    <string name="plugin.DuplicatePluginId">Duplicate plugin id found for '%s'.</string>
+    <string name="plugin.PluginSpecNotSchemaValid">Plugin's zplugin.xml file is not schema-valid: %s</string>
+    <string name="plugin.ErrorInvalidPluginSignature">Plugin '%s' failed to load because its signature was invalid.</string>
+    <string name="plugin.CouldNotFindExtensionSchema">Failed to load extension schema: '%s'</string>
+    <string name="plugin.ExtensionFailedToValidate">Extension point failed to validate against its schema: '%s'</string>
+    <string name="plugin.MissingExtensionPoint">Missing extension data.  Extension point id: '%s'.</string>
+
+    <string name="system.CouldNotCreateSysProfile">Could not create system profile of type %s.</string>
+
+    <string name="engine.ErrorCreatingService">Error creating service '%s': does not implement IZService.</string>
+
+    <string name="cmdline.InvalidCmdLineError">Invalid command line parameter syntax: '%s'</string>
+
+    <string name="progress.ErrorEncountered">Error Encountered</string>
+
+    <string name="password.PasswordDialogHeaderMsg">Use this dialog to enter a password.</string>
+    <string name="password.PasswordEntry">Password Entry</string>
+    <string name="password.Password:">Password:</string>
+
+    <string name="error_dialog.Error">Error</string>
+    <string name="error_dialog.ErrorDetail">Error Detail</string>
+    <string name="error_dialog.Details">Details</string>
+    <string name="error_dialog.DialogTitle">Zoundry Error</string>
+
+    <string name="engine.NoServiceFoundError">No service found with ID '%s'.</string>
+
+    <string name="menu.MissingParentForMenuItemError">No parent menu exists for menu item.</string>
+
+    <string name="backgroundtaskio.FailedToSaveTask">Failed to save task '%s'.</string>
+    <string name="backgroundtaskio.FailedToLoadTask">Failed to load task from '%s'.</string>
+
+    <string name="factory.NoTaskSerializerFound">No background task serializer for namespace '%s'.</string>
+    <string name="factory.NoTaskDeserializerFound">No background task deserializer found for namespace '%s'.</string>
+
+    <string name="backgroundtaskimpl.FailedToRemoveStillRunning">Could not remove task '%s', it is still running.</string>
+    <string name="backgroundtaskimpl.FailedToRemoveDoesNotExist">Could not remove task '%s', it does not exist.</string>
+    <string name="backgroundtaskimpl.FailedToCancelDoesNotExist">Could not cancel task '%s', it does not exists.</string>
+    <string name="backgroundtaskimpl.FailedToResumeTaskNotResumable">Unable to resume task '%s' because it is not resumable.</string>
+    <string name="backgroundtaskimpl.FailedToResumeTaskComplete">Unable to resume task '%s' because it is complete.</string>
+    <string name="backgroundtaskimpl.FailedToResumeTaskAlreadyRunning">Unable to resume task '%s' because it is already running.</string>
+    <string name="backgroundtaskimpl.FailedToResumeTaskNotFound">Unable to resume task '%s' because it does not exist.</string>
+    <string name="backgroundtaskimpl.ErrorExecingTask">Error executing task '%s'.</string>
+    <string name="backgroundtaskimpl.ErrorInTask">Error: '%s'</string>
+    <string name="backgroundtaskimpl.TaskFailedToStartError">Task '%s' failed to start in a timely fashion.</string>
+    <string name="backgroundtaskimpl.UnexpectedBGTaskError">Unexpected error in background task '%s'.</string>
+
+    <string name="prefsdialog.SettingsDialogTitle">Zoundry Raven Settings</string>
+
+    <string name="prefsdialog.DiscardChanges">Discard Changes?</string>
+    <string name="prefsdialog.PrefPageSwitchMessage">Switching to another preference page will discard any changes you have made, is that OK?</string>
+    <string name="prefsdialog.SettingsDialogMessage">Use this dialog to change settings/preferences for the various features in the application.</string>
+    <string name="prefsdialog.ZoundryRavenSettings">Zoundry Raven Settings</string>
+
+    <string name="tpanel.TestCompletedSuccessfully">Test completed successfully.</string>
+    <string name="tpanel.TestFailedMessage">Test failed (double-click on above error for details)</string>
+    <string name="tpanel.CurrentStep">Current step: %s</string>
+    <string name="tpanel.RunningTestStepMessage">Running test step %d of %d.</string>
+    <string name="tpanel.TestCancelled">Test cancelled!</string>
+    <string name="tpanel.CurrentStatus">Current Status</string>
+
+    <string name="pluginimpl.UndeclaredExtensionPointError">Error loading extension with id '%s':  No extension point with id '%s' has been declared.</string>
+
+    <string name="menudefs.NameMissingInMenuItemError">No name specified for menu group item (extension id '%s').</string>
+
+    <string name="pluginimpl.ClassDoesNotImplementCorrectInterfaceError">The contributed class '%s' for extension '%s' must implement the declared interface '%s'.</string>
+    <string name="pluginimpl.ErrorLoadingContributedClass">Problem found loading contributed class '%s' for extension point '%s'.</string>
+    <string name="pluginimpl.MissingClassForExtensionPoint">Extension '%s', while contributing to extension point '%s', must specify a class that implements '%s'.</string>
+    <string name="pluginimpl.ErrorLoadingExtPointInterface">Problem found loading interface for extension point '%s'.</string>
+
+    <string name="bgtaskpanel.RunningPercent">Running (%d%% complete).</string>
+    <string name="bgtaskpanel.RemoveTask">Remove this task.</string>
+    <string name="bgtaskpanel.EndedOn">Ended</string>
+    <string name="bgtaskpanel.PauseTask">Pause this task.</string>
+    <string name="bgtaskpanel.CancelTask">Cancel this task.</string>
+    <string name="bgtaskpanel.StartedOn">Started</string>
+    <string name="bgtaskpanel.Cancelled">Cancelled</string>
+
+    <string name="bgtaskmenus.ShowErrorTooltip">Shows the error information for this task..</string>
+    <string name="bgtaskmenus.ShowError">Show Error</string>
+    <string name="bgtaskmenus.OpenLogFileTooltip">Opens the log file associated with this task.</string>
+    <string name="bgtaskmenus.OpenLogFile">Open Log File</string>
+
+    <string name="i18nserviceio.ErrorLoadingLanguageCodes">Error loading language codes.</string>
+    <string name="i18nserviceio.ErrorLoadingCountryCodes">Error loading country codes.</string>
+    <string name="factory.NoI18NDeserializerFound">No i18n deserializer found for '%s'.</string>
+
+    <string name="localeprefpage.LocaleChanged">Locale Changed</string>
+    <string name="localeprefpage.ChangesWillTakeEffectAfterRestart">Changes to the locale will take effect after restarting the application.</string>
+    <string name="localeprefpage.OverrideDefaultLocale">Override Default Locale</string>
+    <string name="localeprefpage.DefaultLocale">Default Locale:</string>
+    <string name="localeprefpage.LanguagePack">Language Pack</string>
+
+    <string name="spellcheckimpl.DictionaryDownloaded">Dictionary downloaded...processing.</string>
+    <string name="spellcheckimpl.DownloadedOfBytes">Downloaded %d of %d bytes.</string>
+    <string name="spellcheckimpl.DictionaryDownloadedAndProcessed">Dictionary downloaded and processed.</string>
+    <string name="spellcheckimpl.ErrorDownloadingDictionary">Error downloading dictionary file: '%s'</string>
+    <string name="spellcheckimpl.UnexpectedErrorDownloadingDictionary">Unexpected error downloading dictionary.</string>
+    <string name="spellcheckimpl.DownloadingDictionary">Downloading Dictionary</string>
+    <string name="spellcheckimpl.CannotDownloadDownloadInProgress">A dictionary is already being downloaded - only one dictionary can be downloaded at a time.</string>
+    <string name="spellcheckimpl.CannotEnableDownloadInProgress">Cannot enable spell check, downloading a dictionary.</string>
+
+    <string name="personaldictprefpage.Word">Word</string>
+    <string name="personaldictprefpage.AddPersonalDictionaryWord">Add Personal Dictionary Word</string>
+    <string name="personaldictprefpage.Clear">Clear</string>
+    <string name="personaldictprefpage.Remove">Remove</string>
+    <string name="personaldictprefpage.Add">Add</string>
+    <string name="personaldictprefpage.SpellCheckingMustBeEnabled">Note: spell checking must be enabled.</string>
+
+    <string name="loggerprefpage.LogDebuggingMessages">Log Debugging Messages</string>
+    <string name="loggerprefpage.LogWarnings">Log Warnings</string>
+    <string name="loggerprefpage.LogErrors">Log Errors</string>
+    <string name="loggerprefpage.LoggerSettings">Logger Settings</string>
+
+    <string name="connresp.NoContentFoundError">No content found</string>
+
+    <string name="imaging.ErrorCreatingThumbnailError">Error creating thumbnail of image file '%s'.</string>
+    <string name="imaging.PathDoesNotExistError">Path '%s' does not exist or is not a file.</string>
+
+    <string name="bgtaskmanager.CleanUp">Clean Up</string>
+    <string name="bgtaskmanager.BackgroundTaskManager">Background Task Manager</string>
+
+    <string name="dictdownloadpanel.Downloading">Downloading</string>
+    <string name="dictdownloadpanel.Cancel">Cancel</string>
+
+    <string name="input.GenericInputDialogMessage">Use this dialog to enter some data needed by the application.</string>
+
+    <string name="spellingprefpage.RestartNeeded">Restart Needed</string>
+    <string name="spellingprefpage.AppMustBeRestartedMessage">The application must be restarted for this change to take effect.</string>
+    <string name="spellingprefpage.DownloadDictionary">Download Dictionary?</string>
+    <string name="spellingprefpage.DownloadVerifyMessage">In order to enable spell checking, the dictionary for your selected language must be downloaded.  Is that OK?</string>
+    <string name="spellingprefpage.EnableSpellcheck">Enable Spellcheck</string>
+    <string name="spellingprefpage.no">no</string>
+    <string name="spellingprefpage.yes">yes</string>
+    <string name="spellingprefpage.Ready">Ready</string>
+    <string name="spellingprefpage.Language">Language</string>
+
+    <string name="tabctxmenu.CloseAllMsg">Closes all tabs.</string>
+    <string name="tabctxmenu.CloseAll">Close All</string>
+    <string name="tabctxmenu.CloseOthersMsg">Closes all tabs except this tab.</string>
+    <string name="tabctxmenu.CloseOthers">Close Others</string>
+    <string name="tabctxmenu.CloseMsg">Closes this tab.</string>
+    <string name="tabctxmenu.Close">Close</string>
+
+    <string name="datectrl.Reset">Reset</string>
+    <string name="datectrl.Now">Now</string>
+
+    <string name="toolbar.ShowText">Show Text</string>
+    <string name="toolbar.ToolSize">Tool Size</string>
+
+    <string name="listex.UncheckAll">Uncheck All</string>
+    <string name="listex.CheckAll">Check All</string>
+
+    <string name="autoupdateimpl.NewVersionAvailable">New Version Available</string>
+    <string name="autoupdateimpl.NewVersionMessage">A new version of Zoundry Raven is available.  You currently have version %s, but version %s is now ready.  Download the new version now?</string>
+
+    <string name="validatingctrl.InvalidIntegerErrorMessage">Please enter a valid integer value.</string>
+    <string name="validatingctrl.CssLengthErrorMessage">Please enter a valid CSS length. Eg 1px or 1em.</string>
+    
+    <string name="bgtaskprogressdialog.Done_">Done.</string>
+    <string name="bgtaskprogressdialog.Cancelling">Cancelling... </string>
+    <string name="bgtaskprogressdialog.RunInBackground">Run in Background</string>
+
+    <string name="commonvideo.ErrorDiscoveringVideoEmbedInfoTitle">Problem Discovering Video Info</string>
+    <string name="commonvideo.ErrorDiscoveringVideoEmbedInfoMsg">There was a problem connecting to the server to discover the video's 'embed' markup.  Perhaps a network problem.</string>
+    
+    <string name="linkactions.CopyLinkLocationDescription">Copy link URL to the clipboard</string>
+    <string name="linkactions._CopyLinkLocation">&amp;Copy Link Location</string>
+    <string name="linkactions.OpenDescription">Open the link in the browser.</string>
+    <string name="linkactions._Open">&amp;Open</string>
+    
+    <string name="imageactions.CopyImageLocationDescription">Copy image src URL to the clipboard.</string>
+    <string name="imageactions._CopyImageLocation">&amp;Copy Image Location</string>
+    <string name="imageactions.OpenDescription">Open the image in the browser.</string>
+    <string name="imageactions._Open">&amp;Open</string>
+    
+    <string name="standarddialogs.RememberDecision">Remember this decision (don't ask again)</string>
+
+    <string name="ifilm.iFilmVideoDesc">Drop/Paste the clipboard content as an embedded iFilm Video.</string>
+    <string name="ifilm.iFilmVideo">iFilm Video</string>
+    <string name="photobucket.PhotoBucketVideoDesc">Drop/Paste the clipboard content as an embedded PhotoBucket Video.</string>
+    <string name="photobucket.PhotoBucketVideo">PhotoBucket Video</string>
+    <string name="googlevideo.GoogleVideoDesc">Drop/Paste the clipboard content as an embedded Google Video.</string>
+    <string name="googlevideo.GoogleVideo">Google Video</string>
+    <string name="veoh.VeohVideoDesc">Drop/Paste the clipboard content as an embedded Veoh Video.</string>
+    <string name="veoh.VeohVideo">Veoh Video</string>
+    <string name="imagehandler.MultipleImageFilesDesc">Drop/Paste the clipboard content as a bunch of images (optionally thumbnailed).</string>
+    <string name="imagehandler.MultipleImageFiles">Multiple Image Files</string>
+    <string name="imagehandler.ImageFileDesc">Drop/Paste the clipboard content as an image (optionally thumbnailed).</string>
+    <string name="imagehandler.ImageFile">Image File</string>
+    <string name="slide.SlideSlideshowDesc">Drop/Paste the clipboard content as an embedded Slide Slideshow.</string>
+    <string name="slide.SlideSlideshow">Slide Slideshow</string>
+    <string name="vsocial.VSocialVideoDesc">Drop/Paste the clipboard content as an embedded VSocial Video.</string>
+    <string name="vsocial.VSocialVideo">VSocial Video</string>
+    <string name="youtube.YouTubeVideoDesc">Drop/Paste the clipboard content as an embedded YouTube Video.</string>
+    <string name="youtube.YouTubeVideo">YouTube Video</string>
+    <string name="piratr.PiratrVideoDesc">Drop/Paste the clipboard content as an embedded Piratr Video.</string>
+    <string name="piratr.PiratrVideo">Piratr Video</string>
+    <string name="htmlhandler.HTMLDesc">Drop/Paste the clipboard content as HTML markup.</string>
+    <string name="htmlhandler.HTML">HTML</string>
+    <string name="filehandler.MultipleFilesDesc">Drop/Paste the clipboard content as a list of files.</string>
+    <string name="filehandler.MultipleFiles">Multiple Files</string>
+    <string name="filehandler.FileDesc">Drop/Paste the clipboard content as an file.</string>
+    <string name="filehandler.File">File</string>
+    
+    <string name="feedbackimpl.FeedbackSent">Feedback sent, thank you.</string>
+    <string name="feedbackimpl.SendingFeedbackFailed">Sending feedback failed.</string>
+    <string name="feedbackimpl.FeedbackInformationGathered_">Feedback information gathered.</string>
+    <string name="feedbackimpl.SendingFeedback">Sending Feedback</string>
+    <string name="erroraction.Report">Report...</string>
+    <string name="feedbackutil.SendingFeedbackMsg">Now sending your feedback about Zoundry Raven to Zoundry.  Thank you!</string>
+    <string name="feedbackutil.SendingFeedback">Sending Feedback</string>
+    <string name="feedbackdialog.Send">Send</string>
+    <string name="feedbackdialog.FeedbackDescription">Use this dialog to send some feedback to Zoundry about Raven.</string>
+    <string name="feedbackdialog.ZoundryRavenFeedback">Zoundry Raven Feedback</string>
+    <string name="feedbackdialog.Bug">Bug</string>
+    <string name="feedbackdialog.Praise">Praise</string>
+    <string name="feedbackdialog.Enhancement">Enhancement</string>
+    <string name="feedbackdialog.Feedback">Feedback</string>
+    <string name="feedbackdialog.Subject">Subject</string>
+    <string name="feedbackdialog.Email_optional">Email (optional)</string>
+    <string name="feedbackdialog.FeedbackType">Feedback Type</string>
+
+    <string name="zoundrysvcprefpage.ZoundryServiceDescriptionPart3">If you leave this field blank, any commissions you earn will go to the Zoundry donation jar to help us continue to deliver quality software to you, our valued users.</string>
+    <string name="zoundrysvcprefpage.ZoundryServiceDescriptionPart2">Or you can enter a Zoundry Guest ID for a friend or charity from our list to receive your commissions.  For more information on Guest IDs, go to http://www.zoundry.com/charities.html.</string>
+    <string name="zoundrysvcprefpage.ZoundryServiceDescriptionPart1">If you have registered for a Zoundry Service account, please enter your account username (your email address) here.</string>
+    <string name="zoundrysvcprefpage.Zoundry_ID">Zoundry ID:</string>
+    <string name="zoundrysvcprefpage.Zoundry_Service_Settings">Zoundry Service Settings</string>
+
+    <string name="autoupdateimpl.AlreadyUpToDateTitle">Up To Date</string>
+    <string name="autoupdateimpl.AlreadyUpToDateMsg">You have the most recent version of Zoundry Raven.</string>
+
+    <string name="imagehandlerdialog.CreateImageThumbnailDesc">Use this dialog to decide if you want Raven to generate a thumbnail for your image (and the thumbnail's style).</string>
+    <string name="imagehandlerdialog.CreateImageThumbnail">Create Image Thumbnail</string>
+    <string name="imagehandlerdialog.Size">Size</string>
+    <string name="imagehandlerdialog.ThumbnailSettings">Thumbnail Settings</string>
+    <string name="imagehandlerdialog.GenerateOption">Generate a thumbnail</string>
+    <string name="imagehandlerdialog.DoNotGenerateOption">Do not generate a thumbnail</string>
+    <string name="imagehandlerdialog.Generate_Thumbnail">Generate Thumbnail?</string>
+
+</string-bundle>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zoundry-plugin xmlns="http://www.zoundry.com/schemas/2006/03/zplugin.rng" version="1.0" signature="9KN2UOZWZV1J0968EVVW809L3BR5S024VP4PXJH0TPOFQMUF6GPUEEFY04XJ4P9P9G39R7LF7WEGH53YJ4XCV9Z0VMJ935Y5F113UA6AY2YJFWH0CXOLQZKIF30ICUZTC2LNMCHW1O2R8LAUT23KLL2VCK4WH0KNQ9GDFNRVYFT0UJEBMVOSM2H7ZSAVCAYAU2E4733EGZX425Z56QOZQ5SIEUWDGRK3Y34RQ2XK24N3E25SMJYB73DIY8DJ68KF79N0QVF2VSR32S0L9VOCGL6VP9KHREUHMUWK3HNNUOL6D07FT7SE34FED3SSTHMQZ7515F1SG81UKFQG7LWSMBTDQZ6EEZL35JWJXOD96EC44KFRTKUGLX1PQ5LWOZ2CRMJ5I0TVMQJX" id="zoundry.raven.blogapp.prefs" name="Zoundry Blog App User Preferences">
+
+    <dependencies>
+        <depends on="zoundry.raven.blogapp.services" version="1.0"/>
+        <depends on="zoundry.raven.appframework.prefs" version="1.0"/>
+    </dependencies>
+
+    <!-- The System Tray Preference Page -->
+    <zoundry-extension point="zoundry.appframework.ui.preferences.prefpage">
+        <id>zoundry.blogapp.ui.preferences.prefpage.systray</id>
+        <class>zoundry.blogapp.ui.prefs.prefpages.trayprefpage.ZTrayPreferencePage</class>
+        <extension-data>
+            <prefpage>
+                <parent>zoundry.appframework.ui.preferences.prefpage.general</parent>
+                <name>%prefpage.systray.name%</name>
+                <description>%prefpage.systray.description%</description>
+                <header-image>images/prefpages/systray/header.png</header-image>
+                <icon>icons/prefpages/systray.png</icon>
+            </prefpage>
+        </extension-data>
+    </zoundry-extension>
+    
+    <!-- The Editor Preference Page -->
+    <zoundry-extension point="zoundry.appframework.ui.preferences.prefpage">
+        <id>zoundry.blogapp.ui.preferences.prefpage.editor</id>
+        <class>zoundry.blogapp.ui.prefs.prefpages.editorprefpage.ZEditorPreferencePage</class>
+        <extension-data>
+            <prefpage>
+                <parent/>
+                <name>%prefpage.editor.name%</name>
+                <description>%prefpage.editor.description%</description>
+                <header-image>images/prefpages/editor/header.png</header-image>
+                <icon>icons/prefpages/editor.png</icon>
+            </prefpage>
+        </extension-data>
+    </zoundry-extension>
+    <!-- The Editor -> Font Preferences Page -->
+    <zoundry-extension point="zoundry.appframework.ui.preferences.prefpage">
+        <id>zoundry.blogapp.ui.preferences.prefpage.editor.font</id>
+        <class>zoundry.blogapp.ui.prefs.prefpages.editorprefpage.ZEditorFontPreferencePage</class>
+        <extension-data>
+            <prefpage>
+                <parent>zoundry.blogapp.ui.preferences.prefpage.editor</parent>
+                <name>%prefpage.editor.font.name%</name>
+                <description>%prefpage.editor.font.description%</description>
+                <header-image>images/prefpages/editor/header.png</header-image>
+                <icon>icons/prefpages/editorfont.png</icon>
+            </prefpage>
+        </extension-data>
+    </zoundry-extension>    
+        
+
+    <!-- The Blog Publishing Preference Page -->
+    <zoundry-extension point="zoundry.appframework.ui.preferences.prefpage">
+        <id>zoundry.blogapp.ui.preferences.prefpage.blogpublishing</id>
+        <class>zoundry.blogapp.ui.prefs.prefpages.blogpubprefpage.ZBlogPublishingPreferencePage</class>
+        <extension-data>
+            <prefpage>
+                <parent/>
+                <name>%prefpage.blogpub.name%</name>
+                <description>%prefpage.blogpub.description%</description>
+                <header-image>images/prefpages/blogpub/header.png</header-image>
+                <icon>icons/prefpages/blogpublishing.png</icon>
+            </prefpage>
+        </extension-data>
+    </zoundry-extension>
+
+    <!-- The Blog Publishing->Ping Sites Preference Page -->
+    <zoundry-extension point="zoundry.appframework.ui.preferences.prefpage">
+        <id>zoundry.blogapp.ui.preferences.prefpage.blogpublishing.pingsites</id>
+        <class>zoundry.blogapp.ui.prefs.prefpages.pingsitesprefpage.ZPingSitesPreferencePage</class>
+        <extension-data>
+            <prefpage>
+                <parent>zoundry.blogapp.ui.preferences.prefpage.blogpublishing</parent>
+                <name>%prefpage.blogpub.pingsites.name%</name>
+                <description>%prefpage.blogpub.pingsites.description%</description>
+                <header-image>images/prefpages/pingsites/header.png</header-image>
+                <icon>icons/prefpages/pingsites.png</icon>
+            </prefpage>
+        </extension-data>
+    </zoundry-extension>
+
+    <!-- The Blog Publishing->Tagging Sites Preference Page -->
+    <zoundry-extension point="zoundry.appframework.ui.preferences.prefpage">
+        <id>zoundry.blogapp.ui.preferences.prefpage.blogpublishing.tagsites</id>
+        <class>zoundry.blogapp.ui.prefs.prefpages.tagsitesprefpage.ZTagSitesPreferencePage</class>
+        <extension-data>
+            <prefpage>
+                <parent>zoundry.blogapp.ui.preferences.prefpage.blogpublishing</parent>
+                <name>%prefpage.blogpub.tagsites.name%</name>
+                <description>%prefpage.blogpub.tagsites.description%</description>
+                <header-image>images/prefpages/tagsites/header.png</header-image>
+                <icon>icons/prefpages/tagsites.png</icon>
+            </prefpage>
+        </extension-data>
+    </zoundry-extension>
+
+    <!-- The General->Affiliate Links Preference Page -->
+    <zoundry-extension point="zoundry.appframework.ui.preferences.prefpage">
+        <id>zoundry.blogapp.ui.preferences.prefpage.affiliate-links</id>
+        <class>zoundry.blogapp.ui.prefs.prefpages.affiliatelinksprefpage.ZAffiliateLinksPreferencePage</class>
+        <extension-data>
+            <prefpage>
+                <parent>zoundry.appframework.ui.preferences.prefpage.general</parent>
+                <name>%prefpage.affiliatelinks.name%</name>
+                <description>%prefpage.affiliatelinks.description%</description>
+                <header-image>images/prefpages/affiliatelinks/header.png</header-image>
+                <icon>icons/prefpages/affiliatelinks.png</icon>
+            </prefpage>
+        </extension-data>
+    </zoundry-extension>
+
+</zoundry-plugin>

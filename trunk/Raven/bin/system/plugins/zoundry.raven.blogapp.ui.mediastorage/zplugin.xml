@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zoundry-plugin xmlns="http://www.zoundry.com/schemas/2006/03/zplugin.rng" version="1.1" signature="15A0UPI3DB6LM2V4L874APDLQ5VTOF0LBAXEIOMGQNOUCNRJDMWTR77Z1NUF3RVITFRCWYLMV6NQOJTPO6CB8HJ11HPK4U3EOGEP5WI2UMV0VKYIBIOBIZ880FY7LVWRDUBAVYJRBSUOCQF1Q4Z5F6G2MEKJSMK1WKURVK3IRA0D54B32PD9062R1YTZ6OJAYUGEKMS11EM23E3H1RQC509127G5DWRQLBJX2XJZ6AUFN10M1CJT44MGFX3RXIVTWBZOOS1WO7EVWLBN3YLRL9D6S8SLVM6J9T49IQJB9BMDQQD7MGODU13YR69Y90OGRTRJ02VTW8BHGPQ7U0XU7OND1FUVOD8FSX0IXJT2DNDZDXV52VDJQ47OP8O6ATJTUR09N6OQ9NLZV" id="zoundry.raven.blogapp.ui.mediastorage" name="Zoundry Media Storage UI">
+
+    <dependencies>
+        <depends on="zoundry.raven.blogapp.services" version="1.0"/>
+    </dependencies>
+
+    <!-- The media storage context menu (media storage manager dialog). -->
+    <zoundry-extension point="zoundry.appframework.ui.core.menu">
+        <id>zoundry.blogapp.ui.core.menu.dialogs.mediastoragemanager.mediastorage</id>
+        <class/>
+        <extension-data>
+            <menu>
+                <type>popup</type>
+                <name>Media Storage Context Menu</name>
+                <description>The context menu when the user right-clicks on a media storage in the Media Storage Manager.</description>
+            </menu>
+        </extension-data>
+    </zoundry-extension>
+
+    <!-- Media Storage "Edit" Menu Item -->
+    <zoundry-extension point="zoundry.appframework.ui.core.menuitem">
+        <id>zoundry.blogapp.ui.core.menuitem.dialogs.mediastoragemanager.mediastorage.edit</id>
+        <class>zoundry.blogapp.ui.menus.mediastoragemanager.ZEditMediaStorageMenuAction</class>
+        <extension-data>
+            <menu-item>
+                <group>zoundry.blogapp.ui.core.menu.dialogs.mediastoragemanager.mediastorage</group>
+                <name>%mediastoragemenu.edit.name%</name>
+                <gravity>5</gravity>
+                <description>%mediastoragemenu.edit.description%</description>
+                <bold>true</bold>
+                <icon/>
+            </menu-item>
+        </extension-data>
+    </zoundry-extension>
+
+    <!-- Media Storage "Test" Menu Item -->
+    <zoundry-extension point="zoundry.appframework.ui.core.menuitem">
+        <id>zoundry.blogapp.ui.core.menuitem.dialogs.mediastoragemanager.mediastorage.test</id>
+        <class>zoundry.blogapp.ui.menus.mediastoragemanager.ZTestMediaStorageMenuAction</class>
+        <extension-data>
+            <menu-item>
+                <group>zoundry.blogapp.ui.core.menu.dialogs.mediastoragemanager.mediastorage</group>
+                <name>%mediastoragemenu.test.name%</name>
+                <gravity>5</gravity>
+                <description>%mediastoragemenu.test.description%</description>
+                <icon/>
+            </menu-item>
+        </extension-data>
+    </zoundry-extension>
+
+    <!-- Media Storage [Separator] Menu Item -->
+    <zoundry-extension point="zoundry.appframework.ui.core.menuitem">
+        <id>zoundry.blogapp.ui.core.menuitem.dialogs.mediastoragemanager.mediastorage.sep1</id>
+        <extension-data>
+            <menu-item>
+                <group>zoundry.blogapp.ui.core.menu.dialogs.mediastoragemanager.mediastorage</group>
+                <name>SEPARATOR</name>
+                <gravity>5</gravity>
+                <type>separator</type>
+            </menu-item>
+        </extension-data>
+    </zoundry-extension>
+
+    <!-- Media Storage "Delete" Menu Item -->
+    <zoundry-extension point="zoundry.appframework.ui.core.menuitem">
+        <id>zoundry.blogapp.ui.core.menuitem.dialogs.mediastoragemanager.mediastorage.delete</id>
+        <class>zoundry.blogapp.ui.menus.mediastoragemanager.ZDeleteMediaStorageMenuAction</class>
+        <extension-data>
+            <menu-item>
+                <group>zoundry.blogapp.ui.core.menu.dialogs.mediastoragemanager.mediastorage</group>
+                <name>%mediastoragemenu.delete.name%</name>
+                <gravity>5</gravity>
+                <description>%mediastoragemenu.delete.description%</description>
+                <icon/>
+            </menu-item>
+        </extension-data>
+    </zoundry-extension>
+
+</zoundry-plugin>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+
+    <start>
+        <element 
+            name="prefpage" 
+            ns="http://www.zoundry.com/schemas/2006/03/zplugin.rng" 
+            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+
+            <element name="parent">
+                <data type="string"/>
+            </element>
+            <element name="name">
+                <data type="string"/>
+            </element>
+            <element name="description">
+                <data type="string"/>
+            </element>
+            <optional>
+                <element name="header-image">
+                    <data type="string"/>
+                </element>
+            </optional>
+            <optional>
+                <element name="icon">
+                    <data type="string"/>
+                </element>
+            </optional>
+            <optional>
+                <element name="priority">
+                    <data type="int"/>
+                </element>
+            </optional>
+        </element>
+    </start>
+
+</grammar>

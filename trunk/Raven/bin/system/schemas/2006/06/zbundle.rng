@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+
+    <!-- Start of the actual grammar. -->
+    <start>
+        <element 
+            name="string-bundle" 
+            ns="http://www.zoundry.com/schemas/2006/06/zbundle.rng" 
+            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+
+            <attribute name="locale"><data type="string"/></attribute>
+            <optional>
+               <attribute name="date"><data type="string"/></attribute>
+            </optional>
+            <optional>
+                <attribute name="version"><data type="string"/></attribute>
+            </optional>
+
+            <zeroOrMore>
+                <element name="string">
+                    <attribute name="name"><data type="string"/></attribute>
+                    <data type="string"/>
+                </element>
+            </zeroOrMore>
+            
+        </element>
+    </start>
+
+</grammar>

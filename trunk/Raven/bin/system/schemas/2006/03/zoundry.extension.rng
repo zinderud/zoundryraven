@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+
+    <start>
+        <element 
+            name="extension-info" 
+            ns="http://www.zoundry.com/schemas/2006/03/zplugin.rng" 
+            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+
+            <element name="id">
+                <data type="string"/>
+            </element>
+            <optional>
+                <element name="schema-location">
+                    <data type="string"/>
+                </element>
+            </optional>
+            <optional>
+                <element name="interface">
+                    <optional>
+                        <attribute name="optional"><data type="boolean"/></attribute>
+                    </optional>
+                    <data type="string"/>
+                </element>
+            </optional>
+        </element>
+    </start>
+
+</grammar>

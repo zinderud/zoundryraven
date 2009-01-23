@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zoundry-plugin xmlns="http://www.zoundry.com/schemas/2006/03/zplugin.rng" version="1.0" signature="GAIF0PTXOYZXE3FSWCL4K5VCVODUAETZ1WKV7H3HTCTFNQHL46U50UPBJC6ESWHZFME1ETDYW75AFK1JY8NZW5QAESI0TEA1C4JZSN243BSSQR475YWFXKZIIM12L6Y6K1HXPAR4OER7MRPY01PV07FETDLOUMS9XZ4HW2KQL2VBNID3DBC33Z7Z1HG2TBRTMG8UFZ9TBNTKRNZDZWX6NZQE59GW9J72P2HY8GYJLH65J52PUKM7S2WU8JTH0VHA5792QS5FSNZ2FBLIOY9VDRSPIGMWU6LLWB1Z8LSNSLTP6QS6TKS7XT26IYC21BF09FVNBHGL8FE1NL106HAUY6KVKLD1FENP17MR7FFJZK6TRRKSK94U5YLEIBUS7CBF1TO0NMI031ZL" id="zoundry.raven.blogapp.ui.mainmenu" name="Zoundry Main Menu">
+
+    <dependencies>
+        <depends on="zoundry.raven.blogapp.services" version="1.0"/>
+        <depends on="zoundry.raven.blogapp.extensions" version="1.0"/>
+    </dependencies>
+
+    <!-- File->New->Blog Post Menu Item -->
+    <zoundry-extension point="zoundry.appframework.ui.core.menuitem">
+        <id>zoundry.blogapp.ui.core.menuitem.file.new.blog-post</id>
+        <class>zoundry.blogapp.ui.menus.main.file_new.ZNewBlogPostMenuAction</class>
+        <extension-data>
+            <menu-item>
+                <group>zoundry.blogapp.ui.core.menugroup.file.new</group>
+                <name>%menuitem.file.new.blogpost.name%</name>
+                <gravity>5</gravity>
+                <description>%menuitem.file.new.blogpost.description%</description>
+                <icon>icons/mainmenu/file/new/blogpost.png</icon>
+            </menu-item>
+        </extension-data>
+    </zoundry-extension>
+    <!-- File->New->[Separator] Menu Item -->
+    <zoundry-extension point="zoundry.appframework.ui.core.menuitem">
+        <id>zoundry.blogapp.ui.core.menuitem.file.new.separator1</id>
+        <extension-data>
+            <menu-item>
+                <group>zoundry.blogapp.ui.core.menugroup.file.new</group>
+                <name>SEPARATOR</name>
+                <gravity>10</gravity>
+                <type>separator</type>
+            </menu-item>
+        </extension-data>
+    </zoundry-extension>
+    <!-- File->New->Media Storage Menu Item -->
+    <zoundry-extension point="zoundry.appframework.ui.core.menuitem">
+        <id>zoundry.blogapp.ui.core.menuitem.file.new.media-storage</id>
+        <class>zoundry.blogapp.ui.menus.main.file_new.ZNewMediaStorageMenuAction</class>
+        <extension-data>
+            <menu-item>
+                <group>zoundry.blogapp.ui.core.menugroup.file.new</group>
+                <name>%menuitem.file.new.mediastorage.name%</name>
+                <gravity>30</gravity>
+                <description>%menuitem.file.new.mediastorage.description%</description>
+                <icon>icons/mainmenu/file/new/mediastorage.png</icon>
+            </menu-item>
+        </extension-data>
+    </zoundry-extension>
+    <!-- File->New->Blog Site Menu Item -->
+    <zoundry-extension point="zoundry.appframework.ui.core.menuitem">
+        <id>zoundry.blogapp.ui.core.menuitem.file.new.blogsite</id>
+        <class>zoundry.blogapp.ui.menus.main.file_new.ZNewBlogSiteMenuAction</class>
+        <extension-data>
+            <menu-item>
+                <group>zoundry.blogapp.ui.core.menugroup.file.new</group>
+                <name>%menuitem.file.new.blogsite.name%</name>
+                <gravity>20</gravity>
+                <description>%menuitem.file.new.blogsite.description%</description>
+                <icon>icons/mainmenu/file/new/blogaccount.png</icon>
+            </menu-item>
+        </extension-data>
+    </zoundry-extension>
+
+    <!-- File->[Separator] Menu Item -->
+    <zoundry-extension point="zoundry.appframework.ui.core.menuitem">
+        <id>zoundry.blogapp.ui.core.menuitem.file.separator1</id>
+        <extension-data>
+            <menu-item>
+                <group>zoundry.blogapp.ui.core.menugroup.file</group>
+                <name>SEPARATOR</name>
+                <gravity>10</gravity>
+                <type>separator</type>
+            </menu-item>
+        </extension-data>
+    </zoundry-extension>
+    
+    <!-- Tools->Background Tasks Menu Item -->
+    <zoundry-extension point="zoundry.appframework.ui.core.menuitem">
+        <id>zoundry.blogapp.ui.core.menuitem.tools.background-tasks</id>
+        <class>zoundry.blogapp.ui.menus.main.tools.ZBackgroundTasksMenuAction</class>
+        <extension-data>
+            <menu-item>
+                <group>zoundry.blogapp.ui.core.menugroup.tools</group>
+                <name>%menuitem.tools.bgtasks.name%</name>
+                <gravity>5</gravity>
+                <description>%menuitem.tools.bgtasks.description%</description>
+                <icon>icons/mainmenu/tools/bgtasks.png</icon>
+            </menu-item>
+        </extension-data>
+    </zoundry-extension>
+
+    <!-- Tools->[Separator] Menu Item -->
+    <zoundry-extension point="zoundry.appframework.ui.core.menuitem">
+        <id>zoundry.blogapp.ui.core.menuitem.tools.separator1</id>
+        <extension-data>
+            <menu-item>
+                <group>zoundry.blogapp.ui.core.menugroup.tools</group>
+                <name>SEPARATOR</name>
+                <gravity>10</gravity>
+                <type>separator</type>
+            </menu-item>
+        </extension-data>
+    </zoundry-extension>
+
+    <!-- Tools->Media Storages Menu Item -->
+    <zoundry-extension point="zoundry.appframework.ui.core.menuitem">
+        <id>zoundry.blogapp.ui.core.menuitem.tools.mediastorages</id>
+        <class>zoundry.blogapp.ui.menus.main.tools.ZMediaStoragesMenuAction</class>
+        <extension-data>
+            <menu-item>
+                <group>zoundry.blogapp.ui.core.menugroup.tools</group>
+                <name>%menuitem.tools.mediastorages.name%</name>
+                <gravity>15</gravity>
+                <description>%menuitem.tools.mediastorages.description%</description>
+                <icon>icons/mainmenu/tools/mediastorages.png</icon>
+            </menu-item>
+        </extension-data>
+    </zoundry-extension>
+
+    <!-- Tools->Blog Templates Menu Item -->
+    <zoundry-extension point="zoundry.appframework.ui.core.menuitem">
+        <id>zoundry.blogapp.ui.core.menuitem.tools.template-manager</id>
+        <class>zoundry.blogapp.ui.menus.main.tools.ZManageTemplatesMenuAction</class>
+        <extension-data>
+            <menu-item>
+                <group>zoundry.blogapp.ui.core.menugroup.tools</group>
+                <name>%menuitem.tools.templatemanager.name%</name>
+                <gravity>15</gravity>
+                <description>%menuitem.tools.templatemanager.description%</description>
+                <icon>icons/mainmenu/tools/templatemanager.png</icon>
+            </menu-item>
+        </extension-data>
+    </zoundry-extension>
+
+    <!-- Tools->[Separator] Menu Item -->
+    <zoundry-extension point="zoundry.appframework.ui.core.menuitem">
+        <id>zoundry.blogapp.ui.core.menuitem.tools.separator2</id>
+        <extension-data>
+            <menu-item>
+                <group>zoundry.blogapp.ui.core.menugroup.tools</group>
+                <name>SEPARATOR</name>
+                <gravity>20</gravity>
+                <type>separator</type>
+            </menu-item>
+        </extension-data>
+    </zoundry-extension>
+
+    <!-- Tools->Settings Menu Item -->
+    <zoundry-extension point="zoundry.appframework.ui.core.menuitem">
+        <id>zoundry.blogapp.ui.core.menuitem.tools.settings</id>
+        <class>zoundry.blogapp.ui.menus.main.tools.ZSettingsMenuAction</class>
+        <extension-data>
+            <menu-item>
+                <group>zoundry.blogapp.ui.core.menugroup.tools</group>
+                <name>%menuitem.tools.settings.name%</name>
+                <gravity>25</gravity>
+                <description>%menuitem.tools.settings.description%</description>
+                <icon>icons/mainmenu/tools/settings.png</icon>
+            </menu-item>
+        </extension-data>
+    </zoundry-extension>
+
+    <!-- View->[Separator] Menu Item -->
+    <zoundry-extension point="zoundry.appframework.ui.core.menuitem">
+        <id>zoundry.blogapp.ui.core.menuitem.view.separator1</id>
+        <extension-data>
+            <menu-item>
+                <group>zoundry.blogapp.ui.core.menugroup.view</group>
+                <name>SEPARATOR</name>
+                <gravity>20</gravity>
+                <type>separator</type>
+            </menu-item>
+        </extension-data>
+    </zoundry-extension>
+
+    <!-- Help->Translate Raven... Menu Item -->
+    <zoundry-extension point="zoundry.appframework.ui.core.menuitem">
+        <id>zoundry.blogapp.ui.core.menuitem.help.about</id>
+        <class>zoundry.blogapp.ui.menus.main.help.ZManageTranslationsMenuAction</class>
+        <extension-data>
+            <menu-item>
+                <group>zoundry.blogapp.ui.core.menugroup.help</group>
+                <name>%menuitem.help.translate.name%</name>
+                <gravity>20</gravity>
+                <description>%menuitem.help.translate.description%</description>
+                <icon>icons/mainmenu/help/translate.png</icon>
+            </menu-item>
+        </extension-data>
+    </zoundry-extension>
+
+    <!-- Help->About Menu Item -->
+    <zoundry-extension point="zoundry.appframework.ui.core.menuitem">
+        <id>zoundry.blogapp.ui.core.menuitem.help.about</id>
+        <class>zoundry.blogapp.ui.menus.main.help.ZAboutMenuAction</class>
+        <extension-data>
+            <menu-item>
+                <group>zoundry.blogapp.ui.core.menugroup.help</group>
+                <name>%menuitem.help.about.name%</name>
+                <gravity>50</gravity>
+                <description>%menuitem.help.about.description%</description>
+                <icon>icons/mainmenu/help/about.png</icon>
+            </menu-item>
+        </extension-data>
+    </zoundry-extension>
+
+</zoundry-plugin>

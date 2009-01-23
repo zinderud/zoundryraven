@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+
+    <start>
+        <element 
+            name="menu-group" 
+            ns="http://www.zoundry.com/schemas/2006/03/zplugin.rng" 
+            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+
+            <element name="parent-group">
+                <data type="string"/>
+            </element>
+            <element name="name">
+                <data type="string"/>
+            </element>
+            <element name="gravity">
+                <data type="int"/>
+            </element>
+            <optional>
+                <element name="description">
+                    <data type="string"/>
+                </element>
+            </optional>
+            <optional>
+                <element name="icon">
+                    <data type="string" />
+                </element>
+            </optional>
+
+        </element>
+    </start>
+
+</grammar>

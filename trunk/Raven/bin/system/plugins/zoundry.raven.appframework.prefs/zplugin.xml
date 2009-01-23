@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zoundry-plugin xmlns="http://www.zoundry.com/schemas/2006/03/zplugin.rng" version="1.0" signature="WDLW3E9QTZGNTAT60AGO75BYMTYY5J46VCYEO8AAT72N990CVDM6L2ZAK4KNVWDMGHXEGL95GS8GA7OYP79148JLOS1H4LJRVEE61H054YJKW27DCPH35YVQVPIADPXX5LAF8Y6STZ07JCPDJ8F14CGSURS4FBLZUEU3Z8FUFYBMNQT8Y65N0CZT3OX3GXA4RPX3H563SFT9EVXE5B27Z1423YZA1MHQSFFOVYLMC8D9J8FTK3D1K4ILX0YQE7QL7VK1RX8HGS33S7FSNFH59AYIQYGIXTUIYXC9HOZD7GUZONXCR8R2FV7U9JQPTXEC74LXCM1CAW77JPJDQ4MVVY3STNNZWOSJWZ4BOKJ0BXTRXT38FLNV5AKXE055AQP750MS35SP9VWE" id="zoundry.raven.appframework.prefs" name="Zoundry Common User Preferences">
+
+    <dependencies>
+        <depends on="zoundry.raven.appframework.services" version="1.0"/>
+    </dependencies>
+
+    <!-- The General Preference Page -->
+    <zoundry-extension point="zoundry.appframework.ui.preferences.prefpage">
+        <id>zoundry.appframework.ui.preferences.prefpage.general</id>
+        <class>zoundry.appframework.ui.prefs.prefpages.generalprefpage.ZGeneralPreferencePage</class>
+        <extension-data>
+            <prefpage>
+                <parent/>
+                <name>%prefpage.general.name%</name>
+                <description>%prefpage.general.description%</description>
+                <header-image>images/prefpages/general/header.png</header-image>
+                <icon>icons/prefpages/general.png</icon>
+            </prefpage>
+        </extension-data>
+    </zoundry-extension>
+    
+    <!-- The General->Proxy Preference Page -->
+    <zoundry-extension point="zoundry.appframework.ui.preferences.prefpage">
+        <id>zoundry.appframework.ui.preferences.prefpage.general.proxy</id>
+        <class>zoundry.appframework.ui.prefs.prefpages.proxyprefpage.ZProxyPreferencePage</class>
+        <extension-data>
+            <prefpage>
+                <parent>zoundry.appframework.ui.preferences.prefpage.general</parent>
+                <name>%prefpage.general.proxy.name%</name>
+                <description>%prefpage.general.proxy.description%</description>
+                <header-image>images/prefpages/proxy/header.png</header-image>
+                <icon>icons/prefpages/proxy.png</icon>
+            </prefpage>
+        </extension-data>
+    </zoundry-extension>    
+
+    <!-- The General->Logger Preference Page -->
+    <zoundry-extension point="zoundry.appframework.ui.preferences.prefpage">
+        <id>zoundry.appframework.ui.preferences.prefpage.general.loggerservice</id>
+        <class>zoundry.appframework.ui.prefs.prefpages.loggerprefpage.ZLoggerPreferencePage</class>
+        <extension-data>
+            <prefpage>
+                <parent>zoundry.appframework.ui.preferences.prefpage.general</parent>
+                <name>%prefpage.general.logger.name%</name>
+                <description>%prefpage.general.logger.description%</description>
+                <header-image>images/prefpages/logging/header.png</header-image>
+                <icon>icons/prefpages/logging.png</icon>
+            </prefpage>
+        </extension-data>
+    </zoundry-extension>
+
+    <!-- The General->Locale Preference Page -->
+    <zoundry-extension point="zoundry.appframework.ui.preferences.prefpage">
+        <id>zoundry.appframework.ui.preferences.prefpage.general.locale</id>
+        <class>zoundry.appframework.ui.prefs.prefpages.localeprefpage.ZLocalePreferencePage</class>
+        <extension-data>
+            <prefpage>
+                <parent>zoundry.appframework.ui.preferences.prefpage.general</parent>
+                <name>%prefpage.general.locale.name%</name>
+                <description>%prefpage.general.locale.description%</description>
+                <header-image>images/prefpages/locale/header.png</header-image>
+                <icon>icons/prefpages/locale.png</icon>
+            </prefpage>
+        </extension-data>
+    </zoundry-extension>
+
+    <!-- The General->Zoundry Service Preference Page -->
+    <zoundry-extension point="zoundry.appframework.ui.preferences.prefpage">
+        <id>zoundry.appframework.ui.preferences.prefpage.zoundry-service</id>
+        <class>zoundry.appframework.ui.prefs.prefpages.zoundrysvcprefpage.ZZoundryServicePreferencePage</class>
+        <extension-data>
+            <prefpage>
+                <parent>zoundry.appframework.ui.preferences.prefpage.general</parent>
+                <name>%prefpage.zoundrysvc.name%</name>
+                <description>%prefpage.zoundrysvc.description%</description>
+                <header-image>images/prefpages/zoundrysvc/header.png</header-image>
+                <icon>icons/prefpages/zoundrysvc.png</icon>
+            </prefpage>
+        </extension-data>
+    </zoundry-extension>
+
+    <!-- The Spelling Preference Page -->
+    <zoundry-extension point="zoundry.appframework.ui.preferences.prefpage">
+        <id>zoundry.appframework.ui.preferences.prefpage.spelling</id>
+        <class>zoundry.appframework.ui.prefs.prefpages.spelling.spellingprefpage.ZSpellingPreferencePage</class>
+        <extension-data>
+            <prefpage>
+                <parent/>
+                <name>%prefpage.spelling.name%</name>
+                <description>%prefpage.spelling.description%</description>
+                <header-image>images/prefpages/spelling/header.png</header-image>
+                <icon>icons/prefpages/spelling.png</icon>
+            </prefpage>
+        </extension-data>
+    </zoundry-extension>
+
+    <!-- The Personal Dictionary Preference Page -->
+    <zoundry-extension point="zoundry.appframework.ui.preferences.prefpage">
+        <id>zoundry.appframework.ui.preferences.prefpage.spelling.personal-dict</id>
+        <class>zoundry.appframework.ui.prefs.prefpages.spelling.personaldictprefpage.ZPersonalDictionaryPreferencePage</class>
+        <extension-data>
+            <prefpage>
+                <parent>zoundry.appframework.ui.preferences.prefpage.spelling</parent>
+                <name>%prefpage.spelling.personal-dict.name%</name>
+                <description>%prefpage.spelling.personal-dict.description%</description>
+                <header-image>images/prefpages/personal-dict/header.png</header-image>
+                <icon>icons/prefpages/personal-dict.png</icon>
+            </prefpage>
+        </extension-data>
+    </zoundry-extension>
+
+</zoundry-plugin>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zoundry-plugin xmlns="http://www.zoundry.com/schemas/2006/03/zplugin.rng" version="1.0" signature="NURGDYGLXJT5BKGNCMA0NOICFK3IANYTQ040R5SYF5OZ8Y74XJPY4WP2C49QLWSH2Z3XPJR7BLLYVV9BFFJ7X1J3F94XJ3BZGXGY5BDVB3MC262I664H88JESE95NPZZVBRVO2YZFV5JYG2DAWX9STR12EYUYSCYUZMHG6QLAA17ALZO9UISMQL7P01J2TB50EG5VD5XADZBEOLCFV9KNAXWEPTMXTI1YT6LDZGK0VTKWZLLP8CNTAO0NONT48SPFIKVZX3O1F6XWV3T8ABJ387F2W1NC5Y4E82HKEHVNHIDUHLZ46DVCOZ8UZVCEBR1PWEG208JOJBCA7ZVE8P2P9GP7GVS7HS0U9K2GWW7BYKEXQPGJ4VYDI9VFQF0YZED4JSV00WWFGPT" id="zoundry.raven.blogapp.services" name="Zoundry Blog App Services">
+
+    <dependencies>
+        <depends on="zoundry.raven.appframework.services" version="1.0"/>
+        <depends on="zoundry.raven.blogapp.extensions" version="1.0"/>
+        <depends on="zoundry.raven.blogapp.mediastorages" version="1.0"/>
+        <depends on="zoundry.raven.blogapp.pubsystems" version="1.0"/>
+        <depends on="zoundry.raven.blogapp.simplelinkprovider" version="1.0"/>
+    </dependencies>
+
+    <!-- The Application Singleton Service -->
+    <zoundry-extension point="zoundry.engine.service">
+        <id>zoundry.blogapp.service.singleton</id>
+        <class>zoundry.blogapp.services.singleton.singletonimpl.ZSingletonService</class>
+    </zoundry-extension>
+
+    <!-- The Blog Template Service -->
+    <zoundry-extension point="zoundry.engine.service">
+        <id>zoundry.blogapp.service.template</id>
+        <class>zoundry.blogapp.services.template.templatesvcimpl.ZTemplateService</class>
+    </zoundry-extension>
+
+    <!-- The Media Storage Service -->
+    <zoundry-extension point="zoundry.engine.service">
+        <id>zoundry.blogapp.service.mediastorage</id>
+        <class>zoundry.blogapp.services.mediastorage.mediastoragesrvc.ZMediaStorageService</class>
+    </zoundry-extension>
+    
+    <!-- The Publishing Service -->
+    <zoundry-extension point="zoundry.engine.service">
+        <id>zoundry.blogapp.service.publishing</id>
+        <class>zoundry.blogapp.services.pubsystems.publishingsvc.ZPublishingService</class>
+    </zoundry-extension>
+    
+    <!-- The Account Store Service -->
+    <zoundry-extension point="zoundry.engine.service">
+        <id>zoundry.blogapp.service.accountstore</id>
+        <class>zoundry.blogapp.services.accountstore.accountstore.ZAccountStore</class>
+    </zoundry-extension>
+    
+    <!-- The Data Store Service -->
+    <zoundry-extension point="zoundry.engine.service">
+        <id>zoundry.blogapp.service.datastore</id>
+        <class>zoundry.blogapp.services.datastore.datastore.ZDataStore</class>
+    </zoundry-extension>
+    
+    <!-- The Document Index Service -->
+    <zoundry-extension point="zoundry.engine.service">
+        <id>zoundry.blogapp.service.docindex</id>
+        <class>zoundry.blogapp.services.docindex.docindex.ZDocumentIndex</class>
+    </zoundry-extension>
+    
+    <!-- The Anonymous Usage Statistics Service -->
+    <zoundry-extension point="zoundry.engine.service">
+        <id>zoundry.blogapp.service.usage-statistics</id>
+        <class>zoundry.blogapp.services.usage.usage.ZUsageStatisticsService</class>
+    </zoundry-extension>
+    
+    <!-- The Crash Recovery Service -->
+    <zoundry-extension point="zoundry.engine.service">
+        <id>zoundry.blogapp.service.crash-recovery</id>
+        <class>zoundry.blogapp.services.crashrecovery.crashrecoveryimpl.ZCrashRecoveryService</class>
+    </zoundry-extension>
+
+    <!-- The url link provider Service --> 
+    <zoundry-extension point="zoundry.engine.service">
+        <id>zoundry.blogapp.service.links</id>
+        <class>zoundry.blogapp.services.links.linksvcimpl.ZLinkProviderService</class>
+    </zoundry-extension>
+
+    <!-- The Zoundry Product Service -->
+    <zoundry-extension point="zoundry.engine.service">
+        <id>zoundry.blogapp.service.products</id>
+        <class>zoundry.blogapp.services.zservice.productsvcimpl.ZProductService</class>
+    </zoundry-extension>
+
+    <!-- ================================== -->
+    <!-- Contributions to existing Services -->
+    <!-- ================================== -->
+
+    <!-- Add a Blog Post DnD Handler to the DnD Service -->
+    <zoundry-extension point="zoundry.appframework.dnd.handler">
+        <id>zoundry.blogapp.dnd.handler.blog-post</id>
+        <class>zoundry.blogapp.services.dnd.handlers.blogposthandler.ZBlogPostDnDHandler</class>
+    </zoundry-extension>
+
+</zoundry-plugin>

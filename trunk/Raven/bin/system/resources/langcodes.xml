@@ -1,0 +1,3857 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+      Language codes, compiled by Zoundry LLC. (http://www.zoundry.com)
+
+      Based on the ISO639-X available at http://www.loc.gov/standards/iso639-2/langcodes.html
+      See also http://www.ethnologue.com/codes/default.asp.
+
+      The code attribute in <language> defines the 'default' code, where the two-letter code takes priority over a 3 letter code.
+      (http://www.w3.org/International/questions/qa-lang-2or3)
+      
+      The country codes indicate the variation of the language by country  (when applicable).
+-->
+<language-codes xmlns="http://www.zoundry.com/schemas/2006/11/zlanguagecodes.rng">
+
+    <language default-code="ab" name="Abkhazian">
+        <code type="iso639_1">ab</code>
+        <country-codes />
+    </language>
+    <language default-code="ace" name="Achinese">
+        <code type="iso639_2">ace</code>
+        <country-codes>
+            <country-code>id</country-code>
+        </country-codes>
+    </language>
+    <language default-code="ach" name="Acoli">
+        <code type="iso639_2">ach</code>
+        <country-codes>
+            <country-code>sd</country-code>
+            <country-code>ug</country-code>
+        </country-codes>
+    </language>
+    <language default-code="ada" name="Adangme">
+        <code type="iso639_2">ada</code>
+        <country-codes>
+            <country-code>gh</country-code>
+        </country-codes>
+    </language>
+    <language default-code="ady" name="Adyghe; Adygei">
+        <code type="iso639_2">ady</code>
+        <country-codes>
+            <country-code>au</country-code>
+            <country-code>de</country-code>
+            <country-code>eg</country-code>
+            <country-code>fr</country-code>
+            <country-code>il</country-code>
+            <country-code>iq</country-code>
+            <country-code>jo</country-code>
+            <country-code>mk</country-code>
+            <country-code>nl</country-code>
+            <country-code>ru</country-code>
+            <country-code>sy</country-code>
+            <country-code>tr</country-code>
+            <country-code>us</country-code>
+        </country-codes>
+    </language>
+    <language default-code="aa" name="Afar">
+        <code type="iso639_1">aa</code>
+        <code type="iso639_2">aar</code>
+        <country-codes>
+            <country-code>dj</country-code>
+            <country-code>er</country-code>
+            <country-code>et</country-code>
+        </country-codes>
+    </language>
+    <language default-code="afh" name="Afrihili">
+        <code type="iso639_2">afh</code>
+        <country-codes />
+    </language>
+    <language default-code="af" name="Afrikaans">
+        <code type="iso639_1">af</code>
+        <code type="iso639_2">afr</code>
+        <country-codes>
+            <country-code>au</country-code>
+            <country-code>bw</country-code>
+            <country-code>ca</country-code>
+            <country-code>ls</country-code>
+            <country-code>mw</country-code>
+            <country-code>na</country-code>
+            <country-code>nz</country-code>
+            <country-code>za</country-code>
+            <country-code>zm</country-code>
+            <country-code>zw</country-code>
+        </country-codes>
+    </language>
+    <language default-code="ain" name="Ainu">
+        <code type="iso639_2">ain</code>
+        <country-codes>
+            <country-code>jp</country-code>
+            <country-code>ru</country-code>
+        </country-codes>
+    </language>
+    <language default-code="ak" name="Akan">
+        <code type="iso639_1">ak</code>
+        <code type="iso639_2">aka</code>
+        <country-codes>
+            <country-code>gh</country-code>
+        </country-codes>
+    </language>
+    <language default-code="akk" name="Akkadian">
+        <code type="iso639_2">akk</code>
+        <country-codes />
+    </language>
+    <language default-code="sq" name="Albanian">
+        <code type="iso639_1">sq</code>
+        <code type="iso639_2">sqi</code>
+        <code type="iso639_2">alb</code>
+        <country-codes />
+    </language>
+    <language default-code="gsw" name="Alemanic; Swiss German">
+        <code type="iso639_2">gsw</code>
+        <country-codes>
+            <country-code>at</country-code>
+            <country-code>ch</country-code>
+            <country-code>de</country-code>
+            <country-code>fr</country-code>
+            <country-code>li</country-code>
+        </country-codes>
+    </language>
+    <language default-code="ale" name="Aleut">
+        <code type="iso639_2">ale</code>
+        <country-codes>
+            <country-code>ru</country-code>
+            <country-code>us</country-code>
+        </country-codes>
+    </language>
+    <language default-code="am" name="Amharic">
+        <code type="iso639_1">am</code>
+        <code type="iso639_2">amh</code>
+        <country-codes>
+            <country-code>eg</country-code>
+            <country-code>et</country-code>
+            <country-code>il</country-code>
+            <country-code>se</country-code>
+        </country-codes>
+    </language>
+    <language default-code="anp" name="Angika">
+        <code type="iso639_2">anp</code>
+        <country-codes>
+            <country-code>in</country-code>
+            <country-code>np</country-code>
+        </country-codes>
+    </language>
+    <language default-code="ar" name="Arabic">
+        <code type="iso639_1">ar</code>
+        <code type="iso639_2">ara</code>
+        <country-codes />
+    </language>
+    <language default-code="an" name="Aragonese">
+        <code type="iso639_1">an</code>
+        <code type="iso639_2">arg</code>
+        <country-codes>
+            <country-code>es</country-code>
+        </country-codes>
+    </language>
+    <language default-code="arc" name="Aramaic">
+        <code type="iso639_2">arc</code>
+        <country-codes />
+    </language>
+    <language default-code="arp" name="Arapaho">
+        <code type="iso639_2">arp</code>
+        <country-codes>
+            <country-code>us</country-code>
+        </country-codes>
+    </language>
+    <language default-code="arn" name="Araucanian">
+        <code type="iso639_2">arn</code>
+        <country-codes>
+            <country-code>ar</country-code>
+            <country-code>cl</country-code>
+        </country-codes>
+    </language>
+    <language default-code="arw" name="Arawak">
+        <code type="iso639_2">arw</code>
+        <country-codes>
+            <country-code>gf</country-code>
+            <country-code>gy</country-code>
+            <country-code>sr</country-code>
+            <country-code>ve</country-code>
+        </country-codes>
+    </language>
+    <language default-code="hy" name="Armenian">
+        <code type="iso639_1">hy</code>
+        <code type="iso639_2">arm</code>
+        <code type="iso639_2">hye</code>
+        <country-codes>
+            <country-code>am</country-code>
+            <country-code>az</country-code>
+            <country-code>bg</country-code>
+            <country-code>ca</country-code>
+            <country-code>cy</country-code>
+            <country-code>ee</country-code>
+            <country-code>eg</country-code>
+            <country-code>fr</country-code>
+            <country-code>ge</country-code>
+            <country-code>gr</country-code>
+            <country-code>hn</country-code>
+            <country-code>hu</country-code>
+            <country-code>il</country-code>
+            <country-code>in</country-code>
+            <country-code>iq</country-code>
+            <country-code>ir</country-code>
+            <country-code>jo</country-code>
+            <country-code>kg</country-code>
+            <country-code>kz</country-code>
+            <country-code>lb</country-code>
+            <country-code>ps</country-code>
+            <country-code>ro</country-code>
+            <country-code>ru</country-code>
+            <country-code>sy</country-code>
+            <country-code>tj</country-code>
+            <country-code>tm</country-code>
+            <country-code>tr</country-code>
+            <country-code>ua</country-code>
+            <country-code>us</country-code>
+            <country-code>uz</country-code>
+        </country-codes>
+    </language>
+    <language default-code="rup"
+        name="Aromanian; Arumanian; Macedo-Romanian">
+        <code type="iso639_2">rup</code>
+        <country-codes>
+            <country-code>al</country-code>
+            <country-code>ba</country-code>
+            <country-code>bg</country-code>
+            <country-code>cs</country-code>
+            <country-code>gr</country-code>
+            <country-code>mk</country-code>
+            <country-code>ro</country-code>
+        </country-codes>
+    </language>
+    <language default-code="as" name="Assamese">
+        <code type="iso639_1">as</code>
+        <code type="iso639_2">asm</code>
+        <country-codes>
+            <country-code>bd</country-code>
+            <country-code>bt</country-code>
+            <country-code>in</country-code>
+        </country-codes>
+    </language>
+    <language default-code="ast" name="Asturian; Bable">
+        <code type="iso639_2">ast</code>
+        <country-codes>
+            <country-code>es</country-code>
+            <country-code>pt</country-code>
+        </country-codes>
+    </language>
+    <language default-code="av" name="Avaric">
+        <code type="iso639_1">av</code>
+        <code type="iso639_2">ava</code>
+        <country-codes>
+            <country-code>az</country-code>
+            <country-code>kz</country-code>
+            <country-code>ru</country-code>
+            <country-code>tr</country-code>
+        </country-codes>
+    </language>
+    <language default-code="ae" name="Avestan">
+        <code type="iso639_1">ae</code>
+        <code type="iso639_2">ave</code>
+        <country-codes>
+            <country-code>ir</country-code>
+        </country-codes>
+    </language>
+    <language default-code="awa" name="Awadhi">
+        <code type="iso639_2">awa</code>
+        <country-codes>
+            <country-code>in</country-code>
+            <country-code>np</country-code>
+        </country-codes>
+    </language>
+    <language default-code="ay" name="Aymara">
+        <code type="iso639_1">ay</code>
+        <code type="iso639_2">aym</code>
+        <country-codes />
+    </language>
+    <language default-code="az" name="Azerbaijani">
+        <code type="iso639_1">az</code>
+        <code type="iso639_2">aze</code>
+        <country-codes />
+    </language>
+    <language default-code="ban" name="Balinese">
+        <code type="iso639_2">ban</code>
+        <country-codes>
+            <country-code>id</country-code>
+        </country-codes>
+    </language>
+    <language default-code="bal" name="Baluchi">
+        <code type="iso639_2">bal</code>
+        <country-codes />
+    </language>
+    <language default-code="bm" name="Bambara">
+        <code type="iso639_1">bm</code>
+        <code type="iso639_2">bam</code>
+        <country-codes>
+            <country-code>bf</country-code>
+            <country-code>ci</country-code>
+            <country-code>gm</country-code>
+            <country-code>gn</country-code>
+            <country-code>ml</country-code>
+            <country-code>mr</country-code>
+            <country-code>sn</country-code>
+        </country-codes>
+    </language>
+    <language default-code="bad" name="Banda">
+        <code type="iso639_2">bad</code>
+        <country-codes />
+    </language>
+    <language default-code="bas" name="Basa">
+        <code type="iso639_2">bas</code>
+        <country-codes>
+            <country-code>cm</country-code>
+        </country-codes>
+    </language>
+    <language default-code="ba" name="Bashkir">
+        <code type="iso639_1">ba</code>
+        <code type="iso639_2">bak</code>
+        <country-codes>
+            <country-code>kg</country-code>
+            <country-code>kz</country-code>
+            <country-code>ru</country-code>
+            <country-code>tj</country-code>
+            <country-code>tm</country-code>
+            <country-code>ua</country-code>
+            <country-code>uz</country-code>
+        </country-codes>
+    </language>
+    <language default-code="eu" name="Basque">
+        <code type="iso639_1">eu</code>
+        <code type="iso639_2">eus</code>
+        <code type="iso639_2">baq</code>
+        <country-codes>
+            <country-code>au</country-code>
+            <country-code>cr</country-code>
+            <country-code>es</country-code>
+            <country-code>mx</country-code>
+            <country-code>ph</country-code>
+            <country-code>us</country-code>
+        </country-codes>
+    </language>
+    <language default-code="btk" name="Batak (Indonesia)">
+        <code type="iso639_2">btk</code>
+        <country-codes />
+    </language>
+    <language default-code="bej" name="Beja">
+        <code type="iso639_2">bej</code>
+        <country-codes>
+            <country-code>eg</country-code>
+            <country-code>er</country-code>
+            <country-code>sd</country-code>
+        </country-codes>
+    </language>
+    <language default-code="be" name="Belarusian">
+        <code type="iso639_1">be</code>
+        <code type="iso639_2">bel</code>
+        <country-codes>
+            <country-code>az</country-code>
+            <country-code>by</country-code>
+            <country-code>ca</country-code>
+            <country-code>ee</country-code>
+            <country-code>kg</country-code>
+            <country-code>kz</country-code>
+            <country-code>lt</country-code>
+            <country-code>lv</country-code>
+            <country-code>md</country-code>
+            <country-code>pl</country-code>
+            <country-code>ru</country-code>
+            <country-code>tj</country-code>
+            <country-code>tm</country-code>
+            <country-code>ua</country-code>
+            <country-code>us</country-code>
+            <country-code>uz</country-code>
+        </country-codes>
+    </language>
+    <language default-code="bem" name="Bemba">
+        <code type="iso639_2">bem</code>
+        <country-codes>
+            <country-code>bw</country-code>
+            <country-code>cd</country-code>
+            <country-code>mw</country-code>
+            <country-code>zm</country-code>
+        </country-codes>
+    </language>
+    <language default-code="bn" name="Bengali">
+        <code type="iso639_1">bn</code>
+        <code type="iso639_2">ben</code>
+        <country-codes>
+            <country-code>ae</country-code>
+            <country-code>bd</country-code>
+            <country-code>gb</country-code>
+            <country-code>in</country-code>
+            <country-code>mw</country-code>
+            <country-code>np</country-code>
+            <country-code>sa</country-code>
+            <country-code>sg</country-code>
+            <country-code>us</country-code>
+        </country-codes>
+    </language>
+    <language default-code="bho" name="Bhojpuri">
+        <code type="iso639_2">bho</code>
+        <country-codes>
+            <country-code>in</country-code>
+            <country-code>mu</country-code>
+            <country-code>np</country-code>
+        </country-codes>
+    </language>
+    <language default-code="bh" name="Bihari">
+        <code type="iso639_1">bh</code>
+        <code type="iso639_2">bih</code>
+        <country-codes />
+    </language>
+    <language default-code="bik" name="Bikol">
+        <code type="iso639_2">bik</code>
+        <country-codes />
+    </language>
+    <language default-code="bin" name="Bini">
+        <code type="iso639_2">bin</code>
+        <country-codes>
+            <country-code>ng</country-code>
+        </country-codes>
+    </language>
+    <language default-code="bi" name="Bislama">
+        <code type="iso639_1">bi</code>
+        <code type="iso639_2">bis</code>
+        <country-codes>
+            <country-code>nc</country-code>
+            <country-code>vu</country-code>
+        </country-codes>
+    </language>
+    <language default-code="byn" name="Blin; Bilin">
+        <code type="iso639_2">byn</code>
+        <country-codes>
+            <country-code>er</country-code>
+        </country-codes>
+    </language>
+    <language default-code="bs" name="Bosnian">
+        <code type="iso639_1">bs</code>
+        <code type="iso639_2">bos</code>
+        <country-codes>
+            <country-code>ba</country-code>
+        </country-codes>
+    </language>
+    <language default-code="bra" name="Braj">
+        <code type="iso639_2">bra</code>
+        <country-codes>
+            <country-code>in</country-code>
+        </country-codes>
+    </language>
+    <language default-code="br" name="Breton">
+        <code type="iso639_1">br</code>
+        <code type="iso639_2">bre</code>
+        <country-codes>
+            <country-code>fr</country-code>
+            <country-code>us</country-code>
+        </country-codes>
+    </language>
+    <language default-code="bug" name="Buginese">
+        <code type="iso639_2">bug</code>
+        <country-codes>
+            <country-code>id</country-code>
+            <country-code>my</country-code>
+        </country-codes>
+    </language>
+    <language default-code="bg" name="Bulgarian">
+        <code type="iso639_1">bg</code>
+        <code type="iso639_2">bul</code>
+        <country-codes>
+            <country-code>bg</country-code>
+            <country-code>ca</country-code>
+            <country-code>cs</country-code>
+            <country-code>gr</country-code>
+            <country-code>hu</country-code>
+            <country-code>il</country-code>
+            <country-code>md</country-code>
+            <country-code>ro</country-code>
+            <country-code>tr</country-code>
+            <country-code>ua</country-code>
+            <country-code>us</country-code>
+        </country-codes>
+    </language>
+    <language default-code="bua" name="Buriat">
+        <code type="iso639_2">bua</code>
+        <country-codes />
+    </language>
+    <language default-code="my" name="Burmese">
+        <code type="iso639_1">my</code>
+        <code type="iso639_2">mya</code>
+        <code type="iso639_2">bur</code>
+        <country-codes>
+            <country-code>bd</country-code>
+            <country-code>mm</country-code>
+            <country-code>my</country-code>
+            <country-code>th</country-code>
+            <country-code>us</country-code>
+        </country-codes>
+    </language>
+    <language default-code="car" name="Carib">
+        <code type="iso639_2">car</code>
+        <country-codes>
+            <country-code>br</country-code>
+            <country-code>gf</country-code>
+            <country-code>gy</country-code>
+            <country-code>sr</country-code>
+            <country-code>ve</country-code>
+        </country-codes>
+    </language>
+    <language default-code="ca" name="Catalan; Valencian">
+        <code type="iso639_1">ca</code>
+        <code type="iso639_2">cat</code>
+        <country-codes>
+            <country-code>ad</country-code>
+            <country-code>ar</country-code>
+            <country-code>be</country-code>
+            <country-code>br</country-code>
+            <country-code>ch</country-code>
+            <country-code>cl</country-code>
+            <country-code>co</country-code>
+            <country-code>cu</country-code>
+            <country-code>de</country-code>
+            <country-code>do</country-code>
+            <country-code>dz</country-code>
+            <country-code>es</country-code>
+            <country-code>fr</country-code>
+            <country-code>it</country-code>
+            <country-code>mx</country-code>
+            <country-code>us</country-code>
+            <country-code>uy</country-code>
+            <country-code>ve</country-code>
+        </country-codes>
+    </language>
+    <language default-code="ceb" name="Cebuano">
+        <code type="iso639_2">ceb</code>
+        <country-codes>
+            <country-code>ph</country-code>
+            <country-code>us</country-code>
+        </country-codes>
+    </language>
+    <language default-code="cel" name="Celtic (Other)">
+        <code type="iso639_2">cel</code>
+        <country-codes />
+    </language>
+    <language default-code="chg" name="Chagatai">
+        <code type="iso639_2">chg</code>
+        <country-codes>
+            <country-code>tm</country-code>
+        </country-codes>
+    </language>
+    <language default-code="ch" name="Chamorro">
+        <code type="iso639_1">ch</code>
+        <code type="iso639_2">cha</code>
+        <country-codes>
+            <country-code>gu</country-code>
+            <country-code>mp</country-code>
+        </country-codes>
+    </language>
+    <language default-code="ce" name="Chechen">
+        <code type="iso639_1">ce</code>
+        <code type="iso639_2">che</code>
+        <country-codes>
+            <country-code>de</country-code>
+            <country-code>ge</country-code>
+            <country-code>jo</country-code>
+            <country-code>kg</country-code>
+            <country-code>kz</country-code>
+            <country-code>ru</country-code>
+            <country-code>sy</country-code>
+            <country-code>tr</country-code>
+            <country-code>uz</country-code>
+        </country-codes>
+    </language>
+    <language default-code="chb" name="Chibcha">
+        <code type="iso639_2">chb</code>
+        <country-codes>
+            <country-code>co</country-code>
+        </country-codes>
+    </language>
+    <language default-code="ny" name="Chichewa; Chewa; Nyanja">
+        <code type="iso639_1">ny</code>
+        <code type="iso639_2">nya</code>
+        <country-codes>
+            <country-code>bw</country-code>
+            <country-code>mw</country-code>
+            <country-code>mz</country-code>
+            <country-code>zm</country-code>
+            <country-code>zw</country-code>
+        </country-codes>
+    </language>
+    <language default-code="zh" name="Chinese">
+        <code type="iso639_1">zh</code>
+        <code type="iso639_2">chi</code>
+        <code type="iso639_2">zho</code>
+        <country-codes>
+            <country-code>cn</country-code>
+        </country-codes>
+    </language>
+    <language default-code="cu" name="Church Slavic">
+        <code type="iso639_1">cu</code>
+        <code type="iso639_2">chu</code>
+        <country-codes>
+            <country-code>ru</country-code>
+        </country-codes>
+    </language>
+    <language default-code="chk" name="Chuukese">
+        <code type="iso639_2">chk</code>
+        <country-codes>
+            <country-code>fm</country-code>
+            <country-code>gu</country-code>
+        </country-codes>
+    </language>
+    <language default-code="cv" name="Chuvash">
+        <code type="iso639_1">cv</code>
+        <code type="iso639_2">chv</code>
+        <country-codes>
+            <country-code>ee</country-code>
+            <country-code>kg</country-code>
+            <country-code>kz</country-code>
+            <country-code>ru</country-code>
+            <country-code>uz</country-code>
+        </country-codes>
+    </language>
+    <language default-code="cop" name="Coptic">
+        <code type="iso639_2">cop</code>
+        <country-codes>
+            <country-code>eg</country-code>
+        </country-codes>
+    </language>
+    <language default-code="co" name="Corsican">
+        <code type="iso639_1">co</code>
+        <code type="iso639_2">cos</code>
+        <country-codes>
+            <country-code>bo</country-code>
+            <country-code>ca</country-code>
+            <country-code>cu</country-code>
+            <country-code>fr</country-code>
+            <country-code>it</country-code>
+            <country-code>pr</country-code>
+            <country-code>us</country-code>
+            <country-code>uy</country-code>
+            <country-code>ve</country-code>
+        </country-codes>
+    </language>
+    <language default-code="cr" name="Cree">
+        <code type="iso639_1">cr</code>
+        <code type="iso639_2">cre</code>
+        <country-codes />
+    </language>
+    <language default-code="crh"
+        name="Crimean Tatar; Crimean Turkish">
+        <code type="iso639_2">crh</code>
+        <country-codes>
+            <country-code>bg</country-code>
+            <country-code>kg</country-code>
+            <country-code>md</country-code>
+            <country-code>ro</country-code>
+            <country-code>tr</country-code>
+            <country-code>ua</country-code>
+            <country-code>us</country-code>
+            <country-code>uz</country-code>
+        </country-codes>
+    </language>
+    <language default-code="hr" name="Croatian">
+        <code type="iso639_1">hr</code>
+        <code type="iso639_2">hrv</code>
+        <code type="iso639_2">scr</code>
+        <country-codes>
+            <country-code>at</country-code>
+            <country-code>ba</country-code>
+            <country-code>de</country-code>
+            <country-code>hr</country-code>
+            <country-code>hu</country-code>
+            <country-code>it</country-code>
+            <country-code>si</country-code>
+            <country-code>sk</country-code>
+        </country-codes>
+    </language>
+    <language default-code="cus" name="Cushitic">
+        <code type="iso639_2">cus</code>
+        <country-codes />
+    </language>
+    <language default-code="cs" name="Czech">
+        <code type="iso639_1">cs</code>
+        <code type="iso639_2">cze</code>
+        <code type="iso639_2">ces</code>
+        <country-codes>
+            <country-code>at</country-code>
+            <country-code>bg</country-code>
+            <country-code>ca</country-code>
+            <country-code>cz</country-code>
+            <country-code>il</country-code>
+            <country-code>pl</country-code>
+            <country-code>ro</country-code>
+            <country-code>sk</country-code>
+            <country-code>ua</country-code>
+            <country-code>us</country-code>
+        </country-codes>
+    </language>
+    <language default-code="da" name="Danish">
+        <code type="iso639_1">da</code>
+        <code type="iso639_2">dan</code>
+        <country-codes>
+            <country-code>ae</country-code>
+            <country-code>ca</country-code>
+            <country-code>de</country-code>
+            <country-code>dk</country-code>
+            <country-code>gl</country-code>
+            <country-code>is</country-code>
+            <country-code>no</country-code>
+            <country-code>se</country-code>
+            <country-code>us</country-code>
+        </country-codes>
+    </language>
+    <language default-code="dar" name="Dargwa">
+        <code type="iso639_2">dar</code>
+        <country-codes>
+            <country-code>az</country-code>
+            <country-code>kg</country-code>
+            <country-code>kz</country-code>
+            <country-code>ru</country-code>
+            <country-code>tm</country-code>
+            <country-code>tr</country-code>
+            <country-code>ua</country-code>
+            <country-code>uz</country-code>
+        </country-codes>
+    </language>
+    <language default-code="day" name="Dayak">
+        <code type="iso639_2">day</code>
+        <country-codes />
+    </language>
+    <language default-code="del" name="Delaware">
+        <code type="iso639_2">del</code>
+        <country-codes />
+    </language>
+    <language default-code="din" name="Dinka">
+        <code type="iso639_2">din</code>
+        <country-codes />
+    </language>
+    <language default-code="dv" name="Divehi">
+        <code type="iso639_1">dv</code>
+        <code type="iso639_2">div</code>
+        <country-codes>
+            <country-code>in</country-code>
+            <country-code>mv</country-code>
+        </country-codes>
+    </language>
+    <language default-code="doi" name="Dogri">
+        <code type="iso639_2">doi</code>
+        <country-codes />
+    </language>
+    <language default-code="dgr" name="Dogrib">
+        <code type="iso639_2">dgr</code>
+        <country-codes>
+            <country-code>ca</country-code>
+        </country-codes>
+    </language>
+    <language default-code="dua" name="Duala">
+        <code type="iso639_2">dua</code>
+        <country-codes>
+            <country-code>cm</country-code>
+        </country-codes>
+    </language>
+    <language default-code="nl" name="Dutch; Flemish">
+        <code type="iso639_1">nl</code>
+        <code type="iso639_2">nld</code>
+        <code type="iso639_2">dut</code>
+        <country-codes>
+            <country-code>an</country-code>
+            <country-code>aw</country-code>
+            <country-code>be</country-code>
+            <country-code>de</country-code>
+            <country-code>fr</country-code>
+            <country-code>id</country-code>
+            <country-code>nl</country-code>
+            <country-code>sr</country-code>
+        </country-codes>
+    </language>
+    <language default-code="dyu" name="Dyula">
+        <code type="iso639_2">dyu</code>
+        <country-codes>
+            <country-code>bf</country-code>
+            <country-code>ci</country-code>
+            <country-code>ml</country-code>
+        </country-codes>
+    </language>
+    <language default-code="dz" name="Dzongkha">
+        <code type="iso639_1">dz</code>
+        <code type="iso639_2">dzo</code>
+        <country-codes>
+            <country-code>bt</country-code>
+            <country-code>in</country-code>
+            <country-code>np</country-code>
+        </country-codes>
+    </language>
+    <language default-code="frs" name="Eastern Frisian">
+        <code type="iso639_2">frs</code>
+        <country-codes>
+            <country-code>de</country-code>
+            <country-code>us</country-code>
+        </country-codes>
+    </language>
+    <language default-code="efi" name="Efik">
+        <code type="iso639_2">efi</code>
+        <country-codes>
+            <country-code>ng</country-code>
+        </country-codes>
+    </language>
+    <language default-code="eka" name="Ekajuk">
+        <code type="iso639_2">eka</code>
+        <country-codes>
+            <country-code>ng</country-code>
+        </country-codes>
+    </language>
+    <language default-code="elx" name="Elamite">
+        <code type="iso639_2">elx</code>
+        <country-codes />
+    </language>
+    <language default-code="en" name="English">
+        <code type="iso639_1">en</code>
+        <code type="iso639_2">eng</code>
+        <country-codes>
+            <country-code>ad</country-code>
+            <country-code>ae</country-code>
+            <country-code>ag</country-code>
+            <country-code>ai</country-code>
+            <country-code>an</country-code>
+            <country-code>as</country-code>
+            <country-code>au</country-code>
+            <country-code>aw</country-code>
+            <country-code>bb</country-code>
+            <country-code>bm</country-code>
+            <country-code>bn</country-code>
+            <country-code>bs</country-code>
+            <country-code>bw</country-code>
+            <country-code>bz</country-code>
+            <country-code>ca</country-code>
+            <country-code>ch</country-code>
+            <country-code>ck</country-code>
+            <country-code>cm</country-code>
+            <country-code>cn</country-code>
+            <country-code>de</country-code>
+            <country-code>dk</country-code>
+            <country-code>dm</country-code>
+            <country-code>do</country-code>
+            <country-code>ec</country-code>
+            <country-code>er</country-code>
+            <country-code>et</country-code>
+            <country-code>fi</country-code>
+            <country-code>fj</country-code>
+            <country-code>fk</country-code>
+            <country-code>fm</country-code>
+            <country-code>gb</country-code>
+            <country-code>gd</country-code>
+            <country-code>gh</country-code>
+            <country-code>gi</country-code>
+            <country-code>gm</country-code>
+            <country-code>gp</country-code>
+            <country-code>gr</country-code>
+            <country-code>gu</country-code>
+            <country-code>gy</country-code>
+            <country-code>hn</country-code>
+            <country-code>ie</country-code>
+            <country-code>il</country-code>
+            <country-code>in</country-code>
+            <country-code>io</country-code>
+            <country-code>it</country-code>
+            <country-code>jm</country-code>
+            <country-code>jp</country-code>
+            <country-code>ke</country-code>
+            <country-code>kh</country-code>
+            <country-code>ki</country-code>
+            <country-code>kn</country-code>
+            <country-code>kr</country-code>
+            <country-code>ky</country-code>
+            <country-code>lb</country-code>
+            <country-code>lc</country-code>
+            <country-code>lk</country-code>
+            <country-code>lr</country-code>
+            <country-code>ls</country-code>
+            <country-code>mh</country-code>
+            <country-code>mp</country-code>
+            <country-code>ms</country-code>
+            <country-code>mt</country-code>
+            <country-code>mu</country-code>
+            <country-code>mw</country-code>
+            <country-code>mx</country-code>
+            <country-code>my</country-code>
+            <country-code>na</country-code>
+            <country-code>nf</country-code>
+            <country-code>ng</country-code>
+            <country-code>no</country-code>
+            <country-code>nr</country-code>
+            <country-code>nu</country-code>
+            <country-code>nz</country-code>
+            <country-code>pg</country-code>
+            <country-code>ph</country-code>
+            <country-code>pk</country-code>
+            <country-code>pm</country-code>
+            <country-code>pn</country-code>
+            <country-code>pr</country-code>
+            <country-code>pw</country-code>
+            <country-code>rw</country-code>
+            <country-code>sa</country-code>
+            <country-code>sb</country-code>
+            <country-code>sc</country-code>
+            <country-code>sg</country-code>
+            <country-code>sh</country-code>
+            <country-code>sl</country-code>
+            <country-code>so</country-code>
+            <country-code>sr</country-code>
+            <country-code>sz</country-code>
+            <country-code>tc</country-code>
+            <country-code>tk</country-code>
+            <country-code>to</country-code>
+            <country-code>tt</country-code>
+            <country-code>tz</country-code>
+            <country-code>ug</country-code>
+            <country-code>us</country-code>
+            <country-code>vc</country-code>
+            <country-code>ve</country-code>
+            <country-code>vg</country-code>
+            <country-code>vi</country-code>
+            <country-code>vu</country-code>
+            <country-code>ws</country-code>
+            <country-code>za</country-code>
+            <country-code>zm</country-code>
+            <country-code>zw</country-code>
+        </country-codes>
+    </language>
+    <language default-code="myv" name="Erzya">
+        <code type="iso639_2">myv</code>
+        <country-codes>
+            <country-code>az</country-code>
+            <country-code>kg</country-code>
+            <country-code>kz</country-code>
+            <country-code>ru</country-code>
+            <country-code>tm</country-code>
+            <country-code>ua</country-code>
+            <country-code>uz</country-code>
+        </country-codes>
+    </language>
+    <language default-code="eo" name="Esperanto">
+        <code type="iso639_1">eo</code>
+        <code type="iso639_2">epo</code>
+        <country-codes>
+            <country-code>fr</country-code>
+        </country-codes>
+    </language>
+    <language default-code="et" name="Estonian">
+        <code type="iso639_1">et</code>
+        <code type="iso639_2">est</code>
+        <country-codes>
+            <country-code>au</country-code>
+            <country-code>ca</country-code>
+            <country-code>ee</country-code>
+            <country-code>fi</country-code>
+            <country-code>gb</country-code>
+            <country-code>lv</country-code>
+            <country-code>ru</country-code>
+            <country-code>se</country-code>
+            <country-code>us</country-code>
+        </country-codes>
+    </language>
+    <language default-code="ee" name="Ewe">
+        <code type="iso639_1">ee</code>
+        <code type="iso639_2">ewe</code>
+        <country-codes>
+            <country-code>gh</country-code>
+            <country-code>tg</country-code>
+        </country-codes>
+    </language>
+    <language default-code="ewo" name="Ewondo">
+        <code type="iso639_2">ewo</code>
+        <country-codes>
+            <country-code>cm</country-code>
+        </country-codes>
+    </language>
+    <language default-code="fan" name="Fang">
+        <code type="iso639_2">fan</code>
+        <country-codes>
+            <country-code>cg</country-code>
+            <country-code>cm</country-code>
+            <country-code>ga</country-code>
+            <country-code>gq</country-code>
+            <country-code>st</country-code>
+        </country-codes>
+    </language>
+    <language default-code="fat" name="Fanti">
+        <code type="iso639_2">fat</code>
+        <country-codes />
+    </language>
+    <language default-code="fo" name="Faroese">
+        <code type="iso639_1">fo</code>
+        <code type="iso639_2">fao</code>
+        <country-codes>
+            <country-code>dk</country-code>
+        </country-codes>
+    </language>
+    <language default-code="fj" name="Fijian">
+        <code type="iso639_1">fj</code>
+        <code type="iso639_2">fij</code>
+        <country-codes>
+            <country-code>fj</country-code>
+            <country-code>nr</country-code>
+            <country-code>nz</country-code>
+            <country-code>vu</country-code>
+        </country-codes>
+    </language>
+    <language default-code="fil" name="Filipino; Pilipino">
+        <code type="iso639_2">fil</code>
+        <country-codes>
+            <country-code>ph</country-code>
+        </country-codes>
+    </language>
+    <language default-code="fi" name="Finnish">
+        <code type="iso639_1">fi</code>
+        <code type="iso639_2">fin</code>
+        <country-codes>
+            <country-code>ca</country-code>
+            <country-code>ee</country-code>
+            <country-code>fi</country-code>
+            <country-code>no</country-code>
+            <country-code>ru</country-code>
+            <country-code>se</country-code>
+            <country-code>us</country-code>
+        </country-codes>
+    </language>
+    <language default-code="fiu" name="Finno-Ugrian">
+        <code type="iso639_2">fiu</code>
+        <country-codes />
+    </language>
+    <language default-code="fon" name="Fon">
+        <code type="iso639_2">fon</code>
+        <country-codes>
+            <country-code>bj</country-code>
+            <country-code>tg</country-code>
+        </country-codes>
+    </language>
+    <language default-code="fr" name="French">
+        <code type="iso639_1">fr</code>
+        <code type="iso639_2">fra</code>
+        <code type="iso639_2">fre</code>
+        <country-codes>
+            <country-code>ad</country-code>
+            <country-code>ae</country-code>
+            <country-code>at</country-code>
+            <country-code>be</country-code>
+            <country-code>bf</country-code>
+            <country-code>bi</country-code>
+            <country-code>bj</country-code>
+            <country-code>ca</country-code>
+            <country-code>cd</country-code>
+            <country-code>cf</country-code>
+            <country-code>cg</country-code>
+            <country-code>ch</country-code>
+            <country-code>ci</country-code>
+            <country-code>cm</country-code>
+            <country-code>dj</country-code>
+            <country-code>dz</country-code>
+            <country-code>fr</country-code>
+            <country-code>ga</country-code>
+            <country-code>gb</country-code>
+            <country-code>gf</country-code>
+            <country-code>gn</country-code>
+            <country-code>gp</country-code>
+            <country-code>gq</country-code>
+            <country-code>ht</country-code>
+            <country-code>hu</country-code>
+            <country-code>il</country-code>
+            <country-code>it</country-code>
+            <country-code>kh</country-code>
+            <country-code>km</country-code>
+            <country-code>lb</country-code>
+            <country-code>lu</country-code>
+            <country-code>ma</country-code>
+            <country-code>mc</country-code>
+            <country-code>mg</country-code>
+            <country-code>ml</country-code>
+            <country-code>mq</country-code>
+            <country-code>mr</country-code>
+            <country-code>mu</country-code>
+            <country-code>nc</country-code>
+            <country-code>ne</country-code>
+            <country-code>pf</country-code>
+            <country-code>ph</country-code>
+            <country-code>pm</country-code>
+            <country-code>pr</country-code>
+            <country-code>re</country-code>
+            <country-code>rw</country-code>
+            <country-code>sa</country-code>
+            <country-code>sc</country-code>
+            <country-code>sn</country-code>
+            <country-code>td</country-code>
+            <country-code>tg</country-code>
+            <country-code>tn</country-code>
+            <country-code>us</country-code>
+            <country-code>vu</country-code>
+            <country-code>wf</country-code>
+            <country-code>yt</country-code>
+        </country-codes>
+    </language>
+    <language default-code="fur" name="Friulian">
+        <code type="iso639_2">fur</code>
+        <country-codes>
+            <country-code>it</country-code>
+        </country-codes>
+    </language>
+    <language default-code="ff" name="Fulah">
+        <code type="iso639_1">ff</code>
+        <code type="iso639_2">ful</code>
+        <country-codes />
+    </language>
+    <language default-code="gaa" name="Ga">
+        <code type="iso639_2">gaa</code>
+        <country-codes>
+            <country-code>gh</country-code>
+        </country-codes>
+    </language>
+    <language default-code="gd" name="Gaelic; Scottish Gaelic">
+        <code type="iso639_1">gd</code>
+        <code type="iso639_2">gla</code>
+        <country-codes>
+            <country-code>au</country-code>
+            <country-code>ca</country-code>
+            <country-code>gb</country-code>
+            <country-code>us</country-code>
+        </country-codes>
+    </language>
+    <language default-code="gl" name="Galician">
+        <code type="iso639_1">gl</code>
+        <code type="iso639_2">glg</code>
+        <country-codes>
+            <country-code>es</country-code>
+            <country-code>pt</country-code>
+        </country-codes>
+    </language>
+    <language default-code="lg" name="Ganda">
+        <code type="iso639_1">lg</code>
+        <code type="iso639_2">lug</code>
+        <country-codes>
+            <country-code>ug</country-code>
+        </country-codes>
+    </language>
+    <language default-code="gay" name="Gayo">
+        <code type="iso639_2">gay</code>
+        <country-codes>
+            <country-code>id</country-code>
+        </country-codes>
+    </language>
+    <language default-code="gba" name="Gbaya">
+        <code type="iso639_2">gba</code>
+        <country-codes />
+    </language>
+    <language default-code="gez" name="Geez">
+        <code type="iso639_2">gez</code>
+        <country-codes>
+            <country-code>er</country-code>
+            <country-code>et</country-code>
+        </country-codes>
+    </language>
+    <language default-code="ka" name="Georgian">
+        <code type="iso639_1">ka</code>
+        <code type="iso639_2">kat</code>
+        <code type="iso639_2">geo</code>
+        <country-codes>
+            <country-code>am</country-code>
+            <country-code>az</country-code>
+            <country-code>ge</country-code>
+            <country-code>ir</country-code>
+            <country-code>kg</country-code>
+            <country-code>kz</country-code>
+            <country-code>ru</country-code>
+            <country-code>tj</country-code>
+            <country-code>tm</country-code>
+            <country-code>tr</country-code>
+            <country-code>ua</country-code>
+            <country-code>us</country-code>
+            <country-code>uz</country-code>
+        </country-codes>
+    </language>
+    <language default-code="de" name="German">
+        <code type="iso639_1">de</code>
+        <code type="iso639_2">deu</code>
+        <code type="iso639_2">ger</code>
+        <country-codes>
+            <country-code>ae</country-code>
+            <country-code>ar</country-code>
+            <country-code>at</country-code>
+            <country-code>au</country-code>
+            <country-code>ba</country-code>
+            <country-code>be</country-code>
+            <country-code>bo</country-code>
+            <country-code>br</country-code>
+            <country-code>ca</country-code>
+            <country-code>ch</country-code>
+            <country-code>cl</country-code>
+            <country-code>cz</country-code>
+            <country-code>de</country-code>
+            <country-code>dk</country-code>
+            <country-code>ec</country-code>
+            <country-code>ee</country-code>
+            <country-code>fi</country-code>
+            <country-code>fr</country-code>
+            <country-code>hu</country-code>
+            <country-code>il</country-code>
+            <country-code>it</country-code>
+            <country-code>kg</country-code>
+            <country-code>kz</country-code>
+            <country-code>li</country-code>
+            <country-code>lu</country-code>
+            <country-code>md</country-code>
+            <country-code>na</country-code>
+            <country-code>ph</country-code>
+            <country-code>pl</country-code>
+            <country-code>pr</country-code>
+            <country-code>py</country-code>
+            <country-code>ro</country-code>
+            <country-code>ru</country-code>
+            <country-code>si</country-code>
+            <country-code>sk</country-code>
+            <country-code>tj</country-code>
+            <country-code>ua</country-code>
+            <country-code>us</country-code>
+            <country-code>uy</country-code>
+            <country-code>uz</country-code>
+            <country-code>za</country-code>
+        </country-codes>
+    </language>
+    <language default-code="gil" name="Gilbertese">
+        <code type="iso639_2">gil</code>
+        <country-codes>
+            <country-code>fj</country-code>
+            <country-code>ki</country-code>
+            <country-code>nr</country-code>
+            <country-code>sb</country-code>
+            <country-code>tv</country-code>
+            <country-code>vu</country-code>
+        </country-codes>
+    </language>
+    <language default-code="gon" name="Gondi">
+        <code type="iso639_2">gon</code>
+        <country-codes />
+    </language>
+    <language default-code="gor" name="Gorontalo">
+        <code type="iso639_2">gor</code>
+        <country-codes>
+            <country-code>id</country-code>
+        </country-codes>
+    </language>
+    <language default-code="got" name="Gothic">
+        <code type="iso639_2">got</code>
+        <country-codes>
+            <country-code>ua</country-code>
+        </country-codes>
+    </language>
+    <language default-code="grb" name="Grebo">
+        <code type="iso639_2">grb</code>
+        <country-codes />
+    </language>
+    <language default-code="el" name="Greek">
+        <code type="iso639_1">el</code>
+        <code type="iso639_2">ell</code>
+        <code type="iso639_2">gre</code>
+        <country-codes>
+            <country-code>ae</country-code>
+            <country-code>al</country-code>
+            <country-code>am</country-code>
+            <country-code>at</country-code>
+            <country-code>au</country-code>
+            <country-code>bg</country-code>
+            <country-code>bs</country-code>
+            <country-code>ca</country-code>
+            <country-code>cd</country-code>
+            <country-code>cg</country-code>
+            <country-code>cy</country-code>
+            <country-code>de</country-code>
+            <country-code>dj</country-code>
+            <country-code>eg</country-code>
+            <country-code>fr</country-code>
+            <country-code>gb</country-code>
+            <country-code>ge</country-code>
+            <country-code>gr</country-code>
+            <country-code>hu</country-code>
+            <country-code>it</country-code>
+            <country-code>jo</country-code>
+            <country-code>kz</country-code>
+            <country-code>mk</country-code>
+            <country-code>mw</country-code>
+            <country-code>pl</country-code>
+            <country-code>py</country-code>
+            <country-code>ro</country-code>
+            <country-code>ru</country-code>
+            <country-code>se</country-code>
+            <country-code>sl</country-code>
+            <country-code>tn</country-code>
+            <country-code>tr</country-code>
+            <country-code>ua</country-code>
+            <country-code>us</country-code>
+            <country-code>za</country-code>
+        </country-codes>
+    </language>
+    <language default-code="gn" name="Guarani">
+        <code type="iso639_1">gn</code>
+        <code type="iso639_2">grn</code>
+        <country-codes />
+    </language>
+    <language default-code="gu" name="Gujarati">
+        <code type="iso639_1">gu</code>
+        <code type="iso639_2">guj</code>
+        <country-codes>
+            <country-code>bd</country-code>
+            <country-code>fj</country-code>
+            <country-code>gb</country-code>
+            <country-code>in</country-code>
+            <country-code>ke</country-code>
+            <country-code>mu</country-code>
+            <country-code>mw</country-code>
+            <country-code>om</country-code>
+            <country-code>pk</country-code>
+            <country-code>re</country-code>
+            <country-code>sg</country-code>
+            <country-code>tz</country-code>
+            <country-code>ug</country-code>
+            <country-code>us</country-code>
+            <country-code>za</country-code>
+            <country-code>zm</country-code>
+            <country-code>zw</country-code>
+        </country-codes>
+    </language>
+    <language default-code="gwi" name="Gwich´In">
+        <code type="iso639_2">gwi</code>
+        <country-codes>
+            <country-code>ca</country-code>
+            <country-code>us</country-code>
+        </country-codes>
+    </language>
+    <language default-code="hai" name="Haida">
+        <code type="iso639_2">hai</code>
+        <country-codes />
+    </language>
+    <language default-code="ht" name="Haitian Creole">
+        <code type="iso639_1">ht</code>
+        <code type="iso639_2">hat</code>
+        <country-codes>
+            <country-code>bs</country-code>
+            <country-code>ca</country-code>
+            <country-code>do</country-code>
+            <country-code>gf</country-code>
+            <country-code>gp</country-code>
+            <country-code>ht</country-code>
+            <country-code>ky</country-code>
+            <country-code>pr</country-code>
+            <country-code>us</country-code>
+        </country-codes>
+    </language>
+    <language default-code="ha" name="Hausa">
+        <code type="iso639_1">ha</code>
+        <code type="iso639_2">hau</code>
+        <country-codes>
+            <country-code>bf</country-code>
+            <country-code>bj</country-code>
+            <country-code>cf</country-code>
+            <country-code>cg</country-code>
+            <country-code>cm</country-code>
+            <country-code>de</country-code>
+            <country-code>er</country-code>
+            <country-code>gh</country-code>
+            <country-code>ne</country-code>
+            <country-code>ng</country-code>
+            <country-code>sd</country-code>
+            <country-code>td</country-code>
+            <country-code>tg</country-code>
+        </country-codes>
+    </language>
+    <language default-code="haw" name="Hawaiian">
+        <code type="iso639_2">haw</code>
+        <country-codes>
+            <country-code>us</country-code>
+        </country-codes>
+    </language>
+    <language default-code="he" name="Hebrew">
+        <code type="iso639_1">he</code>
+        <code type="iso639_2">heb</code>
+        <country-codes>
+            <country-code>au</country-code>
+            <country-code>ca</country-code>
+            <country-code>de</country-code>
+            <country-code>gb</country-code>
+            <country-code>il</country-code>
+            <country-code>pa</country-code>
+            <country-code>ps</country-code>
+            <country-code>us</country-code>
+        </country-codes>
+    </language>
+    <language default-code="hz" name="Herero">
+        <code type="iso639_1">hz</code>
+        <code type="iso639_2">her</code>
+        <country-codes>
+            <country-code>bw</country-code>
+            <country-code>na</country-code>
+        </country-codes>
+    </language>
+    <language default-code="hil" name="Hiligaynon">
+        <code type="iso639_2">hil</code>
+        <country-codes>
+            <country-code>ph</country-code>
+            <country-code>us</country-code>
+        </country-codes>
+    </language>
+    <language default-code="him" name="Himachali">
+        <code type="iso639_2">him</code>
+        <country-codes />
+    </language>
+    <language default-code="hi" name="Hindi">
+        <code type="iso639_1">hi</code>
+        <code type="iso639_2">hin</code>
+        <country-codes>
+            <country-code>ae</country-code>
+            <country-code>bd</country-code>
+            <country-code>bw</country-code>
+            <country-code>bz</country-code>
+            <country-code>de</country-code>
+            <country-code>gb</country-code>
+            <country-code>in</country-code>
+            <country-code>ke</country-code>
+            <country-code>np</country-code>
+            <country-code>nz</country-code>
+            <country-code>ph</country-code>
+            <country-code>sg</country-code>
+            <country-code>ug</country-code>
+            <country-code>us</country-code>
+            <country-code>ye</country-code>
+            <country-code>za</country-code>
+            <country-code>zm</country-code>
+        </country-codes>
+    </language>
+    <language default-code="ho" name="Hiri Motu">
+        <code type="iso639_1">ho</code>
+        <code type="iso639_2">hmo</code>
+        <country-codes>
+            <country-code>pg</country-code>
+        </country-codes>
+    </language>
+    <language default-code="hit" name="Hittite">
+        <code type="iso639_2">hit</code>
+        <country-codes />
+    </language>
+    <language default-code="hmn" name="Hmong">
+        <code type="iso639_2">hmn</code>
+        <country-codes />
+    </language>
+    <language default-code="hu" name="Hungarian">
+        <code type="iso639_1">hu</code>
+        <code type="iso639_2">hun</code>
+        <country-codes>
+            <country-code>at</country-code>
+            <country-code>au</country-code>
+            <country-code>ca</country-code>
+            <country-code>cs</country-code>
+            <country-code>hu</country-code>
+            <country-code>il</country-code>
+            <country-code>ro</country-code>
+            <country-code>si</country-code>
+            <country-code>sk</country-code>
+            <country-code>ua</country-code>
+            <country-code>us</country-code>
+        </country-codes>
+    </language>
+    <language default-code="hup" name="Hupa">
+        <code type="iso639_2">hup</code>
+        <country-codes>
+            <country-code>us</country-code>
+        </country-codes>
+    </language>
+    <language default-code="iba" name="Iban">
+        <code type="iso639_2">iba</code>
+        <country-codes>
+            <country-code>bn</country-code>
+            <country-code>id</country-code>
+            <country-code>my</country-code>
+        </country-codes>
+    </language>
+    <language default-code="is" name="Icelandic">
+        <code type="iso639_1">is</code>
+        <code type="iso639_2">isl</code>
+        <code type="iso639_2">ice</code>
+        <country-codes>
+            <country-code>ca</country-code>
+            <country-code>is</country-code>
+            <country-code>us</country-code>
+        </country-codes>
+    </language>
+    <language default-code="io" name="Ido">
+        <code type="iso639_1">io</code>
+        <code type="iso639_2">ido</code>
+        <country-codes />
+    </language>
+    <language default-code="ig" name="Igbo">
+        <code type="iso639_1">ig</code>
+        <code type="iso639_2">ibo</code>
+        <country-codes>
+            <country-code>ng</country-code>
+        </country-codes>
+    </language>
+    <language default-code="ijo" name="Ijo">
+        <code type="iso639_2">ijo</code>
+        <country-codes />
+    </language>
+    <language default-code="ilo" name="Iloko">
+        <code type="iso639_2">ilo</code>
+        <country-codes>
+            <country-code>ph</country-code>
+            <country-code>us</country-code>
+        </country-codes>
+    </language>
+    <language default-code="smn" name="Inari Sami">
+        <code type="iso639_2">smn</code>
+        <country-codes>
+            <country-code>fi</country-code>
+        </country-codes>
+    </language>
+    <language default-code="inc" name="Indic">
+        <code type="iso639_2">inc</code>
+        <country-codes />
+    </language>
+    <language default-code="id" name="Indonesian">
+        <code type="iso639_1">id</code>
+        <code type="iso639_2">ind</code>
+        <country-codes>
+            <country-code>id</country-code>
+            <country-code>nl</country-code>
+            <country-code>ph</country-code>
+            <country-code>sa</country-code>
+            <country-code>sg</country-code>
+            <country-code>us</country-code>
+        </country-codes>
+    </language>
+    <language default-code="inh" name="Ingush">
+        <code type="iso639_2">inh</code>
+        <country-codes>
+            <country-code>ru</country-code>
+            <country-code>uz</country-code>
+        </country-codes>
+    </language>
+    <language default-code="iu" name="Inuktitut">
+        <code type="iso639_1">iu</code>
+        <code type="iso639_2">iku</code>
+        <country-codes />
+    </language>
+    <language default-code="ik" name="Inupiaq">
+        <code type="iso639_1">ik</code>
+        <code type="iso639_2">ipk</code>
+        <country-codes />
+    </language>
+    <language default-code="ira" name="Iranian (Other)">
+        <code type="iso639_2">ira</code>
+        <country-codes />
+    </language>
+    <language default-code="ga" name="Irish">
+        <code type="iso639_1">ga</code>
+        <code type="iso639_2">gle</code>
+        <country-codes>
+            <country-code>br</country-code>
+            <country-code>ca</country-code>
+            <country-code>gb</country-code>
+            <country-code>ie</country-code>
+            <country-code>us</country-code>
+        </country-codes>
+    </language>
+    <language default-code="it" name="Italian">
+        <code type="iso639_1">it</code>
+        <code type="iso639_2">ita</code>
+        <country-codes>
+            <country-code>ae</country-code>
+            <country-code>ar</country-code>
+            <country-code>au</country-code>
+            <country-code>ba</country-code>
+            <country-code>be</country-code>
+            <country-code>br</country-code>
+            <country-code>ca</country-code>
+            <country-code>ch</country-code>
+            <country-code>de</country-code>
+            <country-code>eg</country-code>
+            <country-code>er</country-code>
+            <country-code>fr</country-code>
+            <country-code>gb</country-code>
+            <country-code>hr</country-code>
+            <country-code>il</country-code>
+            <country-code>it</country-code>
+            <country-code>li</country-code>
+            <country-code>lu</country-code>
+            <country-code>ly</country-code>
+            <country-code>ph</country-code>
+            <country-code>pr</country-code>
+            <country-code>py</country-code>
+            <country-code>ro</country-code>
+            <country-code>sa</country-code>
+            <country-code>si</country-code>
+            <country-code>sm</country-code>
+            <country-code>tn</country-code>
+            <country-code>us</country-code>
+            <country-code>uy</country-code>
+            <country-code>va</country-code>
+        </country-codes>
+    </language>
+    <language default-code="ja" name="Japanese">
+        <code type="iso639_1">ja</code>
+        <code type="iso639_2">jpn</code>
+        <country-codes>
+            <country-code>ae</country-code>
+            <country-code>ar</country-code>
+            <country-code>as</country-code>
+            <country-code>au</country-code>
+            <country-code>br</country-code>
+            <country-code>bz</country-code>
+            <country-code>ca</country-code>
+            <country-code>de</country-code>
+            <country-code>do</country-code>
+            <country-code>fm</country-code>
+            <country-code>gb</country-code>
+            <country-code>gu</country-code>
+            <country-code>jp</country-code>
+            <country-code>mn</country-code>
+            <country-code>mp</country-code>
+            <country-code>mx</country-code>
+            <country-code>nz</country-code>
+            <country-code>pa</country-code>
+            <country-code>ph</country-code>
+            <country-code>pw</country-code>
+            <country-code>py</country-code>
+            <country-code>sg</country-code>
+            <country-code>th</country-code>
+            <country-code>tw</country-code>
+            <country-code>us</country-code>
+        </country-codes>
+    </language>
+    <language default-code="jv" name="Javanese">
+        <code type="iso639_1">jv</code>
+        <code type="iso639_2">jav</code>
+        <country-codes>
+            <country-code>id</country-code>
+            <country-code>my</country-code>
+            <country-code>nl</country-code>
+            <country-code>sg</country-code>
+        </country-codes>
+    </language>
+    <language default-code="jrb" name="Judeo-Arabic">
+        <code type="iso639_2">jrb</code>
+        <country-codes />
+    </language>
+    <language default-code="jpr" name="Judeo-Persian">
+        <code type="iso639_2">jpr</code>
+        <country-codes>
+            <country-code>il</country-code>
+            <country-code>ir</country-code>
+        </country-codes>
+    </language>
+    <language default-code="kbd" name="Kabardian">
+        <code type="iso639_2">kbd</code>
+        <country-codes>
+            <country-code>ru</country-code>
+            <country-code>sa</country-code>
+            <country-code>tr</country-code>
+            <country-code>us</country-code>
+        </country-codes>
+    </language>
+    <language default-code="kab" name="Kabyle">
+        <code type="iso639_2">kab</code>
+        <country-codes>
+            <country-code>be</country-code>
+            <country-code>dz</country-code>
+            <country-code>fr</country-code>
+        </country-codes>
+    </language>
+    <language default-code="kac" name="Kachin">
+        <code type="iso639_2">kac</code>
+        <country-codes>
+            <country-code>cn</country-code>
+            <country-code>mm</country-code>
+        </country-codes>
+    </language>
+    <language default-code="kl" name="Kalaallisut; Greenlandic">
+        <code type="iso639_1">kl</code>
+        <code type="iso639_2">kal</code>
+        <country-codes>
+            <country-code>dk</country-code>
+            <country-code>gl</country-code>
+        </country-codes>
+    </language>
+    <language default-code="xal" name="Kalmyk">
+        <code type="iso639_2">xal</code>
+        <country-codes>
+            <country-code>cn</country-code>
+            <country-code>de</country-code>
+            <country-code>kg</country-code>
+            <country-code>mn</country-code>
+            <country-code>ru</country-code>
+            <country-code>tw</country-code>
+            <country-code>us</country-code>
+        </country-codes>
+    </language>
+    <language default-code="kam" name="Kamba">
+        <code type="iso639_2">kam</code>
+        <country-codes>
+            <country-code>ke</country-code>
+        </country-codes>
+    </language>
+    <language default-code="kn" name="Kannada">
+        <code type="iso639_1">kn</code>
+        <code type="iso639_2">kan</code>
+        <country-codes>
+            <country-code>in</country-code>
+        </country-codes>
+    </language>
+    <language default-code="kr" name="Kanuri">
+        <code type="iso639_1">kr</code>
+        <code type="iso639_2">kau</code>
+        <country-codes />
+    </language>
+    <language default-code="kaa" name="Kara-Kalpak">
+        <code type="iso639_2">kaa</code>
+        <country-codes>
+            <country-code>af</country-code>
+            <country-code>kg</country-code>
+            <country-code>kz</country-code>
+            <country-code>tm</country-code>
+            <country-code>uz</country-code>
+        </country-codes>
+    </language>
+    <language default-code="krc" name="Karachay-Balkar">
+        <code type="iso639_2">krc</code>
+        <country-codes>
+            <country-code>am</country-code>
+            <country-code>az</country-code>
+            <country-code>kg</country-code>
+            <country-code>kz</country-code>
+            <country-code>ru</country-code>
+            <country-code>us</country-code>
+            <country-code>uz</country-code>
+        </country-codes>
+    </language>
+    <language default-code="krl" name="Karelian">
+        <code type="iso639_2">krl</code>
+        <country-codes>
+            <country-code>fi</country-code>
+            <country-code>ru</country-code>
+        </country-codes>
+    </language>
+    <language default-code="kar" name="Karen">
+        <code type="iso639_2">kar</code>
+        <country-codes />
+    </language>
+    <language default-code="ks" name="Kashmiri">
+        <code type="iso639_1">ks</code>
+        <code type="iso639_2">kas</code>
+        <country-codes>
+            <country-code>gb</country-code>
+            <country-code>in</country-code>
+            <country-code>pk</country-code>
+        </country-codes>
+    </language>
+    <language default-code="csb" name="Kashubian">
+        <code type="iso639_2">csb</code>
+        <country-codes>
+            <country-code>ca</country-code>
+            <country-code>pl</country-code>
+        </country-codes>
+    </language>
+    <language default-code="kaw" name="Kawi">
+        <code type="iso639_2">kaw</code>
+        <country-codes />
+    </language>
+    <language default-code="kk" name="Kazakh">
+        <code type="iso639_1">kk</code>
+        <code type="iso639_2">kaz</code>
+        <country-codes>
+            <country-code>af</country-code>
+            <country-code>cn</country-code>
+            <country-code>de</country-code>
+            <country-code>ir</country-code>
+            <country-code>kg</country-code>
+            <country-code>kz</country-code>
+            <country-code>mn</country-code>
+            <country-code>ru</country-code>
+            <country-code>tj</country-code>
+            <country-code>tm</country-code>
+            <country-code>tr</country-code>
+            <country-code>ua</country-code>
+            <country-code>uz</country-code>
+        </country-codes>
+    </language>
+    <language default-code="kha" name="Khasi">
+        <code type="iso639_2">kha</code>
+        <country-codes>
+            <country-code>bd</country-code>
+            <country-code>in</country-code>
+        </country-codes>
+    </language>
+    <language default-code="km" name="Khmer">
+        <code type="iso639_1">km</code>
+        <code type="iso639_2">khm</code>
+        <country-codes>
+            <country-code>ca</country-code>
+            <country-code>cn</country-code>
+            <country-code>fr</country-code>
+            <country-code>kh</country-code>
+            <country-code>la</country-code>
+            <country-code>us</country-code>
+            <country-code>vn</country-code>
+        </country-codes>
+    </language>
+    <language default-code="khi" name="Khoisan (Other)">
+        <code type="iso639_2">khi</code>
+        <country-codes />
+    </language>
+    <language default-code="kho" name="Khotanese">
+        <code type="iso639_2">kho</code>
+        <country-codes />
+    </language>
+    <language default-code="ki" name="Kikuyu; Gikuyu">
+        <code type="iso639_1">ki</code>
+        <code type="iso639_2">kik</code>
+        <country-codes>
+            <country-code>ke</country-code>
+        </country-codes>
+    </language>
+    <language default-code="kmb" name="Kimbundu">
+        <code type="iso639_2">kmb</code>
+        <country-codes>
+            <country-code>ao</country-code>
+        </country-codes>
+    </language>
+    <language default-code="rw" name="Kinyarwanda">
+        <code type="iso639_1">rw</code>
+        <code type="iso639_2">kin</code>
+        <country-codes>
+            <country-code>bi</country-code>
+            <country-code>cd</country-code>
+            <country-code>rw</country-code>
+            <country-code>ug</country-code>
+        </country-codes>
+    </language>
+    <language default-code="ky" name="Kirghiz">
+        <code type="iso639_1">ky</code>
+        <code type="iso639_2">kir</code>
+        <country-codes>
+            <country-code>af</country-code>
+            <country-code>cn</country-code>
+            <country-code>kg</country-code>
+            <country-code>kz</country-code>
+            <country-code>tj</country-code>
+            <country-code>tr</country-code>
+            <country-code>uz</country-code>
+        </country-codes>
+    </language>
+    <language default-code="kv" name="Komi">
+        <code type="iso639_1">kv</code>
+        <code type="iso639_2">kom</code>
+        <country-codes />
+    </language>
+    <language default-code="kg" name="Kongo">
+        <code type="iso639_1">kg</code>
+        <code type="iso639_2">kon</code>
+        <country-codes />
+    </language>
+    <language default-code="kok" name="Konkani">
+        <code type="iso639_2">kok</code>
+        <country-codes />
+    </language>
+    <language default-code="ko" name="Korean">
+        <code type="iso639_1">ko</code>
+        <code type="iso639_2">kor</code>
+        <country-codes>
+            <country-code>as</country-code>
+            <country-code>au</country-code>
+            <country-code>bh</country-code>
+            <country-code>bn</country-code>
+            <country-code>br</country-code>
+            <country-code>bz</country-code>
+            <country-code>ca</country-code>
+            <country-code>cn</country-code>
+            <country-code>de</country-code>
+            <country-code>gu</country-code>
+            <country-code>jp</country-code>
+            <country-code>kg</country-code>
+            <country-code>kp</country-code>
+            <country-code>kr</country-code>
+            <country-code>kz</country-code>
+            <country-code>mn</country-code>
+            <country-code>mp</country-code>
+            <country-code>mr</country-code>
+            <country-code>nz</country-code>
+            <country-code>pa</country-code>
+            <country-code>ph</country-code>
+            <country-code>py</country-code>
+            <country-code>ru</country-code>
+            <country-code>sa</country-code>
+            <country-code>sg</country-code>
+            <country-code>sr</country-code>
+            <country-code>th</country-code>
+            <country-code>tj</country-code>
+            <country-code>tm</country-code>
+            <country-code>us</country-code>
+            <country-code>uz</country-code>
+        </country-codes>
+    </language>
+    <language default-code="kos" name="Kosraean">
+        <code type="iso639_2">kos</code>
+        <country-codes>
+            <country-code>fm</country-code>
+            <country-code>nr</country-code>
+        </country-codes>
+    </language>
+    <language default-code="kpe" name="Kpelle">
+        <code type="iso639_2">kpe</code>
+        <country-codes />
+    </language>
+    <language default-code="kro" name="Kru">
+        <code type="iso639_2">kro</code>
+        <country-codes />
+    </language>
+    <language default-code="kj" name="Kuanyama; Kwanyama">
+        <code type="iso639_1">kj</code>
+        <code type="iso639_2">kua</code>
+        <country-codes>
+            <country-code>ao</country-code>
+            <country-code>na</country-code>
+        </country-codes>
+    </language>
+    <language default-code="kum" name="Kumyk">
+        <code type="iso639_2">kum</code>
+        <country-codes>
+            <country-code>kz</country-code>
+            <country-code>ru</country-code>
+            <country-code>tr</country-code>
+        </country-codes>
+    </language>
+    <language default-code="ku" name="Kurdish">
+        <code type="iso639_1">ku</code>
+        <code type="iso639_2">kur</code>
+        <country-codes />
+    </language>
+    <language default-code="kru" name="Kurukh">
+        <code type="iso639_2">kru</code>
+        <country-codes>
+            <country-code>bd</country-code>
+            <country-code>in</country-code>
+        </country-codes>
+    </language>
+    <language default-code="kut" name="Kutenai">
+        <code type="iso639_2">kut</code>
+        <country-codes>
+            <country-code>ca</country-code>
+            <country-code>us</country-code>
+        </country-codes>
+    </language>
+    <language default-code="lad" name="Ladino">
+        <code type="iso639_2">lad</code>
+        <country-codes>
+            <country-code>gr</country-code>
+            <country-code>il</country-code>
+            <country-code>pr</country-code>
+            <country-code>tr</country-code>
+            <country-code>us</country-code>
+        </country-codes>
+    </language>
+    <language default-code="lah" name="Lahnda">
+        <code type="iso639_2">lah</code>
+        <country-codes />
+    </language>
+    <language default-code="lam" name="Lamba">
+        <code type="iso639_2">lam</code>
+        <country-codes>
+            <country-code>cd</country-code>
+            <country-code>zm</country-code>
+        </country-codes>
+    </language>
+    <language default-code="lo" name="Lao">
+        <code type="iso639_1">lo</code>
+        <code type="iso639_2">lao</code>
+        <country-codes>
+            <country-code>au</country-code>
+            <country-code>ca</country-code>
+            <country-code>fr</country-code>
+            <country-code>kh</country-code>
+            <country-code>la</country-code>
+            <country-code>th</country-code>
+            <country-code>us</country-code>
+        </country-codes>
+    </language>
+    <language default-code="la" name="Latin">
+        <code type="iso639_1">la</code>
+        <code type="iso639_2">lat</code>
+        <country-codes>
+            <country-code>va</country-code>
+        </country-codes>
+    </language>
+    <language default-code="lv" name="Latvian">
+        <code type="iso639_1">lv</code>
+        <code type="iso639_2">lav</code>
+        <country-codes>
+            <country-code>au</country-code>
+            <country-code>br</country-code>
+            <country-code>by</country-code>
+            <country-code>ca</country-code>
+            <country-code>de</country-code>
+            <country-code>ee</country-code>
+            <country-code>gb</country-code>
+            <country-code>lt</country-code>
+            <country-code>lv</country-code>
+            <country-code>nz</country-code>
+            <country-code>ru</country-code>
+            <country-code>se</country-code>
+            <country-code>ua</country-code>
+            <country-code>us</country-code>
+            <country-code>ve</country-code>
+        </country-codes>
+    </language>
+    <language default-code="lez" name="Lezghian">
+        <code type="iso639_2">lez</code>
+        <country-codes>
+            <country-code>az</country-code>
+            <country-code>ge</country-code>
+            <country-code>kg</country-code>
+            <country-code>kz</country-code>
+            <country-code>ru</country-code>
+            <country-code>tm</country-code>
+            <country-code>tr</country-code>
+            <country-code>ua</country-code>
+            <country-code>uz</country-code>
+        </country-codes>
+    </language>
+    <language default-code="li"
+        name="Limburgan; Limburger; Limburgish">
+        <code type="iso639_1">li</code>
+        <code type="iso639_2">lim</code>
+        <country-codes>
+            <country-code>be</country-code>
+            <country-code>de</country-code>
+            <country-code>nl</country-code>
+        </country-codes>
+    </language>
+    <language default-code="ln" name="Lingala">
+        <code type="iso639_1">ln</code>
+        <code type="iso639_2">lin</code>
+        <country-codes>
+            <country-code>cd</country-code>
+            <country-code>cf</country-code>
+            <country-code>cg</country-code>
+        </country-codes>
+    </language>
+    <language default-code="lt" name="Lithuanian">
+        <code type="iso639_1">lt</code>
+        <code type="iso639_2">lit</code>
+        <country-codes>
+            <country-code>ar</country-code>
+            <country-code>au</country-code>
+            <country-code>br</country-code>
+            <country-code>by</country-code>
+            <country-code>ca</country-code>
+            <country-code>ee</country-code>
+            <country-code>gb</country-code>
+            <country-code>kg</country-code>
+            <country-code>kz</country-code>
+            <country-code>lt</country-code>
+            <country-code>lv</country-code>
+            <country-code>pl</country-code>
+            <country-code>ru</country-code>
+            <country-code>se</country-code>
+            <country-code>tj</country-code>
+            <country-code>tm</country-code>
+            <country-code>us</country-code>
+            <country-code>uy</country-code>
+            <country-code>uz</country-code>
+        </country-codes>
+    </language>
+    <language default-code="jbo" name="Lojban">
+        <code type="iso639_2">jbo</code>
+        <country-codes />
+    </language>
+    <language default-code="dsb" name="Lower Sorbian">
+        <code type="iso639_2">dsb</code>
+        <country-codes>
+            <country-code>de</country-code>
+        </country-codes>
+    </language>
+    <language default-code="loz" name="Lozi">
+        <code type="iso639_2">loz</code>
+        <country-codes>
+            <country-code>bw</country-code>
+            <country-code>na</country-code>
+            <country-code>zm</country-code>
+            <country-code>zw</country-code>
+        </country-codes>
+    </language>
+    <language default-code="lu" name="Luba-Katanga">
+        <code type="iso639_1">lu</code>
+        <code type="iso639_2">lub</code>
+        <country-codes>
+            <country-code>cd</country-code>
+        </country-codes>
+    </language>
+    <language default-code="lua" name="Luba-Lulua">
+        <code type="iso639_2">lua</code>
+        <country-codes>
+            <country-code>cd</country-code>
+        </country-codes>
+    </language>
+    <language default-code="lui" name="Luiseno">
+        <code type="iso639_2">lui</code>
+        <country-codes>
+            <country-code>us</country-code>
+        </country-codes>
+    </language>
+    <language default-code="smj" name="Lule Sami">
+        <code type="iso639_2">smj</code>
+        <country-codes>
+            <country-code>no</country-code>
+            <country-code>se</country-code>
+        </country-codes>
+    </language>
+    <language default-code="lun" name="Lunda">
+        <code type="iso639_2">lun</code>
+        <country-codes>
+            <country-code>ao</country-code>
+            <country-code>cd</country-code>
+            <country-code>zm</country-code>
+        </country-codes>
+    </language>
+    <language default-code="luo" name="Luo (Kenya And Tanzania)">
+        <code type="iso639_2">luo</code>
+        <country-codes>
+            <country-code>ke</country-code>
+            <country-code>tz</country-code>
+        </country-codes>
+    </language>
+    <language default-code="lus" name="Lushai">
+        <code type="iso639_2">lus</code>
+        <country-codes>
+            <country-code>bd</country-code>
+            <country-code>in</country-code>
+            <country-code>mm</country-code>
+        </country-codes>
+    </language>
+    <language default-code="lb" name="Luxembourgish; Letzeburgesch">
+        <code type="iso639_1">lb</code>
+        <code type="iso639_2">ltz</code>
+        <country-codes>
+            <country-code>be</country-code>
+            <country-code>de</country-code>
+            <country-code>fr</country-code>
+            <country-code>lu</country-code>
+            <country-code>us</country-code>
+        </country-codes>
+    </language>
+    <language default-code="mk" name="Macedonian">
+        <code type="iso639_1">mk</code>
+        <code type="iso639_2">mkd</code>
+        <code type="iso639_2">mac</code>
+        <country-codes>
+            <country-code>al</country-code>
+            <country-code>bg</country-code>
+            <country-code>ca</country-code>
+            <country-code>gr</country-code>
+            <country-code>hu</country-code>
+            <country-code>mk</country-code>
+            <country-code>si</country-code>
+        </country-codes>
+    </language>
+    <language default-code="mad" name="Madurese">
+        <code type="iso639_2">mad</code>
+        <country-codes>
+            <country-code>id</country-code>
+            <country-code>sg</country-code>
+        </country-codes>
+    </language>
+    <language default-code="mag" name="Magahi">
+        <code type="iso639_2">mag</code>
+        <country-codes>
+            <country-code>in</country-code>
+        </country-codes>
+    </language>
+    <language default-code="mai" name="Maithili">
+        <code type="iso639_2">mai</code>
+        <country-codes>
+            <country-code>in</country-code>
+            <country-code>np</country-code>
+        </country-codes>
+    </language>
+    <language default-code="mak" name="Makasar">
+        <code type="iso639_2">mak</code>
+        <country-codes>
+            <country-code>id</country-code>
+        </country-codes>
+    </language>
+    <language default-code="mg" name="Malagasy">
+        <code type="iso639_1">mg</code>
+        <code type="iso639_2">mlg</code>
+        <country-codes />
+    </language>
+    <language default-code="ms" name="Malay">
+        <code type="iso639_1">ms</code>
+        <code type="iso639_2">msa</code>
+        <code type="iso639_2">may</code>
+        <country-codes />
+    </language>
+    <language default-code="ml" name="Malayalam">
+        <code type="iso639_1">ml</code>
+        <code type="iso639_2">mal</code>
+        <country-codes>
+            <country-code>ae</country-code>
+            <country-code>bh</country-code>
+            <country-code>fj</country-code>
+            <country-code>gb</country-code>
+            <country-code>il</country-code>
+            <country-code>in</country-code>
+            <country-code>my</country-code>
+            <country-code>qa</country-code>
+            <country-code>sg</country-code>
+        </country-codes>
+    </language>
+    <language default-code="mt" name="Maltese">
+        <code type="iso639_1">mt</code>
+        <code type="iso639_2">mlt</code>
+        <country-codes>
+            <country-code>au</country-code>
+            <country-code>ca</country-code>
+            <country-code>gb</country-code>
+            <country-code>it</country-code>
+            <country-code>mt</country-code>
+            <country-code>tn</country-code>
+            <country-code>us</country-code>
+        </country-codes>
+    </language>
+    <language default-code="mnc" name="Manchu">
+        <code type="iso639_2">mnc</code>
+        <country-codes>
+            <country-code>cn</country-code>
+        </country-codes>
+    </language>
+    <language default-code="mdr" name="Mandar">
+        <code type="iso639_2">mdr</code>
+        <country-codes>
+            <country-code>id</country-code>
+        </country-codes>
+    </language>
+    <language default-code="man" name="Mandingo">
+        <code type="iso639_2">man</code>
+        <country-codes />
+    </language>
+    <language default-code="mni" name="Manipuri">
+        <code type="iso639_2">mni</code>
+        <country-codes>
+            <country-code>bd</country-code>
+            <country-code>in</country-code>
+            <country-code>mm</country-code>
+        </country-codes>
+    </language>
+    <language default-code="gv" name="Manx">
+        <code type="iso639_1">gv</code>
+        <code type="iso639_2">glv</code>
+        <country-codes>
+            <country-code>gb</country-code>
+        </country-codes>
+    </language>
+    <language default-code="mi" name="Maori">
+        <code type="iso639_1">mi</code>
+        <code type="iso639_2">mri</code>
+        <code type="iso639_2">mao</code>
+        <country-codes>
+            <country-code>nz</country-code>
+        </country-codes>
+    </language>
+    <language default-code="mr" name="Marathi">
+        <code type="iso639_1">mr</code>
+        <code type="iso639_2">mar</code>
+        <country-codes>
+            <country-code>il</country-code>
+            <country-code>in</country-code>
+            <country-code>mu</country-code>
+        </country-codes>
+    </language>
+    <language default-code="chm" name="Mari">
+        <code type="iso639_2">chm</code>
+        <country-codes />
+    </language>
+    <language default-code="mh" name="Marshallese">
+        <code type="iso639_1">mh</code>
+        <code type="iso639_2">mah</code>
+        <country-codes>
+            <country-code>mh</country-code>
+            <country-code>nr</country-code>
+        </country-codes>
+    </language>
+    <language default-code="mwr" name="Marwari">
+        <code type="iso639_2">mwr</code>
+        <country-codes />
+    </language>
+    <language default-code="mas" name="Masai">
+        <code type="iso639_2">mas</code>
+        <country-codes>
+            <country-code>ke</country-code>
+            <country-code>tz</country-code>
+        </country-codes>
+    </language>
+    <language default-code="men" name="Mende">
+        <code type="iso639_2">men</code>
+        <country-codes>
+            <country-code>lr</country-code>
+            <country-code>sl</country-code>
+        </country-codes>
+    </language>
+    <language default-code="mic" name="Mi'Kmaq; Micmac">
+        <code type="iso639_2">mic</code>
+        <country-codes>
+            <country-code>ca</country-code>
+            <country-code>us</country-code>
+        </country-codes>
+    </language>
+    <language default-code="min" name="Minangkabau">
+        <code type="iso639_2">min</code>
+        <country-codes>
+            <country-code>id</country-code>
+        </country-codes>
+    </language>
+    <language default-code="mwl" name="Mirandese">
+        <code type="iso639_2">mwl</code>
+        <country-codes>
+            <country-code>pt</country-code>
+        </country-codes>
+    </language>
+    <language default-code="moh" name="Mohawk">
+        <code type="iso639_2">moh</code>
+        <country-codes>
+            <country-code>ca</country-code>
+            <country-code>us</country-code>
+        </country-codes>
+    </language>
+    <language default-code="mdf" name="Moksha">
+        <code type="iso639_2">mdf</code>
+        <country-codes>
+            <country-code>ru</country-code>
+        </country-codes>
+    </language>
+    <language default-code="mo" name="Moldavian">
+        <code type="iso639_1">mo</code>
+        <code type="iso639_2">mol</code>
+        <country-codes />
+    </language>
+    <language default-code="mkh" name="Mon-Khmer (Other)">
+        <code type="iso639_2">mkh</code>
+        <country-codes />
+    </language>
+    <language default-code="lol" name="Mongo">
+        <code type="iso639_2">lol</code>
+        <country-codes>
+            <country-code>cd</country-code>
+        </country-codes>
+    </language>
+    <language default-code="mn" name="Mongolian">
+        <code type="iso639_1">mn</code>
+        <code type="iso639_2">mon</code>
+        <country-codes />
+    </language>
+    <language default-code="mos" name="Mossi">
+        <code type="iso639_2">mos</code>
+        <country-codes>
+            <country-code>bf</country-code>
+            <country-code>bj</country-code>
+            <country-code>ci</country-code>
+            <country-code>gh</country-code>
+            <country-code>ml</country-code>
+            <country-code>tg</country-code>
+        </country-codes>
+    </language>
+    <language default-code="nah" name="Nahuatl">
+        <code type="iso639_2">nah</code>
+        <country-codes />
+    </language>
+    <language default-code="na" name="Nauru">
+        <code type="iso639_1">na</code>
+        <code type="iso639_2">nau</code>
+        <country-codes>
+            <country-code>nr</country-code>
+        </country-codes>
+    </language>
+    <language default-code="nd" name="Ndebele  North; North Ndebele">
+        <code type="iso639_1">nd</code>
+        <code type="iso639_2">nde</code>
+        <country-codes>
+            <country-code>bw</country-code>
+            <country-code>zw</country-code>
+        </country-codes>
+    </language>
+    <language default-code="nr" name="Ndebele  South; South Ndebele">
+        <code type="iso639_1">nr</code>
+        <code type="iso639_2">nbl</code>
+        <country-codes>
+            <country-code>za</country-code>
+        </country-codes>
+    </language>
+    <language default-code="ng" name="Ndonga">
+        <code type="iso639_1">ng</code>
+        <code type="iso639_2">ndo</code>
+        <country-codes>
+            <country-code>ao</country-code>
+            <country-code>na</country-code>
+        </country-codes>
+    </language>
+    <language default-code="nap" name="Neapolitan">
+        <code type="iso639_2">nap</code>
+        <country-codes>
+            <country-code>it</country-code>
+        </country-codes>
+    </language>
+    <language default-code="ne" name="Nepali">
+        <code type="iso639_1">ne</code>
+        <code type="iso639_2">nep</code>
+        <country-codes>
+            <country-code>bn</country-code>
+            <country-code>bt</country-code>
+            <country-code>in</country-code>
+            <country-code>np</country-code>
+        </country-codes>
+    </language>
+    <language default-code="new" name="Newari; Nepal Bhasa">
+        <code type="iso639_2">new</code>
+        <country-codes>
+            <country-code>in</country-code>
+            <country-code>np</country-code>
+        </country-codes>
+    </language>
+    <language default-code="nia" name="Nias">
+        <code type="iso639_2">nia</code>
+        <country-codes>
+            <country-code>id</country-code>
+        </country-codes>
+    </language>
+    <language default-code="nic" name="Niger-Kordofanian (Other)">
+        <code type="iso639_2">nic</code>
+        <country-codes />
+    </language>
+    <language default-code="ssa" name="Nilo-Saharan (Other)">
+        <code type="iso639_2">ssa</code>
+        <country-codes />
+    </language>
+    <language default-code="niu" name="Niuean">
+        <code type="iso639_2">niu</code>
+        <country-codes>
+            <country-code>ck</country-code>
+            <country-code>nu</country-code>
+            <country-code>nz</country-code>
+            <country-code>to</country-code>
+        </country-codes>
+    </language>
+    <language default-code="nog" name="Nogai">
+        <code type="iso639_2">nog</code>
+        <country-codes>
+            <country-code>kz</country-code>
+            <country-code>ru</country-code>
+            <country-code>uz</country-code>
+        </country-codes>
+    </language>
+    <language default-code="frr" name="Northern Frisian">
+        <code type="iso639_2">frr</code>
+        <country-codes>
+            <country-code>de</country-code>
+        </country-codes>
+    </language>
+    <language default-code="se" name="Northern Sami">
+        <code type="iso639_1">se</code>
+        <code type="iso639_2">sme</code>
+        <country-codes>
+            <country-code>fi</country-code>
+            <country-code>no</country-code>
+            <country-code>se</country-code>
+        </country-codes>
+    </language>
+    <language default-code="nso" name="Northern Sotho  Pedi; Sepedi">
+        <code type="iso639_2">nso</code>
+        <country-codes>
+            <country-code>bw</country-code>
+            <country-code>za</country-code>
+        </country-codes>
+    </language>
+    <language default-code="no" name="Norwegian">
+        <code type="iso639_1">no</code>
+        <code type="iso639_2">nor</code>
+        <country-codes>
+            <country-code>no</country-code>
+        </country-codes>
+    </language>
+    <language default-code="nb"
+        name="Norwegian Bokmål; Bokmål  Norwegian">
+        <code type="iso639_1">nb</code>
+        <code type="iso639_2">nob</code>
+        <country-codes>
+            <country-code>no</country-code>
+        </country-codes>
+    </language>
+    <language default-code="nn"
+        name="Norwegian Nynorsk; Nynorsk  Norwegian">
+        <code type="iso639_1">nn</code>
+        <code type="iso639_2">nno</code>
+        <country-codes>
+            <country-code>no</country-code>
+        </country-codes>
+    </language>
+    <language default-code="nub" name="Nubian Languages">
+        <code type="iso639_2">nub</code>
+        <country-codes />
+    </language>
+    <language default-code="nym" name="Nyamwezi">
+        <code type="iso639_2">nym</code>
+        <country-codes>
+            <country-code>tz</country-code>
+        </country-codes>
+    </language>
+    <language default-code="nyn" name="Nyankole">
+        <code type="iso639_2">nyn</code>
+        <country-codes>
+            <country-code>ug</country-code>
+        </country-codes>
+    </language>
+    <language default-code="nyo" name="Nyoro">
+        <code type="iso639_2">nyo</code>
+        <country-codes>
+            <country-code>ug</country-code>
+        </country-codes>
+    </language>
+    <language default-code="nzi" name="Nzima">
+        <code type="iso639_2">nzi</code>
+        <country-codes>
+            <country-code>ci</country-code>
+            <country-code>gh</country-code>
+        </country-codes>
+    </language>
+    <language default-code="oc" name="Occitan; Provençal">
+        <code type="iso639_1">oc</code>
+        <code type="iso639_2">oci</code>
+        <country-codes />
+    </language>
+    <language default-code="oj" name="Ojibwa">
+        <code type="iso639_1">oj</code>
+        <code type="iso639_2">oji</code>
+        <country-codes />
+    </language>
+    <language default-code="or" name="Oriya">
+        <code type="iso639_1">or</code>
+        <code type="iso639_2">ori</code>
+        <country-codes>
+            <country-code>bd</country-code>
+            <country-code>in</country-code>
+        </country-codes>
+    </language>
+    <language default-code="om" name="Oromo">
+        <code type="iso639_1">om</code>
+        <code type="iso639_2">orm</code>
+        <country-codes />
+    </language>
+    <language default-code="osa" name="Osage">
+        <code type="iso639_2">osa</code>
+        <country-codes>
+            <country-code>us</country-code>
+        </country-codes>
+    </language>
+    <language default-code="os" name="Ossetian; Ossetic">
+        <code type="iso639_1">os</code>
+        <code type="iso639_2">oss</code>
+        <country-codes>
+            <country-code>az</country-code>
+            <country-code>de</country-code>
+            <country-code>ge</country-code>
+            <country-code>kz</country-code>
+            <country-code>ru</country-code>
+            <country-code>tj</country-code>
+            <country-code>tm</country-code>
+            <country-code>tr</country-code>
+            <country-code>ua</country-code>
+            <country-code>uz</country-code>
+        </country-codes>
+    </language>
+    <language default-code="pal" name="Pahlavi">
+        <code type="iso639_2">pal</code>
+        <country-codes />
+    </language>
+    <language default-code="pau" name="Palauan">
+        <code type="iso639_2">pau</code>
+        <country-codes>
+            <country-code>gu</country-code>
+            <country-code>pw</country-code>
+        </country-codes>
+    </language>
+    <language default-code="pam" name="Pampanga">
+        <code type="iso639_2">pam</code>
+        <country-codes>
+            <country-code>ph</country-code>
+        </country-codes>
+    </language>
+    <language default-code="pag" name="Pangasinan">
+        <code type="iso639_2">pag</code>
+        <country-codes>
+            <country-code>ph</country-code>
+        </country-codes>
+    </language>
+    <language default-code="pa" name="Panjabi; Punjabi">
+        <code type="iso639_1">pa</code>
+        <code type="iso639_2">pan</code>
+        <country-codes>
+            <country-code>ae</country-code>
+            <country-code>bd</country-code>
+            <country-code>ca</country-code>
+            <country-code>fj</country-code>
+            <country-code>gb</country-code>
+            <country-code>in</country-code>
+            <country-code>ke</country-code>
+            <country-code>mu</country-code>
+            <country-code>my</country-code>
+            <country-code>sg</country-code>
+            <country-code>us</country-code>
+        </country-codes>
+    </language>
+    <language default-code="pap" name="Papiamento">
+        <code type="iso639_2">pap</code>
+        <country-codes>
+            <country-code>an</country-code>
+            <country-code>aw</country-code>
+            <country-code>nl</country-code>
+            <country-code>pr</country-code>
+            <country-code>vi</country-code>
+        </country-codes>
+    </language>
+    <language default-code="fa" name="Persian">
+        <code type="iso639_1">fa</code>
+        <code type="iso639_2">fas</code>
+        <code type="iso639_2">per</code>
+        <country-codes>
+            <country-code>ir</country-code>
+        </country-codes>
+    </language>
+    <language default-code="phi" name="Philippine (Other)">
+        <code type="iso639_2">phi</code>
+        <country-codes />
+    </language>
+    <language default-code="phn" name="Phoenician">
+        <code type="iso639_2">phn</code>
+        <country-codes />
+    </language>
+    <language default-code="pon" name="Pohnpeian">
+        <code type="iso639_2">pon</code>
+        <country-codes>
+            <country-code>fm</country-code>
+        </country-codes>
+    </language>
+    <language default-code="pl" name="Polish">
+        <code type="iso639_1">pl</code>
+        <code type="iso639_2">pol</code>
+        <country-codes>
+            <country-code>ae</country-code>
+            <country-code>at</country-code>
+            <country-code>au</country-code>
+            <country-code>az</country-code>
+            <country-code>by</country-code>
+            <country-code>ca</country-code>
+            <country-code>cz</country-code>
+            <country-code>de</country-code>
+            <country-code>ee</country-code>
+            <country-code>fi</country-code>
+            <country-code>hu</country-code>
+            <country-code>il</country-code>
+            <country-code>kz</country-code>
+            <country-code>lt</country-code>
+            <country-code>lv</country-code>
+            <country-code>pl</country-code>
+            <country-code>ro</country-code>
+            <country-code>ru</country-code>
+            <country-code>sk</country-code>
+            <country-code>ua</country-code>
+            <country-code>us</country-code>
+        </country-codes>
+    </language>
+    <language default-code="pt" name="Portuguese">
+        <code type="iso639_1">pt</code>
+        <code type="iso639_2">por</code>
+        <country-codes>
+            <country-code>ad</country-code>
+            <country-code>ag</country-code>
+            <country-code>ao</country-code>
+            <country-code>be</country-code>
+            <country-code>br</country-code>
+            <country-code>ca</country-code>
+            <country-code>cg</country-code>
+            <country-code>ch</country-code>
+            <country-code>cn</country-code>
+            <country-code>cv</country-code>
+            <country-code>de</country-code>
+            <country-code>es</country-code>
+            <country-code>fr</country-code>
+            <country-code>gb</country-code>
+            <country-code>gw</country-code>
+            <country-code>gy</country-code>
+            <country-code>id</country-code>
+            <country-code>in</country-code>
+            <country-code>jm</country-code>
+            <country-code>lu</country-code>
+            <country-code>mw</country-code>
+            <country-code>mz</country-code>
+            <country-code>na</country-code>
+            <country-code>om</country-code>
+            <country-code>pt</country-code>
+            <country-code>py</country-code>
+            <country-code>sr</country-code>
+            <country-code>st</country-code>
+            <country-code>tl</country-code>
+            <country-code>us</country-code>
+            <country-code>uy</country-code>
+            <country-code>vc</country-code>
+            <country-code>za</country-code>
+        </country-codes>
+    </language>
+    <language default-code="ps" name="Pushto">
+        <code type="iso639_1">ps</code>
+        <code type="iso639_2">pus</code>
+        <country-codes />
+    </language>
+    <language default-code="qu" name="Quechua">
+        <code type="iso639_1">qu</code>
+        <code type="iso639_2">que</code>
+        <country-codes />
+    </language>
+    <language default-code="raj" name="Rajasthani">
+        <code type="iso639_2">raj</code>
+        <country-codes />
+    </language>
+    <language default-code="rap" name="Rapanui">
+        <code type="iso639_2">rap</code>
+        <country-codes>
+            <country-code>cl</country-code>
+            <country-code>pf</country-code>
+            <country-code>us</country-code>
+        </country-codes>
+    </language>
+    <language default-code="rar" name="Rarotongan">
+        <code type="iso639_2">rar</code>
+        <country-codes>
+            <country-code>ck</country-code>
+            <country-code>nz</country-code>
+            <country-code>pf</country-code>
+        </country-codes>
+    </language>
+    <language default-code="ro" name="Romanian">
+        <code type="iso639_1">ro</code>
+        <code type="iso639_2">ron</code>
+        <code type="iso639_2">rum</code>
+        <country-codes>
+            <country-code>au</country-code>
+            <country-code>az</country-code>
+            <country-code>ca</country-code>
+            <country-code>cs</country-code>
+            <country-code>fi</country-code>
+            <country-code>hu</country-code>
+            <country-code>il</country-code>
+            <country-code>kg</country-code>
+            <country-code>kz</country-code>
+            <country-code>md</country-code>
+            <country-code>ro</country-code>
+            <country-code>ru</country-code>
+            <country-code>tj</country-code>
+            <country-code>tm</country-code>
+            <country-code>ua</country-code>
+            <country-code>us</country-code>
+            <country-code>uz</country-code>
+        </country-codes>
+    </language>
+    <language default-code="rom" name="Romany">
+        <code type="iso639_2">rom</code>
+        <country-codes />
+    </language>
+    <language default-code="rn" name="Rundi">
+        <code type="iso639_1">rn</code>
+        <code type="iso639_2">run</code>
+        <country-codes>
+            <country-code>bi</country-code>
+            <country-code>rw</country-code>
+            <country-code>tz</country-code>
+            <country-code>ug</country-code>
+        </country-codes>
+    </language>
+    <language default-code="ru" name="Russian">
+        <code type="iso639_1">ru</code>
+        <code type="iso639_2">rus</code>
+        <country-codes>
+            <country-code>am</country-code>
+            <country-code>az</country-code>
+            <country-code>bg</country-code>
+            <country-code>by</country-code>
+            <country-code>ca</country-code>
+            <country-code>cn</country-code>
+            <country-code>cz</country-code>
+            <country-code>de</country-code>
+            <country-code>ee</country-code>
+            <country-code>fi</country-code>
+            <country-code>ge</country-code>
+            <country-code>gr</country-code>
+            <country-code>il</country-code>
+            <country-code>in</country-code>
+            <country-code>kg</country-code>
+            <country-code>kz</country-code>
+            <country-code>lt</country-code>
+            <country-code>lv</country-code>
+            <country-code>md</country-code>
+            <country-code>mn</country-code>
+            <country-code>no</country-code>
+            <country-code>pl</country-code>
+            <country-code>ro</country-code>
+            <country-code>ru</country-code>
+            <country-code>sk</country-code>
+            <country-code>tj</country-code>
+            <country-code>tm</country-code>
+            <country-code>ua</country-code>
+            <country-code>us</country-code>
+            <country-code>uy</country-code>
+            <country-code>uz</country-code>
+        </country-codes>
+    </language>
+    <language default-code="sam" name="Samaritan Aramaic">
+        <code type="iso639_2">sam</code>
+        <country-codes>
+            <country-code>il</country-code>
+            <country-code>ps</country-code>
+        </country-codes>
+    </language>
+    <language default-code="sm" name="Samoan">
+        <code type="iso639_1">sm</code>
+        <code type="iso639_2">smo</code>
+        <country-codes>
+            <country-code>as</country-code>
+            <country-code>fj</country-code>
+            <country-code>nz</country-code>
+            <country-code>to</country-code>
+            <country-code>us</country-code>
+            <country-code>ws</country-code>
+        </country-codes>
+    </language>
+    <language default-code="sad" name="Sandawe">
+        <code type="iso639_2">sad</code>
+        <country-codes>
+            <country-code>tz</country-code>
+        </country-codes>
+    </language>
+    <language default-code="sg" name="Sango">
+        <code type="iso639_1">sg</code>
+        <code type="iso639_2">sag</code>
+        <country-codes>
+            <country-code>cd</country-code>
+            <country-code>cf</country-code>
+            <country-code>cg</country-code>
+            <country-code>td</country-code>
+        </country-codes>
+    </language>
+    <language default-code="sat" name="Santali">
+        <code type="iso639_2">sat</code>
+        <country-codes>
+            <country-code>bd</country-code>
+            <country-code>bt</country-code>
+            <country-code>in</country-code>
+            <country-code>np</country-code>
+        </country-codes>
+    </language>
+    <language default-code="sc" name="Sardinian">
+        <code type="iso639_1">sc</code>
+        <code type="iso639_2">srd</code>
+        <country-codes />
+    </language>
+    <language default-code="sas" name="Sasak">
+        <code type="iso639_2">sas</code>
+        <country-codes>
+            <country-code>id</country-code>
+        </country-codes>
+    </language>
+    <language default-code="sco" name="Scots">
+        <code type="iso639_2">sco</code>
+        <country-codes>
+            <country-code>gb</country-code>
+            <country-code>ie</country-code>
+        </country-codes>
+    </language>
+    <language default-code="sel" name="Selkup">
+        <code type="iso639_2">sel</code>
+        <country-codes>
+            <country-code>ru</country-code>
+        </country-codes>
+    </language>
+    <language default-code="sem" name="Semitic (Other)">
+        <code type="iso639_2">sem</code>
+        <country-codes />
+    </language>
+    <language default-code="sr" name="Serbian">
+        <code type="iso639_1">sr</code>
+        <code type="iso639_2">srp</code>
+        <code type="iso639_2">scc</code>
+        <country-codes>
+            <country-code>ae</country-code>
+            <country-code>al</country-code>
+            <country-code>au</country-code>
+            <country-code>ba</country-code>
+            <country-code>bg</country-code>
+            <country-code>ca</country-code>
+            <country-code>ch</country-code>
+            <country-code>cs</country-code>
+            <country-code>gr</country-code>
+            <country-code>mk</country-code>
+            <country-code>ro</country-code>
+            <country-code>ru</country-code>
+            <country-code>se</country-code>
+            <country-code>tr</country-code>
+            <country-code>ua</country-code>
+            <country-code>us</country-code>
+        </country-codes>
+    </language>
+    <language default-code="srr" name="Serer">
+        <code type="iso639_2">srr</code>
+        <country-codes>
+            <country-code>gm</country-code>
+            <country-code>sn</country-code>
+        </country-codes>
+    </language>
+    <language default-code="shn" name="Shan">
+        <code type="iso639_2">shn</code>
+        <country-codes>
+            <country-code>cn</country-code>
+            <country-code>mm</country-code>
+            <country-code>th</country-code>
+        </country-codes>
+    </language>
+    <language default-code="sn" name="Shona">
+        <code type="iso639_1">sn</code>
+        <code type="iso639_2">sna</code>
+        <country-codes>
+            <country-code>bw</country-code>
+            <country-code>mw</country-code>
+            <country-code>zm</country-code>
+            <country-code>zw</country-code>
+        </country-codes>
+    </language>
+    <language default-code="ii" name="Sichuan Yi">
+        <code type="iso639_1">ii</code>
+        <code type="iso639_2">iii</code>
+        <country-codes>
+            <country-code>cn</country-code>
+        </country-codes>
+    </language>
+    <language default-code="scn" name="Sicilian">
+        <code type="iso639_2">scn</code>
+        <country-codes>
+            <country-code>it</country-code>
+        </country-codes>
+    </language>
+    <language default-code="sid" name="Sidamo">
+        <code type="iso639_2">sid</code>
+        <country-codes>
+            <country-code>et</country-code>
+        </country-codes>
+    </language>
+    <language default-code="bla" name="Siksika">
+        <code type="iso639_2">bla</code>
+        <country-codes>
+            <country-code>ca</country-code>
+            <country-code>us</country-code>
+        </country-codes>
+    </language>
+    <language default-code="sd" name="Sindhi">
+        <code type="iso639_1">sd</code>
+        <code type="iso639_2">snd</code>
+        <country-codes>
+            <country-code>gb</country-code>
+            <country-code>in</country-code>
+            <country-code>om</country-code>
+            <country-code>ph</country-code>
+            <country-code>pk</country-code>
+            <country-code>sg</country-code>
+            <country-code>us</country-code>
+        </country-codes>
+    </language>
+    <language default-code="si" name="Sinhalese">
+        <code type="iso639_1">si</code>
+        <code type="iso639_2">sin</code>
+        <country-codes>
+        	<country-code>lk</country-code>
+            <country-code>ae</country-code>
+            <country-code>ca</country-code>            
+            <country-code>mv</country-code>
+            <country-code>sg</country-code>
+            <country-code>th</country-code>
+        </country-codes>
+    </language>
+    <language default-code="sit" name="Sino-Tibetan (Other)">
+        <code type="iso639_2">sit</code>
+        <country-codes />
+    </language>
+    <language default-code="sio" name="Siouan Languages">
+        <code type="iso639_2">sio</code>
+        <country-codes />
+    </language>
+    <language default-code="sms" name="Skolt Sami">
+        <code type="iso639_2">sms</code>
+        <country-codes>
+            <country-code>fi</country-code>
+            <country-code>ru</country-code>
+        </country-codes>
+    </language>
+    <language default-code="den" name="Slave (Athapascan)">
+        <code type="iso639_2">den</code>
+        <country-codes />
+    </language>
+    <language default-code="sla" name="Slavic (Other)">
+        <code type="iso639_2">sla</code>
+        <country-codes />
+    </language>
+    <language default-code="sk" name="Slovak">
+        <code type="iso639_1">sk</code>
+        <code type="iso639_2">slk</code>
+        <code type="iso639_2">slo</code>
+        <country-codes>
+            <country-code>ca</country-code>
+            <country-code>cs</country-code>
+            <country-code>hu</country-code>
+            <country-code>pl</country-code>
+            <country-code>ro</country-code>
+            <country-code>sk</country-code>
+            <country-code>ua</country-code>
+            <country-code>us</country-code>
+        </country-codes>
+    </language>
+    <language default-code="sl" name="Slovenian">
+        <code type="iso639_1">sl</code>
+        <code type="iso639_2">slv</code>
+        <country-codes>
+            <country-code>ar</country-code>
+            <country-code>at</country-code>
+            <country-code>au</country-code>
+            <country-code>ca</country-code>
+            <country-code>cs</country-code>
+            <country-code>hr</country-code>
+            <country-code>hu</country-code>
+            <country-code>it</country-code>
+            <country-code>si</country-code>
+            <country-code>us</country-code>
+        </country-codes>
+    </language>
+    <language default-code="sog" name="Sogdian">
+        <code type="iso639_2">sog</code>
+        <country-codes />
+    </language>
+    <language default-code="so" name="Somali">
+        <code type="iso639_1">so</code>
+        <code type="iso639_2">som</code>
+        <country-codes>
+            <country-code>ae</country-code>
+            <country-code>dj</country-code>
+            <country-code>et</country-code>
+            <country-code>fi</country-code>
+            <country-code>gb</country-code>
+            <country-code>it</country-code>
+            <country-code>ke</country-code>
+            <country-code>om</country-code>
+            <country-code>sa</country-code>
+            <country-code>se</country-code>
+            <country-code>so</country-code>
+            <country-code>ye</country-code>
+        </country-codes>
+    </language>
+    <language default-code="son" name="Songhai">
+        <code type="iso639_2">son</code>
+        <country-codes />
+    </language>
+    <language default-code="snk" name="Soninke">
+        <code type="iso639_2">snk</code>
+        <country-codes>
+            <country-code>ci</country-code>
+            <country-code>gm</country-code>
+            <country-code>gn</country-code>
+            <country-code>gw</country-code>
+            <country-code>ml</country-code>
+            <country-code>mr</country-code>
+            <country-code>sn</country-code>
+        </country-codes>
+    </language>
+    <language default-code="st" name="Sotho  Southern">
+        <code type="iso639_1">st</code>
+        <code type="iso639_2">sot</code>
+        <country-codes>
+            <country-code>bw</country-code>
+            <country-code>ls</country-code>
+            <country-code>za</country-code>
+        </country-codes>
+    </language>
+    <language default-code="alt" name="Southern Altai">
+        <code type="iso639_2">alt</code>
+        <country-codes>
+            <country-code>ru</country-code>
+        </country-codes>
+    </language>
+    <language default-code="sma" name="Southern Sami">
+        <code type="iso639_2">sma</code>
+        <country-codes>
+            <country-code>no</country-code>
+            <country-code>se</country-code>
+        </country-codes>
+    </language>
+    <language default-code="es" name="Spanish">
+        <code type="iso639_1">es</code>
+        <code type="iso639_2">spa</code>
+        <country-codes>
+            <country-code>ad</country-code>
+            <country-code>an</country-code>
+            <country-code>ar</country-code>
+            <country-code>au</country-code>
+            <country-code>aw</country-code>
+            <country-code>be</country-code>
+            <country-code>bo</country-code>
+            <country-code>bz</country-code>
+            <country-code>ca</country-code>
+            <country-code>ch</country-code>
+            <country-code>cl</country-code>
+            <country-code>co</country-code>
+            <country-code>cr</country-code>
+            <country-code>cu</country-code>
+            <country-code>de</country-code>
+            <country-code>do</country-code>
+            <country-code>ec</country-code>
+            <country-code>es</country-code>
+            <country-code>fi</country-code>
+            <country-code>fr</country-code>
+            <country-code>gi</country-code>
+            <country-code>gq</country-code>
+            <country-code>gt</country-code>
+            <country-code>hn</country-code>
+            <country-code>il</country-code>
+            <country-code>jm</country-code>
+            <country-code>ky</country-code>
+            <country-code>ma</country-code>
+            <country-code>mx</country-code>
+            <country-code>ni</country-code>
+            <country-code>no</country-code>
+            <country-code>pa</country-code>
+            <country-code>pe</country-code>
+            <country-code>ph</country-code>
+            <country-code>pr</country-code>
+            <country-code>py</country-code>
+            <country-code>se</country-code>
+            <country-code>sv</country-code>
+            <country-code>tt</country-code>
+            <country-code>us</country-code>
+            <country-code>uy</country-code>
+            <country-code>ve</country-code>
+            <country-code>vi</country-code>
+        </country-codes>
+    </language>
+    <language default-code="srn" name="Sranan Togo">
+        <code type="iso639_2">srn</code>
+        <country-codes>
+            <country-code>an</country-code>
+            <country-code>aw</country-code>
+            <country-code>nl</country-code>
+            <country-code>sr</country-code>
+        </country-codes>
+    </language>
+    <language default-code="suk" name="Sukuma">
+        <code type="iso639_2">suk</code>
+        <country-codes>
+            <country-code>tz</country-code>
+        </country-codes>
+    </language>
+    <language default-code="sux" name="Sumerian">
+        <code type="iso639_2">sux</code>
+        <country-codes />
+    </language>
+    <language default-code="su" name="Sundanese">
+        <code type="iso639_1">su</code>
+        <code type="iso639_2">sun</code>
+        <country-codes>
+            <country-code>id</country-code>
+        </country-codes>
+    </language>
+    <language default-code="sus" name="Susu">
+        <code type="iso639_2">sus</code>
+        <country-codes>
+            <country-code>gn</country-code>
+            <country-code>gw</country-code>
+            <country-code>sl</country-code>
+        </country-codes>
+    </language>
+    <language default-code="sw" name="Swahili">
+        <code type="iso639_1">sw</code>
+        <code type="iso639_2">swa</code>
+        <country-codes />
+    </language>
+    <language default-code="ss" name="Swati">
+        <code type="iso639_1">ss</code>
+        <code type="iso639_2">ssw</code>
+        <country-codes>
+            <country-code>ls</country-code>
+            <country-code>mz</country-code>
+            <country-code>sz</country-code>
+            <country-code>za</country-code>
+        </country-codes>
+    </language>
+    <language default-code="sv" name="Swedish">
+        <code type="iso639_1">sv</code>
+        <code type="iso639_2">swe</code>
+        <country-codes>
+            <country-code>ae</country-code>
+            <country-code>ca</country-code>
+            <country-code>ee</country-code>
+            <country-code>fi</country-code>
+            <country-code>no</country-code>
+            <country-code>se</country-code>
+            <country-code>us</country-code>
+        </country-codes>
+    </language>
+    <language default-code="syr" name="Syriac">
+        <code type="iso639_2">syr</code>
+        <country-codes />
+    </language>
+    <language default-code="tl" name="Tagalog">
+        <code type="iso639_1">tl</code>
+        <code type="iso639_2">tgl</code>
+        <country-codes>
+            <country-code>ae</country-code>
+            <country-code>ca</country-code>
+            <country-code>gb</country-code>
+            <country-code>gu</country-code>
+            <country-code>ph</country-code>
+            <country-code>sa</country-code>
+            <country-code>us</country-code>
+        </country-codes>
+    </language>
+    <language default-code="ty" name="Tahitian">
+        <code type="iso639_1">ty</code>
+        <code type="iso639_2">tah</code>
+        <country-codes>
+            <country-code>nc</country-code>
+            <country-code>nz</country-code>
+            <country-code>pf</country-code>
+            <country-code>vu</country-code>
+        </country-codes>
+    </language>
+    <language default-code="tai" name="Tai (Other)">
+        <code type="iso639_2">tai</code>
+        <country-codes />
+    </language>
+    <language default-code="tg" name="Tajik">
+        <code type="iso639_1">tg</code>
+        <code type="iso639_2">tgk</code>
+        <country-codes>
+            <country-code>ir</country-code>
+            <country-code>kg</country-code>
+            <country-code>kz</country-code>
+            <country-code>ru</country-code>
+            <country-code>tj</country-code>
+            <country-code>tm</country-code>
+            <country-code>ua</country-code>
+            <country-code>uz</country-code>
+        </country-codes>
+    </language>
+    <language default-code="tmh" name="Tamashek">
+        <code type="iso639_2">tmh</code>
+        <country-codes />
+    </language>
+    <language default-code="ta" name="Tamil">
+        <code type="iso639_1">ta</code>
+        <code type="iso639_2">tam</code>
+        <country-codes>
+            <country-code>ae</country-code>
+            <country-code>bh</country-code>
+            <country-code>de</country-code>
+            <country-code>fj</country-code>
+            <country-code>gb</country-code>
+            <country-code>in</country-code>
+            <country-code>lk</country-code>
+            <country-code>mu</country-code>
+            <country-code>my</country-code>
+            <country-code>nl</country-code>
+            <country-code>qa</country-code>
+            <country-code>re</country-code>
+            <country-code>sg</country-code>
+            <country-code>th</country-code>
+            <country-code>za</country-code>
+        </country-codes>
+    </language>
+    <language default-code="tt" name="Tatar">
+        <code type="iso639_1">tt</code>
+        <code type="iso639_2">tat</code>
+        <country-codes>
+            <country-code>af</country-code>
+            <country-code>az</country-code>
+            <country-code>by</country-code>
+            <country-code>cn</country-code>
+            <country-code>ee</country-code>
+            <country-code>fi</country-code>
+            <country-code>ge</country-code>
+            <country-code>kg</country-code>
+            <country-code>kz</country-code>
+            <country-code>lt</country-code>
+            <country-code>lv</country-code>
+            <country-code>md</country-code>
+            <country-code>ru</country-code>
+            <country-code>tj</country-code>
+            <country-code>tm</country-code>
+            <country-code>tr</country-code>
+            <country-code>ua</country-code>
+            <country-code>us</country-code>
+            <country-code>uz</country-code>
+        </country-codes>
+    </language>
+    <language default-code="te" name="Telugu">
+        <code type="iso639_1">te</code>
+        <code type="iso639_2">tel</code>
+        <country-codes>
+            <country-code>ae</country-code>
+            <country-code>bh</country-code>
+            <country-code>fj</country-code>
+            <country-code>in</country-code>
+            <country-code>mu</country-code>
+            <country-code>my</country-code>
+            <country-code>sg</country-code>
+        </country-codes>
+    </language>
+    <language default-code="ter" name="Tereno">
+        <code type="iso639_2">ter</code>
+        <country-codes>
+            <country-code>br</country-code>
+        </country-codes>
+    </language>
+    <language default-code="tet" name="Tetum">
+        <code type="iso639_2">tet</code>
+        <country-codes>
+            <country-code>id</country-code>
+            <country-code>tl</country-code>
+        </country-codes>
+    </language>
+    <language default-code="th" name="Thai">
+        <code type="iso639_1">th</code>
+        <code type="iso639_2">tha</code>
+        <country-codes>
+            <country-code>ae</country-code>
+            <country-code>sg</country-code>
+            <country-code>th</country-code>
+            <country-code>us</country-code>
+        </country-codes>
+    </language>
+    <language default-code="bo" name="Tibetan">
+        <code type="iso639_1">bo</code>
+        <code type="iso639_2">tib</code>
+        <code type="iso639_2">bod</code>
+        <country-codes>
+            <country-code>bt</country-code>
+            <country-code>ch</country-code>
+            <country-code>cn</country-code>
+            <country-code>in</country-code>
+            <country-code>no</country-code>
+            <country-code>np</country-code>
+            <country-code>tw</country-code>
+            <country-code>us</country-code>
+        </country-codes>
+    </language>
+    <language default-code="tig" name="Tigre">
+        <code type="iso639_2">tig</code>
+        <country-codes>
+            <country-code>er</country-code>
+            <country-code>sd</country-code>
+        </country-codes>
+    </language>
+    <language default-code="ti" name="Tigrinya">
+        <code type="iso639_1">ti</code>
+        <code type="iso639_2">tir</code>
+        <country-codes>
+            <country-code>de</country-code>
+            <country-code>er</country-code>
+            <country-code>et</country-code>
+            <country-code>il</country-code>
+        </country-codes>
+    </language>
+    <language default-code="tem" name="Timne">
+        <code type="iso639_2">tem</code>
+        <country-codes>
+            <country-code>sl</country-code>
+        </country-codes>
+    </language>
+    <language default-code="tiv" name="Tiv">
+        <code type="iso639_2">tiv</code>
+        <country-codes>
+            <country-code>cm</country-code>
+            <country-code>ng</country-code>
+        </country-codes>
+    </language>
+    <language default-code="tli" name="Tlingit">
+        <code type="iso639_2">tli</code>
+        <country-codes>
+            <country-code>ca</country-code>
+            <country-code>us</country-code>
+        </country-codes>
+    </language>
+    <language default-code="tpi" name="Tok Pisin">
+        <code type="iso639_2">tpi</code>
+        <country-codes>
+            <country-code>pg</country-code>
+        </country-codes>
+    </language>
+    <language default-code="tkl" name="Tokelau">
+        <code type="iso639_2">tkl</code>
+        <country-codes>
+            <country-code>as</country-code>
+            <country-code>nz</country-code>
+            <country-code>tk</country-code>
+            <country-code>us</country-code>
+        </country-codes>
+    </language>
+    <language default-code="tog" name="Tonga (Nyasa)">
+        <code type="iso639_2">tog</code>
+        <country-codes>
+            <country-code>mw</country-code>
+        </country-codes>
+    </language>
+    <language default-code="to" name="Tonga (Tonga Islands)">
+        <code type="iso639_1">to</code>
+        <code type="iso639_2">ton</code>
+        <country-codes>
+            <country-code>as</country-code>
+            <country-code>au</country-code>
+            <country-code>ca</country-code>
+            <country-code>fj</country-code>
+            <country-code>nu</country-code>
+            <country-code>nz</country-code>
+            <country-code>to</country-code>
+            <country-code>us</country-code>
+            <country-code>vu</country-code>
+        </country-codes>
+    </language>
+    <language default-code="tsi" name="Tsimshian">
+        <code type="iso639_2">tsi</code>
+        <country-codes>
+            <country-code>ca</country-code>
+            <country-code>us</country-code>
+        </country-codes>
+    </language>
+    <language default-code="ts" name="Tsonga">
+        <code type="iso639_1">ts</code>
+        <code type="iso639_2">tso</code>
+        <country-codes>
+            <country-code>mz</country-code>
+            <country-code>sz</country-code>
+            <country-code>za</country-code>
+            <country-code>zw</country-code>
+        </country-codes>
+    </language>
+    <language default-code="tn" name="Tswana">
+        <code type="iso639_1">tn</code>
+        <code type="iso639_2">tsn</code>
+        <country-codes>
+            <country-code>bw</country-code>
+            <country-code>na</country-code>
+            <country-code>za</country-code>
+            <country-code>zw</country-code>
+        </country-codes>
+    </language>
+    <language default-code="tum" name="Tumbuka">
+        <code type="iso639_2">tum</code>
+        <country-codes>
+            <country-code>mw</country-code>
+            <country-code>zm</country-code>
+        </country-codes>
+    </language>
+    <language default-code="tr" name="Turkish">
+        <code type="iso639_1">tr</code>
+        <code type="iso639_2">tur</code>
+        <country-codes>
+            <country-code>ae</country-code>
+            <country-code>at</country-code>
+            <country-code>au</country-code>
+            <country-code>az</country-code>
+            <country-code>ba</country-code>
+            <country-code>be</country-code>
+            <country-code>bg</country-code>
+            <country-code>ca</country-code>
+            <country-code>ch</country-code>
+            <country-code>cs</country-code>
+            <country-code>cy</country-code>
+            <country-code>de</country-code>
+            <country-code>dk</country-code>
+            <country-code>fi</country-code>
+            <country-code>fr</country-code>
+            <country-code>gb</country-code>
+            <country-code>ge</country-code>
+            <country-code>gr</country-code>
+            <country-code>hn</country-code>
+            <country-code>il</country-code>
+            <country-code>iq</country-code>
+            <country-code>ir</country-code>
+            <country-code>kg</country-code>
+            <country-code>kz</country-code>
+            <country-code>mk</country-code>
+            <country-code>nl</country-code>
+            <country-code>ro</country-code>
+            <country-code>ru</country-code>
+            <country-code>se</country-code>
+            <country-code>sv</country-code>
+            <country-code>tj</country-code>
+            <country-code>tr</country-code>
+            <country-code>ua</country-code>
+            <country-code>us</country-code>
+            <country-code>uz</country-code>
+        </country-codes>
+    </language>
+    <language default-code="tk" name="Turkmen">
+        <code type="iso639_1">tk</code>
+        <code type="iso639_2">tuk</code>
+        <country-codes>
+            <country-code>af</country-code>
+            <country-code>de</country-code>
+            <country-code>iq</country-code>
+            <country-code>ir</country-code>
+            <country-code>kg</country-code>
+            <country-code>kz</country-code>
+            <country-code>pk</country-code>
+            <country-code>ru</country-code>
+            <country-code>tj</country-code>
+            <country-code>tm</country-code>
+            <country-code>tr</country-code>
+            <country-code>us</country-code>
+            <country-code>uz</country-code>
+        </country-codes>
+    </language>
+    <language default-code="tvl" name="Tuvalu">
+        <code type="iso639_2">tvl</code>
+        <country-codes>
+            <country-code>fj</country-code>
+            <country-code>ki</country-code>
+            <country-code>nr</country-code>
+            <country-code>nz</country-code>
+            <country-code>tv</country-code>
+        </country-codes>
+    </language>
+    <language default-code="tyv" name="Tuvinian">
+        <code type="iso639_2">tyv</code>
+        <country-codes>
+            <country-code>cn</country-code>
+            <country-code>mn</country-code>
+            <country-code>ru</country-code>
+        </country-codes>
+    </language>
+    <language default-code="tw" name="Twi">
+        <code type="iso639_1">tw</code>
+        <code type="iso639_2">twi</code>
+        <country-codes />
+    </language>
+    <language default-code="udm" name="Udmurt">
+        <code type="iso639_2">udm</code>
+        <country-codes>
+            <country-code>kz</country-code>
+            <country-code>ru</country-code>
+        </country-codes>
+    </language>
+    <language default-code="uga" name="Ugaritic">
+        <code type="iso639_2">uga</code>
+        <country-codes />
+    </language>
+    <language default-code="ug" name="Uighur; Uyghur">
+        <code type="iso639_1">ug</code>
+        <code type="iso639_2">uig</code>
+        <country-codes>
+            <country-code>af</country-code>
+            <country-code>au</country-code>
+            <country-code>cn</country-code>
+            <country-code>de</country-code>
+            <country-code>id</country-code>
+            <country-code>in</country-code>
+            <country-code>kg</country-code>
+            <country-code>kz</country-code>
+            <country-code>mn</country-code>
+            <country-code>pk</country-code>
+            <country-code>sa</country-code>
+            <country-code>tj</country-code>
+            <country-code>tr</country-code>
+            <country-code>tw</country-code>
+            <country-code>us</country-code>
+            <country-code>uz</country-code>
+        </country-codes>
+    </language>
+    <language default-code="uk" name="Ukrainian">
+        <code type="iso639_1">uk</code>
+        <code type="iso639_2">ukr</code>
+        <country-codes>
+            <country-code>am</country-code>
+            <country-code>ar</country-code>
+            <country-code>az</country-code>
+            <country-code>br</country-code>
+            <country-code>by</country-code>
+            <country-code>ca</country-code>
+            <country-code>cs</country-code>
+            <country-code>ee</country-code>
+            <country-code>ge</country-code>
+            <country-code>hu</country-code>
+            <country-code>kg</country-code>
+            <country-code>kz</country-code>
+            <country-code>lt</country-code>
+            <country-code>lv</country-code>
+            <country-code>md</country-code>
+            <country-code>pl</country-code>
+            <country-code>py</country-code>
+            <country-code>ro</country-code>
+            <country-code>ru</country-code>
+            <country-code>sk</country-code>
+            <country-code>tj</country-code>
+            <country-code>tm</country-code>
+            <country-code>ua</country-code>
+            <country-code>us</country-code>
+            <country-code>uz</country-code>
+        </country-codes>
+    </language>
+    <language default-code="umb" name="Umbundu">
+        <code type="iso639_2">umb</code>
+        <country-codes>
+            <country-code>ao</country-code>
+            <country-code>na</country-code>
+        </country-codes>
+    </language>
+    <language default-code="und" name="Undetermined">
+        <code type="iso639_2">und</code>
+        <country-codes />
+    </language>
+    <language default-code="hsb" name="Upper Sorbian">
+        <code type="iso639_2">hsb</code>
+        <country-codes>
+            <country-code>de</country-code>
+        </country-codes>
+    </language>
+    <language default-code="ur" name="Urdu">
+        <code type="iso639_1">ur</code>
+        <code type="iso639_2">urd</code>
+        <country-codes>
+            <country-code>ae</country-code>
+            <country-code>af</country-code>
+            <country-code>bd</country-code>
+            <country-code>bh</country-code>
+            <country-code>bw</country-code>
+            <country-code>de</country-code>
+            <country-code>fj</country-code>
+            <country-code>gb</country-code>
+            <country-code>gy</country-code>
+            <country-code>in</country-code>
+            <country-code>mu</country-code>
+            <country-code>mw</country-code>
+            <country-code>no</country-code>
+            <country-code>np</country-code>
+            <country-code>om</country-code>
+            <country-code>pk</country-code>
+            <country-code>qa</country-code>
+            <country-code>sa</country-code>
+            <country-code>th</country-code>
+            <country-code>za</country-code>
+            <country-code>zm</country-code>
+        </country-codes>
+    </language>
+    <language default-code="uz" name="Uzbek">
+        <code type="iso639_1">uz</code>
+        <code type="iso639_2">uzb</code>
+        <country-codes>
+            <country-code>uz</country-code>
+        </country-codes>
+    </language>
+    <language default-code="vai" name="Vai">
+        <code type="iso639_2">vai</code>
+        <country-codes>
+            <country-code>lr</country-code>
+            <country-code>sl</country-code>
+        </country-codes>
+    </language>
+    <language default-code="ve" name="Venda">
+        <code type="iso639_1">ve</code>
+        <code type="iso639_2">ven</code>
+        <country-codes>
+            <country-code>za</country-code>
+            <country-code>zw</country-code>
+        </country-codes>
+    </language>
+    <language default-code="vi" name="Vietnamese">
+        <code type="iso639_1">vi</code>
+        <code type="iso639_2">vie</code>
+        <country-codes>
+            <country-code>au</country-code>
+            <country-code>ca</country-code>
+            <country-code>ci</country-code>
+            <country-code>cn</country-code>
+            <country-code>de</country-code>
+            <country-code>fi</country-code>
+            <country-code>fr</country-code>
+            <country-code>gb</country-code>
+            <country-code>kh</country-code>
+            <country-code>la</country-code>
+            <country-code>mq</country-code>
+            <country-code>nc</country-code>
+            <country-code>nl</country-code>
+            <country-code>no</country-code>
+            <country-code>ph</country-code>
+            <country-code>sn</country-code>
+            <country-code>th</country-code>
+            <country-code>us</country-code>
+            <country-code>vn</country-code>
+            <country-code>vu</country-code>
+        </country-codes>
+    </language>
+    <language default-code="vo" name="Volapük">
+        <code type="iso639_1">vo</code>
+        <code type="iso639_2">vol</code>
+        <country-codes />
+    </language>
+    <language default-code="vot" name="Votic">
+        <code type="iso639_2">vot</code>
+        <country-codes>
+            <country-code>ru</country-code>
+        </country-codes>
+    </language>
+    <language default-code="wal" name="Walamo">
+        <code type="iso639_2">wal</code>
+        <country-codes>
+            <country-code>et</country-code>
+        </country-codes>
+    </language>
+    <language default-code="wa" name="Walloon">
+        <code type="iso639_1">wa</code>
+        <code type="iso639_2">wln</code>
+        <country-codes>
+            <country-code>be</country-code>
+        </country-codes>
+    </language>
+    <language default-code="war" name="Waray">
+        <code type="iso639_2">war</code>
+        <country-codes>
+            <country-code>ph</country-code>
+        </country-codes>
+    </language>
+    <language default-code="was" name="Washo">
+        <code type="iso639_2">was</code>
+        <country-codes>
+            <country-code>us</country-code>
+        </country-codes>
+    </language>
+    <language default-code="cy" name="Welsh">
+        <code type="iso639_1">cy</code>
+        <code type="iso639_2">cym</code>
+        <code type="iso639_2">wel</code>
+        <country-codes>
+            <country-code>ar</country-code>
+            <country-code>ca</country-code>
+            <country-code>gb</country-code>
+        </country-codes>
+    </language>
+    <language default-code="fy" name="Western Frisian">
+        <code type="iso639_1">fy</code>
+        <code type="iso639_2">fry</code>
+        <country-codes />
+    </language>
+    <language default-code="wo" name="Wolof">
+        <code type="iso639_1">wo</code>
+        <code type="iso639_2">wol</code>
+        <country-codes>
+            <country-code>fr</country-code>
+            <country-code>gm</country-code>
+            <country-code>gw</country-code>
+            <country-code>ml</country-code>
+            <country-code>mr</country-code>
+            <country-code>sn</country-code>
+        </country-codes>
+    </language>
+    <language default-code="xh" name="Xhosa">
+        <code type="iso639_1">xh</code>
+        <code type="iso639_2">xho</code>
+        <country-codes>
+            <country-code>bw</country-code>
+            <country-code>ls</country-code>
+            <country-code>za</country-code>
+        </country-codes>
+    </language>
+    <language default-code="sah" name="Yakut">
+        <code type="iso639_2">sah</code>
+        <country-codes>
+            <country-code>ru</country-code>
+        </country-codes>
+    </language>
+    <language default-code="yao" name="Yao">
+        <code type="iso639_2">yao</code>
+        <country-codes>
+            <country-code>mw</country-code>
+            <country-code>mz</country-code>
+            <country-code>tz</country-code>
+            <country-code>zm</country-code>
+        </country-codes>
+    </language>
+    <language default-code="yap" name="Yapese">
+        <code type="iso639_2">yap</code>
+        <country-codes>
+            <country-code>fm</country-code>
+        </country-codes>
+    </language>
+    <language default-code="yi" name="Yiddish">
+        <code type="iso639_1">yi</code>
+        <code type="iso639_2">yid</code>
+        <country-codes />
+    </language>
+    <language default-code="yo" name="Yoruba">
+        <code type="iso639_1">yo</code>
+        <code type="iso639_2">yor</code>
+        <country-codes>
+            <country-code>bj</country-code>
+            <country-code>gb</country-code>
+            <country-code>ng</country-code>
+            <country-code>tg</country-code>
+            <country-code>us</country-code>
+        </country-codes>
+    </language>
+    <language default-code="znd" name="Zande">
+        <code type="iso639_2">znd</code>
+        <country-codes />
+    </language>
+    <language default-code="zap" name="Zapotec">
+        <code type="iso639_2">zap</code>
+        <country-codes />
+    </language>
+    <language default-code="zen" name="Zenaga">
+        <code type="iso639_2">zen</code>
+        <country-codes>
+            <country-code>mr</country-code>
+        </country-codes>
+    </language>
+    <language default-code="za" name="Zhuang; Chuang">
+        <code type="iso639_1">za</code>
+        <code type="iso639_2">zha</code>
+        <country-codes />
+    </language>
+    <language default-code="zu" name="Zulu">
+        <code type="iso639_1">zu</code>
+        <code type="iso639_2">zul</code>
+        <country-codes>
+            <country-code>bw</country-code>
+            <country-code>ls</country-code>
+            <country-code>mw</country-code>
+            <country-code>mz</country-code>
+            <country-code>sz</country-code>
+            <country-code>za</country-code>
+        </country-codes>
+    </language>
+    <language default-code="zun" name="Zuni">
+        <code type="iso639_2">zun</code>
+        <country-codes>
+            <country-code>us</country-code>
+        </country-codes>
+    </language>
+</language-codes>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+
+    <start>
+        <element name="accelerator"
+            ns="http://www.zoundry.com/schemas/2006/03/zplugin.rng"
+            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+
+            <element name="group">
+                <data type="string" />
+            </element>
+            <element name="flags">
+                <zeroOrMore>
+                    <element name="flag">
+                        <choice>
+                            <value>alt</value>
+                            <value>ctrl</value>
+                            <value>cmd</value>
+                            <value>shift</value>
+                        </choice>
+                    </element>
+                </zeroOrMore>
+            </element>
+            <element name="keyCode">
+                <data type="string" />
+            </element>
+            <optional>
+                <element name="parameters">
+                    <zeroOrMore>
+                        <element name="parameter">
+                            <attribute name="name">
+                                <data type="string" />
+                            </attribute>
+                            <data type="string" />
+                        </element>
+                    </zeroOrMore>
+                </element>
+            </optional>
+        </element>
+    </start>
+
+</grammar>

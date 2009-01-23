@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zoundry-plugin xmlns="http://www.zoundry.com/schemas/2006/03/zplugin.rng" version="1.0" signature="1EHITO5N9VDMK0ZJMYLZQTUKCYW9KLYJC8AMH4IZ941ZSWKP6JK899VHX31Z60FSL6EXH5V6F4B6KZD2P0AEYAKWJAJ3A9AKRY8E72S8PT86O5EV4M41HHY3FLWOP21WXMZ3ISNUWLHNISVJ1CUT58J3FNA1B71KXCK1MEZ8MM0LD58A6650GJQ3WR6M7XNJ2UEBZU2JE3D39ZGS10S55XL3DKICFS49T3BVZWWQQW7Z8EB6NIKYBHJUG13OM5GUHM3OMDU067OZA992PXEGD5YJO8WUVCMEC7KUQXOZPQ99HHB7VISLHXI98KHTSC7AQ7OGK2EIZ7T6KN5ZC9PMX0I0CYYEDPQCK1R3VHUH8TYAOKLCEXRK47TYRV2LDWI02G0DP267YSQ06" id="zoundry.raven.appframework.extensions" name="Zoundry Common Extensions">
+
+    <!-- The Engine Service Extension Point -->
+    <zoundry-extension point="zoundry.extension">
+        <id>zoundry.extension.zoundry.engine.service</id>
+        <extension-data>
+            <extension-info>
+                <id>zoundry.engine.service</id>
+                <interface>zoundry.appframework.engine.service.IZService</interface>
+            </extension-info>
+        </extension-data>
+    </zoundry-extension>
+
+    <!-- The Action Extension Point -->
+    <zoundry-extension point="zoundry.extension">
+        <id>zoundry.extension.zoundry.appframework.ui.core.action</id>
+        <extension-data>
+            <extension-info>
+                <id>zoundry.appframework.ui.core.action</id>
+                <interface>zoundry.appframework.ui.actions.action.IZAction</interface>
+            </extension-info>
+        </extension-data>
+    </zoundry-extension>
+
+    <!-- The Menu Extension Point -->
+    <zoundry-extension point="zoundry.extension">
+        <id>zoundry.extension.zoundry.appframework.ui.core.menu</id>
+        <extension-data>
+            <extension-info>
+                <id>zoundry.appframework.ui.core.menu</id>
+                <schema-location>schemas/zoundry.appframework.ui.core.menu.rng</schema-location>
+            </extension-info>
+        </extension-data>
+    </zoundry-extension>
+
+    <!-- The Menu Group Extension Point -->
+    <zoundry-extension point="zoundry.extension">
+        <id>zoundry.extension.zoundry.appframework.ui.core.menugroup</id>
+        <extension-data>
+            <extension-info>
+                <id>zoundry.appframework.ui.core.menugroup</id>
+                <schema-location>schemas/zoundry.appframework.ui.core.menugroup.rng</schema-location>
+            </extension-info>
+        </extension-data>
+    </zoundry-extension>
+
+    <!-- The Menu Item Extension Point -->
+    <zoundry-extension point="zoundry.extension">
+        <id>zoundry.extension.zoundry.appframework.ui.core.menuitem</id>
+        <extension-data>
+            <extension-info>
+                <id>zoundry.appframework.ui.core.menuitem</id>
+                <schema-location>schemas/zoundry.appframework.ui.core.menuitem.rng</schema-location>
+                <!--
+                  Note: because a separator can be contributed on this same extension point,
+                  the interface is optional (since a <class> would not be specified for
+                  a separator).
+                  -->
+                <interface optional="true">zoundry.appframework.ui.actions.menuaction.IZMenuAction</interface>
+            </extension-info>
+        </extension-data>
+    </zoundry-extension>
+
+    <!-- The Tool Bar Item Extension Point -->
+    <zoundry-extension point="zoundry.extension">
+        <id>zoundry.extension.zoundry.appframework.ui.core.toolbaritem</id>
+        <extension-data>
+            <extension-info>
+                <id>zoundry.appframework.ui.core.toolbaritem</id>
+                <schema-location>schemas/zoundry.appframework.ui.core.toolbaritem.rng</schema-location>
+                <!--
+                  Note: because a separator can be contributed on this same extension point,
+                  the interface is optional (since a <class> would not be specified for
+                  a separator).
+                  -->
+                <interface optional="true">zoundry.appframework.ui.actions.toolbaraction.IZToolBarAction</interface>
+            </extension-info>
+        </extension-data>
+    </zoundry-extension>
+
+    <!-- The Accelerator Item Extension Point -->
+    <zoundry-extension point="zoundry.extension">
+        <id>zoundry.extension.zoundry.appframework.ui.core.accelerator</id>
+        <extension-data>
+            <extension-info>
+                <id>zoundry.appframework.ui.core.accelerator</id>
+                <schema-location>schemas/zoundry.appframework.ui.core.accelerator.rng</schema-location>
+                <interface>zoundry.appframework.ui.actions.acceleratoraction.IZAcceleratorAction</interface>
+            </extension-info>
+        </extension-data>
+    </zoundry-extension>
+
+    <!-- The Startup Action Extension Point -->
+    <zoundry-extension point="zoundry.extension">
+        <id>zoundry.extension.zoundry.appframework.startup-action</id>
+        <extension-data>
+            <extension-info>
+                <id>zoundry.appframework.startup-action</id>
+                <interface>zoundry.appframework.ui.actions.startupaction.IZStartupAction</interface>
+            </extension-info>
+        </extension-data>
+    </zoundry-extension>
+
+    <!-- The Shutdown Action Extension Point -->
+    <zoundry-extension point="zoundry.extension">
+        <id>zoundry.extension.zoundry.appframework.shutdown-action</id>
+        <extension-data>
+            <extension-info>
+                <id>zoundry.appframework.shutdown-action</id>
+                <interface>zoundry.appframework.ui.actions.shutdownaction.IZShutdownAction</interface>
+            </extension-info>
+        </extension-data>
+    </zoundry-extension>
+
+    <!-- The User Preferences Page Extension Point -->
+    <zoundry-extension point="zoundry.extension">
+        <id>zoundry.extension.zoundry.appframework.ui.preferences.prefpage</id>
+        <extension-data>
+            <extension-info>
+                <id>zoundry.appframework.ui.preferences.prefpage</id>
+                <schema-location>schemas/zoundry.appframework.ui.preferences.prefpage.rng</schema-location>
+                <interface>zoundry.appframework.ui.dialogs.prefpage.ZUserPreferencePage</interface>
+            </extension-info>
+        </extension-data>
+    </zoundry-extension>
+
+    <!-- The SpellCheck Dictionary Handler Extension Point -->
+    <zoundry-extension point="zoundry.extension">
+        <id>zoundry.extension.zoundry.appframework.spellcheck.dictionary-handler</id>
+        <extension-data>
+            <extension-info>
+                <id>zoundry.appframework.spellcheck.dictionary-handler</id>
+                <interface>zoundry.appframework.services.spellcheck.spellcheckimpl.IZSpellCheckDictionaryHandler</interface>
+            </extension-info>
+        </extension-data>
+    </zoundry-extension>
+
+    <!-- The SpellCheck Provider Extension Point -->
+    <zoundry-extension point="zoundry.extension">
+        <id>zoundry.extension.zoundry.appframework.spellcheck.provider</id>
+        <extension-data>
+            <extension-info>
+                <id>zoundry.appframework.spellcheck.provider</id>
+                <interface>zoundry.appframework.services.spellcheck.spellcheckimpl.IZSpellCheckProvider</interface>
+            </extension-info>
+        </extension-data>
+    </zoundry-extension>
+
+    <!-- The Drag and Drop Handler Extension Point -->
+    <zoundry-extension point="zoundry.extension">
+        <id>zoundry.extension.zoundry.appframework.dnd.handler</id>
+        <extension-data>
+            <extension-info>
+                <id>zoundry.appframework.dnd.handler</id>
+                <interface>zoundry.appframework.services.dnd.dnd.IZDnDHandler</interface>
+            </extension-info>
+        </extension-data>
+    </zoundry-extension>
+
+</zoundry-plugin>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string-bundle xmlns="http://www.zoundry.com/schemas/2006/06/zbundle.rng" locale="en" xml:space="preserve">
+
+    <string name="schematypes.FailedToParseDateTimeString">Failed to parse xs:dateTime formatted string (%s)</string>
+    <string name="schematypes.SchemaDateTimeFormatError">ZSchemaDateTime must be constructed with an xs:dateTime formatted string or a Python datetime object.</string>
+
+    <string name="logger.ShuttingDownLogger">Shutting Down the logger.</string>
+
+    <string name="logoutput.ClassMustExtendIZCustomLogOutputError">%s must extends IZCustomLogOutput</string>
+
+    <string name="fileutil.DirDeleteFailed">Failed to delete directory '%s'.</string>
+    <string name="fileutil.InvalidDirPath">The path provided '%s' is not a valid directory.</string>
+    <string name="fileutil.InvalidFilePath">The path provided '%s' is not a valid file.</string>
+    <string name="fileutil.FailedToDeleteRootPathMsg">Failed to delete root path, operation not allowed.</string>
+
+    <string name="zthread.UnexpectedErrorInThread">Unexpected error in thread.</string>
+    
+    <string name="zcommand.UnexpectedErrorInDoCommand">Unexpected error in doCommand.</string>
+    <string name="zcommand.UnexpectedErrorInUnDoCommand">Unexpected error in undoCommand.</string>
+
+    <string name="sysprops.ErrorSavingPropsFile">Error while attempting to save the properties file '%s'.</string>
+    
+    <string name="fileutil.NotAValidFileError">Could not retrieve meta data for '%s': it is not a file.</string>
+
+    <string name="httpdownload.FailedToDownloadImage">Failed to download dependent image: %s.</string>
+    <string name="httpdownload.FailedToDownloadScript">Failed to download dependent script: %s.</string>
+    <string name="httpdownload.FailedToDownloadCSS">Failed to download dependent css: %s.</string>
+</string-bundle>

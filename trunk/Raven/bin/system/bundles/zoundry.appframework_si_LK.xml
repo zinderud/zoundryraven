@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string-bundle xmlns="http://www.zoundry.com/schemas/2006/06/zbundle.rng" locale="en" xml:space="preserve">
+
+    <string name="Browse">සොයන්න...</string>
+    <string name="OK">හරි</string>
+    <string name="Cancel">එපා</string>
+    <string name="Apply">යොදාගන්න</string>
+    <string name="Close">වසන්න</string>
+    <string name="Next">ඉදිරියට (&amp;N)</string>
+    <string name="Finish">අවසන් කරන්න (&amp;F)</string>
+    <string name="Back">පිටුපසට (&amp;B)</string>
+
+    <string name="dialog.YesButtonLabel">ඔවු (&amp;Y)</string>
+    <string name="dialog.NoButtonLabel">නැහැ (&amp;N)</string>
+
+    <!--  ====================================================  -->
+    <!--  Strings for Plugin: zoundry.raven.appframework.prefs  -->
+    <!--  ====================================================  -->
+    <string name="prefpage.general.name">සාමාන්‍ය‍</string>
+    <string name="prefpage.general.description">මෙම රිසිකෙරුම් අංශයේ බොහෝ සාමාන්‍ය රිසිකෙරුම් පිටු ගොනුකර ඇත.</string>
+    <string name="prefpage.general.logger.name">ලොග්ගත කෙරුම</string>
+    <string name="prefpage.general.logger.description">ලොග්ගත කෙරුම් සැකසුම් වෙනස් කරන්න. (මූලිකවම නිදොස්කෙරුම් ලොගය සක්‍රිය/අක්‍රිය කිරීමට භාවිතා වේ.)</string>
+    <string name="prefpage.general.locale.name">දේශීයකරණය</string>
+    <string name="prefpage.general.locale.description">දේශීයකරණ සහ භාෂා සැකසුම් තෝරා ගන්න.</string>
+    
+    <string name="prefpage.general.proxy.name">ප්‍රොක්සි</string>
+    <string name="prefpage.general.proxy.description">HTTP ප්‍රොක්සි සැකසුම් රිසි කරන්න.</string>
+    <string name="prefpage.general.proxy.enable">HTTP ප්‍රොක්සි බාවිතා කරන්න</string>
+    <string name="prefpage.general.proxy.host">සත්කාරක</string>
+    <string name="prefpage.general.proxy.port">තොටුපළ</string>
+    <string name="prefpage.general.proxy.username">භාවිතාරුනාමය</string>
+	<string name="prefpage.general.proxy.password">මුරපදය</string>    
+
+    <string name="prefpage.zoundrysvc.name">Zoundry සේවා</string>
+    <string name="prefpage.zoundrysvc.description">Zoundry සේවා සැකසුම් රිසිකරන්න. මෙය අදාළ වන්නේ ඔබ Zoundry සේවා සාමාජිකයෙක් නම් පමණි.</string>
+
+    <string name="prefpage.spelling.name">අක්ෂර වින්‍යාසය</string>
+    <string name="prefpage.spelling.description">අක්ෂර වින්‍යාස පරීක්ෂා සැකසුම් රිසිකරන්න.</string>
+    <string name="prefpage.spelling.personal-dict.name">පෞද්ගලික ශබ්දකෝෂය</string>
+    <string name="prefpage.spelling.personal-dict.description">ඔබේ පෞද්ගලික ශබ්දකෝෂය කළමනාකරණය කරන්න.</string>
+
+    <string name="prefpage.systray.name">පද්ධති තැටිය</string>
+    <string name="prefpage.systray.description">පද්ධති පුවරුවේ Zoundry Raven හි කාර්යය රිසිකරන්න.</string>
+
+    <string name="prefpage.affiliatelinks.name">අනුබද්ධිත සබැඳි</string>
+    <string name="prefpage.affiliatelinks.description">Zoundry Raven ඔබේ නිෂ්පාදන සබැඳි සමග ක්‍රියාත්මක වන ආකාරය රිසිකරන්න.</string>
+
+    <string name="prefpage.blogpub.name">බ්ලොග් පළකෙරුම</string>
+    <string name="prefpage.blogpub.description">බ්ලොග් පළවියයුතු ආකාරය රිසි කරන්න.</string>
+    <string name="prefpage.blogpub.pingsites.name">පින්ග් අඩවි</string>
+    <string name="prefpage.blogpub.pingsites.description">බ්ලොග් පෝස්ටයක් පළකරන විට භාවිතා කළ යුතු පින්ග් අඩවි රිසිකරන්න.</string>
+    
+    <string name="prefpage.blogpub.tagsites.name">ටැග අඩවි</string>
+    <string name="prefpage.blogpub.tagsites.description">බ්ලොග් පෝස්ටයක් පළකරන විට බාවිතා කල යුතු ටැග අඩවි රිසි කරන්න.</string>
+    
+    <string name="prefpage.editor.name">සංස්කාරකය</string>
+    <string name="prefpage.editor.description">බ්ලොග් සංස්කාරකය රිසිකරන්න.</string>
+    <string name="prefpage.editor.font.name">සංස්කාරකයේ අකුරු රටාව</string>
+    <string name="prefpage.editor.font.description">සංස්කාරකයේ අකුරුරටාව රිසිකරන්න.</string>
+    
+
+    <!--  =================================================  -->
+    <!--  Strings for Plugin: zoundry.raven.blogapp.ui.core  -->
+    <!--  =================================================  -->
+    <string name="menuitem.file.new.blogpost.name">බ්ලොග් පෝස්ටයක් (&amp;P)</string>
+    <string name="menuitem.file.new.blogpost.description">නව බ්ලොග් පෝස්ටයක් ලියන්න.</string>
+    <string name="menuitem.file.new.mediastorage.name">මාධ්‍ය ගබඩාවක් (&amp;S)</string>
+    <string name="menuitem.file.new.mediastorage.description">නව මාධ්‍ය ගබඩාවක් රිසිකරන්න.</string>
+    <string name="menuitem.file.new.blogsite.name">බ්ලොග් ගිණුමක් (&amp;B)</string>
+    <string name="menuitem.file.new.blogsite.description">නව බ්ලොග් ගිණුමක් සාදා රිසිකරන්න.</string>
+
+    <string name="menuitem.tools.bgtasks.name">පසුබිම් කාර්යයන් (&amp;T)...</string>
+    <string name="menuitem.tools.bgtasks.description">පසුබිම් කාර්ය කළමනාකරු විවෘත කරන්න.</string>
+    <string name="menuitem.tools.settings.name">රිසිකෙරුම් (&amp;P)...</string>
+    <string name="menuitem.tools.settings.description">Zoundry Raven සැකසුම් සංවාද කොටුව විවෘත කරන්න.</string>
+    <string name="menuitem.tools.mediastorages.name">මාධ්‍ය ගබඩා සැකසුම් (&amp;M)...</string>
+    <string name="menuitem.tools.mediastorages.description">මාධ්‍ය ගබඩා සහ ඒවායේ සැකසුම් කළමනාකරණය කරන සංවාද කොටුව විවෘත කරන්න.</string>
+    <string name="menuitem.help.about.name">පිළිබඳව (&amp;A)</string>
+    <string name="menuitem.help.about.description">වැඩසටහන පිළිබඳව තොරතුරු ලබාගන්න.</string>
+    <string name="menuitem.help.translate.name">Raven පරිවර්තනය කරන්න (&amp;T)...</string>
+    <string name="menuitem.help.translate.description">Zoundry Raven පරිවර්තනය කිරීමට යොදාගත හැකි පරිවර්තන කළමනාකරු කවුළුව විවෘත කරයි.</string>
+    <string name="menuitem.tools.templatemanager.name">බ්ලොග් ටෙම්ප්ලේට කළමනාකරු...</string>
+    <string name="menuitem.tools.templatemanager.description">බ්ලොග් ටෙම්ප්ලේට කළමනාකරු විවෘත කරයි.</string>
+
+    <string name="mediastoragemenu.edit.name">සකසන්න (&amp;E)...</string>
+    <string name="mediastoragemenu.edit.description">මාධ්‍ය ගබඩාවේ සැකසුම් වෙනස් කරන්න</string>
+    <string name="mediastoragemenu.test.name">පරීක්ෂා කරන්න (&amp;T)...</string>
+    <string name="mediastoragemenu.test.description">මාධ්‍ය ගබඩාවේ සැකසුම් පරීක්ෂා කරන්න</string>
+    <string name="mediastoragemenu.delete.name">මකන්න (&amp;D)</string>
+    <string name="mediastoragemenu.delete.description">මාධ්‍ය ගබඩාව මකා දමන්න</string>
+
+    <string name="menugroup.blogmenu.downloadrecentposts">පෝස්ට බාන්න</string>
+    <string name="menugroup.blogmenu.downloadrecentposts.recent1">නවතම පෝස්ටය</string>
+    <string name="menugroup.blogmenu.downloadrecentposts.recent1.description">නවතම පෝස්ටය බාන්න.</string>
+    <string name="menugroup.blogmenu.downloadrecentposts.recent5">නවතම පෝස්ට 5</string>
+    <string name="menugroup.blogmenu.downloadrecentposts.recent5.description">නවතම පෝස්ට 5 බාන්න.</string>
+    <string name="menugroup.blogmenu.downloadrecentposts.recent10">නවතම පෝස්ට 10</string>
+    <string name="menugroup.blogmenu.downloadrecentposts.recent10.description">නවතම පෝස්ට 10 බාන්න.</string>
+    <string name="menugroup.blogmenu.downloadrecentposts.recent20">නවතම පෝස්ට 20</string>
+    <string name="menugroup.blogmenu.downloadrecentposts.recent20.description">නවතම පෝස්ට 20 බාන්න.</string>
+    <string name="menugroup.blogmenu.downloadrecentposts.recent50">නවතම පෝස්ට 50</string>
+    <string name="menugroup.blogmenu.downloadrecentposts.recent50.description">නවතම පෝස්ට 50 බාන්න.</string>
+    <string name="menugroup.blogmenu.downloadrecentposts.recent100">නවතම පෝස්ට 100</string>
+    <string name="menugroup.blogmenu.downloadrecentposts.recent100.description">නවතම පෝස්ට 100 බාන්න.</string>
+    <string name="menugroup.blogmenu.downloadrecentposts.recent250">නවතම පෝස්ට 250</string>
+    <string name="menugroup.blogmenu.downloadrecentposts.recent250.description">නවතම පෝස්ට 250 බාන්න.</string>
+    <string name="menugroup.blogmenu.downloadrecentposts.recent500">නවතම පෝස්ට 500</string>
+    <string name="menugroup.blogmenu.downloadrecentposts.recent500.description">නවතම පෝස්ට 500 බාන්න.</string>
+    <string name="menugroup.blogmenu.downloadrecentposts.recent1000">නවතම පෝස්ට 1000</string>
+    <string name="menugroup.blogmenu.downloadrecentposts.recent1000.description">නවතම පෝස්ට 1000 බාන්න.</string>
+    <string name="menugroup.blogmenu.downloadrecentposts.allposts">සියළුම පෝස්ට</string>
+    <string name="menugroup.blogmenu.downloadrecentposts.allposts.description">සියළුම පෝස්ට බාන්න.</string>
+
+    <!--  =====================================================  -->
+    <!--  Strings for Plugin: zoundry.raven.blogapp.ui.standard  -->
+    <!--  =====================================================  -->
+    <string name="perspective.standard.name">සම්මත</string>
+    <string name="perspective.standard.description">සම්මත දෘශ්ටිකෝණය යටතේ සාමාන්‍ය විද්‍යුත් තැපැල් කළමනාකරණ මෘදුකාංගයකට සමාන අන්දමින් පෙනෙන ලෙස බ්ලොග් සහ ගිණුම් තෙරතුරු පෙන්වයි.</string>
+    <string name="blogpost-details-panel.preview.name">පෙරදැක්ම</string>
+    <string name="blogpost-details-panel.general.name">සාමාන්‍ය</string>
+    <string name="blogpost-details-panel.links.name">සබැඳි</string>
+    <string name="blogpost-details-panel.media.name">මාධ්‍ය</string>
+    <string name="image-details-panel.info.name">තොරතුරු</string>
+    <string name="link-details-panel.info.name">තොරතුරු</string>
+    <string name="tag-details-panel.info.name">තොරතුරු</string>
+
+    <!--  ===================================================  -->
+    <!--  Strings for Plugin: zoundry.raven.blogapp.ui.browse  -->
+    <!--  ===================================================  -->
+    <string name="perspective.browse.name">ගවේශක</string>
+    <string name="perspective.browse.description">ගවේශක දෘශ්ඨිකෝණය යටතේ පැනල තුනක ගවේශක අතුරුමුහුණතකින් බ්ලොග් සහ ගිණුම් තොරතුරු පෙන්වයි.</string>
+
+    <!--  =====================================  -->
+    <!--  Strings for Zoundry AppFramework Code  -->
+    <!--  =====================================  -->
+    <string name="user.CouldNotCreateUserProfile">%s වර්ගයේ භාවිතාකරු ප්‍රෝෆයිලයක් නිර්මාණය කළ නොහැක.</string>
+
+    <string name="plugin.FailedToLoadSchema">zplugin RNG පරිපාටිය ප්‍රවේශනය කිරීමට නොහැකිවිය.</string>
+    <string name="plugin.FailedToLoadPluginSpec">%s හි ප්ලගින විශේෂිත ගොනුව ප්‍රවේශ කිරීමට නොහැකි විය.</string>
+    <string name="plugin.DependencyCheckFailed">'%s' ප්ලගිනයේ පරායත්තතා පරීක්ෂාව අසාර්ථකවිය. [%s වෙළුම් අව්ශ්‍යයි '%s' නම් ප්ලගිනයේ]</string>
+    <string name="plugin.PluginNotLoadedDueToLicense">බලපත්‍ර සීමාවක් නිසා '%s' ප්ලගිනය ප්‍රවේශ කිරීමට නොහැකි විය.</string>
+    <string name="plugin.DuplicatePluginId">'%s' සඳහා භාවිතාකරන ලද ප්ලගින හැඳුනුමක් හමුවිය.</string>
+    <string name="plugin.PluginSpecNotSchemaValid">ප්ලගිනයේ zplugin.xml ගොනුව පරිපාටිය‍ට අනුව නිවැරදි නොමැත: %s</string>
+    <string name="plugin.ErrorInvalidPluginSignature">අත්සන වැරදි නිසා '%s' ප්ලගිනය ප්‍රවේශ කිරීමට නොහැකි විය.</string>
+    <string name="plugin.CouldNotFindExtensionSchema">දිගු පරිපාටිය ප්‍රවේශ කිරීමට නොහැකි විය : '%s'</string>
+    <string name="plugin.ExtensionFailedToValidate">හිමි පරිපාටියට අනුව දිගු ස්ථානය තහවුරු කිරීමට නොහැකි විය : '%s'</string>
+    <string name="plugin.MissingExtensionPoint">දිගු දත්ත හමු නොවිනි. දිගු ස්ථාන හැඳුනුම : '%s'.</string>
+
+    <string name="system.CouldNotCreateSysProfile">%s වර්ගයේ පද්ධති ප්‍රෝෆයිලයක් තැනීමට නොහැකි විය.</string>
+
+    <string name="engine.ErrorCreatingService">'%s' සේවාව නිර්මාණයේදී දෝෂයක් මතුවිය: IZService ක්‍රියාත්මක නකෙරිනි.</string>
+
+    <string name="cmdline.InvalidCmdLineError">වැරදි විධාන රේඛ පරාමිති ගැළපුමකි: '%s'</string>
+
+    <string name="progress.ErrorEncountered">දෝෂයක් ඇතිවිය</string>
+
+    <string name="password.PasswordDialogHeaderMsg">මුරපදයක් ඇතුල් කිරීමට මෙම සංවාද කොටුව භාවිතා කරන්න.</string>
+    <string name="password.PasswordEntry">මුරපදයක් දෙන්න</string>
+    <string name="password.Password:">මුරපදය:</string>
+
+    <string name="error_dialog.Error">දෝෂයකි</string>
+    <string name="error_dialog.ErrorDetail">දෝෂ විස්තරය</string>
+    <string name="error_dialog.Details">විස්තර</string>
+    <string name="error_dialog.DialogTitle">Zoundry දෝෂයකි</string>
+
+    <string name="engine.NoServiceFoundError">'%s' නම් හැඳුනුම සමග කිසිදු සේවාවක් හමු නොවිනි.</string>
+
+    <string name="menu.MissingParentForMenuItemError">මෙනු අංගය සඳහා කිසිදු මුල් මෙනුවක් නොපවතී.</string>
+
+    <string name="backgroundtaskio.FailedToSaveTask">'%s' කාර්යය සුරැකීමට නොහැකි විය.</string>
+    <string name="backgroundtaskio.FailedToLoadTask">'%s' වෙතින් කාර්යය ප්‍රවේශ කිරීමට නොහැකි විය.</string>
+
+    <string name="factory.NoTaskSerializerFound">No background task serializer for namespace '%s'.</string>
+    <string name="factory.NoTaskDeserializerFound">No background task deserializer found for namespace '%s'.</string>
+
+    <string name="backgroundtaskimpl.FailedToRemoveStillRunning">දැනටමත් ධාවනය වන බැවින්, '%s' කාර්යය ඉවත් කළ නොහැක.</string>
+    <string name="backgroundtaskimpl.FailedToRemoveDoesNotExist">ඉවත් කිරීම සඳහා '%s' නම් කාර්යයක් නැත.</string>
+    <string name="backgroundtaskimpl.FailedToCancelDoesNotExist">අහෝසි කිරීම සඳහා '%s' නම් කාර්යයක් නැත.</string>
+    <string name="backgroundtaskimpl.FailedToResumeTaskNotResumable">නැවතූ තැනින් පටන්ගත හැකි කාර්යයක් නොවන නිසා, '%s' කාර්යය ආරම්භ කළ නොහැක.</string>
+    <string name="backgroundtaskimpl.FailedToResumeTaskComplete">'%s' කාර්යය සම්පූර්ණ නිසා, නැවතූ තැනින් පටන්ගත නොහැක.</string>
+    <string name="backgroundtaskimpl.FailedToResumeTaskAlreadyRunning">'%s' කාර්යය දැනටමත් ධාවනය වන නිසා, නැවතූ තැනින් පටන්ගත නොහැක.</string>
+    <string name="backgroundtaskimpl.FailedToResumeTaskNotFound">නැවත පටන්ගැනීම සඳහා '%s' නම් කාර්යයක් නැත.</string>
+    <string name="backgroundtaskimpl.ErrorExecingTask">'%s' කාර්යය ක්‍රියාත්මක කිරීම දෝෂ සහගතයි.</string>
+    <string name="backgroundtaskimpl.ErrorInTask">දෝෂය: '%s'</string>
+    <string name="backgroundtaskimpl.TaskFailedToStartError">'%s' කාර්යය කාලානුරූප ක්‍රමයට අනුව ආරම්භ කිරීමට නොහැකි විය.</string>
+    <string name="backgroundtaskimpl.UnexpectedBGTaskError">'%s' පසුබිම් කාර්යයේ අනපේක්ෂිත දෝෂයක් මතුවිය.</string>
+
+    <string name="prefsdialog.SettingsDialogTitle">Zoundry Raven සැකසුම්</string>
+
+    <string name="prefsdialog.DiscardChanges">වෙනස්කෙරුම අතහරින්නද ?</string>
+    <string name="prefsdialog.PrefPageSwitchMessage">වෙනත් රිසිකෙරුම් පිටුවකා යාමෙන් මෙතෙක් ඔබ සිදුකල වෙනස් කම් අහිමි වනු ඇත. එසේ වූවාට කමක් නැත්ද ?</string>
+    <string name="prefsdialog.SettingsDialogMessage">වැඩසටහනේ විවධ අංග වල සැකසුම් සකස් කිරීමට මෙම සංවාද කොටුව භාවිතා කරන්න.</string>
+    <string name="prefsdialog.ZoundryRavenSettings">Zoundry Raven සැතසුම්</string>
+
+    <string name="tpanel.TestCompletedSuccessfully">පරීක්ෂාව සාර්ථකව සම්පූර්ණ විනි.</string>
+    <string name="tpanel.TestFailedMessage">පරීක්ෂාව අසාර්ථක විනි.(විස්තර සඳහා ඉහත දෝෂය ද්‍වි-ක්ලික් කරන්න)</string>
+    <string name="tpanel.CurrentStep">වත්මන් පියවර: %s</string>
+    <string name="tpanel.RunningTestStepMessage">පරීක්ෂණයේ %d වන අදියර ධාවනය වෙමින් පවතී. (සම්පූර්ණ අදියර %d කි.)</string>
+    <string name="tpanel.TestCancelled">පරීක්ෂාව අහෝසි කරන ලදී !</string>
+    <string name="tpanel.CurrentStatus">වත්මන් තත්වය</string>
+
+    <string name="pluginimpl.UndeclaredExtensionPointError">'%s' හැඳුනුම සහිත දිගුව ප්‍රවේශ කිරීම දෝෂ සහගතය: '%s' හැඳුනුම සහිත දිගු ස්ථානයක් සකස්කොට නොමැති.</string>
+
+    <string name="menudefs.NameMissingInMenuItemError">මෙනු කාණ්ඩ අංගයට නමක් ලබාදී නොමැත. (දිගු හැඳුනුම : '%s'.)</string>
+
+    <string name="pluginimpl.ClassDoesNotImplementCorrectInterfaceError">The contributed class '%s' for extension '%s' must implement the declared interface '%s'.</string>
+    <string name="pluginimpl.ErrorLoadingContributedClass">Problem found loading contributed class '%s' for extension point '%s'.</string>
+    <string name="pluginimpl.MissingClassForExtensionPoint">Extension '%s', while contributing to extension point '%s', must specify a class that implements '%s'.</string>
+    <string name="pluginimpl.ErrorLoadingExtPointInterface">'%s' දිගු ස්ථානය සඳහා අතුරුමුහුණත ප්‍රවේශනය කිරීමේදී ගැටළු මතුවිය.</string>
+
+    <string name="bgtaskpanel.RunningPercent">ධාවනය වෙමින් පවතී(%d%% සම්පූර්ණයි).</string>
+    <string name="bgtaskpanel.RemoveTask">මෙම කාර්යය ඉවත් කරන්න.</string>
+    <string name="bgtaskpanel.EndedOn">නවතන ලද්දේ</string>
+    <string name="bgtaskpanel.PauseTask">මෙම කාර්යය අතරමග නවතන්න.</string>
+    <string name="bgtaskpanel.CancelTask">මෙම කාර්යය අහෝසි කරන්න.</string>
+    <string name="bgtaskpanel.StartedOn">ආරම්භ කළේ</string>
+    <string name="bgtaskpanel.Cancelled">අහෝසි කෙරිනි</string>
+
+    <string name="bgtaskmenus.ShowErrorTooltip">මෙම කාර්යය සඳහා දෝෂ තොරතුරු පෙන්වයි...</string>
+    <string name="bgtaskmenus.ShowError">දෝෂය පෙන්වන්න</string>
+    <string name="bgtaskmenus.OpenLogFileTooltip">මෙම කාර්යය සමග බැඳි ලොග් ගොනුව පෙන්වන්න.</string>
+    <string name="bgtaskmenus.OpenLogFile">ලොග් ගොනුව විවෘත කරන්න</string>
+
+    <string name="i18nserviceio.ErrorLoadingLanguageCodes">භාෂා කේතයන් ප්‍රවේශනය දෝෂ සහගතය.</string>
+    <string name="i18nserviceio.ErrorLoadingCountryCodes">දේශ කේතයන් ප්‍රවේශනය දෝෂ සහගතය.</string>
+    <string name="factory.NoI18NDeserializerFound">No i18n deserializer found for '%s'.</string>
+
+    <string name="localeprefpage.LocaleChanged">දේශීයකෙරුම වෙනස් කෙරිනි</string>
+    <string name="localeprefpage.ChangesWillTakeEffectAfterRestart">දේශීයකෙරුම සම්බන්ධ වෙනස්කම් වැඩසටහන ප්‍රතිපනගැන්වුමෙන් අනතුරුව බලාත්මක වනු ඇත.</string>
+    <string name="localeprefpage.OverrideDefaultLocale">සම්මත දේශීයකෙරුම ඉක්මවා යන්න</string>
+    <string name="localeprefpage.DefaultLocale">සම්මත දේශීයකෙරුම:</string>
+    <string name="localeprefpage.LanguagePack">භාෂා ඇසුරුම</string>
+
+    <string name="spellcheckimpl.DictionaryDownloaded">ශබ්දකෝෂය බානලද... අවශ්‍ය ක්‍රියාමාර්ග ගනිමින් පවතී.</string>
+    <string name="spellcheckimpl.DownloadedOfBytes">බයිට %d ක් බා අවසන්ය. (සම්පූර්ණ විශාලත්වය බයිට %d කි.)</string>
+    <string name="spellcheckimpl.DictionaryDownloadedAndProcessed">ශබ්දකෝෂය බානලද අතර අව්ශ්‍ය ක්‍රියාමාර්ග ගෙන අවසන්ය.</string>
+    <string name="spellcheckimpl.ErrorDownloadingDictionary">ශබ්දකෝෂ ගොනුව පෑම දෝෂ සහගතය : '%s'</string>
+    <string name="spellcheckimpl.UnexpectedErrorDownloadingDictionary">ශබ්දකෝෂය බෑමේදී අනපේක්ෂිත දෝෂයක් මතුවිය.</string>
+    <string name="spellcheckimpl.DownloadingDictionary">ශබ්දකෝෂය බාමින් පවතී</string>
+    <string name="spellcheckimpl.CannotDownloadDownloadInProgress">ශබ්දකෝෂයක් දැනටමත් බාමන් පවතී - එක් මොහොතක බෑ හැක්කේ එක් ශබ්දකෝෂයක් පමණි.</string>
+    <string name="spellcheckimpl.CannotEnableDownloadInProgress">ශබ්දකෝෂයක් බාමින් පවතින නිසා අක්ෂර වින්‍යාස පරීක්ෂණය බලාත්මක කළ නොහැක.</string>
+
+    <string name="personaldictprefpage.Word">වදන</string>
+    <string name="personaldictprefpage.AddPersonalDictionaryWord">පෞද්ගලික ශබ්දකෝෂයට වදනක් එක් කරන්න</string>
+    <string name="personaldictprefpage.Clear">පැහැදිලි කරන්න</string>
+    <string name="personaldictprefpage.Remove">ඉවත් කරන්න</string>
+    <string name="personaldictprefpage.Add">එක් කරන්න</string>
+    <string name="personaldictprefpage.SpellCheckingMustBeEnabled">වැදගත් : අක්ෂර වින්‍යාස පරීක්ෂණය බලාත්මක කොට තිබිය යුතුය.</string>
+
+    <string name="loggerprefpage.LogDebuggingMessages">නිදොස්කෙරුම් පණිවුඩ ලොග්ගත කරන්න</string>
+    <string name="loggerprefpage.LogWarnings">අවවාද ලොග්ගත කරන්න</string>
+    <string name="loggerprefpage.LogErrors">දෝෂ ලොග්ගත කරන්න</string>
+    <string name="loggerprefpage.LoggerSettings">ලොග්ගත කෙරුම් සැකසුම්</string>
+
+    <string name="connresp.NoContentFoundError">කිසිත් හමු නෙිවිනි</string>
+
+    <string name="imaging.ErrorCreatingThumbnailError">'%s' පිංතූරය සඳහා thumbnail නිර්මාණය කිරීම දෝෂ සහගතය.</string>
+    <string name="imaging.PathDoesNotExistError">Path '%s' මංපෙත නොපවතී හෝ ගොනුවක් නොවේ.</string>
+
+    <string name="bgtaskmanager.CleanUp">පිරිසිදු කරන්න</string>
+    <string name="bgtaskmanager.BackgroundTaskManager">පසුබිම් කාර්ය කළමනාකරු</string>
+
+    <string name="dictdownloadpanel.Downloading">බාමින් පවතී</string>
+    <string name="dictdownloadpanel.Cancel">අහෝසි කරන්න</string>
+
+    <string name="input.GenericInputDialogMessage">වැඩසටහනට අවශ්‍ය දත්ත කිහිපය්ක ලබා දීමට මෙම සංවාද කොටුව භාවිතා කරන්න.</string>
+
+    <string name="spellingprefpage.RestartNeeded">ප්‍රතිපනගැන්වුමක් අවශ්‍යය</string>
+    <string name="spellingprefpage.AppMustBeRestartedMessage">මෙම වෙනස්කම බලාත්මක වීමට වැඩසටහන ප්‍රතිපනගැන්වුම අවශ්‍ය වෙයි.</string>
+    <string name="spellingprefpage.DownloadDictionary">ශබ්දකෝශය බාන්නද ?</string>
+    <string name="spellingprefpage.DownloadVerifyMessage">අක්ෂර වින්‍යාස පරීක්ෂාව බලාත්මක කරන්නට, තෝරගත් භාෂාවට අදාළ ශබ්දකෝෂය බාගත කළ යුතුය. එසේ කරන්නද ?</string>
+    <string name="spellingprefpage.EnableSpellcheck">අක්ෂර වින්‍යාස පරීක්ෂාව බලාත්මක කරන්නEnable Spellcheck</string>
+    <string name="spellingprefpage.no">සූදානම් නැත</string>
+    <string name="spellingprefpage.yes">සූදානම්</string>
+    <string name="spellingprefpage.Ready">සූදානම් බව</string>
+    <string name="spellingprefpage.Language">භාෂාව</string>
+
+    <string name="tabctxmenu.CloseAllMsg">සියළු ටැබ වසන්න.</string>
+    <string name="tabctxmenu.CloseAll">සියල්ල වසන්න</string>
+    <string name="tabctxmenu.CloseOthersMsg">මෙම ටැබය හැර අන් සියළු ටැබ වසයි.</string>
+    <string name="tabctxmenu.CloseOthers">අන් ටැබ වසන්න</string>
+    <string name="tabctxmenu.CloseMsg">මෙම ටැබය වසයි.</string>
+    <string name="tabctxmenu.Close">වසන්න</string>
+
+    <string name="datectrl.Reset">ප්‍රතිපිහිටුවන්න</string>
+    <string name="datectrl.Now">දැන්</string>
+
+    <string name="toolbar.ShowText">පෙළ පෙන්වන්න</string>
+    <string name="toolbar.ToolSize">මෙවලම් විශාලත්වය</string>
+
+    <string name="listex.UncheckAll">සියළු තේරීම් ඉවත් කරන්න</string>
+    <string name="listex.CheckAll">සියල්ල තෝරන්න</string>
+
+    <string name="autoupdateimpl.NewVersionAvailable">නව වෙළුමක් ලබාගත හැක</string>
+    <string name="autoupdateimpl.NewVersionMessage">Zoundry Raven හි නව වෙළුමක් පැමිණ ඇත. ඔබ සතුව දැන් ඇත්තේ %s වෙළුමයි, නමුත් %s වෙළුම දැන් සූදානම්ව ඇත. නව වෙළුම දැන් බාන්නද ?</string>
+
+    <string name="validatingctrl.InvalidIntegerErrorMessage">නිවැරදි පූර්ණ සංඛ්‍යාමය අගයක් ලබා දෙන්න.</string>
+    <string name="validatingctrl.CssLengthErrorMessage">කරුණාකර නිවැරදි CSS දිගක් ලබා දෙන්න. උදා: 1px හෝ 1em.</string>
+    
+    <string name="bgtaskprogressdialog.Done_">කළා.</string>
+    <string name="bgtaskprogressdialog.Cancelling">අහෝසිකරමින් පවතී... </string>
+    <string name="bgtaskprogressdialog.RunInBackground">පසුබිමින් ධාවනය කරන්න</string>
+
+    <string name="commonvideo.ErrorDiscoveringVideoEmbedInfoTitle">වීඩියෝ තොරතුරු ලබාගැනීම ගැටළු සහගතයි</string>
+    <string name="commonvideo.ErrorDiscoveringVideoEmbedInfoMsg">වීඩියෝවේ එබ්බවූ markup ලබා ගැනීමට සේවාදායකයට සම්බන්ධ වීමේදී ගැටළුවක් මතුවිය. ඇතැම්විට ජාලගත දෝෂයක් විය හැකිය.</string>
+    
+    <string name="linkactions.CopyLinkLocationDescription">සබැඳි ලිපිනය රැඳවුම් පිවරුවට පිටපත් කරයි</string>
+    <string name="linkactions._CopyLinkLocation">සබැඳි ලිපිනය පිටපත් කරන්න (&amp;C)</string>
+    <string name="linkactions.OpenDescription">සබැඳි ගමනාන්තය වෙබ් ගවේශකයේ විවෘත කරයි.</string>
+    <string name="linkactions._Open">විවෘත කරන්න (&amp;O)</string>
+    
+    <string name="imageactions.CopyImageLocationDescription">පිංතූර මූලාශ්‍රයේ ලිපිනය රැඳවුම් පුවරුවට පිටපත් කරන්න.</string>
+    <string name="imageactions._CopyImageLocation">පිංතූරයේ ස්ථානය පිටපත් කරන්න (&amp;C)</string>
+    <string name="imageactions.OpenDescription">පිංතූරය වෙබ් ගවේශකයේ විවෘත කරන්න.</string>
+    <string name="imageactions._Open">විවෘත කරන්න (&amp;O)</string>
+    
+    <string name="standarddialogs.RememberDecision">මෙම තීරණය මතක තබාගන්න. (නැවත විමසන්න එපා.)</string>
+
+    <string name="ifilm.iFilmVideoDesc">එබ්බවූ‍ iFilm වීඩියෝවක් ලෙස රැඳවුම් පුවරුවේ අන්තර්ගතය අලවන්න.</string>
+    <string name="ifilm.iFilmVideo">iFilm වීඩියෝ</string>
+    <string name="photobucket.PhotoBucketVideoDesc">එබ්බවූ PhotoBucket වීඩියෝවක් ලෙස රැඳවුම් පුවරුවේ අන්තර්ගතය අලවන්න.</string>
+    <string name="photobucket.PhotoBucketVideo">PhotoBucket වීඩියෝ</string>
+    <string name="googlevideo.GoogleVideoDesc">එබ්බවූ Google වීඩියෝවක් ලෙස රැඳවුම්පුවරුවේ අන්තර්ගතය අලවන්න.</string>
+    <string name="googlevideo.GoogleVideo">Google වීඩියෝ</string>
+    <string name="veoh.VeohVideoDesc">එබ්බවූ Veoh වීඩියෝවක් ලෙස රැඳවුම්පුවරුවේ අන්තර්ගතය අලවන්න.</string>
+    <string name="veoh.VeohVideo">Veoh වීඩියෝ</string>
+    <string name="imagehandler.MultipleImageFilesDesc">පිංතූර එකතුවක් ලෙස රැඳවුම්පුවරුවේ අන්තර්ගතය අලවන්න. (අමතර වශයෙන් thumbnail බවට පත්කොට.)</string>
+    <string name="imagehandler.MultipleImageFiles">පිංතූර ගොනු කිහිපයක්</string>
+    <string name="imagehandler.ImageFileDesc">පිංතූරයක් ලෙස රැඳවුම්පුවරුවේ අන්තර්ගතය අලවන්න. (අමතර වශයෙන් thumbnail බවට පත්කොට.)</string>
+    <string name="imagehandler.ImageFile">පිංතූර ගොනුවත්</string>
+    <string name="slide.SlideSlideshowDesc">එබ්බවූ Slide Slideshow එකක් ලෙස රැඳවුම් පුවරුවේ අන්තර්ගතය අලවන්න.</string>
+    <string name="slide.SlideSlideshow">Slide Slideshow</string>
+    <string name="vsocial.VSocialVideoDesc">එබ්බවූ VSocial වීඩියෝවක් ලෙස රැඳවුම්පුවරුවේ අන්තර්ගතය අලවන්න.</string>
+    <string name="vsocial.VSocialVideo">VSocial වීඩියෝ</string>
+    <string name="youtube.YouTubeVideoDesc">එබ්බවූ YouTube වීඩියෝවක් ලෙස රැඳවුම්පුවරුවේ අන්තර්ගතය අලවන්න.</string>
+    <string name="youtube.YouTubeVideo">YouTube වීඩියෝ</string>
+    <string name="piratr.PiratrVideoDesc">එබ්බවූ Piratr වීඩියෝවක් ලෙස රැඳවුම්පුවරුවේ අන්තර්ගතය අලවන්න.</string>
+    <string name="piratr.PiratrVideo">Piratr වීඩියෝ</string>
+    <string name="htmlhandler.HTMLDesc">HTML කේත කොටසක් ලෙස රැඳවුම්පුවරුවේ අන්තර්ගතය අලවන්න.</string>
+    <string name="htmlhandler.HTML">HTML</string>
+    <string name="filehandler.MultipleFilesDesc">ගොනු ලයිස්තුවක් ලෙස රැඳවුම්පුවරුවේ අන්තර්ගතය අලවන්න.</string>
+    <string name="filehandler.MultipleFiles">ගොනු එකතුවක්</string>
+    <string name="filehandler.FileDesc">ගොනුවක් ලෙස රැඳවුම්පුවරුවේ අන්තර්ගතය අලවන්න.</string>
+    <string name="filehandler.File">ගොනුවක්</string>
+    
+    <string name="feedbackimpl.FeedbackSent">අදහස යැවිනි, ඔබට ස්තුති !</string>
+    <string name="feedbackimpl.SendingFeedbackFailed">අදහස යැවීම අසාර්ථක විය.</string>
+    <string name="feedbackimpl.FeedbackInformationGathered_">සියළු තොරතුරු එක්රැස් කරගැනිනි.</string>
+    <string name="feedbackimpl.SendingFeedback">අදහස යවමින් පවතී</string>
+    <string name="erroraction.Report">වාර්ථාකරන්න...</string>
+    <string name="feedbackutil.SendingFeedbackMsg">Zoundry Raven පිළිබඳ ඔබේ අදහස දැන් to Zoundry වෙත යවමින් පවතී. ස්තුති !</string>
+    <string name="feedbackutil.SendingFeedback">අදහස යවමින් පවතී</string>
+    <string name="feedbackdialog.Send">යවන්න</string>
+    <string name="feedbackdialog.FeedbackDescription">Raven පිළිබඳ ඔබේ අදහස Zoundry ‍වෙත යැවීමට මෙම සංවාද කොටුව භාවිතා කරන්න.</string>
+    <string name="feedbackdialog.ZoundryRavenFeedback">Zoundry Raven අදහස් දැක්වුම</string>
+    <string name="feedbackdialog.Bug">දෝෂයක්</string>
+    <string name="feedbackdialog.Praise">ස්තුතියක්</string>
+    <string name="feedbackdialog.Enhancement">වැඩිදියුණු කෙරුමක් පිළිබඳව</string>
+    <string name="feedbackdialog.Feedback">අදහස</string>
+    <string name="feedbackdialog.Subject">විෂය</string>
+    <string name="feedbackdialog.Email_optional">වි-ලිපිනය (අත්‍යවශ්‍ය නැත)</string>
+    <string name="feedbackdialog.FeedbackType">අදහස් වර්ගය</string>
+
+    <string name="zoundrysvcprefpage.ZoundryServiceDescriptionPart3">එබ මෙම ක්‍ෂේත්‍රය හිස්ව තැබුවහොත්, ඔබ විසින් උපයන ඕනෑ කොමිස් අගයක් Zoundry පරිත්‍යාග බඳුන කරා යනු ඇත. අපගේ වටිනාම භාවිතාකරු වන ඔබ වෙත උසස් තත්වයේ මෘදුකාංග ලබා දීම සඳහා මෙම පරිත්‍යාග අපට උපකාරී වේ.</string>
+    <string name="zoundrysvcprefpage.ZoundryServiceDescriptionPart2">එසේ නැතහොත්, ඔබේ කොමිස් අගය ලැබීම සඳහා ඔබේ මිතුරෙකු හෝ පුණ්‍යායතනයක් වෙනුවෙන් Zoundry Guest ID එකක් ඇතුලත් කළ හැකිය. Guest IDs පිළිබඳ වැඩිදුර තොරතුරු සඳහා http://www.zoundry.com/charities.html වෙත යන්න.</string>
+    <string name="zoundrysvcprefpage.ZoundryServiceDescriptionPart1">ඔබ Zoundry Service ගිණුමක් වෙනුවෙන් ලියාපදිංචි වී ඇත්නම්, ඔබේ භාවිතාකරු නාමය හෝ විද්‍යුත් තපැල් ලිපිනය මෙතැනට ඇතුලත් කරන්න.</string>
+    <string name="zoundrysvcprefpage.Zoundry_ID">Zoundry ID:</string>
+    <string name="zoundrysvcprefpage.Zoundry_Service_Settings">Zoundry සේවා සැකසුම්</string>
+
+    <string name="autoupdateimpl.AlreadyUpToDateTitle">යාවත් කාලයි</string>
+    <string name="autoupdateimpl.AlreadyUpToDateMsg">ඔබ සතුව ඇත්තේ Zoundry Raven හි නවතම සංස්කරණයයි.</string>
+
+    <string name="imagehandlerdialog.CreateImageThumbnailDesc">Raven විසින් ඔබේ පිංතූරය සඳහා thumbnail එකක් ජනනය කිරීමට අවශ්‍ය නම්, මෙම සංවාද කොටුව භාවිතා කරන්න.</string>
+    <string name="imagehandlerdialog.CreateImageThumbnail">පිංතූරය සඳහා thumbnail එකක් නිර්මාණය කරන්න</string>
+    <string name="imagehandlerdialog.Size">විශාලත්වය</string>
+    <string name="imagehandlerdialog.ThumbnailSettings">Thumbnail සැකසුම්</string>
+    <string name="imagehandlerdialog.GenerateOption">Thumbnail එකක් නිර්මාණය කරන්න</string>
+    <string name="imagehandlerdialog.DoNotGenerateOption">Thumbnail එකක් නිර්මාණය කරන්න එපා</string>
+    <string name="imagehandlerdialog.Generate_Thumbnail">Thumbnail එක නිර්මාණය කරන්නද ?</string>
+
+</string-bundle>
