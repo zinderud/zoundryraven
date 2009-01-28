@@ -40,7 +40,7 @@ There are a couple of tricky dependencies, including:
 
 These two dependencies come with their own .readme files.  Please see those files for details on how to install.
 
-To install pytz-2008i.zip, unpack it to a temporary directory and type in "python setup.py install" from the command prompt.
+To install pytz-2008i.zip, unpack it to a temporary directory and type in "C:\path\to\python24\python.exe setup.py install" from the command prompt.
 
 _Note: cygtidy-0-99-0.dll can be copied to either your system32 directory or your python24 directory (drop it right next to your python.exe)._
 
