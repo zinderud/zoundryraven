@@ -24,12 +24,14 @@ Download and unpack the RavenDependencies.zip from this project's "Downloads" se
   # egenix-mx-base-2.0.6.win32-py2.4.exe
   # egenix-mx-experimental-0.9.0.win32-py2.4.exe
   # PIL-1.1.6.win32-py2.4.exe
-  # pycrypto-2.0.1.tar.gz.tar
+  # (DELETE THIS DUPE)pycrypto-2.0.1.tar.gz.tar
   # pysqlite-2.3.3.win32-py2.4.exe
   # pywin32-212.win32-py2.4.exe
   # PyXML-0.8.4.win32-py2.4.exe
   # pycrypto-2.0.1.win32-py2.4.exe
   # pytz-2008i.zip
+
+NOTE: Windows Vista owners - you should install the above with Administrator priviledges (right click, Run-As-Administrator).
 
 There are a couple of tricky dependencies, including:
 
@@ -37,6 +39,8 @@ There are a couple of tricky dependencies, including:
   # uTidy.py
 
 These two dependencies come with their own .readme files.  Please see those files for details on how to install.
+
+To install pytz-2008i.zip, unpack it to a temporary directory and type in "python setup.py install" from the command prompt.
 
 _Note: cygtidy-0-99-0.dll can be copied to either your system32 directory or your python24 directory (drop it right next to your python.exe)._
 
