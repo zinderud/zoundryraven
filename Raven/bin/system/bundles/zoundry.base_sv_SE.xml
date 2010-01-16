@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zb:string-bundle xmlns:zb="http://www.zoundry.com/schemas/2006/06/zbundle.rng" locale="sv_SE" xml:space="preserve">
+    <zb:string name="fileutil.DirDeleteFailed">Det gick inte att ta bort mapp '%s'.</zb:string>
+    <zb:string name="fileutil.FailedToDeleteRootPathMsg">Det gick inte att ta bort rotsökvägen. Åtgärden tillåts inte.</zb:string>
+    <zb:string name="fileutil.InvalidDirPath">Sökvägen '%s' går inte till något verklig mapp.</zb:string>
+    <zb:string name="fileutil.InvalidFilePath">Sökvägen '%s' går inte till en verklig fil.</zb:string>
+    <zb:string name="fileutil.NotAValidFileError">Kan inte läsa in metadata för '%s'. Det är inte någon verklig fil.</zb:string>
+    <zb:string name="httpdownload.FailedToDownloadCSS">Kunde inte ladda hem tillhörande css: '%s'.</zb:string>
+    <zb:string name="httpdownload.FailedToDownloadImage">Kunde inte ladda hem tillhörande bild: '%s'.</zb:string>
+    <zb:string name="httpdownload.FailedToDownloadScript">Kunde inte ladda  hem tillhörande scrip: '%s'.</zb:string>
+    <zb:string name="logger.ShuttingDownLogger">Stänger loggern.</zb:string>
+    <zb:string name="logoutput.ClassMustExtendIZCustomLogOutputError">Ett</zb:string>
+    <zb:string name="schematypes.FailedToParseDateTimeString">Kunde inte hantera xs:dateTime formaterade sträng ('%s')</zb:string>
+    <zb:string name="schematypes.SchemaDateTimeFormatError">Datumsträngen måste formateras.</zb:string>
+    <zb:string name="sysprops.ErrorSavingPropsFile">Ett fel inträffade när egenskapsfilen '%s' skulle sparas.</zb:string>
+    <zb:string name="zcommand.UnexpectedErrorInDoCommand">Öväntat fel i att Utför-kommando.</zb:string>
+    <zb:string name="zcommand.UnexpectedErrorInUnDoCommand">Oväntat fel i Ångra-kommando</zb:string>
+    <zb:string name="zthread.UnexpectedErrorInThread">Oväntat fel i tråden.</zb:string>
+</zb:string-bundle>
