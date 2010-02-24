@@ -54,6 +54,10 @@
         type="zoundry.appframework.spellcheck.provider.aspell"
         handler="zoundry.appframework.spellcheck.dictionary-handler.aspell"
         url="http://www.zoundry.com/download/dictionaries/aspell/ru.zip" />
+    <dictionary display-name="Slavik" lang-code="sk"
+        type="zoundry.appframework.spellcheck.provider.aspell"
+        handler="zoundry.appframework.spellcheck.dictionary-handler.aspell"
+        url="http://www.zoundry.com/download/dictionaries/aspell/sk.zip" />
     <dictionary display-name="Spanish" lang-code="es"
         type="zoundry.appframework.spellcheck.provider.aspell"
         handler="zoundry.appframework.spellcheck.dictionary-handler.aspell"
