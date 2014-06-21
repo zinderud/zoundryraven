@@ -33,6 +33,13 @@ from zoundry.blogpub.blogserverapi import ZServerBlogCategory
 from zoundry.blogpub.blogserverapi import ZServerBlogEntry
 from zoundry.blogpub.namespaces import IZBlogPubAttrNamespaces
 from zoundry.blogpub.namespaces import IZBlogPubTagwordNamespaces
+#
+# To ensure we get "<iframe></iframe>" instead of "<iframe/>" tags, we employ the help of "tidy HTML".
+#    ChuahTC Date:2013-Sept-3
+from zoundry.base.zdom import tidyutil
+
+#
+#
 
 # -----------------------------------------------------------------------------------
 #
@@ -435,6 +442,9 @@ class ZBlogPublisher(ZPublisherBase, IZBlogPublisher):
         pubmetadata = self._getPubMetaData(zblog, zblogDocument)
         title = zblogDocument.getTitle()
         content = self._transformContentForPublishing(zblog, zxhtmlDocument)
+        # ----
+        # print "DEBUG (blogpublisher:_populateServerEntry): ", content    # DEBUG: ChuahTC 2013-Sep-2
+        # ----
 
         zserverBlogEntry.setTitle(title)
         zserverBlogEntry.setContent(content)
@@ -604,10 +614,40 @@ class ZBlogPublisher(ZPublisherBase, IZBlogPublisher):
         """  #$NON-NLS-1$
         # simply serialize the body content (but not including the body element).
         content = extractBody(zxhtmlDocument.getBody().serialize())
+
+        # ---- START ----
+        #
+        # To avoid getting self-terminating "iframe" tags, we filter the body content through "tidyutil.py".
+        #    ChuahTC Date: 2013-Sept-3
+        #
+        # print "DEBUG (blogpublisher:_transformContentForPublishing) BEFORE: ", content    # DEBUG: ChuahTC 2013-Sep-3
+
+        # Set "output_xml=0" instead of 1 to fix the problem with (occasional) empty content after filtering through
+        # "tidyutil.py" when "iframe" tags are present.
+        #
+        #    ChuahTC Date: 2014-Mar-19
+        #
+        # tidyOptions = dict(output_xml=1, show_body_only=1, quiet=1, char_encoding="utf8", \
+        #                   output_error=0, show_warnings=0, quote_nbsp=0, raw=1)
+        tidyOptions = dict(output_xml=0, show_body_only=1, quiet=1, char_encoding="utf8", \
+                           output_error=0, show_warnings=0, quote_nbsp=0, raw=1)
+
+        content = tidyutil.tidyHtml(content, tidyOptions)
+
+        # print "DEBUG (blogpublisher:_transformContentForPublishing) AFTER: ", content    # DEBUG: ChuahTC 2013-Sep-3
+        # ---- END -----
+
+
         removeNewLines = zblog.getPreferences().getUserPreferenceBool(IZBlogAppUserPrefsKeys.SP_REMOVE_NEWLINES, False)
         if removeNewLines:
             transformer = ZXhtmlRemoveNewLinesTransformer()
             content = transformer.transform(content)
+
+            # ---- START ----
+            # print "DEBUG (blogpublisher:_transformContentForPublishing)NewLinesRemoved: ", content    # DEBUG: ChuahTC 2013-Sep-3
+            # ---- END -----
+
+
         return content
     # end _transformContentForPublishing()
 
