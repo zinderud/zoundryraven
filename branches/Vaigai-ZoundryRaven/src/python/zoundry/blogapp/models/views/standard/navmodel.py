@@ -19,6 +19,7 @@ NODE_TYPE_UNPUBLISHED = 128
 
 NODE_PARAMS = {
         NODE_TYPE_POSTS : (_extstr(u"navigator.Posts"), u"posts", u"posts", False), #$NON-NLS-2$ #$NON-NLS-1$ #$NON-NLS-3$
+        NODE_TYPE_UNPUBLISHED : (_extstr(u"navigator.UnpublishedPosts"), u"posts", u"posts", False), #Vaigai-ZoundryRaven
         NODE_TYPE_LINKS : (_extstr(u"navigator.Links"), u"links", u"links", False), #$NON-NLS-2$ #$NON-NLS-1$ #$NON-NLS-3$
         NODE_TYPE_IMAGES : (_extstr(u"navigator.Images"), u"images", u"images", False), #$NON-NLS-2$ #$NON-NLS-1$ #$NON-NLS-3$
         NODE_TYPE_TAGS : (_extstr(u"navigator.Tags"), u"tags", u"tags", False), #$NON-NLS-2$ #$NON-NLS-1$ #$NON-NLS-3$
@@ -210,7 +211,7 @@ class ZNavigatorTreeSubNode(ZNavigatorTreeNode):
 
     def hashCode(self):
         vals = [
-            self.getType(), 
+            self.getType(),
             self.parentBlog.getId()
         ]
         val = u"".join(map(unicode, vals)) #$NON-NLS-1$
@@ -273,6 +274,60 @@ class ZNavigatorTreePostsNode(ZNavigatorTreeSubNode):
 
 # end ZNavigatorTreePostsNode
 
+# --------------------------------------------------------------------------------------
+# Class to specifically model the "Unpublished Posts" Blog sub-node.
+# Vaigai-ZoundryRaven branch added this class if user edit existing blog the post is flaged as un published and un tagged from posts
+# --------------------------------------------------------------------------------------
+class ZNavigatorTreeUnPubPostsNode(ZNavigatorTreeSubNode):
+
+    def __init__(self):
+        ZNavigatorTreeSubNode.__init__(self, NODE_TYPE_UNPUBLISHED)
+        self.filter = ZDocumentSearchFilter()
+        self.postsCount = -1
+    # end __init__()
+
+    def getPostsCount(self):
+        if self.postsCount == -1:
+            self._configureFilter()
+            self.postsCount = self._getPostsCount()
+        return self.postsCount
+    # end getPostsCount()
+
+    def _configureFilter(self):
+        self.filter.setAccountIdCriteria(IZDocumentSearchFilter.UNPUBLISHED_ACCOUNT_ID)
+        self.filter.setBlogIdCriteria(IZDocumentSearchFilter.UNPUBLISHED_BLOG_ID)
+    # end _configureFilter()
+
+    def _getPostsCount(self):
+        docIndex = getApplicationModel().getEngine().getService(IZBlogAppServiceIDs.DOCUMENT_INDEX_SERVICE_ID)
+        return docIndex.getDocumentCount(self.filter)
+    # end _getPostsCount()
+
+    def getSearchFilter(self):
+        return self.filter
+    # end getSearchFilter()
+
+    def getLabel(self):
+        label = ZNavigatorTreeSubNode.getLabel(self)
+        return u"%s (%d)" % (label, self.getPostsCount()) #$NON-NLS-1$
+    # end getLabel()
+
+    def addDocumentIDO(self, documentIDO):
+        if self.postsCount != -1 and self.filter.matches(documentIDO):
+            self.postsCount = self.postsCount + 1
+            return True
+        return False
+    # end addDocumentIDO()
+
+    def removeDocumentIDO(self, documentIDO):
+        if self.postsCount != -1 and self.filter.matches(documentIDO):
+            self.postsCount = self.postsCount - 1
+            return True
+        return False
+    # end removeDocumentIDO()
+
+# end ZNavigatorTreeUnPubPostsNode
+
 
 # --------------------------------------------------------------------------------------
 # Extends the Posts node to provide a model for the Posts child of the Unpublished
@@ -291,7 +346,7 @@ class ZNavigatorTreeUnpublishedPostsNode(ZNavigatorTreePostsNode):
 
     def hashCode(self):
         vals = [
-            self.getType(), 
+            self.getType(),
             IZDocumentSearchFilter.UNPUBLISHED_BLOG_ID
         ]
         val = u"".join(map(unicode, vals)) #$NON-NLS-1$
@@ -372,7 +427,7 @@ class ZNavigatorTreeUnpublishedLinksNode(ZNavigatorTreeLinksNode):
 
     def hashCode(self):
         vals = [
-            self.getType(), 
+            self.getType(),
             IZDocumentSearchFilter.UNPUBLISHED_BLOG_ID
         ]
         val = u"".join(map(unicode, vals)) #$NON-NLS-1$
@@ -450,10 +505,10 @@ class ZNavigatorTreeUnpublishedImagesNode(ZNavigatorTreeImagesNode):
         self.filter.setAccountIdCriteria(IZDocumentSearchFilter.UNPUBLISHED_ACCOUNT_ID)
         self.filter.setBlogIdCriteria(IZDocumentSearchFilter.UNPUBLISHED_BLOG_ID)
     # end _configureFilter()
-    
+
     def hashCode(self):
         vals = [
-            self.getType(), 
+            self.getType(),
             IZDocumentSearchFilter.UNPUBLISHED_BLOG_ID
         ]
         val = u"".join(map(unicode, vals)) #$NON-NLS-1$
@@ -558,6 +613,7 @@ class ZNavigatorTreeBlogNode(ZNavigatorTreeNode):
         self.blog = blog
         self.children = [
                  ZNavigatorTreePostsNode(),
+                 ZNavigatorTreeUnPubPostsNode(),
                  ZNavigatorTreeLinksNode(),
                  ZNavigatorTreeImagesNode(),
                  ZNavigatorTreeTagsNode(),
