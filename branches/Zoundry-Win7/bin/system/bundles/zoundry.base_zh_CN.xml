@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<zb:string-bundle xmlns:zb="http://www.zoundry.com/schemas/2006/06/zbundle.rng" locale="zh_CN" xml:space="preserve">
+    <zb:string name="fileutil.DirDeleteFailed">删除目录 '%s' 失败。</zb:string>
+    <zb:string name="fileutil.FailedToDeleteRootPathMsg">删除根目录失败，不允许该操作</zb:string>
+    <zb:string name="fileutil.InvalidDirPath">该目录 '%s' 不存在</zb:string>
+    <zb:string name="fileutil.InvalidFilePath">无效文件 '%s'</zb:string>
+    <zb:string name="fileutil.NotAValidFileError">无法识别文件 '%s':  不是文件</zb:string>
+    <zb:string name="httpdownload.FailedToDownloadCSS">下载样式表失败: %s</zb:string>
+    <zb:string name="httpdownload.FailedToDownloadImage">下载图像失败: %s</zb:string>
+    <zb:string name="httpdownload.FailedToDownloadScript">下载脚本失败: %s</zb:string>
+    <zb:string name="logger.ShuttingDownLogger">关闭操作日志记录器</zb:string>
+    <zb:string name="logoutput.ClassMustExtendIZCustomLogOutputError">%s 必须从 IZCustomLogOutput 继承</zb:string>
+    <zb:string name="schematypes.FailedToParseDateTimeString">解析日期格式失败(%s)</zb:string>
+    <zb:string name="schematypes.SchemaDateTimeFormatError">ZSchemaDateTime must be constructed with an xs:dateTime formatted string or a Python datetime object.</zb:string>
+    <zb:string name="sysprops.ErrorSavingPropsFile">试图保存属性文件失败 %s</zb:string>
+    <zb:string name="zcommand.UnexpectedErrorInDoCommand">未知错误。</zb:string>
+    <zb:string name="zcommand.UnexpectedErrorInUnDoCommand">未知错误</zb:string>
+    <zb:string name="zthread.UnexpectedErrorInThread">未知错误。</zb:string>
+</zb:string-bundle>

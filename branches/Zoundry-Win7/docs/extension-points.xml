@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zoundry-extension-points project-name="Raven">
+    
+    <!-- Zoundry Extension Point Extension Point -->
+    <extension-point name="zoundry.extension">
+        <description>
+            The 'zoundry.extension' extension point exposes a point where a plugin can 
+            contribute its own extension point to the application.  For example, if a 
+            third party wishes to contribute a new Perspective to the application, and
+            that perspective wishes to expose its own set of extension points so that 
+            it itself can be extended, then this extension point would be used to 
+            contribute those extension points.  :)
+        </description>
+        <interface>None</interface>
+    </extension-point>
+
+    <!-- Zoundry Engine Service Extension Point -->
+    <extension-point name="zoundry.engine.service">
+        <description>
+            The 'zoundry.engine.service' extension point exposes a point where a plugin can
+            contribute a Service to the Application.  Services have a lifecycle that is
+			controlled by the Application's Engine.  Services are created and started when
+			the Engine starts, and then are stopped and destroyed when the Engine stops.
+			Services can be used by getting a reference from the Engine using the service's
+			ID (specified in the zplugin.xml).
+        </description>
+        <interface>zoundry.appframework.engine.service.IZService</interface>
+    </extension-point>
+
+    <!-- Zoundry User Preferences Extension Point -->
+    <extension-point name="zoundry.appframework.ui.preferences.prefpage">
+        <description>
+            The 'zoundry.appframework.ui.preferences.prefpage' extension point exposes 
+            a point where a plugin can contribute a user preferences (settings) page
+            to the application.  The user preference contribution includes both some 
+            meta data that will be used to display an entry in a User Prefs Tree View, 
+            as well as a concrete implementation of a ZUserPreferencePage.
+        </description>
+        <interface>zoundry.appframework.ui.prefs.prefpage.ZUserPreferencePage</interface>
+    </extension-point>
+
+    <!-- Zoundry Menu Extension Points -->
+    <extension-point name="zoundry.appframework.ui.core.menu">
+        <description>
+            The 'zoundry.appframework.ui.core.menu' extension point exposes a point where a 
+            plugin can contribute a new menu to the application.  The menu can either
+            be a menu bar or a pop-up (context) menu.
+        </description>
+        <interface>None</interface>
+    </extension-point>
+    <extension-point name="zoundry.appframework.ui.core.menugroup">
+        <description>
+            The 'zoundry.appframework.ui.core.menugroup' extension point exposes a point where a 
+            plugin can contribute a new menu group to the application's main menu.  The
+            menu group can be either a sub-group of an group, or it can be a new main group.
+            Menu groups are contributed into 'menus', which must be previously contributed.
+        </description>
+        <interface>None</interface>
+    </extension-point>
+    <extension-point name="zoundry.appframework.ui.core.menuitem">
+        <description>
+            The 'zoundry.appframework.ui.core.menuitem' extension point exposes a point where a 
+            plugin can contribute a new menu item to an existing menu group.  The menu item
+            is associated with an Action, which gets instantiated and run when the menu
+            item is clicked on.
+        </description>
+        <interface>zoundry.blogapp.app.ui.actions.action.IZAction</interface>
+    </extension-point>
+
+    <!-- Zoundry Perspective (UI) Extension Point -->
+    <extension-point name="zoundry.blogapp.ui.perspective">
+        <description>
+            The 'zoundry.blogapp.ui.perspective' extension point exposes a point where a 
+            plugin can contribute a top level UI Perspective to the Application.  Perspectives
+            basically represent a unique style of viewing the Application's data (blog accounts,
+            posts, etc...).  Perspectives must implement the IZPerspective interface.
+        </description>
+        <interface>zoundry.blogapp.ui.perspectives.perspective.IZPerspective</interface>
+    </extension-point>
+
+    <!-- Zoundry Media Storage Type Extension Point -->
+    <extension-point name="zoundry.blogapp.mediastorage.type">
+        <description>
+            The 'zoundry.blogapp.mediastorage.type' extension point exposes a point where a plugin 
+            can contribute a media storage type to the application.  Media Storage Types are used to 
+            create Media Storages, which are in turn used to manage uploading of resources to 
+            remote storage.  Media Storage Types consist of:
+              1) a set of properties which are needed to configure the media storage
+              2) a set of capabilities which indicate what the store type can do
+              3) a class that implements IZMediaStorage which provides the actual store impl
+        </description>
+        <interface>zoundry.blogapp.services.mediastorage.mediastorageprovider.IZMediaStorageProvider</interface>
+    </extension-point>
+
+    <!-- Zoundry Media Site Extension Point -->
+    <extension-point name="zoundry.blogapp.mediastorage.site">
+        <description>
+            The 'zoundry.blogapp.mediastorage.site' extension point exposes a point where a plugin 
+            can contribute a media site to the application.  Media Sites are templates that refer
+            to a Media Storage Type.  These templates do the following:
+              1) provide default values for the media storage type's properties
+              2) optionally override the media storage type's capabilities (can only remove 
+                 capabilities, not add them)
+        </description>
+        <interface></interface>
+    </extension-point>
+
+    <!-- Zoundry Startup Action Extension Point -->
+    <extension-point name="zoundry.appframework.startup-action">
+        <description>
+            The 'zoundry.appframework.startup-action' extension point exposes a point where a plugin 
+            can contribute some code that will be run when the application starts up.  When the action 
+            is executed, it is given an instance of zoundry.appframework.actions.shutdown.IZStartupActionContext
+            as the action context.
+        </description>
+        <interface>zoundry.appframework.ui.actions.startupaction.IZStartupAction</interface>
+    </extension-point>
+
+    <!-- Zoundry Shutdown Action Extension Point -->
+    <extension-point name="zoundry.appframework.shutdown-action">
+        <description>
+            The 'zoundry.appframework.shutdown-action' extension point exposes a point where a plugin 
+            can contribute some code that will be run when the application is being closed.  A 
+            shutdown action can be used, for example, to do the following:
+              1) Prompt the user to save unsaved resources
+              2) Save the state of running processes
+              3) Close any currently open resources
+            A shutdown action is a type of Action that gets run when the user attempts to close the
+            application.  When the action is executed, it is given an instance of 
+            zoundry.appframework.actions.shutdown.IZShutdownActionContext as the action context.
+        </description>
+        <interface>zoundry.appframework.ui.actions.shutdownaction.IZShutdownAction</interface>
+    </extension-point>
+
+    <!-- The Blog Post Details Panel Extension Point -->
+    <extension-point name="zoundry.extension.zoundry.engine.service">
+        <description>
+            The 'zoundry.extension.zoundry.engine.service' extension point exposes a point where a
+            plugin can contribute a tab to the blog post details notebook.  This is a notebook that
+            is updated whenever the user clicks on a blog post in the list of blog posts.  This 
+            extension is specifically for the Standard View.
+        </description>
+        <interface>zoundry.blogapp.ui.views.standard.ctxview.postdetails.IZBlogPostDetailsPanelFactory</interface>
+    </extension-point>
+
+</zoundry-extension-points>

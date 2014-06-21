@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Merchants>
+	<Merchant website="http://www.amazon.com" uri="www.amazon.com" enabled="true" name="Amazon.com" mid="1">
+		<Icon name="www_amazon_com" location="http://www.amazon.com/favicon.ico"/>
+		<ReList enabled="true">
+			<Re type="1" group="2" group2="-1">(http://www.amazon.com/exec/obidos/tg/detail/-/)(\w+)(/.*)</Re>
+			<Re type="1" group="2" group2="-1">(http://www.amazon.com/exec/obidos/ASIN/)(\w+)(/.*)*</Re>
+			<Re type="1" group="3" group2="-1">(http://www.amazon.com/exec/obidos/tg/stores/detail/-/)(\w+/)(\w+)(/.*)*</Re>
+			<Re type="1" group="6" group2="-1">(http://www.amazon.com)(/.*)*((detail/-/)|(.ASIN/))(\w+)(/.*)*</Re>
+			<Re type="1" group="2" group2="-1">(http://www.amazon.com/gp/product/)(\w+)(/.*)</Re>
+			<Re type="1" group="4" group2="-1">(http://www.amazon.com)(/.*)*(dp/)(\w+)(/.*)*</Re>
+		</ReList>
+	</Merchant>
+	<Merchant website="http://www.buy.com" uri="www.buy.com" enabled="true" name="Buy.com" mid="2">
+		<Icon name="www_buy_com" location="http://www.buy.com/favicon.ico"/>
+		<ReList enabled="true">
+			<Re type="1" group="2" group2="-1">(www.buy.com/retail/product.asp\?sku=)(\d+)</Re>
+			<Re type="1" group="4" group2="-1">(www.buy.com/prod)(/\S+)+(/)(\d+)(\.html)</Re>
+			<Re type="1" group="4" group2="-1">(www.buy.com)(/.*)*(\&amp;sku=)(\d+)</Re>
+		</ReList>
+		<Mws enabled="true" provider="www.cj.com">
+			<Property name="sid">1670306</Property><Property name="aid">1566996</Property>
+			<Property name="pid">CJ</Property>
+		</Mws>
+	</Merchant>
+	<Merchant website="http://www.overstock" uri="www.overstock.com" enabled="false" name="Overstock.com" mid="3">
+		<ReList enabled="true">
+			<Re type="1" group="2" group2="-1">(http://www.overstock.com/cgi-bin/d2.cgi\?PAGE=PROFRAME&amp;PROD_ID=)(\d+)</Re>
+		</ReList>
+	</Merchant>
+	<Merchant website="http://www.jr.com" uri="www.jr.com" enabled="false" name="J and R" mid="4">
+		<ReList enabled="false">
+			<Re type="1" group="2" group2="-1">(http://www.jr.com/JRProductPage.process\?Product=)(\d+)</Re>
+			<Re type="1" group="2" group2="-1">(http://www.jr.com/JRProductPage.process\?Product_Id=)(\d+)</Re>
+		</ReList>
+	</Merchant>
+	<Merchant website="http://www.apple.com/itunes" uri="www.itunes.com" enabled="false" name="iTunes" mid="5">
+		<Icon name="www_itunes_com" location="http://www.apple.com/favicon.ico"/>
+		<ReList enabled="true">
+			<Re type="1" group="3" group2="5">(http://phobos.apple.com/WebObjects/MZStore.woa/wa/viewAlbum\?)(playlistId=)(\d+)(&amp;selectedItemId=)(\d+)</Re>
+			<Re type="1" group="3" group2="-1">(http://phobos.apple.com/WebObjects/MZStore.woa/wa/viewAlbum\?)(playlistId=)(\d+)</Re>
+			<Re type="1" group="3" group2="5">(http://ax.phobos.apple.com.edgesuite.net/WebObjects/MZStore.woa/wa/viewAlbum\?)(playlistId=)(\d+)(&amp;selectedItemId=)(\d+)</Re>
+			<Re type="1" group="3" group2="-1">(http://ax.phobos.apple.com.edgesuite.net/WebObjects/MZStore.woa/wa/viewAlbum\?)(playlistId=)(\d+)</Re>
+			<Re type="1" group="5" group2="3">(http://phobos.apple.com/WebObjects/MZStore.woa/wa/viewAlbum\?)(selectedItemId=)(\d+)(&amp;playlistId=)(\d+)</Re>
+			<Re type="1" group="5" group2="3">(http://ax.phobos.apple.com.edgesuite.net/WebObjects/MZStore.woa/wa/viewAlbum\?)(selectedItemId=)(\d+)(&amp;playlistId=)(\d+)</Re>
+		</ReList>
+	</Merchant>
+	<Merchant website="http://www.sharperimage.com" uri="www.sharperimage.com" enabled="false" name="The Sharper Image" mid="6">
+		<Icon name="www_sharperimage_com" location="http://www.sharperimage.com/favicon.ico"/>
+		<ReList enabled="true">
+			<Re type="1" group="2" group2="-1">(http://www.sharperimage.com/us/en/catalog/productview/sku=)(\w+)</Re>
+			<Re type="1" group="2" group2="-1">(http://www.sharperimage.com/us/en/catalog/productview.jhtml\?sku=)(\w+)</Re>
+		</ReList>
+	</Merchant>
+	<Merchant website="http://www.cooking.com" uri="www.cooking.com" enabled="false" name="Cooking.com" mid="7">
+		<Icon name="www_cooking_com" location="http://www.cooking.com/favicon.ico"/>	
+		<ReList enabled="true">
+			<Re type="1" group="2" group2="-1">(http://www.cooking.com/products/shprodde.asp\?SKU=)(\w+)</Re>
+		</ReList>
+		<Mws enabled="true" provider="www.cj.com">
+			<Property name="sid">1670306</Property>
+			<Property name="aid">1509572</Property>
+			<Property name="pid">CJ</Property>
+		</Mws>
+	</Merchant>
+	<Merchant website="http://www.macys.com" uri="www.macys.com" enabled="false" name="Macys" mid="8">
+		<Icon name="www_macys_com" location="http://www.macys.com/favicon.ico"/>
+		<ReList enabled="false">
+			<Re type="1" group="2" group2="-1">(http://www.macys.com/catalog/product/index.ognc\?ID=)(\w+)(&amp;\S*)*</Re>
+		</ReList>
+	</Merchant>
+	<Merchant website="http://www.sierratradingpost.com" uri="www.sierratradingpost.com" enabled="false" name="Sierra Trading Post" mid="9">
+		<Icon name="www_sierratradingpost_com" location="http://www.sierratradingpost.com/favicon.ico"/>
+		<ReList enabled="false">
+			<Re type="1" group="4" group2="-1">(http://www.sierratradingpost.com)(/\S*)(/base_no.)(\w+)(/\S*)*</Re>
+			<Re type="1" group="2" group2="-1">(http://www.sierratradingpost.com/product.asp\?base_no=)(\w+)(/\S*)*</Re>
+		</ReList>
+	</Merchant>
+	<Merchant website="http://www.target.com" uri="www.target.com" enabled="false" name="Target" mid="10"/>
+	<Merchant website="http://www.dell.com" uri="www.dell.com" enabled="false" name="Dell" mid="11"/>
+	<Merchant website="http://www.barnesandnoble.com" uri="www.barnesandnoble.com" enabled="false" name="Barnes and Noble" mid="12"/>
+	<Merchant website="http://www.nascar.com" uri="www.nascar.com" enabled="false" name="Nascar" mid="13"/>
+	<Merchant website="http://www.tigerdirect.com" uri="www.tigerdirect.com" enabled="false" name="TigerDirect.com" mid="14">
+		<ReList enabled="true">
+			<Re type="1" group="6" group2="4">(http://www.tigerdirect.com)(/\S*)(\?edpno=)(\S+)(&amp;sku=)(\S+)?</Re>
+			<Re type="2" group="4" group2="-1">(http://www.tigerdirect.com)(/\S*)(\?edpno=)(\S+)(&amp;catid=)(\S+)?</Re>
+			<Re type="1" group="4" group2="-1">(http://www.tigerdirect.com)(/\S*)(&amp;sku=)(\S+)(&amp;)(\S+)?</Re>
+			<Re type="1" group="4" group2="-1">(http://www.tigerdirect.com)(/\S*)(&amp;sku=)(\S+)</Re>
+		</ReList>
+	</Merchant>
+	<Merchant website="http://www.ebags.com" uri="www.ebags.com" enabled="false" name="eBags" mid="15">
+		<ReList enabled="false">
+			<Re type="1" group="4" group2="-1">(http://www.ebags.com)(/\S*)*(modelid=)(\w+)</Re>
+		</ReList>
+	</Merchant>
+	<Merchant website="http://www.brookstone.com" uri="www.brookstone.com" enabled="false" name="Brookstone" mid="16">
+		<ReList enabled="true">
+			<Re type="1" group="2" group2="-1">(http://www.brookstone.com/shop/product.asp\?product_code=)(\w+)(&amp;\S*)*</Re>
+			<Re type="2" group="2" group2="-1">(http://www.brookstone.com/shop/ensemble.asp\?ensemble_code=)(\w+)(&amp;\S*)*</Re>
+		</ReList>
+		<Mws enabled="true" provider="www.cj.com">
+			<Property name="sid">1670306</Property>
+			<Property name="aid">1488218</Property>
+			<Property name="pid">CJ</Property>
+		</Mws>
+	</Merchant>
+	<Merchant website="http://www.ritzcamera.com/" uri="www.ritzcamera.com" enabled="false" name="Ritz Camera" mid="17">
+		<ReList enabled="true">
+			<Re type="1" group="4" group2="-1">(http://www.ritzcamera.com)(/\S*)*(productId=)(\w+)</Re>
+			<Re type="1" group="2" group2="-1">(http://www.ritzcamera.com/product/)(\w*)(\.htm)</Re>
+		</ReList>
+		<Mws enabled="true" provider="www.cj.com">
+			<Property name="sid">1670306</Property>
+			<Property name="aid">1556587</Property>
+			<Property name="pid">CJ</Property>
+		</Mws>
+	</Merchant>
+	<Merchant website="http://www.homedepot.com" uri="www.homedepot.com" enabled="false" name="Home Depot" mid="18">
+		<ReList enabled="false"/>
+		<Mws enabled="true" provider="www.cj.com">
+			<Property name="sid">1670306</Property>
+			<Property name="aid">1461363</Property>
+			<Property name="pid">CJ</Property>
+		</Mws>
+	</Merchant>
+</Merchants>

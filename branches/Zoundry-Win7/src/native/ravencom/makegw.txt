@@ -1,0 +1,2 @@
+from win32com.makegw import makegw
+makegw.make_framework_support("C:\\Program Files\\Microsoft SDK\\Include\\mshtmhst.h", "IDocHostUIHandler", 0, 1)

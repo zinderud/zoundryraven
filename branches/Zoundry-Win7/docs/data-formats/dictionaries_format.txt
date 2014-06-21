@@ -1,0 +1,5 @@
+This is a description of the format of a list of "dictionaries" in Raven.
+
+<dictionaries endpoint="xsd:string">
+    <dictionary display-name="xsd:string" lang-code="xsd:string" handler="z:id" type="z:id" url="z:url" />*
+</dictionaries>

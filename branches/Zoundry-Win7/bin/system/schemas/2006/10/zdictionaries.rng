@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+
+    <!-- Start of the actual grammar. -->
+    <start>
+        <element 
+            name="dictionaries" 
+            ns="http://www.zoundry.com/schemas/2006/10/zdictionaries.rng" 
+            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+
+            <attribute name="endpoint"><data type="string"/></attribute>
+
+            <zeroOrMore>
+                <element name="dictionary">
+                    <attribute name="lang-code"><data type="string"/></attribute>
+                    <attribute name="type"><data type="string"/></attribute>
+                    <attribute name="handler"><data type="string"/></attribute>
+                    <attribute name="url"><data type="string"/></attribute>
+                </element>
+            </zeroOrMore>
+
+        </element>
+    </start>
+
+</grammar>

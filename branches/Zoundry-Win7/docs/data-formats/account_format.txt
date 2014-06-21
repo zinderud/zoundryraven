@@ -1,0 +1,26 @@
+This is a description of the format of a single "account" in Raven.
+
+<account type="weblog" account-id="z:guid">
+	<attributes>?
+		<attribute name="xs:string" namespace="xs:anyURI">xs:string</attribute>*
+	</attributes>
+	<api-info>?
+		<attributes>?
+			<attribute name="xs:string" namespace="xs:anyURI">xs:string</attribute>*
+		</attributes>
+	</api-info>
+	<blogs>
+		<blog blog-id="z:guid">
+			<attributes>?
+				<attribute name="xs:string" namespace="xs:anyURI">xs:string</attribute>*
+			</attributes>
+			<categories>?
+				<category>
+					<attributes>?
+						<attribute name="xs:string" namespace="xs:anyURI">xs:string</attribute>*
+					</attributes>
+				</category>*
+			</categories>
+		</blog>+
+	</blogs>
+</account>

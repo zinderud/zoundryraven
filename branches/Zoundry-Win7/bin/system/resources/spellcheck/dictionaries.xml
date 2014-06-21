@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dictionaries endpoint="http://www.zoundry.com/zbw/dictionaries.xml"
+    xmlns="http://www.zoundry.com/schemas/2006/10/zdictionaries.rng">
+
+    <dictionary display-name="Dutch" lang-code="nl"
+        type="zoundry.appframework.spellcheck.provider.aspell"
+        handler="zoundry.appframework.spellcheck.dictionary-handler.aspell"
+        url="http://www.zoundry.com/download/dictionaries/aspell/nl.zip" />
+    <dictionary display-name="English (CA)" lang-code="en_CA"
+        type="zoundry.appframework.spellcheck.provider.aspell"
+        handler="zoundry.appframework.spellcheck.dictionary-handler.aspell"
+        url="http://www.zoundry.com/download/dictionaries/aspell/en.zip" />
+    <dictionary display-name="English (GB)" lang-code="en_GB"
+        type="zoundry.appframework.spellcheck.provider.aspell"
+        handler="zoundry.appframework.spellcheck.dictionary-handler.aspell"
+        url="http://www.zoundry.com/download/dictionaries/aspell/en.zip" />
+    <dictionary display-name="English (US)" lang-code="en_US"
+        type="zoundry.appframework.spellcheck.provider.aspell"
+        handler="zoundry.appframework.spellcheck.dictionary-handler.aspell"
+        url="http://www.zoundry.com/download/dictionaries/aspell/en.zip" />
+    <dictionary display-name="French" lang-code="fr_FR"
+        type="zoundry.appframework.spellcheck.provider.aspell"
+        handler="zoundry.appframework.spellcheck.dictionary-handler.aspell"
+        url="http://www.zoundry.com/download/dictionaries/aspell/fr.zip" />
+    <dictionary display-name="French (Switzerland)" lang-code="fr_CH"
+        type="zoundry.appframework.spellcheck.provider.aspell"
+        handler="zoundry.appframework.spellcheck.dictionary-handler.aspell"
+        url="http://www.zoundry.com/download/dictionaries/aspell/fr.zip" />
+    <dictionary display-name="German" lang-code="de_DE"
+        type="zoundry.appframework.spellcheck.provider.aspell"
+        handler="zoundry.appframework.spellcheck.dictionary-handler.aspell"
+        url="http://www.zoundry.com/download/dictionaries/aspell/de.zip" />
+    <dictionary display-name="German (Switzerland)" lang-code="de_CH"
+        type="zoundry.appframework.spellcheck.provider.aspell"
+        handler="zoundry.appframework.spellcheck.dictionary-handler.aspell"
+        url="http://www.zoundry.com/download/dictionaries/aspell/de.zip" />
+    <dictionary display-name="Italian" lang-code="it"
+        type="zoundry.appframework.spellcheck.provider.aspell"
+        handler="zoundry.appframework.spellcheck.dictionary-handler.aspell"
+        url="http://www.zoundry.com/download/dictionaries/aspell/it.zip" />
+    <dictionary display-name="Norwegian" lang-code="no"
+        type="zoundry.appframework.spellcheck.provider.aspell"
+        handler="zoundry.appframework.spellcheck.dictionary-handler.aspell"
+        url="http://www.zoundry.com/download/dictionaries/aspell/no.zip" />
+    <dictionary display-name="Portuguese" lang-code="pt_PT"
+        type="zoundry.appframework.spellcheck.provider.aspell"
+        handler="zoundry.appframework.spellcheck.dictionary-handler.aspell"
+        url="http://www.zoundry.com/download/dictionaries/aspell/pt.zip" />
+    <dictionary display-name="Portuguese (Brazil)" lang-code="pt_BR"
+        type="zoundry.appframework.spellcheck.provider.aspell"
+        handler="zoundry.appframework.spellcheck.dictionary-handler.aspell"
+        url="http://www.zoundry.com/download/dictionaries/aspell/pt.zip" />
+    <dictionary display-name="Russian" lang-code="ru"
+        type="zoundry.appframework.spellcheck.provider.aspell"
+        handler="zoundry.appframework.spellcheck.dictionary-handler.aspell"
+        url="http://www.zoundry.com/download/dictionaries/aspell/ru.zip" />
+    <dictionary display-name="Slavik" lang-code="sk"
+        type="zoundry.appframework.spellcheck.provider.aspell"
+        handler="zoundry.appframework.spellcheck.dictionary-handler.aspell"
+        url="http://www.zoundry.com/download/dictionaries/aspell/sk.zip" />
+    <dictionary display-name="Spanish" lang-code="es"
+        type="zoundry.appframework.spellcheck.provider.aspell"
+        handler="zoundry.appframework.spellcheck.dictionary-handler.aspell"
+        url="http://www.zoundry.com/download/dictionaries/aspell/es.zip" />
+    <dictionary display-name="Swedish" lang-code="sv"
+        type="zoundry.appframework.spellcheck.provider.aspell"
+        handler="zoundry.appframework.spellcheck.dictionary-handler.aspell"
+        url="http://www.zoundry.com/download/dictionaries/aspell/sv.zip" />
+
+</dictionaries>

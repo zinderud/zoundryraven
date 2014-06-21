@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zb:string-bundle xmlns:zb="http://www.zoundry.com/schemas/2006/06/zbundle.rng" locale="es_MX" xml:space="preserve">
+    <zb:string name="fileutil.DirDeleteFailed">Fallo al borrar el directorio '%s'.</zb:string>
+    <zb:string name="fileutil.FailedToDeleteRootPathMsg">Falló al borrar, operación no permitida.</zb:string>
+    <zb:string name="fileutil.InvalidDirPath">La ruta '%s' no es un directorio válido.</zb:string>
+    <zb:string name="fileutil.InvalidFilePath">La ruta '%s' no es un archivo válido.</zb:string>
+    <zb:string name="fileutil.NotAValidFileError">No se pudo recuperar metadatos de '%s': no es un archivo.</zb:string>
+    <zb:string name="httpdownload.FailedToDownloadCSS">Fallo al descargar CSS dependiente: %s.</zb:string>
+    <zb:string name="httpdownload.FailedToDownloadImage">Fallo al descargar imagen dependiente: %s.</zb:string>
+    <zb:string name="httpdownload.FailedToDownloadScript">Fallo al descargar script dependiente: %s.</zb:string>
+    <zb:string name="zcommand.UnexpectedErrorInDoCommand">Error inesperado en 'doCommand'.</zb:string>
+    <zb:string name="zcommand.UnexpectedErrorInUnDoCommand">Error inesperado en 'undoCommand'.</zb:string>
+    <zb:string name="zthread.UnexpectedErrorInThread">Error inesperado en hilo.</zb:string>
+</zb:string-bundle>

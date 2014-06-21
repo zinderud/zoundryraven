@@ -1,0 +1,931 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<string-bundle xmlns="http://www.zoundry.com/schemas/2006/06/zbundle.rng" locale="en" xml:space="preserve">
+
+    <string name="ZoundryRaven">Zoundry Raven</string>
+
+    <string name="raven.StartupErrorsFoundMsg">වැඩසටහන පනගැන්වීමේදී දෝෂ මතු විය. වැඩිදුර තොරතුරු සඳහා startup.log ගොනුව බලන්න.</string>
+    <string name="raven.ErrorFindingProfile">ප්‍රෝෆයිලය සෙවීමේදී ගැටළු මතු විය.</string>
+
+    <string name="mainmenu.Perspective">දෘශ්ඨිකෝණය (&amp;P)</string>
+
+    <string name="splash.Complete">සම්පූර්ණයි</string>
+    <string name="splash.CurrentProgress2">වත්මන් ප්‍රගතිය (%s)</string>
+    <string name="splash.OverallProgress2">සමස්ථ ප්‍රගතිය (%s)</string>
+    <string name="splash.CurrentProgress">වත්මන් ප්‍රගතිය : </string>
+    <string name="splash.OverallProgress">සමස්ථ ප්‍රගතිය : </string>
+    <string name="splash.StartingZoundryRaven">Zoundry Raven පන ගන්වමින් පවති</string>
+
+    <string name="startup.ValidatingPlugin">%s ප්ලගිනය පන තහවුරු කරමින් පවතී.</string>
+    <string name="startup.ValidatingPlugins">ප්ලගින %d ක් තහවුරු කරමින් පවතී.</string>
+    <string name="startup.LoadingPlugin">%s ප්ලගිනය ප්‍රවේශනය කරමින් පවතී.</string>
+    <string name="startup.LoadingPlugins">ප්ලගින %d ක් ප්‍රවේශණය කරමින් පවතී.</string>
+    <string name="startup.StartingService">'%s' සේවාව ආරම්භ කරමින් පවතී.</string>
+    <string name="startup.StartingEngineServices">ප්‍රධාන සේවාවන් ආරම්භ කරමින් පවතී.</string>
+    <string name="startup.CreatingService">'%s' සේවාව නිර්මාණය කරමින් පවතී.</string>
+    <string name="startup.CreatingEngineServices">ප්‍රධාන සේවාවන් නිර්මාණය කරමින් පවතී.</string>
+    <string name="startup.ServiceFailedToStartMsg">'%s' සේවාව ඇරඹුමට නොහැකි විය : '%s'</string>
+    <string name="startup.ServiceCreationFailedMsg">'%s' සේවාව නිර්මාණය කිරීමට නොහැකි විය : '%s'</string>
+    <string name="startup.PluginFailedToValidateMsg">'%s' ප්ලගිනය තහවුරු කරගැනීමට නොහැකි විය : '%s'</string>
+    <string name="startup.PluginFailedToLoadMsg">'%s' ප්ලගිනය ප්‍රවේශ කරගැනීමට කොහැකි විය : '%s'</string>
+    <string name="startup.ErrorDuringStartupMsg">පනගැන්වුම අතරතුරදී ගැටළු මතුවිය : '%s'</string>
+
+    <string name="newprofile.DialogUseMsg">නව භාවිතාකරු ප්‍රෝෆයිලයක් තැනීමට මෙම සංවාද කොටුව භාවිතා කරන්න.</string>
+    <string name="newprofile.NewProfile">නව ප්‍රෝෆයිලයක්</string>
+    <string name="newprofile.ChooseAProfileLocation">ප්‍රෝෆයිලයක ස්ථානයක් තෝරාගන්න :</string>
+    <string name="newprofile.Path:">මංපෙත :</string>
+    <string name="newprofile.Name:">නම :</string>
+    <string name="newprofile.ProfileInfo">ප්‍රෝෆයිල තොරතුරු</string>
+    <string name="newprofile.CreateNewProfile">නව ප්‍රෝෆයිලයක් තනන්න</string>
+    <string name="newprofile.ProfilePathMissing">ප්‍රෝෆයිලයේ මංපෙත ලබාදිය යුතුය.</string>
+    <string name="newprofile.ProfileAlreadyExists">'%s' නම් ප්‍රෝෆයිලයක් දැනටමත් පවතී.</string>
+    <string name="newprofile.ProfileNameMissing">ප්‍රෝෆයිලය සඳහා නමක් සැපයිය යුතුය.</string>
+    <string name="newprofile.ProfilePathTooltip">මෙම ප්‍රෝෆයිලය ඔබේ තැටියේ තැන්පත් විය යුතු ස්ථානයට සම්පූර්ණ මංපෙත ලබාදෙන්න.</string>
+    <string name="newprofile.ProfileNameTooltip">මෙම නව ප්‍රෝෆයිලය සඳහ ානමක් ලබාදෙන්න.</string>
+    <string name="newprofile.DirectoryNotWritableError">තෝරා ගන්නා ලද බහාලුම ලිවිය හැකි එකක් විය යුතුය.</string>
+    <string name="newprofile.DirectoryNotEmptyError">තෝරාගන්නා ලද බහාලුම හිස් එකක් විය යුතුය. එසේත් නැතහොත් එය මීට පෙර නිර්මාණය කළ Raven ප්‍රෝෆයිලයන් තැන්පත් කරන එකක් විය යුතුය.</string>
+    <string name="newprofile.NotADirectoryError">තෝරාගත් මංපෙත බහාලුමක් වෙත මිස ගොනුවක් වෙත නොවිය යුතුය.</string>
+
+    <string name="manager.DialogUseMsg">ඔබේ Raven ප්‍රෝෆයිලයන් කළමනාකරණය කිරීමට මෙම සංවාද කොටුව භාවිතා කරන්න. ඉදිරියට යාම සඳහා ප්‍රෝෆයිලයක් නිර්මාණය කිරීම හෝ තෝරාගැනීම කරන්න.</string>
+    <string name="manager.Profiles">ප්‍රෝෆයිලයන්</string>
+    <string name="manager.Delete">මකන්න</string>
+    <string name="manager.New">නව එකක්</string>
+    <string name="manager.WindowTitle">Zoundry ප්‍රෝෆයිල කළමනාකරු</string>
+    <string name="manager.Portable">ගෙන යා හැකි</string>
+    <string name="manager.Path">මංපෙත</string>
+    <string name="manager.Name">නම</string>
+    <string name="manager.DeleteProfileTitle">ප්‍රෝෆයිලය මකන්නද ?</string>
+    <string name="manager.DeleteProfileConfirmMsg">'%s' ප්‍රෝෆයිලය තුල ඇති සියළු ගොනුද මකන්නද ?</string>
+    <string name="manager.BypassCheckboxTooltip">ඔබට භාවිතා කිරීමට අවශය එක් ප්‍රෝෆයිලයක් පමණක් නම්, මෙය බලාත්මක කරන්න.</string>
+    <string name="manager.ImportingZBW1XProfile">Zoundry Blog Writer 1.x ප්‍රෝෆයිලයක් ආනයනය කරමින් පවතී</string>
+    <string name="manager.Import">ආනයනය කරන්න...</string>
+    <string name="manager.ProfileAlreadyExists">'%s' නම් ප්‍රෝෆයිලයක් දැනටමත් පවතී.</string>
+    <string name="manager.ProfileNotFound">'%s' නම් ප්‍රෝෆයිලයක් හමු නොවිනි.</string>
+    <string name="manager.DoNotShowProfileDialog">මෙම සංවාද කොටුව නැවත පෙන්වන්න එපා</string>
+    <string name="manager.FromWLW">Windows Live Writer වෙතින්...</string>
+    <string name="manager.FromZBW">Zoundry Blog Writer වෙතින්...</string>
+    <string name="manager.MyProfile">මගේ ප්‍රෝෆයිලය</string>
+
+    <string name="viewutil.HtmlFileNotFoundError">'%s' නම් ස්ථිතික HTML ගොනුව සොයාගත නොහැකි විය.</string>
+
+    <string name="perspective.Unknown">නොදන්නා</string>
+
+    <string name="appwindow.FailedToLoadDefaultPerspective">සාමාන්‍ය දෘශ්ඨිකෝණය ප්‍රවේශ කරගැනීමට නොහැකි විය. කරුණාකර Zoundry සහය ලබාගන්න.</string>
+
+    <string name="mainmenu.New">නව (&amp;N)</string>
+    <string name="mainmenu.Help">උදව් (&amp;H)</string>
+    <string name="mainmenu.Tools">ආවුද (&amp;T)</string>
+    <string name="mainmenu.View">දසුන (&amp;V)</string>
+    <string name="mainmenu.File">ගොනුව (&amp;F)</string>
+
+    <string name="importprofile.ImportDialogHeaderMsg">Zoundry Blog Writer 1.x වෙතින් ප්‍රෝෆයිලයන් ‍ආනයනය කරගැනීමට මෙම සංවාද කොටුව යොදාගන්න.</string>
+    <string name="importprofile.ImportProfile">ප්‍රෝෆයිලය ආනයනය කරන්න</string>
+    <string name="importprofile.EnterZBW1XPathTooltip">ඔබේ Zoundry Blog Writer 1.x භාවිතාකරු ප්‍රෝෆයිලයට මංපෙත ලබාදෙන්න.</string>
+    <string name="importprofile.ChoosePathDialogTitle">Zoundry Blog Writer 1.x ප්‍රෝෆයිලයක් තෝරාගන්න</string>
+    <string name="importprofile.OldProfilePath:">පැරණි ප්‍රෝෆයිල මංපෙත</string>
+    <string name="importprofile.ZBW1XProfileMissing">Zoundry Blog Writer 1.x ප්‍රෝෆයිලයක් වෙති මංපෙත ලබාදිය යුතුය.</string>
+    <string name="importprofile.ImportMessage">ඔබේ නව Raven ප්‍රෝෆයිලය සඳහන් කිරීමට මෙම සංවාද කොටුව භාවිතා කරන්න.(Windows Live Writer වෙතින් ආනයනය කළ.)</string>
+    <string name="importprofile.ImportHeader">Windows Live Writer වෙතින් ආනයනය කරන්න</string>
+
+    <string name="importer.ImportedBlogPostMsg">බ්ලොග් පෝස්ට %d ක් ආනයකය කෙරිනි. (සම්පූර්ණ පෝස්ට ගණන %d යි.)</string>
+    <string name="importer.IncorrectListenerType">Incorrect listener type (should be an instance of IZRunnableProgressListener).</string>
+    <string name="importer.ImportedBlogAccountMsg">බ්ලොග් ගිණුම් %d ක් ආනයනය කෙරිනි. (සම්පූර්ණ ගිණුම් ගණන %d යි.)</string>
+    <string name="importer.ImportedPersonalDictionaryMsg">පෞද්ගලික ශබ්දාකෝෂ තොරතුරු ආනයනය කෙරිනි.</string>
+    <string name="importer.ImportedMediaStoreMsg">FTP සහ මාධ්‍ය ගබඩා තොරතුරු ආනයනය කෙරිකි.</string>
+
+    <string name="accountio.FailedToLoadAccount">'%s' හි ගිණුම ප්‍රවේශ කිරීම‍ට නොහැකිවිය.</string>
+    <string name="accountio.FailedToSaveAccount">'%s' බහාලුම වෙත ගිණුම සුරැකීහට නොහැකිවිය.</string>
+
+    <string name="factory.NoAccountDeserializer">No deserializer found for account with namespace '%s'.</string>
+    <string name="factory.NoSerializerForAccountError">No serializer found for namespace '%s'.</string>
+
+    <string name="navigator.Unpublished">පළ නොකළ</string>
+    <string name="navigator.Tags">‍ටැග</string>
+    <string name="navigator.Images">පිංතූර</string>
+    <string name="navigator.Links">සබැඳි</string>
+    <string name="navigator.Posts">පොස්ට</string>
+
+    <string name="dataio.DocumentLoadFailedError">'%s' ලේඛනය ප්‍රවේශ කිරීමට නොහැකිවිය.</string>
+    <string name="dataio.FailedToSaveDocument">'%s' ලේඛනය සුරැකීමට නොහැකිවිය.</string>
+
+    <string name="deserializers.NoContentModeFoundError">Failed to deserialize document: no 'mode' found for content.</string>
+
+    <string name="mediastorageio.FailedToSaveStore">'%s' නම් හැඳුනුම ඇකි මාධ්‍ය ගබඩාව සුරැකීමට නොහැකිවිය.</string>
+    <string name="mediastorageio.FailedToLoadStore">මාධ්‍ය ගබඩාව ප්‍රවේශ කරගැනීමට නොහැකිවිය.</string>
+
+    <string name="mediastoragesrvc.NoMediaSiteFound">'%s' නම් හැඳුනුම ඇති මාධ්‍ය අඩවියක් සොයාගත නොහැකි විය.</string>
+    <string name="mediastoragesrvc.FailedToAddMediaStorageError">%s නම් මාධ්‍ය ගබඩාවක් දැනටමත් පවතින නිසා, මාධ්‍ය ගබඩාව එක්කිරීමට ටනාහැකි විය.</string>
+    <string name="mediastoragesrvc.StoreTypeNotFoundError">'%s' මාධ්‍ය අඩවියෙහි සදහන් වන්නේ නොපවතින මාධය ගබඩා වර්ගයක් පිළිබඳවය (%s).</string>
+
+    <string name="mediasiteimpl.InvalidPropertyOverride">මාධය අඩවියේ වත්කම්ක් එහි මාධය ගබඩා වර්ගයේ නොපවතින වත්කමක් අභිබවා යාමට උත්සාහ කළේය(%s).</string>
+
+    <string name="mediastorageimpl.FailedToUploadFile">'%s' ගොනුව පැටවීමට නොහැකි විය.</string>
+
+    <string name="docindex.ReindexedDocument">'%s' ගොනුව ප්‍රතිසූචිගතකරන ලදී.</string>
+    <string name="docindex.LoadedDocument">'%s' ගොනුව ප්‍රවේශනය කරන ලදී.</string>
+    <string name="docindex.ReindexTask">Reindex Task</string>
+
+    <string name="shutdown.CancelRunningTasksTitle">ධාවනය වන කාර්යයන් නවතන්නද ?</string>
+    <string name="shutdown.CancelRunningTasksMessage">පසුව නැවතූ තැනින් පටන්ගත නොහැකි කාර්යයන් %d ක් ධාවනය වෙමින් පවතී. එම කාර්යයනද නවතන්නද ?</string>
+
+    <string name="mediastorageztest.FileStillExistsError">'%s' නම් ලිපිනයේ පරීක්‍ෂණ ගොනුව තවමත් පවතී.</string>
+    <string name="mediastorageztest.FailedToDeleteFileError">මාධ්‍ය ගබඩාවෙන් ගොනුව මැකීමට නොහැකිවිය=.</string>
+    <string name="mediastorageztest.VerifyTestFileDeleted">පරීක්‍ෂන ගොනුව මැකීඇතිදැයි තහවුරු කරගන්න...</string>
+    <string name="mediastorageztest.DeleteTestFile">මාධය ගබඩාවෙන් පරීක්ෂන ගොනුව මකන්න...</string>
+    <string name="mediastorageztest.FileNotInStoreListError">මාධ්‍ය ගබඩා ගොනු ලයිස්තුවේ පරීක්ෂණ ගොනුව සොයාගැනීමට නොහැකිවිය.</string>
+    <string name="mediastorageztest.VerifyTestFileList">මාධය ගබඩා ගොනු ලයිස්තුවේ පරීක්ෂණ ගොනුව ඇතිබව තහවුරු කරගන්න...</string>
+    <string name="mediastorageztest.TestFileWrongSizeError">පරීක්ෂණ ගොනුව පවතින නමුත්, එය වැරදි ගොනුවිශාලත්වයක් දරයි.</string>
+    <string name="mediastorageztest.IncorrectContentTypeError">Incorrect content type '%s' for URL: '%s'.</string>
+    <string name="mediastorageztest.FileNotFoundError">'%s' ලිපිනය තහවුරු කරගැනීමට නොහැකිවිය. (ගොනුව හමු නොවිනි.)</string>
+    <string name="mediastorageztest.FailedToVerifyURLError">ලිපිනය තහවුරු කරගැනීමට නොහැකිවිය: '%s'</string>
+    <string name="mediastorageztest.VerifyTestFileURL">පැටවූ ගොනුවේ ලිපිනය ලබාගන්න...</string>
+    <string name="mediastorageztest.NoURLFromUploadError">'%s' මාධය ගබඩාව [පැටවීම්] ගොනුව වෙත ලිපිනයක් ලබානොදින.</string>
+    <string name="mediastorageztest.FailedToUploadTestFileError">'%s' මාධය ගබඩාවට පරීක්ෂණ ගොනුව පැටවීමට නොහැකිවිය.</string>
+    <string name="mediastorageztest.UploadTestFile">පරීක්ෂණ ගොනුව ගබඩාවට පටවන්න...</string>
+
+    <string name="editstoredialog._Settings">%s සැකසුම්</string>
+    <string name="editstoredialog.EditMediaStorageDialogMessage">මාධ්‍ය ගබඩා සැකසුම් වෙනස් කිරීමට මෙම සංවාද කොටුව භාවිතා කරන්න.</string>
+    <string name="editstoredialog.EditMediaStorageSettings">මාධ්‍ය ගබඩා සැකසුම් වෙනස් කරන්න</string>
+    <string name="editstoredialog.EditSettings">%s හි සැකසුම් වෙනස් කරන්න</string>
+    <string name="mediastoragedialog.NewStore">නව ගබඩාවක්</string>
+    <string name="mediastoragedialog.MediaStorages">මාධ්‍ය ගබඩා</string>
+    <string name="mediastoragedialog.DialogTitle">මාධ්‍ය ගබඩා කළමනාකරු</string>
+    <string name="mediastoragedialog.HeaderTitle">මාධය ගබඩා කළමනාකරු</string>
+    <string name="mediastoragedialog.HeaderMessage">ඔබේ මාධ්‍ය ගපඩා කළමනාකරණයට මෙම සංවාද කොටුව භාවිතා කරන්න.</string>
+    <string name="mediastoragedialog.Type">වර්ගය</string>
+    <string name="mediastoragedialog.Name">නම</string>
+
+    <string name="mediastoragemanager.DeleteMediaStorage">'%s' මාධය ගබඩාව මකන්නද ?</string>
+    <string name="mediastoragemanager.ConfirmDelete">මැකුම තහවුරු කරන්න</string>
+    <string name="mediastoragemanager.MediaStorageTestDialogTitle">මාධ්‍ය ගබඩා සැකසුම් පරීක්ෂා කරන්න</string>
+
+     <string name="mediastoragewizard.Settings">සැකසුම්</string>
+    <string name="mediastoragewizard.ConfirmSettingsText">ඔබේ සැකසුම් තහවුරු කිරීමට මොහොතක් ගතකරන්න.</string>
+    <string name="mediastoragewizard._Settings">%s සැකසුම්</string>
+    <string name="mediastoragewizard.MediaStorageNameTooltip">මෙම මාධ්‍ය ගබඩාව සඳහා පහසු නමක් දෙන්න (උදා: රාහුල විද්‍යාලයීය බ්ලොගයේ ගොනු)</string>
+    <string name="mediastoragewizard.MediaStorageName">මාධ්‍ය ගබඩා නාමය:</string>
+    <string name="mediastoragewizard.StoreTypeComboTooltip">මාධ්‍ය ගබඩා වර්ගයක් ලයිස්තුවෙන් තොරන්න.</string>
+    <string name="mediastoragewizard.EmptyStoreTypeSelectionError">ගබඩා වර්ගයක් තෝරන්න.</string>
+    <string name="mediastoragewizard.MediaStorageType">මාධ්‍ය ගබඩා වර්ගය:</string>
+    <string name="mediastoragewizard.WizardDescription">නව මාධ්‍ය ගබඩාව්ක තැනීමට මෙම විශාරද භාවිතා කරන්න. Zoundry Raven පිංතූර සහ අනෙකුත් ගොනු  තැන්පත් කිරීම‍ට යම් දුරස්ථ අඩවියක් භාවිතා කරන අතර, එවිට ඒවා ඔබේ බ්ලොග් පෝස්‍ටයට නිවැරදිව සම්බන්ධ කෙතරෙනු ඇත.</string>
+    <string name="mediastoragewizard.WelcomeMessage">නව මාධ්‍ය අඩවි විශාරද වෙත සාදරයෙන් පිළිගනිමු</string>
+    <string name="mediastoragewizard.StoreAlreadyExistsError">'%s' නම් මාධ්‍ය ගබඩාවක් දැනටමත් පවතී.</string>
+    <string name="mediastoragewizard.EmptyStoreNameError">ඔබ මෙම මාධ්‍ය ගබඩාවට නමක් ලබාදිය යුතුය.</string>
+    <string name="mediastoragewizard.NewMediaStorageWizard">නව මාධ්‍ය ගබඩා විශාරද</string>
+    <string name="mediastoragewizard.NoStorageLink">මා සතුව මාර්ගගත ගබඩාවක් නොමැත !</string>
+
+    <string name="infodetailswidgets.Unavailable">ලබාගත නොහැත...</string>
+    <string name="infodetailswidgets.Retrieving">ලබාගනිමින් පවතී...</string>
+    <string name="infodetailswidgets.ImageType">පිංතූර වර්ගය:</string>
+    <string name="infodetailswidgets.ImageHeight">පිංතූර උස:</string>
+    <string name="infodetailswidgets.ImageWidth">පිංතූර පළල:</string>
+    <string name="infodetailswidgets.FileSize">ගොනු විශාලත්වය:</string>
+    <string name="infodetailswidgets.Summary">සාරාංශය</string>
+    <string name="infodetailswidgets.PreviewUnavailable">පෙරදැක්ම ලබාගත නොහැකිය</string>
+    <string name="infodetailswidgets.GeneratingPreview">පෙරදැක්ම උපදවමින් පවතී...</string>
+    <string name="infodetailswidgets.Preview">පෙරදැක්ම</string>
+
+    <string name="imgsviewmodel.local">local</string>
+
+    <string name="infodetailswidgets.LinkType">සබැඳි වර්ගය:</string>
+
+    <string name="postsview.Title">මාතෘකාව</string>
+    <string name="postsview.ThisMonth">මෙම මාසයේ</string>
+    <string name="postsview.ThisWeek">මෙම සතියේ</string>
+    <string name="postsview.Yesterday">ඊයේ</string>
+    <string name="postsview.Today">අද</string>
+    <string name="postsview.Published">පළ කළ</string>
+    <string name="postsview.Drafts">කටුවැඩ</string>
+    <string name="postsview.All">සියල්ල</string>
+    <string name="postsview.Filter">පෙරහන:</string>
+    <string name="postsview.NoTitle">මාතෘකා රහිත</string>
+
+    <string name="linkdetails.LinkURL">සබැඳි ලිපිනය</string>
+    <string name="mediadetails.MediaSource">මාධ්‍ය මූලාශ්‍රය</string>
+
+    <string name="editorwin.SaveDocument">ලේඛනය සුරකින්න</string>
+    <string name="editorwin.SaveDocumentMessage">'%s' වෙනස් කොට ඇත. වෙනස්කම් සුරකින්නට අනුමැතිය දෙනවාද ?</string>
+    <string name="editorwin.No_Title">මාතෘකා රහිත</string>
+‍
+    <string name="publishersitewizard.NewPublisherSiteWizard">නව බ්ලොග් ගිණුම් විශාරද</string>
+    <string name="publishersitewizard.WelcomeMessage">නව බ්ලොග් ගිණුම් විඹාරද වෙත සාදරයෙන් පිළිගනිමු</string>
+    <string name="publishersitewizard.WizardDescription">නව බ්ලොග් ගිණුමක් නිර්මාණය කිරීමට මෙම විශාරද භාවිතා කරන්න. Zoubdry Raven ට බ්ලොග් ගිණුමේ තොරතුරු භාවිතයෙන් ඔබේ බ්ලොග් පෝස්ට ඔබේ බ්ලොගයට එක්කළ හැකිය.</string>
+    <string name="publishersitewizard.BlogUrlLabel">බ්ලොග් ලිපිනය:</string>
+    <string name="publishersitewizard.BlogUrlTooltip">බ්ලොග් අඩවියේ ලිපිනය ලබාදෙන්න.</string>
+    <string name="publishersitewizard.BlogUrlInvalid">http://hostname/path යන ආකාරයට ඔබගේ බ්ලොග් ලිපිනය නිවැරදි වියයුතුය.</string>
+    <string name="publishersitewizard.ApiInfo">ගිණුම් සහ අඩවි API තොරතුරු</string>
+    <string name="publishersitewizard.ApiInfoDescription">ගිණුම් නමත් තෝරා බ්ලොගයේ API තොරතුරු ලබාදෙන්න.</string>
+    <string name="publishersitewizard.AccountNameLabel">ගිණුම් නාමය:</string>
+    <string name="publishersitewizard.AccountNameTooltip">මෙම අඩවිය සමග බැඳි ගිණුමට නමක් ලබාදෙන්න</string>
+    <string name="publishersitewizard.AccountAlreadyExistsError">'%s' නම් ගිණුමක් දැනටමත් පවතී. වෙනස් නමක් තෝරාගන්න.</string>
+    <string name="publishersitewizard.EmptyAccountNameError">ගිණුම් නාමය හිස්ය. මෙම අඩවියේ ගිණුමට නමක් ලබාදෙන්න.</string>
+    <string name="publishersitewizard.SiteTypeLabel">අඩවි වර්ගය:</string>
+    <string name="publishersitewizard.SiteTypeTooltip">බ්ලොග් අඩවි API වර්ගය තෝරාගන්න.</string>
+    <string name="publishersitewizard.EmptySiteTypeSelectionError">කරුණාකර අඩවි වර්ගය තෝරාගන්න.</string>
+    <string name="publishersitewizard.UsernameLabel">භාවිතාකරු නම:</string>
+    <string name="publishersitewizard.UsernameTooltip">ඔබේ බ්ලොග් අඩවියේ API භාවිතාකරුනාමය දෙන්න.</string>
+    <string name="publishersitewizard.EmptyUsername">භාවිතාකරු නාමය හිස්ය. ඔබේ ගිණුමේ භාවිතාකරුනාමය ලබාදෙන්න.</string>
+    <string name="publishersitewizard.PasswordLabel">මුරපදය:</string>
+    <string name="publishersitewizard.PasswordTooltip">ඔබේ බ්ලොග් අඩවියේ API මුරපදය ලබාදෙන්න.</string>
+    <string name="publishersitewizard.EmptyPassword">මුරපදය හිස්ය. ඔබේ ගිණුමේ මුරපදය ලබාදෙන්න.</string>
+    <string name="publishersitewizard.ApiUrlLabel">API ලිපිනය:</string>
+    <string name="publishersitewizard.ApiUrlTooltip">ඔබගේ බ්ලොග් අඩවියේ API ලිපිනය ලබාදෙන්න.</string>
+    <string name="publishersitewizard.ApiUrlInvalid">API ලිපිනය අත්‍යවශ්‍ය වන අතර එය http://hostname/path ආකාරය ගතයුතුය</string>
+    <string name="publishersitewizard.Confirm">බ්ලොග තහවුරු කරන්න</string>
+    <string name="publishersitewizard.ConfirmDescription">බෑම සඳහා බ්ලොගයක් තෝරා පිංතූර පැටවුම් යාන්ත්‍රණයක් තෝරන්න.</string>
+    <string name="publishersitewizard.MediaUploadMethodLabel">ගොනු පටවන්නේ:</string>
+    <string name="publishersitewizard.MediaUploadMethodTooltip">පිංතූර සහ අනෙකුත් මාධ්‍යයන් පටවන ආකාරය තෝරන්න.</string>
+    <string name="publishersitewizard.CreateNewMediaStorage">නව මාධ්‍ය ගබඩාවක් තනන්න</string>
+
+	<string name="blogpostslist.WhereFound">හමුවූ තැන (බ්ලොග් පෝස්ට)</string>
+    <string name="blogpostslist.Title">මාතෘකාව</string>
+    <!-- <string name="blogpostslist.Blog">Blog</string> -->
+    <!-- <string name="blogpostslist.Published">Published</string> -->
+    <string name="blogpostslist.Created">නිර්මාණය කළේ</string>
+    <!-- <string name="blogpostslist.Modified">Modifed</string> -->
+    <string name="blogpostslist.NoTitle">මාතෘකා රහිත</string>
+
+    <string name="accountblogs.BlogList">බ්ලොග් ලයිස්තුව</string>
+    <string name="accountblogs.BlogName">බ්ලොග් නම</string>
+
+    <string name="synchronizeaccountdialog.DialogTitle">‍Update Account Blogs</string>
+    <string name="synchronizeaccountdialog.HeaderTitle">Update Account Blogs</string>
+    <string name="synchronizeaccountdialog.HeaderMessage">මෙම ගිණුමේ ඇති බ්ලොග් ලයිස්තුව යාවත්කාල කිරීමටත් ආසන්න පෝස්ට බාගැනීමටත් මෙම සංවාද කොටුව භාවිතා කරන්න.</string>
+    <string name="synchronizeaccountdialog.RefreshBlogList">බ්ලොග් ලයිස්තුව ප්‍රතිපූරණය කරන්න</string>
+    <string name="synchronizeaccountdialog.FetchingBlogList">බ්ලොග් ලයිස්තුව ලබාගනිමින් පවති...</string>
+
+    <string name="publishersynch.updatingbloglist">සේවාදායකයෙන් බ්ලොග් ලයිස්තුව යාවත්කාල කරමින් පවතී</string>
+    <string name="publishersynch.updatingcategories">සේවාදායකයෙන් වර්ග ලයිස්තුව යාවත්කාල කරමින් පවතී</string>
+    <string name="publishersynch.downloadingposts">සේවාදායකයෙන් ලේඛන බාමින් පවතී</string>
+
+    <string name="publishersynch.AccountSynchBgTask.name">මාර්ගගත බ්ලොග් තොරතුරු යාවත්කාල කරන්න</string>
+    <string name="publishersynch.DownloadBgTask.name">ලේඛන බාන්න</string>
+
+    <string name="deleteentryuiutil.DeleteDocumentError.title">ලේභන මැකුම් දෝෂයක්</string>
+    <string name="deleteentryuiutil.DeleteDocumentNotFound.message">මැකීමට නම් කල ගොනුව සොයාගත නොහැක.</string>
+    <string name="deleteentryuiutil.DeleteBgTask.name">ලේඛනය මකන්න</string>
+
+    <string name="publishentryuiutil.PublishDocumentError.title">ලේඛන පළ කිරීමේ දෝෂයක්</string>
+    <string name="publishentryuiutil.PublishDocumentNotFound.message">පළකිරීමට නම් කළ ලේඛනය ලබාගත නොහැක.</string>
+    <string name="publishentryuiutil.PublishBgTask.name">ලේඛනය පළකරන්න</string>
+
+
+    <string name="settingssubpage.InvalidEndpointError">A valid URL for 'endpoint' is required.</string>
+    <string name="settingssubpage.Endpoint">Endpoint:</string>
+    <string name="settingssubpage.APIInformation">API තොරතුරු</string>
+    <string name="settingssubpage.InvalidPasswordError">'මුරපදය' සඳහා අගයක් දීම අවශ්‍යය.</string>
+    <string name="settingssubpage.Password">මුරපදය:</string>
+    <string name="settingssubpage.InvalidUsernameError">'භාවිතාකරුනාමය' සඳහා අලයක් අවශ්‍යය.</string>
+    <string name="settingssubpage.Username">භාවිතාකරුනාමය:</string>
+    <string name="settingssubpage.Credentials">Credentials</string>
+
+    <string name="pubsubpage.OverridePublishingSettings">සියල්ලට පොදු පළකෙරුම සැකසුම් ඉක්මවා යන්න</string>
+    <string name="pubsubpage.ReUploadImages">පිංතූර ප්‍රති-පටවන්න (අපිරිසිදු නොවුනත්)</string>
+    <string name="pubsubpage.UploadTNsOnly">Upload thumbnails only</string>
+    <string name="pubsubpage.ImageUpload">පිංතූර පැටවුම</string>
+    <string name="pubsubpage.AddLightbox">Add Lightbox to image links</string>
+    <string name="pubsubpage.AddPoweredByZoundry">පෝස්ටයේ අගට 'Powered By Zoundry' යන කොටස යොදන්න</string>
+    <string name="pubsubpage.PublishingOptions">පළකෙරුම් විකල්ප</string>
+    <string name="pubsubpage.RemoveNewLines">නවපේළි ඉවත් කරන්න</string>
+
+    <string name="pingsubpage.OverrideGlobalPingSettings">සියල්ලට පොදු පින්ග් අඩවි සැකසුම් ඉක්මවා යන්න.</string>
+    <string name="pingsubpage.PingSites">පින්ග් අඩවි</string>
+    <string name="pingsubpage.OverrideAccountPingSitesSettings">ගිණුමේ පින්ග් අඩවි සැතසුම් ඉක්මවා යන්න</string>
+    
+    <string name="tagsubpage.OverrideGlobalTagSettings">සියල්ලට බලපාන ටැග අඩවි සැතසුම් ඉක්මවා යන්න</string>
+    <string name="tagsubpage.TagSites">ටැග අඩවි</string>
+    <string name="tagsubpage.OverrideAccountTagSitesSettings">ගිණුමේ ටැග අඩවි සැකසුම් ඉක්මවා යන්න</string>
+
+    <string name="pubsubpage.OverrideAccountPublishingSettings">ගිණුමේ පළකෙරුම් සැකසුම් ඉක්මවා යන්න</string>
+
+    <string name="storesubpage.OverrideAccountMediaStorageSetting">ගිණුමේ මාධ්‍ය ගබඩා සැකසුම් ඉක්මවා යන්න</string>
+
+    <string name="accountpage.Ping_Sites_Description">පින්ග් අඩවි විස්තරයPing Sites Description</string>
+    <string name="accountpage.Ping_Sites">පින්ග් අඩවි</string>
+    <string name="accountpage.Tag_Sites_Description">ටැග අඩවි විස්තරයTag Sites Description</string>
+    <string name="accountpage.Tag_Sites">ටැග අඩවි</string>
+    
+    <string name="accountpage.Media_Store_Description">මාධ්‍ය ගබඩා විස්තරය</string>
+    <string name="accountpage.Media_Store">මාධ්‍ය ගබඩාව</string>
+    <string name="accountpage.Publishing_Description">පළකෙරුම් විස්තරය</string>
+    <string name="accountpage.Publishing">පළකෙරුම්</string>
+    <string name="accountpage.Settings_Description">සැකසුම් විස්තරය</string>
+    <string name="accountpage.Settings">සැකසුම්</string>
+
+    <string name="blogpage.Ping_Sites_Description">පින්ග් අඩවි විස්තරය</string>
+    <string name="blogpage.Ping_Sites">පින්ග් අඩවි</string>
+    <string name="blogpage.Tag_Sites_Description">ටැග අඩවි විස්තරය</string>
+    <string name="blogpage.Tag_Sites">ටැග අඩවි</string>
+    
+    <string name="blogpage.Media_Store_Description">මාධ්‍ය ගබඩා විස්තරය</string>
+    <string name="blogpage.Media_Store">මාධ්‍ය ගබඩා</string>
+    <string name="blogpage.Publishing_Description">පළකෙරුම් විස්තරය</string>
+    <string name="blogpage.Publishing">පළකෙරුම්</string>
+
+    <string name="pingsitesprefpage.Ping_Sites">පින්ග් අඩවි</string>
+    <string name="tagsitesprefpage.Tag_Sites">ටැග අඩවි</string>
+
+    <string name="blogpubprefpage.Re_Upload_images__even_if_not_dirty_">පිංතූර ප්‍රති-පටවන්න (අපිරිසිදු නැති වුවත්)</string>
+    <string name="blogpubprefpage.Upload_thumbnails_only">Upload thumbnails only</string>
+    <string name="blogpubprefpage.Image_Upload">පිංකූර පැටවුම</string>
+    <string name="blogpubprefpage.Add__Powered_By_Zoundry__to_the_post_footer">පෝස්ටයේ අගට 'Powered By Zoundry' යන කොටස යොදන්න</string>
+    <string name="blogpubprefpage.Publishing_Options">පළකෙරුම් විකල්ප</string>
+    <string name="blogpubprefpage.AddLightbox">Add Lightbox to image links</string>
+    <string name="blogpubprefpage.RemoveNewLines">නවපේළි ඉවත් කරන්න</string>
+
+    <string name="standard.Download_content_">පෝස්ට බාන්න.</string>
+    <string name="standard.Delete">මකන්න</string>
+    <string name="standard.DeleteDescription">තෝරාගත් පෝස්ට මකන්න.</string>
+    <string name="standard.Download">බාන්න</string>
+    <string name="standard.Publish_some_content_">පළකරන්න.</string>
+    <string name="standard.Publish">පළකරන්න</string>
+    <string name="standard.Author_some_new_content_">නව පෝස්ටයක් ලියන්න.</string>
+    <string name="standard.Write">ලියන්න</string>
+    <string name="standard.ViewOnlineDescription">තෝරාගත් අංගය මාර්ගගතව බලන්න.</string>
+    <string name="standard.ViewOnline">බලන්න (මර්ගගතව)</string>
+    <string name="standard.AddStorageDescription">නව මාධ්‍ය ගබඩාවක් එක් කරන්න</string>
+    <string name="standard.AddStorage">ගබඩාවක් එක් කරන්න</string>
+    <string name="standard.AddAccountDescriton">නව බ්ලොග් ගිණුමක් එක් කරන්න</string>
+    <string name="standard.AddAccount">ගිණුමක් එක් කරන්න</string>
+
+    <string name="accountprefsdialog.DeleteAccount">ගිණුම මකන්න</string>
+    <string name="accountprefsdialog.DeleteAccountNamed">'%s' නම් ගිණුම මකන්නට අවශ්‍යද ?</string>
+    <string name="accountprefsdialog.RemoveAccount">ගිණුම ඉවත් කරන්න</string>
+    <string name="accountprefsdialog.AddAccount">ගිණුමක් එක් කරන්න...</string>
+    <string name="accountprefsdialog.AccountManagerDescription">ඔබේ ගිණුම් කළමනාකරණයට මෙම සංවාද කොටුව භාවිතා කරන්න</string>
+    <string name="accountprefsdialog.AccountManager">ගිණුම් කළමනාකරු</string>
+
+    <string name="blogeditor.Preview">පෙරදැක්ම</string>
+    <string name="blogeditor.XHTML">XHTML</string>
+    <string name="blogeditor.Design">සැලසුම</string>
+    <string name="blogeditor.RedoDesc">අවසන් සංස්කරණය නැවත කරන්න.</string>
+    <string name="blogeditor.Redo">නැවත කරන්න</string>
+    <string name="blogeditor.UndoDesc">අවසන් සංස්කරණය අහෝසි කරන්න.</string>
+    <string name="blogeditor.Undo">අහෝසි කරන්න</string>
+    <string name="blogeditor.PasteDesc">රැඳවුම්පුවරුවේ අන්තර්ගතය අලවයි.</string>
+    <string name="blogeditor.Paste">අලවන්න</string>
+    <string name="blogeditor.CopyDesc">වත්මන් තෝරාගැනීම පිටපත් කරයි.</string>
+    <string name="blogeditor.Copy">පිටපතර කරන්න</string>
+    <string name="blogeditor.CutDesc">වත්මන් තෝරාගැනීම කපයි.</string>
+    <string name="blogeditor.Cut">කපන්න</string>
+    <string name="blogeditor.SaveDesc">බ්ලොග් පෝස්ටය සුරකියි.</string>
+    <string name="blogeditor.Save">සුරකින්න‍</string>
+    
+    <string name="blogeditor.CopyNonPortableFiles">ගෙනයා නොහැකි ගොනු පිටපත්කරන්න</string>
+    <string name="blogeditor.CopyNonPortableFilesDesc">ගෙනයාහැකි ධාවකයේ නොමැි ගොනු එකක් හෝ වැඩි ගණනක් මෙම පෝස්ටයේ ඇත. එම ‍ගොනු ගෙනයා හැකි ධාවකයට පිටපත් කරගන්නද ?</string>
+    <string name="blogeditor.CopyNonPortableFilesProgressTitle">ගෙනයා නොහැකි ගොනු පිටපත් කරමින් පවතී</string>
+    <string name="blogeditor.CopyNonPortableFilesProgressAction">%s ‍ගොනුව පිටපත් කරමිප් පවතී</string>
+
+    <string name="factory.TemplateSerializerNotFound">Could not find template serializer for namespace %s.</string>
+    <string name="factory.TemplateDeserializerNotFound">Could not find template deserializer for namescpace %s.</string>
+
+    <string name="trayprefpage.HideAppWindowOnMinimize">කවුළුව කුඩා කිරීමේදී වැඩසටහන සඟවන්න</string>
+    <string name="trayprefpage.AlwaysShowTrayIcon">පද්ධති තැටි මූර්තිය සැමවිට පෙන්වන්න</string>
+    <string name="trayprefpage.TrayIcon">පද්ධති තැටි මූර්තිය</string>
+    <string name="trayprefpage.RequiredRestartTitle">පද්ධති තැටි සැකසුම් වෙනස් තෙරිනි</string>
+    <string name="trayprefpage.RequiredRestartMessage">පද්ධති තැටියට කරන ලද වෙනස් කම්, වැඩසටහන ප්‍රතිපනගැන්වීමෙන් පසු බලාත්මක වනු ඇත.</string>
+
+    <string name="blogposthandler.NoContentTitle">No Content Dropped</string>
+    <string name="blogposthandler.NoContentDroppedMsg">No content was dropped into the editor because the blog post being dropped has not yet been published.</string>
+
+    <string name="splash.BuiltOn">සාදනලද්දේ</string>
+    <string name="splash.Version">වෙළුම</string>
+
+    <string name="accountbrowser.Accounts">ගිණුම්</string>
+    <string name="accountbrowser.Unpublished">පළ නොකළ</string>
+
+    <string name="foldersbrowser.Folders">බහාලුම්</string>
+    <string name="foldersbrowser.Tags">ටැග</string>
+    <string name="foldersbrowser.Images">පිංතූර</string>
+    <string name="foldersbrowser.Links">සබැඳි</string>
+    <string name="foldersbrowser.Posts">පෝස්ට</string>
+
+    <string name="blogbrowser.Blogs">බ්ලොග</string>
+
+    <string name="postactions.DeleteDescription">මෙම බ්ලොග් පෝස්ටය මකන්න.</string>
+    <string name="postactions.Delete">මකන්න (&amp;D)</string>
+    <string name="postactions.ViewDescription">ඔබේ සාමාන්‍ය වෙබ් ගවේශකයේ බ්ලොග් පෝස්ටය බලන්න.</string>
+    <string name="postactions.View">බලන්න (මාර්ගගතව) (&amp;V)...</string>
+    <string name="postactions.EditDescription">බ්ලොග් පොස්ටය සංස්කාරකයේ විවෘත කරයි.</string>
+    <string name="postactions.Edit">සංස්කරණය කරන්න (&amp;E)...</string>
+    <string name="postactions.CopyPostUrl">ස්ථිර සබැඳි ස්ථානය පිටපත් කරන්න</string>
+    <string name="postactions.CopyPostUrlDescription">පෝස්ටයේ සබැඳි ලිපිනය රැඳවුම් පුවරුවට පිටපත් කරයි</string>
+
+    <!-- Spell check dialog -->
+    <string name="spellcheckdialog.DialogTitle">අක්ෂර වින්‍යාස පරීක්ෂණය</string>
+    <string name="spellcheckdialog.MisspellWord">වැරදි ලෙස අකුරු යෙදූ වචනය</string>
+    <string name="spellcheckdialog.ReplaceWith">මාරුකරන්න</string>
+    <string name="spellcheckdialog.Suggestions">යෝජනා</string>
+    <string name="spellcheckdialog.Ignore">නොසලකා හරින්න</string>
+    <string name="spellcheckdialog.IgnoreAll">සියල්ල නොසලකා හරින්න</string>
+    <string name="spellcheckdialog.Add">එක් කරන්න</string>
+    <string name="spellcheckdialog.Replace">මාරුකරන්න</string>
+    <string name="spellcheckdialog.ReplaceAll">සියල්ල මාරුකරන්න</string>
+
+    <!-- spell checck ui util -->
+    <string name="spellcheckuiu‍til.SpellcheckNotSupported">මෙම සංස්කාරකය මගින් අක්ෂර වින්‍යාස පරීක්ෂණයට සහය නොදක්වයි</string>
+    <string name="spellcheckuiutil.SpellcheckNotEnabledQuestion">අක්ෂර වින්‍යාස පරීක්ෂණය බලාත්මක නැත. දැන් අක්ෂර වින්‍යාස පරීක්ෂණය බලාත්මක කරන්නට ඔබ කැමති ද ?</string>
+    <string name="spellcheckuiutil.SpellcheckCompleted">අක්ෂර වින්‍යාස පරීක්ෂණය සම්පූර්ණයි</string>
+
+    <!-- Find replace dialog -->
+    <string name="findreplacedialog.DialogTitle">සෙවුම සහ ප්‍රතිස්ථානගත කිරීම</string>
+    <string name="findreplacedialog.FindWhat">සොයන්නේ</string>
+    <string name="findreplacedialog.MatchCase">Match case</string>
+    <string name="findreplacedialog.MatchWholeWord">සම්පූර්ණ වචනය තෝරන්න</string>
+    <string name="findreplacedialog.ReplaceWith">මාරුකරන්නේ</string>
+    <string name="findreplacedialog.Find">සොයන්න</string>
+    <string name="findreplacedialog.ReplaceFind">ප්‍රතිස්ථානගත කරන්න/සොයන්න</string>
+    <string name="findreplacedialog.ReplaceAll">සියල්ල ප්‍රතිස්ථානගත කරන්න</string>
+    <string name="findreplacedialog.NotFound">හමු නොවිනි</string>
+
+    <string name="postsview.BlogPosts">බ්ලොග් පෝස්ට</string>
+
+    <string name="linksummaryview.LinkSummary">සබැඳි සාරාංශය</string>
+
+    <string name="postsummaryview.BlogPostSummary">බ්ලොග් පෝස්ට සාරාංශය</string>
+
+    <string name="tagsummaryview.TagSummary">ටැග සාරාංශය</string>
+
+    <string name="imagesummaryview.ImageSummary">පිංතූර සාරාංශය</string>
+
+    <string name="templatefetch.Resource_Downloaded">'%s' මූලාශ්‍රය බාන ලදී.</string>
+    <string name="templatefetch.DownloadingResource">'%s' මූලාශ්‍රය බාමින් පවතී.</string>
+
+    <string name="templatefetchbgtask.SavingTemplateToDisk">ටේම්ප‍්ලේටය සුරකිමින් පවතී</string>
+    <string name="templatefetchbgtask.CleaningUpTemplateHTML">ටෙම්ප්ලේට HTML කේත සුද්ද කරමින් පවතී</string>
+    <string name="templatefetchbgtask.DownloadingBlogTemplate">බ්ලොග් ටෙම්ප්ලේටය බාමින් පවතී</string>
+    <string name="templatefetchbgtask.PublishingTemplateBlogPost">Publishing template blog post</string>
+    <string name="templatefetchbgtask.DownloadingTemplate">ටෙම්ප්ලේටය බාමින් පවතී</string>
+
+    <string name="blogactions.DownloadTemplateDescription">බ්ලොගයේ වත්මන් ටෙම්ප්ලේටය බායි.</string>
+    <string name="blogactions.Download_Template">ටෙම්ප්ලේටය බාන්න (&amp;T)...</string>
+    <string name="blogactions.ViewOnlineDescription">මෙම බ්ලොගය සාමාන්‍ය වෙබ් ගවේශකයේ බලන්න.</string>
+    <string name="blogactions._ViewOnline">බලන්න (මාර්ගගතව) (&amp;V)...</string>
+    <string name="blogactions.New_Post">නව පෝස්ටයක් (&amp;P)...</string>
+    <string name="blogactions.DownloadRecentPostsDescription">ආසන්න පෝස්ට බාන්න.</string>
+    <string name="blogactions._DownloadRecentPosts">ආසන්න පෝස්ට බාන්න (&amp;D)</string>
+    <string name="blogactions.SettingsDescription">බ්ලොග් සැකසුම් සංවාද කොටුව විවෘත කරයි.</string>
+    <string name="blogactions._Settings">සැකසුම් (&amp;S)...</string>
+    <string name="blogactions.ProblemOpeningBlogURL">බ්ලොග් ලිපිනය විවෘතකිරීමේදී ගැටළුවක් මතුවිය</string>
+    <string name="blogactions.CouldNotDetermineURLForBlog">'%s' බ්ලොගයේ ලිපිනය තීරණය කළ නොහැක.</string>
+
+    <string name="pubdatawidgets.OtherOptions">වෙනත් විකල්ප</string>
+    <string name="pubdatawidgets.ImageUpload">පිංතූර පැටවුම</string>
+    <string name="pubdatawidgets.Publishing">පළකෙරුම</string>
+    <string name="pubdatawidgets.AddPoweredBy">පෝස්ටයේ අගට 'Powered by Zoundry' යන්න යොදන්න</string>
+    <string name="pubdatawidgets.ReUpload">පිංතූර ප්‍රති-පටවන්න (අපිරිසිදු නොවුනත්)</string>
+    <string name="pubdatawidgets.UploadOnlyTNs">Upload only thumbnail images</string>
+    <string name="pubdatawidgets.OverridePubTime">පළකෙරුම් කාලය ඉක්මවා යන්න :</string>
+    <string name="pubdatawidgets.PublishAsDraft">කටුසටහනක් ලෙස පළ කරන්න</string>
+    <string name="pubdatawidgets.AddLightbox">Add Lightbox to image links</string>
+    <string name="pubdatawidgets.Add">එක් කරන්න</string>
+    <string name="pubdatawidgets.AddCategory">වර්ගයක් එක් කරන්න:</string>
+    <string name="pubdatawidgets.URL">ලිපිනය</string>
+    <string name="pubdatawidgets.Service">සේවාව</string>
+    <string name="pubdatawidgets.WpOptions">WordPress 2.2+ විකල්ප</string>
+    <string name="pubdatawidgets.WpPostSlug">Post Slug</string>
+    <string name="pubdatawidgets.WpPostPassword">පෝස්ට මුරපදය</string>
+    <string name="pubdatawidgets.WpPublishStatus">පළකෙරුම් තත්වය</string>
+    <string name="pubdatawidgets.TrackbackDate">දිනය</string>
+    <string name="pubdatawidgets.TrackbackSent">යවන ලද</string>
+    <string name="pubdatawidgets.Trackback.EnterUrlInNewLines">Trackback ලිපින (එක් පේළියකට එක ගණනේ):</string>
+    
+    <string name="pubdatawidgets.WpPublishStatus_published">පළ කළ</string>    
+    <string name="pubdatawidgets.WpPublishStatus_pending">අනුමැතිය ලැබෙනතුරු සිටින</string>
+    <string name="pubdatawidgets.WpPublishStatus_unpublished">පළ නොකළ (කටුසටහන්)</string>
+    <string name="pubdatawidgets.WpPublishStatus_private">පෞද්ගලික</string>
+    
+    <!-- 
+    <string name="pubdatawidgets.RemoveTrackback">Remove Trackback</string>
+    <string name="pubdatawidgets.AddTrackback">Add Trackback URL:</string>
+	-->
+    <string name="storesubpage.UploadFilesVia">ගොනු පටවන්න</string>
+
+    <string name="aboutdialog.Credits">ප්‍රණාමය</string>
+    <string name="aboutdialog.Info">තොරතුරු</string>
+    <string name="aboutdialog.AboutRaven">Zoundry Raven පිළිබඳව</string>
+
+    <string name="imagedialog.ImageDialogInsertDescription">පිංතූර ගොනුවක් එක් කිරීමට මෙම සංවාද කොටුව භාවිතා කරන්න.</string>
+    <string name="imagedialog.ImageDialogEditDescription">පිංතූර වත්කම් වෙනස් කිරීමට මෙම සංවාද කොටුව භාවිතා කරන්න.</string>
+    <string name="imagedialog.Insert_Image">පිංතූරය එක් කරන්න</string>
+    <string name="imagedialog.Edit_Image">පිංතූරය සංස්කරණය කරන්න</string>
+    <string name="imagedialog.Bottom">පහළ</string>
+    <string name="imagedialog.Top">ඉහළ</string>
+    <string name="imagedialog.Right">දකුණ</string>
+    <string name="imagedialog.Left">වම</string>
+    <string name="imagedialog.Margin">වටේ තීරය</string>
+    <string name="imagedialog.Color">පාට</string>
+    <string name="imagedialog.Width">පළල</string>
+    <string name="imagedialog.Style">මෝස්තරය</string>
+    <string name="imagedialog.LockAspect">Lock Aspect</string>
+    <string name="imagedialog.InvalidImageURLError">කරුණාකර පිංතූරයේ ස්ථානය වෙත නිවැරදි ලිපිනයක් ලබාදෙන්න.</string>
+    <string name="imagedialog.Height">උස</string>
+    <string name="imagedialog.Class">Class</string>
+    <string name="imagedialog.Title">මාතෘකාව</string>
+    <string name="imagedialog.ALTText">ALT පෙළ</string>
+    <string name="imagedialog.Src">Src</string>
+    <string name="imagedialog.Border">මායිම</string>
+    <string name="imagedialog.Alignment">එකේළි කෙරුම</string>
+    <string name="imagedialog.Size">විශාලත්වය</string>
+    <string name="imagedialog.ImageProperties">පිංතූර වත්කම්</string>
+    <string name="imagedialog.InsertImage">පිංතූරය එක් කරන්න</string>
+    <string name="imagedialog.EditImageInformation">පිංතූර තොරතුරු වෙනස් කරන්න</string>
+
+    <string name="linkdialog.LinkDialogDescription">HTML සබැඳි නිර්මාණයට/සංස්කරණයට මෙම සංවාද කොටුව භාවිතා කරන්න.</string>
+    <string name="linkdialog.CreateHyperlink">සබැඳියක් තනන්න</string>
+    <string name="linkdialog.EditHyperlink">සබැඳිය සංස්කරණය කරන්න</string>
+    <string name="linkdialog.LinkProperties">සබැඳි වත්කම්</string>
+    <string name="linkdialog.OpenInNewWindow">ක්ලික් කල විට ගමනාන්තය වෙනත් කවුළුවක විවර කරන්න.</string>
+    <string name="linkdialog.InvalidURLError">කරුණාකර නිවැරදි ලිපනයක් ලබාදෙන්න.</string>
+    <string name="linkdialog.Rel">Rel</string>
+    <string name="linkdialog.Class">Class</string>
+    <string name="linkdialog.Target">ඉලක්කය</string>
+    <string name="linkdialog.Title">මාතෘකාව</string>
+    <string name="linkdialog.URL">ලිපිනය</string>
+    <string name="linkdialog.EnterLinkInfo">සබැඳි තොරතුරු ලබා දේන්න</string>
+
+    <string name="blogconfig.Configure">රිසිකරන්න...</string>
+    <string name="blogconfig.WeblogPing">වෙබ්ලොග් පින්ග්</string>
+    <string name="blogconfig.Categories">වර්ග</string>
+    <string name="blogconfig.General">සාමාන්‍ය</string>
+    <string name="blogconfig.Trackbacks">Trackbacks</string>
+    <string name="blogconfig.TagSites">ටැග අඩවි</string>
+
+    <string name="blogselector._AllAccounts_">&lt; සියළු ගිණුම් &gt;</string>
+    <string name="blogselector.Account">ගිණුම: </string>
+    <string name="blogselector.BlogName">බ්ලොගයේ නම:</string>
+
+    <string name="metadata.Tagwords">ටැගවදන්:</string>
+    <string name="metadata.Title">මාතෘකාව:</string>
+    <string name="metadata.Blogs">බ්ලොගය(න්):</string>
+
+    <string name="blogeditor.PublishContentToYourBlog">ඔබේ බ්ලොගයේ පළ කරන්න.</string>
+
+    <string name="file_new.BlogAccountDescription">නව බ්ලොග් ගිණුමක් තනන්න.</string>
+    <string name="file_new._BlogAccount">බ්ලොග් ගිණුමක් (&amp;B)...</string>
+    <string name="file_new.MediaStorageDescription">නව මාධ්‍ය ගබඩාවක් තනන්න.</string>
+    <string name="file_new._MediaStorage">මාධ්‍ය ගබඩාවක් (&amp;M)...</string>
+    <string name="file_new.BlogPostDescription">නව බ්ලොග් පෝස්ටයක් ලියන්න.</string>
+    <string name="file_new._BlogPost">බ්ලොග් පෝස්ටයක් (&amp;B)...</string>
+
+    <string name="file.ExitDescription">වැඩසටහනෙන් ඉවත් වෙන්න.</string>
+    <string name="file.Exit">ඉවත් වෙන්න (&amp;X)</string>
+
+    <string name="help.AboutDescription">Zoundry Raven පිළිබඳ සංවාද කොටුව විවෘත කරන්න.</string>
+    <string name="help._About">පිළිබඳව (&amp;A)...</string>
+    <string name="help.ManageTranslationsDesc">පරිවර්තන කළමනාකරු කවුළුව විවෘත කරයි.</string>
+    <string name="help.ManageTranslations">පරිවර්තන කළමනාකරණය කරන්න...</string>
+
+    <string name="tools.MediaStorageSettingsDescription">මාධය ගබඩා කළමනාකරු සංවාද කොටුව විවෘත කරයි.</string>
+    <string name="tools._MediaStorageSettings">මාධ්‍ය ගබඩා සැකසුම් (&amp;M)...</string>
+    <string name="tools.BackgroundTasksDescription">පසුබිම් කාර්යය සංවාද කොටුව විවෘත කරයි</string>
+    <string name="tools.BackgroundTasks">පසුබිම් කාර්යය (&amp;T)...</string>
+    <string name="tools._Preferences">රිසිකෙරුම් (&amp;P)...</string>
+    <string name="tools.AccountManagerDescription">ගිණුම් කළමනාකරු කවුළුව විවෘත කරයි.</string>
+    <string name="tools._AccountManager">ගිණුම් කළමනාකරු (&amp;A)...</string>
+
+    <string name="mediastoragemanager.DeleteDescription">මාධ්‍ය ගබඩාව මකන්න.</string>
+    <string name="mediastoragemanager._Delete">මකන්න (&amp;D)</string>
+    <string name="mediastoragemanager.TestDescription">මාධ්‍ය ගබඩාවේ රිසිකෙරුම් පරීක්ෂා කරන්න.</string>
+    <string name="mediastoragemanager._Test">පරීක්ෂා කරන්න (&amp;T)...</string>
+    <string name="mediastoragemanager.EditDescription">මාධ්‍ය ගබඩාව වෙනස් කරන්න.</string>
+    <string name="mediastoragemanager._Edit">වෙනස් කරන්න (&amp;E)...</string>
+
+    <string name="welcome.GettingStarted">ඇරඹුම</string>
+
+    <string name="dashboard.Dashboard">උපකරණ පුවරුව</string>
+
+    <string name="tagsview.Tags">ටැග</string>
+
+    <string name="linksview.Links">සබැඳි</string>
+
+    <string name="imagesview.Images">පිංතූර</string>
+
+    <string name="blogsummary.BlogSummary">බ්ලොග් සාරාංශය</string>
+
+    <string name="acctsummary.AccountSummary">ගිණුම් සාරාංශය</string>
+
+    <string name="navigator.AccountNavigator">බ්ලොග් ගිණුම්</string>
+
+    <string name="trayactions.RestoreDescription">වැඩසටහන් කවුළුව තිබූ තත්වයට පත්කරන්න.</string>
+    <string name="trayactions._Restore">ප්‍රතිපිහිටුවන්න (&amp;R)...</string>
+    <string name="trayactions.MinimizeDescription">වැඩසටහන් කවුළුව අඩප්‍රමාණ කරන්න.</string>
+    <string name="trayactions._Minimize">අවප්‍රමාණ කරන්න (&amp;M)</string>
+
+    <string name="mediastoragewizard.TestSettings">සැකසුම් පරීක්ෂා කරන්න...</string>
+
+    <string name="blogposthandler.BlogPostDesc">රැඳවුම්පුවරුවේ අන්තර්ගතය බ්ලොග් පෝස්ටයක් ලෙස අලවන්න.</string>
+    <string name="blogposthandler.BlogPost">බ්ලොග් පෝස්ටය</string>
+
+    <string name="mediastorageutil.AssociateStorageWithAccounts">ගබඩාව ගිණුම් සමග සම්බන්ධ කරන්න</string>
+    <string name="mediastorageutil.AssociateStorageWithAccountsMsg">ඔබ සතුව මාධ්‍ය ගබඩාවක් ලබා නොදෙන ලද ගිණුම් %d ක් ඇත. එම ගිණුම් සඳහා මෙම ගබඩාව යොදාගන්නද ?</string>
+
+    <string name="fontdialog.DialogTitle">අකුරු රටා සැකසුම්</string>
+    <string name="fontdialog.FontSettings">සැකසුම්</string>
+    <string name="fontdialog.FontPreview">පෙරදැක්ම</string>
+	<string name="fontdialog.FontName">අකුරු රටාව</string>
+	<string name="fontdialog.FontSize">විශාලත්වය</string>
+	<string name="fontdialog.Color">පාට</string>
+	<string name="fontdialog.BackgroundColor">පසුබිම</string>
+	
+	<string name="tabledialog.DialogTitle">වගුව</string>
+	<string name="tabledialog.TableSettings">වගු සැකසුම්</string>
+	<string name="tabledialog.Cols">තීර</string>
+	<string name="tabledialog.Rows">පේළ්</string>
+	<string name="tabledialog.CellPadding">සෛල පිරවුම</string>
+	<string name="tabledialog.CellSpacing">‍සෛල ඉඩගැන්වුම</string>
+	<string name="tabledialog.Width">පළල (px)</string>
+	<string name="tabledialog.Border">මායිම</string>
+	
+    <string name="feedback.SendFeedbackDescription">Raven පිළිබඳ ඔබේ අදහස් Zoundry වෙත යවන්න. (දෝෂ වාර්තා, යෝජනා ආදිය.) කරුණාකර ඉංග්‍රිසි භාෂාව භාවිතා කරන්න.</string>
+    <string name="feedback.SendFeedback">අදහස් යවන්න (&amp;F)...</string>
+
+    <string name="trayicon.NewBlogPost">නව බ්ලොග් පෝස්ටයක්...</string>
+
+    <string name="startup.RecoverMessage">සුරකින නොලද ලේඛන %d ක් හමුවිය.(එසේ වන්නට ඇත්තේ Raven එක්වර නැවතුන නිසා හෝ දෝෂයකට බඳුන් වුන නිසා විය හැකිය.). එම ගොනු නැවත ලබාගන්නද ?</string>
+    <string name="startup.RecoverTitle">සුරකින නොලද ලේඛන නැවත ලබාගැනීම</string>
+
+    <string name="publisherutil.DeletingPostFromBlogs">'%s' පෝස්ටය බ්ලොග් %d කින් මකමින් පවතී.</string>
+    <string name="publisherutil.DeletingOnlinePost">මාර්ගගත පෝස්ටය මකමින් පවතී</string>
+    <string name="publisherutil.DeleteUnpublishedPostTitle">පළ නොකළ පෝස්ටය මකන්නද ?</string>
+    <string name="publisherutil.DeleteUnpublishedPostMessage">පළ නොකළ "%s" බ්ලොග් පෝස්ටය මකන්නද ?</string>
+    <string name="publisherutil.PublishingConfigurationMessage">ඔබ පළකරනු ලබන ලේඛනය සමග එලඹිය හැකි ගැටළු පිළිබඳව මෙම සංවාද කොටුව ඔබව දැනුවත් කරනු ලබයි.</string>
+    <string name="publisherutil.PublishingConfiguration">ප‍ළකෙරුම් සැකසුම්</string>
+
+    <string name="deletepostsdialog.DeleteLocalCopy">Local පිටපත මකන්න</string>
+    <string name="deletepostsdialog.DeleteFromTheseBlogs">පහත බ්ලොග් වලින් මකන්න</string>
+    <string name="deletepostsdialog.DeleteBlogPost">බ්ලොග් පෝස්ටය මකන්න</string>
+    <string name="deletepostsdialog.DeletePublishedPost">පළකළ පෝස්ටය මකන්නද ?</string>
+
+    <string name="blogcommands.PostDeleted">පෝස්ටය මකාදැමිනි.</string>
+    <string name="blogcommands.DeletingLocalCopy">Local පිටපත මකාදමමින් පවතී...</string>
+    <string name="blogcommands.FailedToDeleteOnlinePost">මාර්ගගත පෝස්ටය මැකීමට නොහැකිවිය.</string>
+    <string name="blogcommands.DeletingPostFromBlog">'%s' බ්ලොගයෙන් පෝස්ටය මකමින් පවතී...</string>
+
+    <string name="importactions.ImportedWLWProfile">WLW ප්‍රෝෆයිලය ආනයනය කෙරිනි</string>
+    <string name="importactions.ImportingWLWProfile">Windows Live Writer ප්‍රෝෆයිලය ආනයනය කරමින් පවතී</string>
+    <string name="importactions.ImportedZBWProfile">ZBW ප්‍රෝෆයිලය ආනයනය කෙරිනි</string>
+
+    <string name="importactions.WLWDetectedTitle">Windows Live Writer හමුවිය</string>
+    <string name="importactions.WLWDetectedMessage">Windows Live Writer ඔබේ පරිගණකයේ ස්ථාපනය කොට ඇති බව හඳුනා ගැනිනි. එම සැකසුම් Raven වෙත ආනයනය කිරීමට කැමතිද ?</string>
+    <string name="importactions.ZBWDetectedTitle">Zoundry Blog Writer හමුවිය</string>
+    <string name="importactions.ZBWDetectedMessage">Zoundry Blog Writer ඔබේ පරිගණකයේ ස්ථාපනය කොට ඇති බව හඳුනා ගැනිනි. එම සැකසුම් Raven වෙත ආනයනය කිරීමට කැමතිද ?</string>
+
+    <string name="wlwimporter.ImportedWLWBlogMsg">Windows Live Writer බ්ලොගය ආනයනය කෙරිනි: '%s'</string>
+
+    <string name="blogeditor.__NoTemplate__">--ටෙම්ප්ලේටයක් නැත--</string>
+    <string name="blogeditor.ViewWithTemplate">ටෙම්ප්ලේටය සමග බලන්න:</string>
+
+    <string name="templateuiutil.DownloadingBlogTemplate">ඔබේ '%s' නම් බ්ලොගයේ ටෙම්ප්ලේටය බාමින් පවතී.</string>
+
+    <string name="templategrabber.TemplateDownloaded">ටෙම්ප්ලේටය බානලදී.</string>
+    <string name="templategrabber.BlogContentAnalysed">බ්ලොගයේ අන්තර්ගතය විශ්ලේෂණය කෙරිනි.</string>
+    <string name="templategrabber.AnalysingBlogContent">ටේම්ප්ලේටය හඳුනාගැනීමට බ්ලොගයේ අන්තර්ගතය විශ්ලේෂණය කරමින් පවතී.</string>
+    <string name="templategrabber.TemplateDownloadStarted">බ්ලොග් ටෙම්ප්ලේටය බෑම ආරම්භ කෙරිනි.</string>
+    <string name="templategrabber.DownloadingBlogTemplate">බ්ලොග් ටෙම්ප්ලේටය බාමින් පවතී</string>
+    <string name="templategrabber.Downloading">බාමින් පවතී</string>
+    <string name="templategrabber.DownloadingResources">බ්ලොග් ටෙම්ප්ලේටයේ මූලාශ්‍ර බාමින් පවතී.</string>
+    <string name="templategrabber.TemplateTrimmedAndSaved">ටෙම්ප්ලේටය පිළිවෙල කොට සුරකිනලදී.</string>
+    <string name="templategrabber.TemplateDownloaded_Trimming">ටෙම්ප්ලේටය බා අවසන්ය. පිළිවෙල කරමින් පවතී.</string>
+    <string name="templategrabber.BlogContentDownloaded_Analysing">බ්ලොග් අන්තර්ගතය බා අවසන්ය. විශ්ලේෂණය කරමින් පවතී.</string>
+    <string name="templategrabber.DownloadingBlogContentForAnalysis">විශ්ලේෂණය සඳහා බ්ලොග් අන්තර්ගතය බාමින් පවතී.</string>
+    <string name="templategrabber.UnableToDetectTemplate">පවතින බ්ලොග් අන්තර්ගතය ඔස්සේ ඔබේ බ්ලොගයේ ටෙම්ප්ලේටය හදුනාගැනීමට නොහැකිවිය.</string>
+    <string name="templategrabber.FindingBlogPostContent">Finding blog post content markup.</string>
+    <string name="templategrabber.FindingBlogPostTitle">Finding blog post title markup.</string>
+    <string name="templategrabber.AnalysingFrom">Analysing from: '%s'</string>
+    <string name="templategrabber.BlogHasNoPosts">බ්ලොග් ටෙම්ප්ලේටය වෙනුවෙන් විශ්ලේෂණය කිරීමට බ්ලොගයේ කිසිදු පෝස්ටයක් නොමැත.</string>
+    <string name="templategrabber.ConnectingToFeed">Connecting to your blog's feed.</string>
+
+    <string name="templatedialogs.DialogDescriptionMessage">Raven දන්නා දැනටමත් පවතින බ්ලොගයකින් ටෙම්ප්ලේට එක් කිරීමට මෙම සංවාද කොටුව භාවිතා කරන්න.</string>
+    <string name="templatedialogs.AddTemplateFromBlog">බ්ලොගයකින් ටෙම්ප්ලේටයක් එක්කරන්න</string>
+    <string name="templatedialogs.MakeThisTemplateTheDefault">මෙම බ්ලොගය සඳහා මෙම ටෙම්ප්ලේටය සම්මතය බවට පත්කරන්න</string>
+    <string name="templatedialogs.PickAFriendlyTemplateName">මෙම ටෙම්ප්ලේටය සඳහා පහසු නමක් ලබා දෙන්න. (උදා: 'රාහුල විද්‍යාලයේ බ්ලොග් ටෙම්ප්ලේට් එක'.)</string>
+    <string name="templatedialogs.TemplateName">ටෙම්ප්ලේටයේ නම</string>
+    <string name="templatedialogs.ChooseABlog">කරුණාකර බ්ලොගයක් තෝරාගන්න.</string>
+    <string name="templatedialogs.FromBlog">බ්ලොගයෙන්</string>
+    <string name="templatedialogs.AddTemplate">ටෙම්ප්ලේටයක් එක්කරන්න</string>
+    <string name="templatedialogs.TemplateAlreadyExists">මෙම නමම ඇති ටෙම්ප්ලේටය්ක දැනටමත් පවතී, කරුණාකර වෙනත් නමක් තෝරාගන්න.</string>
+    <string name="templatedialogs.PleaseEnterTemplateName">ඔබේ ටෙම්ප්ලේටය සඳහා නමක් ලබාදෙන්න (උදා: 'රාහුල විද්‍යාලයේ බ්ලොග් ටෙම්ප්ලේට් එක').</string>
+
+    <string name="templatemanager.BlogTemplateManagerDescription">බ්ලොග් ටෙම්ප්ලේට එකතුකිරීමට සහ ඉවත් කිරීමට මෙම සසංවාද කොටුව භාවිතා කරන්න.</string>
+    <string name="templatemanager.BlogTemplateManager">බ්ලොග් ටෙම්ප්ලේට කළමනාකරු</string>
+
+    <string name="tools.OpenTheTemplateManager">බ්ලොග් ටෙම්ප්ලේට කළමනාකරු සංවාදකොටුව විවෘත කරන්න</string>
+    <string name="tools.ManageTemplates">බ්ලොග් ටෙම්ප්ලේට කළමනාකරණය කරන්න</string>
+
+    <string name="blogeditortoolbarmodel.Create_Thumbnail">Thumbnail නිර්මාණය කරන්න</string>
+    <string name="blogeditortoolbarmodel.Thumbnail">Thumbnail</string>
+    <string name="blogeditortoolbarmodel.Image_border">පිංතූර මායිම</string>
+    <string name="blogeditortoolbarmodel.Border">මායිම</string>
+    <string name="blogeditortoolbarmodel.Align_Image">පිංතූරය එකේළි කරන්න‍</string>
+    <string name="blogeditortoolbarmodel.Align">එකේළි කරන්න</string>
+
+    <string name="blogeditortoolbarmodel.HtmlBlockTags">XHTML Block ටැග</string>
+    <string name="blogeditortoolbarmodel.HtmlBlockTagsDescription">XHTML block ටැග හැඩසවන්න හෝ ඇතුලත් කරන්න</string>
+    
+    <string name="blogeditortoolbarmodel.HtmlTags">XHTML ටැග</string>
+    <string name="blogeditortoolbarmodel.HtmlTagsDescription">XHTML ටැග හැඩසවන්න හෝ ඇතුලත් කරන්න</string>
+    
+    <string name="blogeditortoolbarmodel.XhtmlValidate">තහවුරු කරන්න</string>
+    <string name="blogeditortoolbarmodel.XhtmlValidateDescription">XHTML 1.0 පරිපාටියට අනුව කේතය තහවුරු කරන්න</string>
+    <string name="blogeditortoolbarmodel.XhtmlTidy">පිරිසිදු කරන්න</string>
+    <string name="blogeditortoolbarmodel.XhtmlTidyDescription">XHTML කේත පිරිසිදු කරන්න</string>
+    <string name="blogeditortoolbarmodel.XhtmlClearMessages">ඉවත්කරන්න</string>
+    <string name="blogeditortoolbarmodel.XhtmlClearMessagesDescription">තහවුරු කෙරුම් පණිවුඩ ඉවත් කරන්න</string>
+
+    <string name="blogpostmenubar._Find">සොයන්න (&amp;F)...</string>
+    <string name="blogpostmenubar.Select_All">සියල්ල තෝරන්න (&amp;A)</string>
+    <string name="blogpostmenubar.PasteAs_Html">HTML ලෙස අලවන්න (&amp;H)</string>
+    <string name="blogpostmenubar._Paste">අලවන්න (&amp;P)</string>
+    <string name="blogpostmenubar._Copy">පිටපත් කරන්න (&amp;C)</string>
+    <string name="blogpostmenubar.Cu_t">කපන්න (&amp;T)</string>
+    <string name="blogpostmenubar._Redo">නැවත කරන්න (&amp;R)</string>
+    <string name="blogpostmenubar._Undo">අහෝසි කරන්න (&amp;U)</string>
+    <string name="blogpostmenubar._Close">වසන්න (&amp;‍C)</string>
+    <string name="blogpostmenubar._Save">සුරකින්න (&amp;S)</string>
+    <string name="blogpostmenubar._Edit">සැකසුම් (&amp;E)</string>
+    <string name="blogpostmenubar._File">ගොනුව (&amp;F)</string>
+
+    <string name="templatesubpage.OverrideAccountTemplate">ගිණුමේ ටෙම්ප්ලේට සැකසුම් ඉක්මවා යන්න</string>
+    <string name="templatesubpage.ChooseTemplate">සම්මත ටෙම්ප්ලේටයක් තෝරාගන්න</string>
+
+    <string name="blogpage.Template_Description">ටෙම්ප්ලේට විස්තරය</string>
+    <string name="blogpage.Template">ටෙම්ප්ලේටය</string>
+
+    <string name="accountpage.Template_Description">ටෙම්ප්ලේට විස්තර</string>
+    <string name="accountpage.Template">ටෙම්ප්ලේටයTemplate</string>
+
+    <string name="postsview.LastModified">අවසන් අළුත්කෙරුම</string>
+
+    <string name="blogchooser.RemoveBlogTooltip">මෙම බ්ලොගය ඉවත් කරන්න - ඔබට මෙම බ්ලොගය වෙත පෝස්ටය පළකිරීමට අවශ්‍ය නැත්නම් මෙය භාවිතා කරන්න.</string>
+    <string name="blogchooser.AddBlogTooltip">තවත් බ්ලොග වලට පළ කරන්න - මෙම පෝස්ටය බ්ලොග කිහිපයක පළකිරීමට අවශ්‍ය නම් මෙය තෝරාගන්න.</string>
+
+    <string name="templateactions.DeleteTemplateMsg">'%s' ටෙම්ප්ලේටය මකන්නද ?</string>
+    <string name="templateactions.DeleteTemplateTitle">ටෙම්ප්ලේටය මකන්නද ?</string>
+    <string name="templatemanager.Remove">ඉවත් කරන්න</string>
+    <string name="templatemanager.Add">එක්කරන්න...</string>
+    <string name="templatemanager.Templates">ටෙම්ප්ලේට</string>
+
+    <string name="affiliatelinksprefpage.AffiliateLinksDesc3">වැදගත්: ඔබ සතුව Zoundry සේවා ගිණුමක් ඇතිනම්, බ්ලොග් පෝස්ට සංස්කාරකය තුලදී ඔබේ නිෂ්පාදන සබැඳි රයිට්-ක්ලික් කිරීමේන මතුවන මෙනුවේ විකල්ප භාවිතයෙන් ඔබ විසින්ම Zoundry අනුබද්ධ සබැඳි බවට පත් කළ යුතුය.</string>
+    <string name="affiliatelinksprefpage.AffiliateLinksDesc2">එම ක්‍රමයෙන් Zoundry වෙත සහය දැක්වීමට ඔබ අපේක්ෂා නොකරන්නේ නම්, ඉහළ දැක්වෙන ලකුණු කොටුව සලකුණු කරන්න, හවිට අප ඔබේ සබැඳි Zoundry අනුබද්ධ සබැඳි බවට පත් කිරීම නවත්වන්නෙමු.</string>
+    <string name="affiliatelinksprefpage.AffiliateLinksDesc1">සාමාන්‍යයෙන් ඔබේ බ්ලොග් පෝස්ටයන් තුල අඩංගු නිෂ්පාදන සබැඳි (උදා: Amazon.com) Zoundry වෙත ඉපයීමක් කළ හැකි අනුබද්ධ සබැඳි බවට පත් කරනු ඇත. මේ අපගේ භාවිතාකරුවයන්ට Zoundry Raven නොමිලේ ලබාදීමට යොදාගන්නා එක් ක්‍රමවේදයකි.</string>
+    <string name="affiliatelinksprefpage.DontTouchLinks">මගේ සබැඳි අවුල් කරන්න එපා !</string>
+    <string name="affiliatelinksprefpage.Affiliate_Links">අනුබද්ධිත සබැඳි</string>
+        
+    <string name="blogcontenteditorcontextmenumodel.Select__All">සියල්ල තෝරන්න (&amp;A)</string>
+    <string name="blogcontenteditorcontextmenumodel.Paste_as__Html">HTML ෙලස අලවන්න (&amp;H)</string>
+    <string name="blogcontenteditorcontextmenumodel._Paste">අලවන්න (&amp;P)</string>
+    <string name="blogcontenteditorcontextmenumodel._Copy">පිටපත් කරන්න (&amp;C)</string>
+    <string name="blogcontenteditorcontextmenumodel.Cu_t">කපන්න (&amp;T)</string>
+    <string name="blogcontenteditorcontextmenumodel._Redo">නැවත කරන්න (&amp;R)</string>
+    <string name="blogcontenteditorcontextmenumodel._Undo">අහෝසි කරන්න (&amp;U)</string>
+	<string name="blogcontenteditorcontextmenumodel.Remove_Extended_Entry_Marker">Remove Extended Entry Marker</string>    
+    
+    <string name="blogcontenteditorlinkmenumodel.Link">සබැඳි</string>
+    <string name="blogcontenteditorlinkmenumodel.CreateLink">සබැඳියක් තනන්න...</string>
+    <string name="blogcontenteditorlinkmenumodel.LinkTo">සම්බන්ධ කරන්න</string>
+    <string name="blogcontenteditorlinkmenumodel.RemoveLink">සබැඳිය ඉවත් කරන්න</string>
+    <string name="blogcontenteditorlinkmenumodel.ConvertLink">සබැඳිය හරවන්න...</string>
+    <string name="blogcontenteditorlinkmenumodel.EditLink">සබැඳිය වෙනස් කරන්න</string>
+    <string name="blogcontenteditorlinkmenumodel.CopyLinkLocation">ගමනාන්තය පිටපත් කරන්න</string>
+    <string name="blogcontenteditorlinkmenumodel.CreateEmbedContent">එබ්බවූ අන්තර්ගතයක් තනන්න</string>
+    
+    <string name="blogcontenteditorimagemenumodel.Image">පිංතූරය</string>
+    <string name="blogcontenteditorimagemenumodel.InsertImageFile">පිංතූර ගොනු ඇතුලත් කරන්න</string>
+    <string name="blogcontenteditorimagemenumodel.InsertImageTag">පිංතූර ටැග ඇතුලත් කරන්න</string>
+    <string name="blogcontenteditorimagemenumodel.EditImage">පිංතූරය සංස්කරණය කරන්න=</string>
+    <string name="blogcontenteditorimagemenumodel.CopyImageLocation">පිංතූරයේ ස්ථානය පිටපත් කරන්න</string>
+    
+    <string name="blogcontenteditorimagealignmenumodel.Align">එකේලි කරන්න</string>
+    <string name="blogcontenteditorimagealignmenumodel.AlignNone">එකේලි කරන්න එපා</string>
+    <string name="blogcontenteditorimagealignmenumodel.AlignLeft">වමට</string>
+    <string name="blogcontenteditorimagealignmenumodel.AlignCenter">මැදට</string>
+    <string name="blogcontenteditorimagealignmenumodel.AlignRight">දකුණට</string>
+      
+    <string name="blogcontenteditorimagebordermenumodel.Border">මායිම</string>
+    <string name="blogcontenteditorimagebordermenumodel.BorderNone">මායිමක් නැත</string>
+    <string name="blogcontenteditorimagebordermenumodel.BorderSolid">ඝන</string>
+    <string name="blogcontenteditorimagebordermenumodel.BorderDashed">කෙටි ඉරි</string>
+    <string name="blogcontenteditorimagebordermenumodel.BorderDotted">තිත්</string>
+    <string name="blogcontenteditorimagebordermenumodel.BorderDouble">ද්විත්ව</string>
+    <string name="blogcontenteditorimagebordermenumodel.BorderGroove">Groove</string>
+    <string name="blogcontenteditorimagebordermenumodel.BorderInset">Inset</string>
+    <string name="blogcontenteditorimagebordermenumodel.BorderOutset">Outset</string>
+    <string name="blogcontenteditorimagebordermenumodel.BorderRidge">Ridge</string>
+    
+    <string name="blogcontenteditorimagethumbnailmenumodel.Thumbnail">Thumbnail</string>
+    
+    <string name="blogcontenteditortablemenumodel.Table">වගු</string>
+    <string name="blogcontenteditortablemenumodel.InsertTable">වගුවක් ඇතුලත් කරන්න...</string>
+
+    <string name="blogeditoractions.FailedToConvertLink">නිෂ්පාදන සබැඳිය හැරවීමට නොහැකි විය.</string>
+    <string name="blogeditoractions.SuccessfullyConvertedLink">නිෂ්පාදන සබැඳිය සාර්ථකව හරවනලදී, HTML තුලට ඇතුලත් කරමින් පවතී.</string>
+    <string name="blogeditoractions.Invoking_Zoundry_Service">Zoundry සේවාව ඉල්ලමින් පවතී...</string>
+    <string name="blogeditoractions.Converting_Link">සබැඳිය හරවමින් පවතී</string>
+
+    <string name="publishersitewizard.NoBlogYet">මා සතුව තවමත් බ්ලොගයක් නොමැත !</string>
+
+    <string name="postactions.OpenAsUnpublishedDesc">තෝරාගත් ගොනුවේ සුරකින නොලද, පළ නොකළ පිටපතක් තනා එය බ්ලොග් සංස්කාරකයේ විවෘක කරයි.</string>
+    <string name="postactions.OpenAsUnpublished">නොපළකළ පිටපතක් විවෘත කරන්න...</string>
+
+    <string name="translationeditor.UseThisDialogMsg">Raven යම් භාෂාවකට පරිවර්තනය කෙරුමට මෙම සංවාද කොටුව භාවිතා කරන්න. ලයිස්තුවෙන් එක් පෙළක් තොරාගන්න, පරිවර්තිත පෙළ යතුරු ලියනය කරන්න, ENTER ඔබන්න.</string>
+    <string name="translationeditor.TranslationEditor">පරිවර්තන සංස්කාරකය</string>
+    <string name="translationeditor.EnglishValue">ඉංග්‍රිසි අදහස</string>
+    <string name="translationeditor.ShowOnlyUntranslated">පරිවර්තනය නොකළ පෙළ පමණක් පෙන්වන්න</string>
+    <string name="translationeditor.EditTranslation_">(%s) පරිවර්තනය සංස්කරණය කරන්න</string>
+    <string name="translationeditor.TranslatedValue">පරිවර්තිත පෙළ</string>
+    <string name="translationeditor.BundleKey">Bundle Key</string>
+    <string name="translationeditor.Save">සුරකින්න</string>
+    <string name="translationeditor.CancelTranslationTitle">පරිවර්තනය කරන ලද පෙළ අතහරින්නද ?</string>
+    <string name="translationeditor.CancelTranslationMessage">ඔබ මෙය අතහැර දැම්මහොත්, පරිවර්තිත සියළු පෙළ අහිමි වනු ඇත. අතහැර දමන්න ද?</string>
+    
+    <string name="newtranslationdl.UseThisDialogMsg">නව පරිවර්තනයක් තැනීමට මෙම සංවාද කොටුව භාවිතා කරන්න. ඔබේ භාෂාව සහ රට (අත්‍යවශ්‍ය නොවේ) තෝරාගන්න.</string>
+    <string name="newtranslationdl.LanguageLabel">භාෂාව:</string>
+    <string name="newtranslationdl.CreateNewTranslation">නව පරිවර්තනයක් තනන්න</string>
+    
+    <string name="translationmanager.UseThisWindowMsg">පරිවර්තන එක් කිරීමට/සංස්කරණය කිරීමට මෙම කවුළුව භාවිතා කරන්න.</string>
+    <string name="translationmanager.TranslationManager">පරිවර්තන කළමනාකරු</string>
+    <string name="translationmanager.Edit">සංස්කරණය කරන්න...</string>
+    <string name="translationmanager.New">නව...</string>
+    <string name="translationmanager.Translations">පරිවර්තන</string>
+    <string name="translationmanager.MustHaveWriteAccessError">ඔබ සතුව Zoundry Raven ස්ථාපිත බහාලුමට ලිවීමේ හැකියාව තිබිය යුතුය.</string>
+    <string name="translationmanager.TranslationEditingNotAllowed">පරිවර්තන සංස්කරණය කිරීමට අවසර නැත</string>
+    
+    <string name="welcome.PublishDesc">අවසානයේ, ඔබේ පෝස්ටය පළකරන්න.(ප්‍රධාන වැඩසටහනේ 'පළකරන්න' බොත්තම හෝ සංස්කාරකයේ මෙවලම් තීරුව බාවිතා කරමින්.)</string>
+    <string name="welcome.Publish">පළකරන්න</string>
+    <string name="welcome.WritePostDesc">මීළඟට, ඔබට නව පෝස්ටයක් ලිවිය හැකිය.</string>
+    <string name="welcome.WritePost">පෝස්ටයක් ලියන්න</string>
+    <string name="welcome.CreateAccountDesc">පළමුව, නව බ්ලොග් ගිණුම් විශාරද භාවිතයෙන් ඔබේ නව බ්ලොග් ගිණුම සකසාගන්න. ඔබ සතුව WordPress.com හෝ Blogger.com වැනි මාර්ගගත බ්ලොග් සේවා සපයන්නෙතුගෙන් ලබාගත් ගිණුමක් තිබිය යුතුය.</string>
+    <string name="welcome.CreateAnAccount">ගිණුමක් තනන්න</string>
+    <string name="welcome.WelcomeToRaven">Raven වෙත සාදරයෙන් පිළිගනිමු</string>
+
+    <string name="blogsummary.ViewBlogDesc">මෙම බ්ලොගය සාමාන්‍ය වෙබ් ගවේශකයෙන් බලන්න (මාර්ගගත)</string>
+    <string name="blogsummary.ViewBlog">බ්ලොගය බලන්න (මාර්ගගත)</string>
+    <string name="blogsummary.NewPostDesc">මෙම බ්ලොගයට නව පෝස්ටයක් ලියන්න</string>
+    <string name="blogsummary.NewPost">නව පෝස්ටයක්</string>
+    <string name="blogsummary.ConfigureBlogDesc">මෙම බ්ලොගයේ සැතසුම් බලන්න</string>
+    <string name="blogsummary.ConfigureBlog">බ්ලොගය රිසිකරන්න</string>
+
+    <string name="dashboard.SettingsDesc">වැඩසටහන් සැකසුම් රිසිකරන්න</string>
+    <string name="dashboard.Settings">සැකසුම්</string>
+    <string name="dashboard.NewMediaStorageDesc">නව මාධ්‍ය ගබඩාවක් තනන්න</string>
+    <string name="dashboard.NewMediaStorage">නව මාධ්‍ය ගබඩාවක්</string>
+    <string name="dashboard.NewBlogAccountDesc">නව බ්ලොග් ගිණුමක් තනන්න</string>
+    <string name="dashboard.NewBlogAccount">නව බ්ලොග් ගිණුමක්</string>
+
+    <string name="acctsummary.Refresh">ප්‍රතිපූරණය කරන්න</string>
+    <string name="acctsummary.ViewSettings">සැකසුම් බලන්න</string>
+    <string name="acctsummary.RefreshDesc">මෙම ගිණුම ප්‍රතිපූරණය කරන්න (මාර්ගගත)</string>
+    <string name="acctsummary.ViewSettingsDesc">මෙම ගිණුමේ සැකසුම් බලන්න</string>
+
+    <string name="blogposttoolbar.ViewPostOnline">පෝස්ටය මාර්ගගතව බලන්න.</string>
+    <string name="blogposttoolbar.ViewOnline">බලන්න (මාර්ගගත)</string>
+    <string name="blogposttoolbar.Publish">පළකරන්න</string>
+    
+    <string name="blogeditortoolbarmodel.Check_Spelling">අක්ෂර වින්‍යාසය පරීක්ෂා කරන්න</string>
+    <string name="blogeditortoolbarmodel.Spell_Check">අක්ෂර වින්‍යාසය පරීක්ෂා කරන්න</string>
+    <string name="blogeditortoolbarmodel.Insert_Extended_Entry_marker">Insert Extended Entry marker</string>
+    <string name="blogeditortoolbarmodel.Extended_Entry">Extended Entry</string>
+    <string name="blogeditortoolbarmodel.Insert_Table">වගුවක් ඇතුලත් කරන්න</string>
+    <string name="blogeditortoolbarmodel.Insert_Link">සබැඳියක් ඇතුලත් කරන්න</string>
+    <string name="blogeditortoolbarmodel.Insert_Image">පිංතූරයක් ඇතුලත් කරන්න</string>
+    <string name="blogeditortoolbarmodel.Numbered_List">අංකිත ලයිස්තුවක් ඇතුලත් කරන්න</string>
+    <string name="blogeditortoolbarmodel.Number_List">අංකිත ලයිස්තුවක් ඇතුලත් කරන්න</string>
+    <string name="blogeditortoolbarmodel.Bulleted_List">අනංකිත ලයිස්තුවක් ඇතුලත් කරන්න</string>
+    <string name="blogeditortoolbarmodel.Bullet_List">අනංකිත ලයිස්තුවක් ඇතුලත් කරන්න</string>
+    <string name="blogeditortoolbarmodel.Remove_Indent">උපඡේදනය ඉවත් කරන්න</string>
+    <string name="blogeditortoolbarmodel.De_Indent">උපඡේදනය ඉවත් කරන්න</string>
+    <string name="blogeditortoolbarmodel.Indent">උපඡේදනය කරන්න</string>
+    <string name="blogeditortoolbarmodel.Justify">සමබර කරන්න</string>    
+    <string name="blogeditortoolbarmodel.Align_Right">දකුණට එකේළි කරන්න</string>
+    <string name="blogeditortoolbarmodel.Center">මැදට එකේළි කරන්න</string>
+    <string name="blogeditortoolbarmodel.Align_Left">වමට එකේළි කරන්න</string>
+    <string name="blogeditortoolbarmodel.Strikethrough">හරහාඉර</string>
+    <string name="blogeditortoolbarmodel.Underline">යටිඉර</string>
+    <string name="blogeditortoolbarmodel.Italic">ඇලකුරු</string>
+    <string name="blogeditortoolbarmodel.Bold">ඝනකුරු</string>
+    <string name="blogeditortoolbarmodel.Font_Settings">අකුරු රටා සැකසුම්</string>
+    <string name="blogeditortoolbarmodel.Font">අකුරු රටාව</string>
+    <string name="blogeditortoolbarmodel.Blockquote">උපුටාගැනීම් කොටස</string>
+
+    <string name="appstatusbar.NoRunningTasks">ධාවනය වන කාර්යයන් නොමැත</string>
+    <string name="appstatusbar.RunningTasks">ධාවනය වන කාර්යයන්</string>
+
+    <string name="navigator.DashboardTooltip">Zoundry Raven උපකරණ පුවරුවට යන්න.</string>
+    <string name="navigator.CollapseAllTooltip">ගසේ සියළු පුරුක් හකුළන්න.</string>
+
+    <string name="flickrprovider.RavenIsAuthorized">Raven වෙත දැන් Flickr වෙතින් අවසර ලැබී ඇත !</string>
+    <string name="flickrprovider.StillNotAuthorized">Raven වෙත *තවමත්* අවසර ලැබී නැත. වම් වැරැද්දත් සිදුව තිබේ.</string>
+    <string name="flickrprovider.NotYetAuthorized">Raven වෙත තවම Flickr වෙතින් අවසර ලැබී නොමැත.</string>
+    <string name="flickrprovider.Authorized">අවසර දීඇත</string>
+    <string name="flickrprovider.ClickHereLabel">ඔබ Raven වෙත අවසර ලබාගත් පසු මෙතැන ක්ලික් කරන්න: </string>
+    <string name="flickrprovider.Begin">ආරම්භ කරන්න</string>
+    <string name="flickrprovider.BeginAuthLabel">පළමුව, අවසර ලබාගැනීමේ ක්‍රියාවලිය ආරම්භ කරන්න: </string>
+    <string name="flickrprovider.FlickrAuthDescription">ඔබ දැන් Flickr වෙත ගොඩවී (Login) Zoundry Raven අවසරලත් සේවාග්‍රාහකයෙක් (authorized-client) ලෙස සකස් කළ යුතුය, එසේ නැති වුවහොත් Flickr වෙත පිංතූර පැටවීමට Zoundry Raven ට හැකියාව නොලැබෙනු ඇත. Raven වෙත අවසර ලබාදීම සරලය. පහත 'ආරම්භ කරන්න' බොත්තම එබීමෙන් ක්‍රියාවලිය ආරම්භ කරන්න. ඔබේ වෙබ් ගවේශකය විවෘතවී ඔබව Flickr වෙත ගෙනයනු ඇත. අනතුරුව ලැබෙන උපදෙස් පිළිපදින්න. පසුව ආපසු පැමිණ පහත 'අවසර දීඇත' බොත්තම ඔබන්න.</string>
+    
+    <string name="help.Check‍ForUpdatesDesc">Zoundry Raven හි නව වෙළුමක් ලබාගැනීමට ඇත්දැයි බලන්න.</string>
+    <string name="help.CheckForUpdates">යාවත්කාල කිරීම් සඳහා පරීක්ෂා කරන්න</string>
+
+    <string name="help.GetSupportDesc">Zoundry Raven සඳහා සංවාද පුවරු සහය ලබාගන්න.</string>
+    <string name="help.GetSupport">සහයෝගයන් ලබාගන්න...</string>
+
+</string-bundle>

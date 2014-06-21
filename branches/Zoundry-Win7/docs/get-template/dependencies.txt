@@ -1,0 +1,41 @@
+
+How to find dependencies when downloading all resources (recursively)
+needed by a web page.
+
+HTML:
+  - Javascript
+  - CSS
+  - Images
+
+Javascript:
+  - Other javascript
+
+CSS
+  - Other CSS
+
+
+From HTML:
+=========
+
+<link rel="stylesheet" type="text/css" href="/css/yourcss.css">
+<script language="javascript" src="whatever.js">
+<img src="image.png">
+<STYLE TYPE="text/css">
+      @import url(http://style.com/corporate);
+      @import url(http://style.com/division);
+      
+      .blah {
+	      background-image: url(pics/cssT/smallPic.jpg)
+	      }
+</STYLE>
+
+
+From CSS (.html or .css file):
+=============================
+
+http://www.blooberry.com/indexdot/css/syntax/atrules/import.htm
+@import url(http://style.com/corporate);
+.blah {
+    background-image: url(pics/cssT/smallPic.jpg)
+ }
+

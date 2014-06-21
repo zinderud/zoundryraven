@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zoundry-plugin xmlns="http://www.zoundry.com/schemas/2006/03/zplugin.rng" version="1.0" signature="55X03UGLGJPHQPBCBZNSJKXJSF5R1RM4JP5YPN0MLRCTV8NIR8RGVE9G3QNJ8GTN5MP5WCLSPMX5G6UYUJV0AO89EIEEIPFZOJ1TR3IVFFT6YP2JV4FHNE6FDIX4QFDRAE7GSAJL3L6X3KMHSY7LMSFQP2SJR0ODGWPVGO0EWMQMJ6OBZJS8CFWBH3Q634ODAW4G2ZLXJ6OXBENGN1YNNX0R3R4BOAH57TW72H9Z8A5RY0TMCIYG9025YS23JHG4AFRX1G88VY83WZO74D1OOPDZ90ZUHTCGGOBHRSHLM1HP8UUU6BSK149CWGUGEFZC346W9OHE6NXURFXJG16OM7GCM8K05VAXTG0PMNM65X3M13KS0YOAPC2DBXSRCFNT82B4XVY1M354" id="zoundry.raven.blogapp.mediastorages" name="Zoundry Media Storages">
+
+    <dependencies>
+        <depends on="zoundry.raven.blogapp.extensions" version="1.0"/>
+    </dependencies>
+    
+    <!-- *********************************************************************************** -->
+    <!-- Some media storage type definitions (FTP, Flickr, etc...)                             -->
+    <!-- *********************************************************************************** -->
+
+    <!-- The FTP Media Storage Type -->
+    <zoundry-extension point="zoundry.blogapp.mediastorage.type">
+        <id>zoundry.blogapp.mediastorage.type.ftp</id>
+        <class>zoundry.blogapp.services.mediastorage.providers.ftpprovider.ZFTPMediaStorageProvider</class>
+        <extension-data>
+            <media-storage-type>
+                <icon>icons/types/ftp.png</icon>
+                <properties>
+                	<property name="host">
+                	    <display-name>Host</display-name>
+                	    <tooltip>The FTP host. (Example: ftp.myftphost.com)</tooltip>
+                	    <validation-regexp>.+</validation-regexp>
+                	    <validation-error-message>A value for 'host' is required.</validation-error-message>
+                	</property>
+                	<property name="port">
+                	    <display-name>Port</display-name>
+                	    <default-value>21</default-value>
+                	    <tooltip>The FTP Port (Example: 21)</tooltip>
+                	    <validation-regexp>\d+</validation-regexp>
+                	    <validation-error-message>A value for 'port' is required (and must be a number).</validation-error-message>
+                	</property>
+                	<property name="username">
+                	    <display-name>Username</display-name>
+                        <tooltip>Your FTP username.</tooltip>
+                	    <validation-regexp>.+</validation-regexp>
+                	    <validation-error-message>A value for 'username' is required.</validation-error-message>
+                	</property>
+                	<property name="password">
+                	    <display-name>Password</display-name>
+                        <tooltip>Your FTP password.</tooltip>
+                	    <type>password</type>
+                	</property>
+                	<property name="path">
+                	    <display-name>FTP Path</display-name>
+                	    <tooltip>Path on the remote FTP server. (Example: /mypix)</tooltip>
+                	    <default-value>/</default-value>
+                	</property>
+                	<property name="url">
+                	    <display-name>URL</display-name>
+                	    <tooltip>URL used to retrieve uploaded files. (Example: http://www.myftphost.com/myusername/mypix/)</tooltip>
+                	    <validation-regexp>(.+):.+</validation-regexp>
+                	    <validation-error-message>A valid 'url' is required.</validation-error-message>
+                	</property>
+                	<property name="passive">
+                	    <display-name>Use 'passive' FTP</display-name>
+                	    <tooltip>Active/Passive FTP mode. (If your settings do not work, try changing the value of 'passive')</tooltip>
+                	    <type>checkbox</type>
+                	    <default-value>false</default-value>
+                	</property>
+                </properties>
+                <capabilities>
+                	<capability enabled="true" id="zoundry.raven.capability.mediastorage.supports-delete"/>
+                	<capability enabled="true" id="zoundry.raven.capability.mediastorage.supports-file-list"/>
+                	<capability enabled="true" id="zoundry.raven.capability.mediastorage.supports-anytype-files"/>
+                </capabilities>
+            </media-storage-type>
+        </extension-data>
+    </zoundry-extension>
+    
+    <!-- The Image Shack Media Storage Type -->
+    <zoundry-extension point="zoundry.blogapp.mediastorage.type">
+        <id>zoundry.blogapp.mediastorage.type.image-shack</id>
+        <class>zoundry.blogapp.services.mediastorage.providers.imageshackprovider.ZImageShackMediaStorageProvider</class>
+        <extension-data>
+            <media-storage-type>
+                <icon>icons/types/imageshack.png</icon>
+                <properties>
+                    <property name="registrationCode">
+                        <display-name>Registration Code</display-name>
+                        <tooltip>Your personal Image Shack registration code, for registered Image Shack users (optional).</tooltip>
+                    </property>
+                </properties>
+                <capabilities>
+                    <capability enabled="false" id="zoundry.raven.capability.mediastorage.supports-delete"/>
+                    <capability enabled="false" id="zoundry.raven.capability.mediastorage.supports-file-list"/>
+					<capability enabled="true"  id="zoundry.raven.capability.mediastorage.supports-image-files"/>
+					<capability enabled="false" id="zoundry.raven.capability.mediastorage.supports-video-files"/>
+					<capability enabled="false" id="zoundry.raven.capability.mediastorage.supports-anytype-files"/>
+                </capabilities>
+            </media-storage-type>
+        </extension-data>
+    </zoundry-extension>
+    
+    <!-- The Google Picasa Media Storage Type -->
+    <zoundry-extension point="zoundry.blogapp.mediastorage.type">
+        <id>zoundry.blogapp.mediastorage.type.picasa</id>
+        <class>zoundry.blogapp.services.mediastorage.providers.picasaprovider.ZPicasaMediaStorageProvider</class>
+        <extension-data>
+            <media-storage-type>
+                <icon>icons/types/picasa.png</icon>
+                <properties>
+                	<property name="username">
+                	    <display-name>Google Account Email</display-name>
+                        <tooltip>Your Google account email address associated with Picasa Web Albums</tooltip>
+                	    <validation-regexp>^[a-zA-Z0-9][\w\.-]*[a-zA-Z0-9]@[a-zA-Z0-9][\w\.-]*[a-zA-Z0-9]\.[a-zA-Z][a-zA-Z\.]*[a-zA-Z]$</validation-regexp>
+                	    <validation-error-message>A value for 'Google Account email' is required.</validation-error-message>
+                	</property>
+                	<property name="password">
+                	    <display-name>Password</display-name>
+                        <tooltip>Your Google account password.</tooltip>
+                	    <type>password</type>
+                	    <validation-regexp>.+</validation-regexp>
+                	    <validation-error-message>A value for 'password' is required.</validation-error-message>	    
+                	</property>
+                    <property name="albumName">
+                        <display-name>Album Name</display-name>
+                        <tooltip>Name of web album where you want your photos uploaded to. E.g: name of your blog. (required).</tooltip>
+                	    <validation-regexp>.+</validation-regexp>
+                	    <validation-error-message>A value for 'web album name' is required.</validation-error-message>    
+                    </property>
+                </properties>
+                <capabilities>
+                    <capability enabled="false" id="zoundry.raven.capability.mediastorage.supports-delete"/>
+                    <capability enabled="false" id="zoundry.raven.capability.mediastorage.supports-file-list"/>
+					<capability enabled="true"  id="zoundry.raven.capability.mediastorage.supports-image-files"/>
+					<capability enabled="false" id="zoundry.raven.capability.mediastorage.supports-video-files"/>
+					<capability enabled="false" id="zoundry.raven.capability.mediastorage.supports-anytype-files"/>
+                </capabilities>
+            </media-storage-type>
+        </extension-data>
+    </zoundry-extension>
+
+    <!-- The LiveJournal FotoBilder Media Storage Type -->
+    <zoundry-extension point="zoundry.blogapp.mediastorage.type">
+        <id>zoundry.blogapp.mediastorage.type.ljfotobilder</id>
+        <class>zoundry.blogapp.services.mediastorage.providers.ljfotobilderprovider.ZLJFotoBilderStorageProvider</class>
+        <extension-data>
+            <media-storage-type>
+                <icon>icons/types/livejournal.gif</icon>
+                <properties>
+                	<property name="username">
+                	    <display-name>Username</display-name>
+                        <tooltip>LJ Fotobilder or ScrapBook account username</tooltip>
+                	    <validation-regexp>.+</validation-regexp>
+                	    <validation-error-message>A value forJ Fotobilder or ScrapBook server 'username' is required.</validation-error-message>
+                	</property>
+                	<property name="password">
+                	    <display-name>Password</display-name>
+                        <tooltip>LJ Fotobilder or ScrapBook account password.</tooltip>
+                	    <type>password</type>
+                	    <validation-regexp>.+</validation-regexp>
+                	    <validation-error-message>A value forJ Fotobilder or ScrapBook server 'password' is required.</validation-error-message>	    
+                	</property>
+                    <property name="albumName">
+                        <display-name>Gallery Name</display-name>
+                        <tooltip>Name of gallery (album) where you want your photos uploaded to.</tooltip>
+                	    <validation-regexp>.+</validation-regexp>
+                	    <validation-error-message>A value for 'gallery name' is required.</validation-error-message>    
+                    </property>
+                </properties>
+                <capabilities>
+                    <capability enabled="false" id="zoundry.raven.capability.mediastorage.supports-delete"/>
+                    <capability enabled="false" id="zoundry.raven.capability.mediastorage.supports-file-list"/>
+					<capability enabled="true"  id="zoundry.raven.capability.mediastorage.supports-image-files"/>
+					<capability enabled="false" id="zoundry.raven.capability.mediastorage.supports-video-files"/>
+					<capability enabled="false" id="zoundry.raven.capability.mediastorage.supports-anytype-files"/>    
+                </capabilities>
+            </media-storage-type>
+        </extension-data>
+    </zoundry-extension>
+
+    <!-- The flickr Media Storage Type -->
+    <zoundry-extension point="zoundry.blogapp.mediastorage.type">
+        <id>zoundry.blogapp.mediastorage.type.flickr</id>
+        <class>zoundry.blogapp.services.mediastorage.providers.flickrprovider.ZFlickrMediaStorageProvider</class>
+        <extension-data>
+            <media-storage-type>
+                <icon>icons/types/flickr.png</icon>
+                <properties>
+                    <property name="tags">
+                        <display-name>Tags</display-name>
+                        <tooltip>Space separated list of tags that will be applied to every image uploaded to flickr.</tooltip>
+                    </property>
+                    <property name="hidden">
+                        <display-name>Hidden</display-name>
+                        <tooltip>Controls whether the images uploaded to flickr will be searchable.</tooltip>
+                        <type>checkbox</type>
+                        <default-value>false</default-value>
+                    </property>
+                    <property name="token">
+                        <display-name>Token</display-name>
+                        <type>hidden</type>
+                    </property>
+                </properties>
+                <capabilities>
+                    <capability enabled="false" id="zoundry.raven.capability.mediastorage.supports-delete"/>
+                    <capability enabled="false" id="zoundry.raven.capability.mediastorage.supports-file-list"/>
+                    <capability enabled="true"  id="zoundry.raven.capability.mediastorage.supports-image-files"/>
+                    <capability enabled="false" id="zoundry.raven.capability.mediastorage.supports-video-files"/>
+                    <capability enabled="false" id="zoundry.raven.capability.mediastorage.supports-anytype-files"/>    
+                </capabilities>
+                <wizardPages>
+                    <page class="zoundry.blogapp.services.mediastorage.providers.flickrprovider.ZFlickrAuthorizationWizardPage" />
+                </wizardPages>
+            </media-storage-type>
+        </extension-data>
+    </zoundry-extension>
+
+
+    <!-- *********************************************************************************** -->
+    <!-- Some media storage site definitions (Ripway FTP, etc...)                            -->
+    <!-- *********************************************************************************** -->
+
+    <!-- The RipWay FTP Media Site -->
+    <zoundry-extension point="zoundry.blogapp.mediastorage.site">
+        <id>zoundry.blogapp.mediastorage.site.ripway</id>
+        <class/>
+        <extension-data>
+            <media-site>
+            	<media-storage-type-id>zoundry.blogapp.mediastorage.type.ftp</media-storage-type-id>
+            	<display-name>Ripway FTP</display-name>
+                <icon>icons/sites/ripway.png</icon>
+                <properties>
+                	<property name="host">
+                		<default-value>ftphost.ripway.com</default-value>
+                	</property>
+                	<property name="url">
+                		<default-value>http://h1.ripway.com/USERNAME/</default-value>
+                	</property>
+                    <property name="passive">
+                        <default-value>true</default-value>
+                        <hidden>true</hidden>
+                    </property>
+                </properties>
+            </media-site>
+        </extension-data>
+    </zoundry-extension>
+    <!-- The custom FTP Media Site -->
+    <zoundry-extension point="zoundry.blogapp.mediastorage.site">
+        <id>zoundry.blogapp.mediastorage.site.customftp</id>
+        <class/>
+        <extension-data>
+            <media-site>
+                <media-storage-type-id>zoundry.blogapp.mediastorage.type.ftp</media-storage-type-id>
+                <display-name>Custom FTP</display-name>
+            </media-site>
+        </extension-data>
+    </zoundry-extension>
+    <!-- The Image Shack Media Site -->
+    <zoundry-extension point="zoundry.blogapp.mediastorage.site">
+        <id>zoundry.blogapp.mediastorage.site.image-shack</id>
+        <class/>
+        <extension-data>
+            <media-site>
+                <media-storage-type-id>zoundry.blogapp.mediastorage.type.image-shack</media-storage-type-id>
+                <display-name>Image Shack</display-name>
+            </media-site>
+        </extension-data>
+    </zoundry-extension>
+    <!-- The Picasa Site -->
+    <zoundry-extension point="zoundry.blogapp.mediastorage.site">
+        <id>zoundry.blogapp.mediastorage.site.picasa</id>
+        <class/>
+        <extension-data>
+            <media-site>
+                <media-storage-type-id>zoundry.blogapp.mediastorage.type.picasa</media-storage-type-id>
+                <display-name>Picasa Web Album</display-name>
+            </media-site>
+        </extension-data>
+    </zoundry-extension>
+    <!-- The LJ Scrapbook Site -->
+    <zoundry-extension point="zoundry.blogapp.mediastorage.site">
+        <id>zoundry.blogapp.mediastorage.site.ljscrapbook</id>
+        <class/>
+        <extension-data>
+            <media-site>
+                <media-storage-type-id>zoundry.blogapp.mediastorage.type.ljfotobilder</media-storage-type-id>
+                <display-name>LiveJournal ScrapBook</display-name>
+            </media-site>
+        </extension-data>
+    </zoundry-extension>
+    <!-- The flickr Site -->
+    <zoundry-extension point="zoundry.blogapp.mediastorage.site">
+        <id>zoundry.blogapp.mediastorage.site.flickr</id>
+        <class/>
+        <extension-data>
+            <media-site>
+                <media-storage-type-id>zoundry.blogapp.mediastorage.type.flickr</media-storage-type-id>
+                <display-name>Flickr</display-name>
+            </media-site>
+        </extension-data>
+    </zoundry-extension>
+
+</zoundry-plugin>

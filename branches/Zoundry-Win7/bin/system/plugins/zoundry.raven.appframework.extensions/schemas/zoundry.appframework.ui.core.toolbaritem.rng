@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+
+    <start>
+        <element 
+            name="toolbar-item" 
+            ns="http://www.zoundry.com/schemas/2006/03/zplugin.rng" 
+            datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+
+            <element name="toolbar">
+                <data type="string"/>
+            </element>
+            <optional>
+                <element name="text">
+                    <data type="string"/>
+                </element>
+            </optional>
+            <element name="gravity">
+                <data type="int"/>
+            </element>
+            <element name="type">
+                <choice>
+                    <value>separator</value>
+                    <value>standard</value>
+                    <value>toggle</value>
+                </choice>
+            </element>
+            <optional>
+                <element name="description">
+                    <data type="string"/>
+                </element>
+            </optional>
+            <optional>
+                <element name="bitmaps">
+                    <zeroOrMore>
+                        <element name="bitmap">
+                            <data type="string"/>
+                            <attribute name="size">
+                                <data type="int" />
+                            </attribute>
+                            <attribute name="type">
+                                <choice>
+                                   <value>standard</value>
+                                   <value>hover</value>
+                                   <value>disabled</value>
+                                </choice>
+                            </attribute>
+                        </element>
+                    </zeroOrMore>
+                </element>
+            </optional>
+        </element>
+    </start>
+
+</grammar>

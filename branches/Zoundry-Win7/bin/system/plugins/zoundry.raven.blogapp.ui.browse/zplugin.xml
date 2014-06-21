@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zoundry-plugin xmlns="http://www.zoundry.com/schemas/2006/03/zplugin.rng" version="1.0" signature="VJJOYCXXUC0EDLOIHD3A9RS3318FC3SHWZ83Z1B7MJ48FTN41CW7Q73Y97RYT2BMUJAVS3KTGZX9EIEOQ95L9U0LUUWBTU1S3S2FUFTMP9N1P652N6F2PT5ZLG068R3CZ62QO5NFPCGX6PA0C0HIX7M1RRW4TDLLZ7QUN32YC9XW2QXMNDF4T182FF06JVKOQ9U43AOTLKPQBMM37XOJ7ZE42DSUHVD43HLG7J5Z3LF5V46I00E04JQLF4BVR96OT4R6KZV5YDIFAIN8GQ760ICCISCJC8PH5IUBEHU7ZVNAS2YGLEZTBQH9TTXNDUQYVDS8LUEV8O6MYAZZ2MRHAG9PV5GU5T7LBM503BY4W23815JLL5J5NOWS4KSUVH3BD4CT4A8F0410" id="zoundry.raven.blogapp.ui.browse" name="Zoundry Browse Perspective UI">
+
+    <dependencies>
+        <depends on="zoundry.raven.blogapp.services" version="1.0"/>
+        <depends on="zoundry.raven.blogapp.ui.core" version="1.0"/>
+    </dependencies>
+
+    <!-- The Browse Perspective -->
+    <zoundry-extension point="zoundry.blogapp.ui.perspective">
+        <id>zoundry.blogapp.ui.perspectives.browse</id>
+        <class>zoundry.blogapp.ui.perspectives.browse.ZBrowsePerspective</class>
+        <extension-data>
+            <perspective-info>
+                <name>%perspective.browse.name%</name>
+                <description>%perspective.browse.description%</description>
+            </perspective-info>
+        </extension-data>
+    </zoundry-extension>
+
+</zoundry-plugin>
