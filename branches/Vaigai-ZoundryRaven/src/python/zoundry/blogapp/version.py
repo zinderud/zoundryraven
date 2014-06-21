@@ -10,9 +10,9 @@ class ZVersion:
     def __init__(self):
         self.MAJOR_VERSION = 1
         self.MINOR_VERSION = 0
-        self.BUILD = 500
+        self.BUILD = 376
         self.MODIFIER = u'' #$NON-NLS-1$
-        self.DATE = u'2008-12-22T08:00:56.130Z' #$NON-NLS-1$
+        self.DATE = u'2014-06-21T17:00:56.130Z' #$NON-NLS-1$
     # end __init__()
     def getFullVersionString(self):
         ver = u"%d.%d.%d %s" % (self.MAJOR_VERSION, self.MINOR_VERSION, self.BUILD, self.MODIFIER) #$NON-NLS-1$

@@ -361,7 +361,18 @@ class ZMSHTMLControlBase(ZTransparentPanel):
             userProfile = getApplicationModel().getUserProfile()
             tmpDir = userProfile.getTempDirectory()
         d = str(time.time())
-        fname = os.path.join(tmpDir, u"_z_raven_mshtml_%s_tmp.xhtml" % d) #$NON-NLS-1$
+
+        # For Microsoft Internet Explorer Version 9 (and above?) the file extension for the temporary file must have
+        # a ".html" (previously a ".xhtml") extension in order for the blog post to load successfully into the ActiveX
+        # mshtml IHtmlDocument. Otherwise, the blog posts will appear to be mal-formatted during previews and fail to
+        # load correctly during editing.
+        #
+        # Chuah TC    23 December 2013
+        #
+        #fname = os.path.join(tmpDir, u"_z_raven_mshtml_%s_tmp.xhtml" % d) #$NON-NLS-1$
+        fname = os.path.join(tmpDir, u"_z_raven_mshtml_%s_tmp.html" % d) #$NON-NLS-1$
+
+
         tmpFile = codecs.open(fname, u"w") #$NON-NLS-1$
         try:
             # write the utf-8 byte order marker for wintel platforms.
@@ -759,7 +770,7 @@ class ZMSHTMLControl(ZMSHTMLControlBase):
         #visitors.append( ZMshtmlSetUnSelectableOnVisitor() )
         self._runMshtmlVisitors(visitors)
     # end _runStandardCleanupVisitors()
-    
+
     def _runImgCleanupVisitor(self):
         visitors = []
         visitors.append( ZMshtmlFixImgSrcVisitor() )
@@ -824,7 +835,7 @@ class ZMSHTMLControl(ZMSHTMLControlBase):
                 command  = u"Italic" #$NON-NLS-1$
             elif param == u"u": #$NON-NLS-1$
                 command  = u"Underline" #$NON-NLS-1$
-                
+
 
         hasText = self.hasTextSelection()
         if hasText and command and command == u"InsertOrderedList": #$NON-NLS-1$
@@ -947,7 +958,7 @@ class ZMSHTMLControl(ZMSHTMLControlBase):
         if tr:
             ele = tr.parentElement()
             if ele and tr.text == ele.innerText and ele.tagName != u"BODY": #$NON-NLS-1$
-                pass 
+                pass
             elif ele and ele.outerHTML == tr.htmlText:
                 pass
             else:
@@ -955,7 +966,7 @@ class ZMSHTMLControl(ZMSHTMLControlBase):
                 # handle locally if selection is a text fragment (i.e does not have <P> etc)
                 handleLocallly = html and html[0] != u"<" #$NON-NLS-1$
 
-        if handleLocallly: 
+        if handleLocallly:
             # listTag = ou | ul on a text selection (instead of whole para)
             listTag = getSafeString(listTag).lower()
             if listTag not in (u"ol", u"ul"): #$NON-NLS-1$ #$NON-NLS-2$
@@ -963,7 +974,7 @@ class ZMSHTMLControl(ZMSHTMLControlBase):
             openTag = u"<%s><li>" % listTag #$NON-NLS-1$
             closeTag = u"</li></%s>" % listTag #$NON-NLS-1$
             self._wrapSelection(openTag, closeTag)
-            
+
         elif listTag in (u"ol", u"ul"): #$NON-NLS-1$ #$NON-NLS-2$
             # Let IE handle it. IE will take care of handling multiple paras into a multline bullet
             if listTag == u"ol":             #$NON-NLS-1$
@@ -971,7 +982,7 @@ class ZMSHTMLControl(ZMSHTMLControlBase):
             else:
                 ZMSHTMLControlBase.execCommand(self, u"InsertUnOrderedList", None) #$NON-NLS-1$
             # Assume exec command modifies the document.
-            self._fireContentModified()            
+            self._fireContentModified()
     # end _applyListMarkup()
 
     def _markupSelection(self, xhtmlTag, cssStyle = None):
