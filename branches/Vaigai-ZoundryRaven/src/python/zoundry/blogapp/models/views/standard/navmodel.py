@@ -16,10 +16,12 @@ NODE_TYPE_TAGS = 16
 NODE_TYPE_BLOG = 32
 NODE_TYPE_ACCOUNT = 64
 NODE_TYPE_UNPUBLISHED = 128
+NODE_TYPE_DRAFTED = 256 #Vaigai-ZoundryRaven
 
 NODE_PARAMS = {
         NODE_TYPE_POSTS : (_extstr(u"navigator.Posts"), u"posts", u"posts", False), #$NON-NLS-2$ #$NON-NLS-1$ #$NON-NLS-3$
-        NODE_TYPE_UNPUBLISHED : (_extstr(u"navigator.UnpublishedPosts"), u"posts", u"posts", False), #Vaigai-ZoundryRaven
+        #NODE_TYPE_UNPUBLISHED : (_extstr(u"ZContextInfoEditedView"), u"posts", u"posts", False), #Vaigai-ZoundryRaven
+        NODE_TYPE_DRAFTED : (_extstr(u"navigator.Edited"), u"posts", u"posts", False), #Vaigai-ZoundryRaven
         NODE_TYPE_LINKS : (_extstr(u"navigator.Links"), u"links", u"links", False), #$NON-NLS-2$ #$NON-NLS-1$ #$NON-NLS-3$
         NODE_TYPE_IMAGES : (_extstr(u"navigator.Images"), u"images", u"images", False), #$NON-NLS-2$ #$NON-NLS-1$ #$NON-NLS-3$
         NODE_TYPE_TAGS : (_extstr(u"navigator.Tags"), u"tags", u"tags", False), #$NON-NLS-2$ #$NON-NLS-1$ #$NON-NLS-3$
@@ -275,13 +277,15 @@ class ZNavigatorTreePostsNode(ZNavigatorTreeSubNode):
 # end ZNavigatorTreePostsNode
 
 # --------------------------------------------------------------------------------------
+#ZNavigatorTreeEditedPostsNode added
+# by pitchaimuthu2050 21-06-2014 22:07 IST
 # Class to specifically model the "Unpublished Posts" Blog sub-node.
 # Vaigai-ZoundryRaven branch added this class if user edit existing blog the post is flaged as un published and un tagged from posts
 # --------------------------------------------------------------------------------------
-class ZNavigatorTreeUnPubPostsNode(ZNavigatorTreeSubNode):
+class ZNavigatorTreeEditedPostsNode(ZNavigatorTreeSubNode):
 
     def __init__(self):
-        ZNavigatorTreeSubNode.__init__(self, NODE_TYPE_UNPUBLISHED)
+        ZNavigatorTreeSubNode.__init__(self, NODE_TYPE_DRAFTED)
         self.filter = ZDocumentSearchFilter()
         self.postsCount = -1
     # end __init__()
@@ -295,7 +299,9 @@ class ZNavigatorTreeUnPubPostsNode(ZNavigatorTreeSubNode):
 
     def _configureFilter(self):
         self.filter.setAccountIdCriteria(IZDocumentSearchFilter.UNPUBLISHED_ACCOUNT_ID)
-        self.filter.setBlogIdCriteria(IZDocumentSearchFilter.UNPUBLISHED_BLOG_ID)
+        if self.parentBlog:
+        	self.filter.setBlogIdCriteria(IZDocumentSearchFilter.UNPUBLISHED_POSTS)
+        self.filter.setBlogIdCriteria(True)
     # end _configureFilter()
 
     def _getPostsCount(self):
@@ -326,7 +332,7 @@ class ZNavigatorTreeUnPubPostsNode(ZNavigatorTreeSubNode):
         return False
     # end removeDocumentIDO()
 
-# end ZNavigatorTreeUnPubPostsNode
+# end ZNavigatorTreeEditedPostsNode
 
 
 # --------------------------------------------------------------------------------------
@@ -613,7 +619,7 @@ class ZNavigatorTreeBlogNode(ZNavigatorTreeNode):
         self.blog = blog
         self.children = [
                  ZNavigatorTreePostsNode(),
-                 ZNavigatorTreeUnPubPostsNode(),
+                 ZNavigatorTreeEditedPostsNode(),#pitchaimuthu
                  ZNavigatorTreeLinksNode(),
                  ZNavigatorTreeImagesNode(),
                  ZNavigatorTreeTagsNode(),

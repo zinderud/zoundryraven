@@ -34,6 +34,7 @@ class IZBlogBasedSearchFilter(IZSearchFilter):
 
     UNPUBLISHED_ACCOUNT_ID = u"__unpublished__" #$NON-NLS-1$
     UNPUBLISHED_BLOG_ID = u"__unpublished__" #$NON-NLS-1$
+    UNPUBLISHED_POSTS = u"__unpublished_drafted__" #pitchaimuthu
 
     def getAccountIdCriteria(self):
         u"Returns the account id used to narrow the search results." #$NON-NLS-1$
@@ -91,7 +92,7 @@ class IZDocumentSearchFilter(IZBlogBasedSearchFilter):
     def getLinkURLCriteria(self):
         u"Returns the image URL criteria to use to narrow the search results." #$NON-NLS-1$
     # end getLinkURLCriteria()
-    
+
     def getTagIdCriteria(self):
         u"Returns the tag id criteria to use to narrow the search results." #$NON-NLS-1$
     # end getTagIdCriteria()

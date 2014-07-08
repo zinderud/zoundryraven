@@ -103,7 +103,7 @@
     <string name="navigator.Images">Images</string>
     <string name="navigator.Links">Links</string>
     <string name="navigator.Posts">Posts</string>
-    <string name="navigator.UnpublishedPosts">Unpublished</string>
+    <string name="navigator.Edited">Edited</string>
 
     <string name="dataio.DocumentLoadFailedError">Failed to load document '%s'.</string>
     <string name="dataio.FailedToSaveDocument">Failed to save document '%s'.</string>
@@ -399,6 +399,7 @@
     <string name="foldersbrowser.Images">Images</string>
     <string name="foldersbrowser.Links">Links</string>
     <string name="foldersbrowser.Posts">Posts</string>
+    <string name="foldersbrowser.Edited">Edited</string>
 
     <string name="blogbrowser.Blogs">Blogs</string>
 
