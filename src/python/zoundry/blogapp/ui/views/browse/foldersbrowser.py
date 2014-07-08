@@ -64,6 +64,7 @@ class ZFolderListProvider(IZListViewExContentProvider):
             self.folders.append( (_extstr(u"foldersbrowser.Links"), u"links", IZViewSelectionTypes.BLOG_LINKS_SELECTION) ) #$NON-NLS-2$ #$NON-NLS-1$
             self.folders.append( (_extstr(u"foldersbrowser.Images"), u"images", IZViewSelectionTypes.BLOG_IMAGES_SELECTION) ) #$NON-NLS-2$ #$NON-NLS-1$
             self.folders.append( (_extstr(u"foldersbrowser.Tags"), u"tags", IZViewSelectionTypes.BLOG_TAGS_SELECTION) ) #$NON-NLS-2$ #$NON-NLS-1$
+            #self.folders.append( (_extstr(u"foldersbrowser.Edited"), u"posts", IZViewSelectionTypes.BLOG_EDITED_SELECTION) ) #vaigai-Zoundry-Raven
     # end refresh()
 
     def getImageList(self):

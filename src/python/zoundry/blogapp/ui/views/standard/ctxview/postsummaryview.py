@@ -14,7 +14,7 @@ class ZBlogPostSummaryView(ZSummaryView):
 
     def __init__(self, parent):
         ZSummaryView.__init__(self, parent)
-        
+
         self.clearEventTypes = [
             IZViewSelectionTypes.BLOG_POSTS_SELECTION,
             IZViewSelectionTypes.ACCOUNT_SELECTION,
@@ -23,6 +23,7 @@ class ZBlogPostSummaryView(ZSummaryView):
             IZViewSelectionTypes.BLOG_LINKS_SELECTION,
             IZViewSelectionTypes.BLOG_TAGS_SELECTION,
             IZViewSelectionTypes.UNPUBLISHED_ACCOUNT_SELECTION,
+            IZViewSelectionTypes.BLOG_EDITED_SELECTION,
         ]
     # end __init__()
 
@@ -50,7 +51,7 @@ class ZBlogPostSummaryView(ZSummaryView):
             self.clearSelection()
         event.Skip()
     # end onViewSelectionChanged()
-    
+
     def onBlogPostsFilterChanged(self, event):
         self.clearSelection()
         event.Skip()

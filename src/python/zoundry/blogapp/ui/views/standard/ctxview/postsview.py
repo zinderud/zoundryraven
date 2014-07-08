@@ -566,3 +566,73 @@ class ZContextInfoPostsView(ZView):
     # end _restoreSashPosition()
 
 # end ZContextInfoPostsView
+
+#by pitchaimuthu
+class ZContextInfoEditedView(ZView):
+
+    def __init__(self, parent):
+        ZView.__init__(self, parent, wx.ID_ANY)
+
+        self.sashPosition = 0
+
+        self._createWidgets()
+        self._layoutWidgets()
+        self._populateWidgets()
+        self._bindWidgetEvents()
+    # end __init__()
+
+    def getViewId(self):
+        return IZViewIds.POSTS_VIEW
+    # end getViewId()
+
+    def _createWidgets(self):
+        self.splitterWindow = ZSplitterWindow(self)
+
+        self.blogPostsView = ZBlogPostsView(self.splitterWindow)
+        self.blogPostSummaryView = ZBlogPostSummaryView(self.splitterWindow)
+
+        self.splitterWindow.SplitHorizontally(self.blogPostsView, self.blogPostSummaryView)
+        self.splitterWindow.SetMinimumPaneSize(100)
+        self.splitterWindow.SetSashSize(8)
+        self.splitterWindow.SetSashGravity(0.0)
+    # end _createWidgets()
+
+    def _layoutWidgets(self):
+        box = wx.BoxSizer(wx.VERTICAL)
+        box.Add(self.splitterWindow, 1, wx.EXPAND)
+        self.SetAutoLayout(True)
+        self.SetSizer(box)
+    # end _layoutWidgets()
+
+    def _populateWidgets(self):
+        self._restoreSashPosition()
+    # end _populateWidgets()
+
+    def _bindWidgetEvents(self):
+        self.Bind(ZEVT_SPLITTER_SASH_POS_CHANGED, self.onSashPosChanged, self.splitterWindow)
+    # end _bindWidgetEvents()
+
+    def onSashPosChanged(self, event):
+        self.sashPosition = self.splitterWindow.GetSashPosition()
+        event.Skip()
+    # end onSashPosChanged()
+
+    def destroy(self):
+        self._saveSashPosition()
+        self.blogPostsView.destroy()
+        self.blogPostSummaryView.destroy()
+    # end destroy()
+
+    def _saveSashPosition(self):
+        userPrefs = getApplicationModel().getUserProfile().getPreferences()
+        userPrefs.setUserPreference(IZBlogAppUserPrefsKeys.POSTS_VIEW_SASH_POS, self.sashPosition)
+    # end _saveSashPosition()
+
+    def _restoreSashPosition(self):
+        userPrefs = getApplicationModel().getUserProfile().getPreferences()
+        self.sashPosition = userPrefs.getUserPreferenceInt(IZBlogAppUserPrefsKeys.POSTS_VIEW_SASH_POS, 200)
+        self.splitterWindow.SetSashPosition(self.sashPosition)
+    # end _restoreSashPosition()
+
+# end ZContextInfoEditedView
+

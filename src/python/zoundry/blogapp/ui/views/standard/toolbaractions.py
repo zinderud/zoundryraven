@@ -29,7 +29,8 @@ class ZWriteToolBarAction(ZToolBarAction):
             IZViewSelectionTypes.BLOG_IMAGES_SELECTION,
             IZViewSelectionTypes.BLOG_LINKS_SELECTION,
             IZViewSelectionTypes.BLOG_POSTS_SELECTION,
-            IZViewSelectionTypes.BLOG_TAGS_SELECTION
+            IZViewSelectionTypes.BLOG_TAGS_SELECTION,
+            IZViewSelectionTypes.BLOG_EDITED_SELECTION,
     ]
 
     def __init__(self):
@@ -192,7 +193,7 @@ class ZDownloadToolBarAction(ZDownloadRecentBlogPostsActionBase, ZDropDownToolBa
 # Toolbar action for the "View (online)" toolbar item in the Standard Perspective.
 # ------------------------------------------------------------------------------
 class ZViewOnlineToolBarAction(ZToolBarAction):
-    
+
     def __init__(self):
         self.enabledTypes = [ IZViewSelectionTypes.BLOG_SELECTION, IZViewSelectionTypes.LINK_SELECTION, IZViewSelectionTypes.IMAGE_SELECTION ]
     # end __init__()

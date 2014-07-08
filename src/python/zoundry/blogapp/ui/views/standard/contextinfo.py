@@ -9,6 +9,7 @@ from zoundry.blogapp.ui.views.standard.ctxview.imagesview import ZContextInfoIma
 from zoundry.blogapp.ui.views.standard.ctxview.linksview import ZContextInfoLinksView
 from zoundry.blogapp.ui.views.standard.ctxview.postsview import ZContextInfoPostsView
 from zoundry.blogapp.ui.views.standard.ctxview.tagsview import ZContextInfoTagsView
+from zoundry.blogapp.ui.views.standard.ctxview.postsview import ZContextInfoEditedView
 from zoundry.blogapp.ui.views.standard.ctxview.welcome import ZWelcomeView
 from zoundry.blogapp.ui.views.view import ZView
 from zoundry.blogapp.ui.views.viewsel import IZViewSelectionTypes
@@ -38,6 +39,8 @@ class ZContextInfoView(ZView):
             IZViewSelectionTypes.BLOG_TAGS_SELECTION : self._showTagsView,
             IZViewSelectionTypes.BLOG_IMAGES_SELECTION : self._showImagesView,
             IZViewSelectionTypes.BLOG_LINKS_SELECTION : self._showLinksView,
+            IZViewSelectionTypes.BLOG_EDITED_SELECTION : self._showEditedView,
+
         }
 
         self._createViews()
@@ -56,11 +59,13 @@ class ZContextInfoView(ZView):
         self.imagesView = ZContextInfoImagesView(self)
         self.linksView = ZContextInfoLinksView(self)
         self.tagsView = ZContextInfoTagsView(self)
+        self.editedView = ZContextInfoEditedView(self)#pitchaimuthu
+
     # end _createViews()
-    
+
     def _layoutViews(self):
         sizer = ZCardSizer()
-        
+
         sizer.Add(self.welcomeView)
         sizer.Add(self.dashboardView)
         sizer.Add(self.accountSummaryView)
@@ -69,7 +74,8 @@ class ZContextInfoView(ZView):
         sizer.Add(self.imagesView)
         sizer.Add(self.linksView)
         sizer.Add(self.tagsView)
-        
+        sizer.Add(self.editedView)#pitchaimuthu
+
         self.SetAutoLayout(True)
         self.SetSizer(sizer)
         self.Layout()
@@ -115,7 +121,7 @@ class ZContextInfoView(ZView):
     def _showWelcomePage(self):
         self.welcomeView.Show(True)
     # end _showWelcomePage()
-    
+
     def _showDashboardView(self):
         self.dashboardView.Show(True)
     # end _showDashboardView()
@@ -140,10 +146,15 @@ class ZContextInfoView(ZView):
         self.linksView.Show(True)
     # end _showLinksView()
 
+    def _showEditedView(self):#pitchaimuthu
+        self.editedView.Show(True)
+    # end _showLinksView()
+
+
     def _showTagsView(self):
         self.tagsView.Show(True)
     # end _showLinksView()
-    
+
     def _showDashboardOrWelcomeView(self):
         accountStore = getApplicationModel().getService(IZBlogAppServiceIDs.ACCOUNT_STORE_SERVICE_ID)
         accounts = accountStore.getAccounts()

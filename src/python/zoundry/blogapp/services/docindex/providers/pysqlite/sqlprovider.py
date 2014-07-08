@@ -263,7 +263,7 @@ class ZPySQLIndexProvider(IZIndexProvider):
         linkIDOs = self._getLinkIDOs(docId, connection)
         imageIDOs = self._getImageIDOs(docId, connection)
         tagIDOs = self._getTagIDOs(docId, connection)
-        
+
         try:
             self._delete(u"DELETE FROM Document WHERE Document.DocumentId = ?", [ docId ], connection) #$NON-NLS-1$
             connection.commit()

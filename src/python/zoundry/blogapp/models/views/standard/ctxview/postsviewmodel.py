@@ -4,10 +4,10 @@ from zoundry.blogapp.services.docindex.index import IZDocumentSearchFilter
 
 
 # ------------------------------------------------------------------------------
-# A wrapper around the document IDO list to provide a clean way to add, remove, 
+# A wrapper around the document IDO list to provide a clean way to add, remove,
 # sort, etc all of the entries in the list.  This is particularly useful when an
-# event is fired from the index indicating that a new document IDO was added, 
-# removed, etc.  In that case, this wrapper is used to add or remove the 
+# event is fired from the index indicating that a new document IDO was added,
+# removed, etc.  In that case, this wrapper is used to add or remove the
 # document IDO, rather than having to re-query the index.
 #
 # FIXME (EPW) extend/use the ZSortedList class
@@ -87,9 +87,9 @@ class ZDocumentIDOListWrapper:
 
 
 # ------------------------------------------------------------------------------
-# The model associated with the context view for the Standard Perspective when 
+# The model associated with the context view for the Standard Perspective when
 # a blog has been selected by the user.  This model provides access to all data
-# that needs to be displayed by that view (list of blog entries, search 
+# that needs to be displayed by that view (list of blog entries, search
 # capabalities, etc...).
 # ------------------------------------------------------------------------------
 class ZContextInfoPostsModel:
@@ -101,7 +101,7 @@ class ZContextInfoPostsModel:
         self.engine = getApplicationModel().getEngine()
         self.indexService = self.engine.getService(IZBlogAppServiceIDs.DOCUMENT_INDEX_SERVICE_ID)
     # end __init__()
-    
+
     def getCurrentFilter(self):
         return self.currentFilter
     # end getCurrentFilter()
@@ -113,7 +113,7 @@ class ZContextInfoPostsModel:
     def clearTitleCriteria(self):
         self.currentFilter.setTitleCriteria(None)
     # end clearTitleCriteria()
-    
+
     def setDraftCriteria(self, draft = True):
         self.currentFilter.setDraftCriteria(draft)
     # end setDraftCriteria()
@@ -138,7 +138,7 @@ class ZContextInfoPostsModel:
             self.entries = ZDocumentIDOListWrapper(indexResults, self.currentFilter)
         return self.entries
     # end getEntries()
-    
+
     def getEntry(self, index):
         return self.entries[index]
     # end getEntry()

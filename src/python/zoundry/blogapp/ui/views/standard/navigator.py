@@ -23,6 +23,7 @@ from zoundry.blogapp.models.views.standard.navmodel import NODE_TYPE_LINKS
 from zoundry.blogapp.models.views.standard.navmodel import NODE_TYPE_POSTS
 from zoundry.blogapp.models.views.standard.navmodel import NODE_TYPE_TAGS
 from zoundry.blogapp.models.views.standard.navmodel import NODE_TYPE_UNPUBLISHED
+from zoundry.blogapp.models.views.standard.navmodel import NODE_TYPE_DRAFTED #Vaigai-Zoundry-Raven
 from zoundry.blogapp.models.views.standard.navmodel import ZNavigatorModel
 from zoundry.blogapp.models.views.standard.navmodel import ZNavigatorTreeBlogNode
 from zoundry.blogapp.models.views.standard.navmodel import ZNavigatorTreeNode
@@ -125,6 +126,13 @@ def createViewSelection(node):
             blogId = node.getParentBlog().getId()
             accountId = node.getParentBlog().getAccount().getId()
         return ZViewSelection(IZViewSelectionTypes.BLOG_TAGS_SELECTION, (accountId, blogId))
+    elif node.getType() == NODE_TYPE_DRAFTED:#Vaigai-Zoundry-Raven pitchaimuthu
+        accountId = None
+        blogId = None
+        if node.getParentBlog() is not None:
+            blogId = node.getParentBlog().getId()
+            accountId = node.getParentBlog().getAccount().getId()
+        return ZViewSelection(IZViewSelectionTypes.BLOG_EDITED_SELECTION, (accountId, blogId))
     elif node.getType() == NODE_TYPE_POSTS:
         accountId = None
         blogId = None
